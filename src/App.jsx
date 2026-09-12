@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { AnimatePresence } from 'framer-motion'
 import Header from './components/Header.jsx'
 import DiagramCanvas from './components/DiagramCanvas.jsx'
+import EsquemaView from './components/EsquemaView.jsx'
 import ServiceDrawer from './components/ServiceDrawer.jsx'
 import Legend from './components/Legend.jsx'
 import useWindowWidth from './hooks/useWindowWidth.js'
@@ -15,6 +16,7 @@ export default function App() {
   const [servicoAbertoId, setServicoAbertoId] = useState(null)
   const [servicoDestacadoId, setServicoDestacadoId] = useState(null)
   const [historicoDrawer, setHistoricoDrawer] = useState([])
+  const [modoVista, setModoVista] = useState('mapa')
   const destaqueTimeoutRef = useRef(null)
 
   const { idioma, mudarIdioma, t, tCamada, tPreset, tServico } = useIdioma()
@@ -69,20 +71,25 @@ export default function App() {
         onSeleccionarResultado={seleccionarResultadoBusca}
         idioma={idioma} onIdioma={mudarIdioma}
         t={t} tCamada={tCamada} tPreset={tPreset}
+        modoVista={modoVista} onModoVista={setModoVista}
       />
 
-      <DiagramCanvas
-        cenario={cenario}
-        hyperscaler={hyperscaler}
-        mostrarLegado={mostrarLegado}
-        perfisActivos={perfisActivos}
-        servicoDestacadoId={servicoDestacadoId}
-        servicoAbertoId={servicoAbertoId}
-        onAbrirServico={abrirServico}
-        t={t} tCamada={tCamada} tServico={tServico}
-      />
+      {modoVista === 'mapa' ? (
+        <DiagramCanvas
+          cenario={cenario}
+          hyperscaler={hyperscaler}
+          mostrarLegado={mostrarLegado}
+          perfisActivos={perfisActivos}
+          servicoDestacadoId={servicoDestacadoId}
+          servicoAbertoId={servicoAbertoId}
+          onAbrirServico={abrirServico}
+          t={t} tCamada={tCamada} tServico={tServico}
+        />
+      ) : (
+        <EsquemaView t={t} idioma={idioma} />
+      )}
 
-      <Legend t={t} tCamada={tCamada} />
+      {modoVista === 'mapa' && <Legend t={t} tCamada={tCamada} />}
 
       <footer className="px-2 text-center text-[10px] leading-relaxed text-gray-500">
         {t('footerDisclaimer')}

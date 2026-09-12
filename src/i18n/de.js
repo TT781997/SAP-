@@ -40,6 +40,9 @@ export default {
     zoomOut: 'Verkleinern',
     closeDrawer: 'Schließen',
     back: 'Zurück',
+    viewMap: 'Karte',
+    viewSchema: 'Schema',
+    esquemaFocusLegend: 'Fokuskomponenten für dieses Szenario',
     profiles: {
       greenfield: 'Mid-Market Greenfield',
       brownfield: 'Komplexes ECC-Brownfield',
