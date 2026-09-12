@@ -1,140 +1,151 @@
-import { useEffect, useRef } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
-import { X } from 'lucide-react'
-import { SERVICOS_POR_ID, LAYERS, SCENARIOS } from '../data.js'
+import { motion } from 'framer-motion'
+import { X, ArrowLeft } from 'lucide-react'
+import { SERVICOS_POR_ID, LAYERS, obterEstado } from '../data.js'
+import { obterIcone } from '../icons.js'
 
-function Seccao({ titulo, children }) {
+// paraQueServe mistura, no mesmo parágrafo, "para que serve" e "como se
+// mistura" (ex.: "...Mistura típica: X + Y + Z."). Separa as frases pela
+// palavra "mistura" para preencher as duas secções exigidas sem inventar
+// texto novo; nos casos sem essa palavra, mostra o parágrafo inteiro nas
+// duas secções.
+function dividirParaQueServe(texto) {
+  const frases = texto.split(/(?<=[.!?])\s+(?=[A-ZÀ-Ú])/)
+  const comMistura = frases.filter((f) => /mistura|mix|mezcla|melange|mischt/i.test(f))
+  const semMistura = frases.filter((f) => !/mistura|mix|mezcla|melange|mischt/i.test(f))
+  if (comMistura.length === 0) return { paraQueUsado: texto, comoMistura: texto }
+  return {
+    paraQueUsado: semMistura.join(' ') || texto,
+    comoMistura: comMistura.join(' '),
+  }
+}
+
+export default function ServiceDrawer({ servicoId, cenario, temHistorico, onFechar, onVoltar, onAbrirRelacionado, isStack, t, tCamada, tServico }) {
+  const servico = SERVICOS_POR_ID[servicoId]
+  const layer = LAYERS.find((l) => l.id === servico.camada)
+  const estado = obterEstado(servicoId, { cenario, mostrarLegado: true, perfisActivos: [] })
+  const Icone = obterIcone(servico.tipo)
+
+  const nome = tServico(servicoId, 'nome') ?? servico.nome
+  const oQueFaz = tServico(servicoId, 'oQueFaz') ?? servico.oQueFaz
+  const paraQueServe = tServico(servicoId, 'paraQueServe') ?? servico.paraQueServe
+  const exemploReal = tServico(servicoId, 'exemploReal') ?? servico.exemploReal
+  const naoConfundir = tServico(servicoId, 'naoConfundir') ?? servico.naoConfundir
+  const { paraQueUsado, comoMistura } = dividirParaQueServe(paraQueServe)
+
+  const NOME_ESTADO = {
+    activo: t('stateActive'), recomendado: t('stateRecommended'), opcional: t('stateOptional'),
+    legado: t('stateLegacy'), irrelevante: t('stateIrrelevant'),
+  }
+
+  const variantesPainel = isStack
+    ? { initial: { y: '100%' }, animate: { y: 0 }, exit: { y: '100%' } }
+    : { initial: { x: '100%' }, animate: { x: 0 }, exit: { x: '100%' } }
+
   return (
-    <div>
-      <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wide text-gray-500">{titulo}</p>
-      <div className="text-sm leading-relaxed text-gray-200">{children}</div>
-    </div>
+    <>
+      <motion.div
+        initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+        onClick={onFechar}
+        className="fixed inset-0 z-30 bg-black/50"
+        aria-hidden="true"
+      />
+      <motion.div
+        {...variantesPainel}
+        transition={{ type: 'tween', duration: 0.28, ease: 'easeOut' }}
+        role="dialog"
+        aria-modal="true"
+        aria-label={nome}
+        className={
+          isStack
+            ? 'vidro fixed inset-x-0 bottom-0 z-40 flex max-h-[70vh] flex-col rounded-t-2xl'
+            : 'vidro fixed inset-y-0 right-0 z-40 flex w-full max-w-[440px] flex-col'
+        }
+      >
+        {/* 1. Nome do Serviço */}
+        <div className="flex items-center gap-2 border-b border-white/10 p-4">
+          {temHistorico && (
+            <button type="button" onClick={onVoltar} aria-label={t('back')} className="rounded-lg p-1.5 text-gray-400 hover:bg-white/10 hover:text-gray-200">
+              <ArrowLeft size={18} aria-hidden="true" />
+            </button>
+          )}
+          <div
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg"
+            style={{ background: `color-mix(in srgb, ${servico.corAcento || layer.corVar} 18%, transparent)`, color: servico.corAcento || layer.corVar }}
+          >
+            <Icone size={18} aria-hidden="true" />
+          </div>
+          <h2 className="flex-1 text-[15px] font-bold text-gray-100">{nome}</h2>
+          <button type="button" onClick={onFechar} aria-label={t('closeDrawer')} className="rounded-lg p-1.5 text-gray-400 hover:bg-white/10 hover:text-gray-200">
+            <X size={18} aria-hidden="true" />
+          </button>
+        </div>
+
+        <div className="flex-1 overflow-y-auto p-4 text-[13px] leading-relaxed text-gray-300">
+          {/* 2. Camada + Tipo + Estados neste cenário */}
+          <div className="mb-4 flex flex-wrap items-center gap-1.5">
+            <span className="rounded-full border border-white/10 px-2 py-0.5 text-[11px]" style={{ color: layer.corVar }}>{tCamada(servico.camada)}</span>
+            <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[11px] text-gray-300">{servico.tipo}</span>
+            <span className="rounded-full border border-white/10 bg-white/5 px-2 py-0.5 text-[11px] text-gray-300">{t('drawerScenario')}: {NOME_ESTADO[estado]}</span>
+          </div>
+
+          {/* 3. O que faz */}
+          <Seccao titulo={t('drawerWhat')}>{oQueFaz}</Seccao>
+          {/* 4. Para que é usado */}
+          <Seccao titulo={t('drawerUsedFor')}>{paraQueUsado}</Seccao>
+          {/* 5. Como se mistura */}
+          <Seccao titulo={t('drawerMix')}>{comoMistura}</Seccao>
+          {/* 6. Exemplo Real */}
+          <Seccao titulo={t('drawerExample')}>{exemploReal}</Seccao>
+
+          {/* 7. Relaciona-se com */}
+          <Seccao titulo={t('drawerRelated')}>
+            <div className="flex flex-wrap gap-1.5">
+              {servico.ligaA.map((id) => {
+                const alvo = SERVICOS_POR_ID[id]
+                if (!alvo) return null
+                return (
+                  <button
+                    key={id}
+                    type="button"
+                    onClick={() => onAbrirRelacionado(id)}
+                    className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-[11px] text-gray-200 transition-colors hover:bg-white/10"
+                  >
+                    {tServico(id, 'nome') ?? alvo.nome}
+                  </button>
+                )
+              })}
+            </div>
+          </Seccao>
+
+          {/* 8. Não confundir com (condicional) */}
+          {naoConfundir && <Seccao titulo={t('drawerDontConfuse')}>{naoConfundir}</Seccao>}
+
+          {/* 9. Satélites no índice Help (condicional) */}
+          {servico.satelitesHelp && (
+            <Seccao titulo={t('drawerSatellites')}>
+              <ul className="list-inside list-disc space-y-0.5">
+                {servico.satelitesHelp.split(';').map((item) => (
+                  <li key={item}>{item.trim()}</li>
+                ))}
+              </ul>
+            </Seccao>
+          )}
+        </div>
+
+        {/* 10. Rodapé fixo */}
+        <div className="border-t border-white/10 p-3 text-center text-[11px] text-gray-500">
+          {t('drawerFeatures')}
+        </div>
+      </motion.div>
+    </>
   )
 }
 
-export default function ServiceDrawer({ servicoId, cenario, onFechar, onAbrirServico, isStack }) {
-  const fecharBtnRef = useRef(null)
-  const painelRef = useRef(null)
-  const servico = servicoId ? SERVICOS_POR_ID[servicoId] : null
-
-  useEffect(() => {
-    if (servico) fecharBtnRef.current?.focus()
-  }, [servico])
-
-  useEffect(() => {
-    function aoTeclar(e) {
-      if (e.key === 'Escape') {
-        onFechar()
-        return
-      }
-      if (e.key === 'Tab' && painelRef.current) {
-        const focaveis = painelRef.current.querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])')
-        if (focaveis.length === 0) return
-        const primeiro = focaveis[0]
-        const ultimo = focaveis[focaveis.length - 1]
-        if (e.shiftKey && document.activeElement === primeiro) {
-          e.preventDefault()
-          ultimo.focus()
-        } else if (!e.shiftKey && document.activeElement === ultimo) {
-          e.preventDefault()
-          primeiro.focus()
-        }
-      }
-    }
-    if (servico) document.addEventListener('keydown', aoTeclar)
-    return () => document.removeEventListener('keydown', aoTeclar)
-  }, [servico, onFechar])
-
-  const camada = servico ? LAYERS.find((l) => l.id === servico.camada) : null
-  const cenariosAtivos = servico ? servico.cenarios.map((c) => SCENARIOS[c].nome) : []
-
+function Seccao({ titulo, children }) {
   return (
-    <AnimatePresence>
-      {servico && (
-        <>
-          <motion.div
-            key="fundo-drawer"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={onFechar}
-            aria-hidden="true"
-            className="fixed inset-0 z-30 bg-black/55 backdrop-blur-sm"
-          />
-          <motion.aside
-            key="painel-drawer"
-            ref={painelRef}
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby="drawer-titulo"
-            initial={isStack ? { y: '100%' } : { x: '100%' }}
-            animate={isStack ? { y: 0 } : { x: 0 }}
-            exit={isStack ? { y: '100%' } : { x: '100%' }}
-            transition={{ type: 'tween', duration: 0.3, ease: 'easeOut' }}
-            className="vidro fixed right-0 top-0 z-40 flex h-full w-full flex-col gap-5 overflow-y-auto p-6 lg:w-[400px] max-lg:top-auto max-lg:bottom-0 max-lg:h-auto max-lg:max-h-[85vh] max-lg:rounded-t-3xl"
-          >
-            <div className="flex items-start justify-between gap-4">
-              <h2 id="drawer-titulo" className="text-lg font-semibold leading-snug text-gray-50">
-                {servico.nome}
-              </h2>
-              <button
-                ref={fecharBtnRef}
-                type="button"
-                onClick={onFechar}
-                aria-label="Fechar painel de detalhes"
-                className="shrink-0 rounded-full p-1.5 text-gray-400 transition-colors hover:bg-white/10 hover:text-gray-100"
-              >
-                <X size={18} aria-hidden="true" />
-              </button>
-            </div>
-
-            <Seccao titulo="Camada · Tipo · Cenários em que está activo">
-              <div className="flex flex-wrap items-center gap-1.5">
-                <span
-                  className="rounded-full px-2.5 py-1 text-xs font-medium"
-                  style={{ background: `color-mix(in srgb, ${camada.corVar} 15%, transparent)`, color: camada.corVar }}
-                >
-                  {camada.nome}
-                </span>
-                <span className="rounded-full border border-white/10 px-2.5 py-1 text-xs text-gray-300">{servico.tipo}</span>
-                {cenariosAtivos.map((c) => (
-                  <span key={c} className="rounded-full bg-white/5 px-2.5 py-1 text-xs text-gray-400">
-                    {c}
-                  </span>
-                ))}
-              </div>
-            </Seccao>
-
-            <Seccao titulo="O que faz">{servico.oQueFaz}</Seccao>
-            <Seccao titulo="Para que é usado">{servico.paraQueServe}</Seccao>
-            <Seccao titulo="Exemplo Real">{servico.exemploReal}</Seccao>
-
-            <Seccao titulo="Relaciona-se com">
-              <div className="flex flex-wrap gap-2">
-                {servico.ligaA.map((id) => {
-                  const outro = SERVICOS_POR_ID[id]
-                  if (!outro) return null
-                  return (
-                    <button
-                      key={id}
-                      type="button"
-                      onClick={() => onAbrirServico(id)}
-                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs text-gray-200 transition-colors hover:border-white/25 hover:bg-white/10"
-                    >
-                      {outro.nome}
-                    </button>
-                  )
-                })}
-              </div>
-            </Seccao>
-
-            <div className="rounded-xl border border-white/10 bg-white/[0.03] p-4">
-              <p className="mb-1.5 text-[11px] font-semibold uppercase tracking-wide text-gray-500">Neste cenário</p>
-              <p className="text-sm leading-relaxed text-gray-200">{servico.contextoPorCenario[cenario]}</p>
-            </div>
-          </motion.aside>
-        </>
-      )}
-    </AnimatePresence>
+    <div className="mb-4">
+      <h3 className="mb-1 text-[11px] font-bold uppercase tracking-wide text-gray-500">{titulo}</h3>
+      <div className="text-gray-300">{children}</div>
+    </div>
   )
 }

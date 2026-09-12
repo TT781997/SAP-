@@ -1,61 +1,107 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
+import { AnimatePresence } from 'framer-motion'
 import Header from './components/Header.jsx'
 import DiagramCanvas from './components/DiagramCanvas.jsx'
 import ServiceDrawer from './components/ServiceDrawer.jsx'
 import Legend from './components/Legend.jsx'
 import useWindowWidth from './hooks/useWindowWidth.js'
+import { useIdioma } from './i18n/index.js'
 
-const LARGURA_STACK = 1024 // abaixo disto: diagrama em stack vertical, drawer em bottom-sheet
-
-// Estado inicial pedido: cenário Híbrido (RISE), hyperscaler Azure, sem drawer aberto.
 export default function App() {
   const [cenario, setCenario] = useState('rise')
   const [hyperscaler, setHyperscaler] = useState('azure')
   const [mostrarLegado, setMostrarLegado] = useState(false)
+  const [perfisActivos, setPerfisActivos] = useState([])
   const [servicoAbertoId, setServicoAbertoId] = useState(null)
-  const [searchQuery, setSearchQuery] = useState('')
+  const [servicoDestacadoId, setServicoDestacadoId] = useState(null)
+  const [historicoDrawer, setHistoricoDrawer] = useState([])
+  const destaqueTimeoutRef = useRef(null)
+
+  const { idioma, mudarIdioma, t, tCamada, tPreset, tServico } = useIdioma()
   const largura = useWindowWidth()
-  const isStack = largura < LARGURA_STACK
+  const isStack = largura < 1024
+
+  useEffect(() => () => clearTimeout(destaqueTimeoutRef.current), [])
+
+  function alternarPerfil(id) {
+    setPerfisActivos((prev) => (prev.includes(id) ? prev.filter((p) => p !== id) : [...prev, id]))
+  }
+
+  function abrirServico(id) {
+    setHistoricoDrawer([])
+    setServicoAbertoId(id)
+  }
+
+  function abrirRelacionado(id) {
+    setHistoricoDrawer((prev) => [...prev, servicoAbertoId])
+    setServicoAbertoId(id)
+  }
+
+  function voltarDrawer() {
+    setHistoricoDrawer((prev) => {
+      const anterior = prev[prev.length - 1]
+      setServicoAbertoId(anterior)
+      return prev.slice(0, -1)
+    })
+  }
+
+  function fecharDrawer() {
+    setServicoAbertoId(null)
+    setHistoricoDrawer([])
+  }
+
+  // Selecção de um resultado de busca: abre o drawer + acende o destaque no
+  // canvas (scroll + anel amarelo), que se apaga sozinho ao fim de alguns segundos.
+  function seleccionarResultadoBusca(id) {
+    abrirServico(id)
+    setServicoDestacadoId(id)
+    clearTimeout(destaqueTimeoutRef.current)
+    destaqueTimeoutRef.current = setTimeout(() => setServicoDestacadoId(null), 4000)
+  }
 
   return (
-    <div className="fundo-mapa relative min-h-screen">
+    <div className="fundo-mapa flex min-h-screen flex-col gap-3 p-3 sm:p-4">
       <Header
-        cenario={cenario}
-        onMudarCenario={setCenario}
-        hyperscaler={hyperscaler}
-        onMudarHyperscaler={setHyperscaler}
-        mostrarLegado={mostrarLegado}
-        onAlternarLegado={() => setMostrarLegado((v) => !v)}
-        searchQuery={searchQuery}
-        onMudarSearch={setSearchQuery}
+        cenario={cenario} onCenario={setCenario}
+        hyperscaler={hyperscaler} onHyperscaler={setHyperscaler}
+        mostrarLegado={mostrarLegado} onMostrarLegado={setMostrarLegado}
+        perfisActivos={perfisActivos} onAlternarPerfil={alternarPerfil}
+        onSeleccionarResultado={seleccionarResultadoBusca}
+        idioma={idioma} onIdioma={mudarIdioma}
+        t={t} tCamada={tCamada} tPreset={tPreset}
       />
 
-      <main className="relative z-10">
-        <DiagramCanvas
-          cenario={cenario}
-          hyperscaler={hyperscaler}
-          mostrarLegado={mostrarLegado}
-          searchQuery={searchQuery}
-          servicoAbertoId={servicoAbertoId}
-          onAbrirServico={setServicoAbertoId}
-          largura={largura}
-          isStack={isStack}
-        />
-      </main>
+      <DiagramCanvas
+        cenario={cenario}
+        hyperscaler={hyperscaler}
+        mostrarLegado={mostrarLegado}
+        perfisActivos={perfisActivos}
+        servicoDestacadoId={servicoDestacadoId}
+        servicoAbertoId={servicoAbertoId}
+        onAbrirServico={abrirServico}
+        t={t} tCamada={tCamada} tServico={tServico}
+      />
 
-      <footer className="relative z-10 mx-auto max-w-6xl px-4 pb-10 pt-2 text-center text-[11px] leading-relaxed text-gray-600 md:px-8">
-        Conteúdo pedagógico com base em ofertas públicas SAP. Cases resumidos a partir de histórias públicas.
+      <Legend t={t} tCamada={tCamada} />
+
+      <footer className="px-2 text-center text-[10px] leading-relaxed text-gray-500">
+        {t('footerDisclaimer')}
       </footer>
 
-      <Legend />
-
-      <ServiceDrawer
-        servicoId={servicoAbertoId}
-        cenario={cenario}
-        onFechar={() => setServicoAbertoId(null)}
-        onAbrirServico={setServicoAbertoId}
-        isStack={isStack}
-      />
+      <AnimatePresence>
+        {servicoAbertoId && (
+          <ServiceDrawer
+            servicoId={servicoAbertoId}
+            cenario={cenario}
+            temHistorico={historicoDrawer.length > 0}
+            onFechar={fecharDrawer}
+            onVoltar={voltarDrawer}
+            onAbrirRelacionado={abrirRelacionado}
+            isStack={isStack}
+            t={t} tCamada={tCamada} tServico={tServico}
+          />
+        )}
+      </AnimatePresence>
     </div>
   )
 }

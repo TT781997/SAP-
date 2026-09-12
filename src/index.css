@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
-/* ------------------------------------------------------------------
-   Tokens de tema (Tailwind v4, "CSS-first"). Gera classes utilitárias
-   automaticamente: bg-layer-infra, text-layer-core, border-layer-lob, etc.
-   Para ajustar a paleta do mapa, muda só os valores aqui.
-------------------------------------------------------------------- */
 @theme {
   --color-app-bg: #070b14;
   --color-app-panel: #0c1220;
@@ -16,88 +11,57 @@
   --color-layer-integracao: #8b5cf6;
   --color-layer-core: #0ea5e9;
   --color-layer-lob: #10b981;
+  --color-layer-alm: #f43f5e;
+
   --color-accent-ia: #f59e0b;
+  --color-accent-metodo: #fb7185;
 
-  --font-sans: 'Inter', 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
-}
-
-html {
-  color-scheme: dark;
+  --font-sans: 'Inter', 'IBM Plex Sans', system-ui, sans-serif;
 }
 
 body {
-  margin: 0;
   background: var(--color-app-bg);
   color: #e5e7eb;
   font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
 }
 
-/* Fundo: grid subtil + vinheta, conforme o design system pedido. */
 .fundo-mapa {
-  position: relative;
   background-color: var(--color-app-bg);
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    radial-gradient(ellipse at center, rgba(255, 255, 255, 0.05), transparent 70%);
+  background-size: 24px 24px, 24px 24px, 100% 100%;
 }
 
-.fundo-mapa::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background: radial-gradient(ellipse at 50% 0%, transparent 0%, transparent 40%, var(--color-app-bg) 92%);
-}
-
-/* Vidro fosco (glassmorphism) para cards e painéis. */
 .vidro {
   background: rgba(255, 255, 255, 0.045);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.06), 0 8px 24px -8px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
-/* Scrollbar discreta, coerente com a estética dark. */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
-}
-*::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-*::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.18);
-  border-radius: 8px;
-}
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.15); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.25); }
 
-/* Focus ring visível e consistente para navegação por teclado. */
 :focus-visible {
   outline: 2px solid #38bdf8;
   outline-offset: 2px;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
-/* Animação de fluxo nas ligações activas do cenário (stroke-dashoffset). */
 @keyframes fluxo-ligacao {
-  to {
-    stroke-dashoffset: -28;
-  }
+  to { stroke-dashoffset: -24; }
 }
 .ligacao-animada {
+  stroke-dasharray: 5 4;
   animation: fluxo-ligacao 900ms linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ligacao-animada {
-    animation: none;
-  }
-  * {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-  }
+  .ligacao-animada { animation: none; }
+  * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }

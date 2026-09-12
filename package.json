@@ -1,9 +1,8 @@
 {
-  "name": "mapa-ecossistema-sap",
+  "name": "mapa-sap-portfolio",
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Mapa interativo do ecossistema tecnológico SAP — On-Premise, Cloud Pública e RISE with SAP.",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
