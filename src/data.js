@@ -52,9 +52,9 @@ export const ORDEM_CENARIOS = ['onprem', 'cloud', 'rise']
 export const HYPERSCALER_IDS = ['aws', 'azure', 'gcp', 'sci']
 
 export const CLUSTERS = {
-  spend: { nome: 'Spend', membros: ['ariba', 'business-network', 'concur', 'fieldglass', 'taulia', 'managed-gateway', 'spend-control-tower', 'vim'], colapsadoPorDefeito: true },
-  cx: { nome: 'CX', membros: ['commerce-cloud', 'sales-cloud', 'service-cloud', 'emarsys', 'customer-data-cloud', 'cpq', 'fsm', 'order-management', 'customer-checkout', 'entitlement-management'], colapsadoPorDefeito: true },
-  supply: { nome: 'Supply Chain', membros: ['ibp', 'ewm', 'tm', 'digital-manufacturing', 'apm', 'yard-logistics', 'warehouse-insights', 'ipd', 'service-asset-manager', 'gbt', 'event-management', 'snc', 'fnr', 'returns-management'], colapsadoPorDefeito: true },
+  spend: { nome: 'Spend', membros: ['ariba', 'business-network', 'concur', 'fieldglass', 'taulia', 'managed-gateway', 'spend-control-tower', 'vim', 'bn-asset', 'bn-commerce', 'spend-analytics'], colapsadoPorDefeito: true },
+  cx: { nome: 'CX', membros: ['commerce-cloud', 'sales-cloud', 'service-cloud', 'emarsys', 'customer-data-cloud', 'cpq', 'fsm', 'order-management', 'customer-checkout', 'entitlement-management', 'mirakl', 'cdp', 'knowledge-central', 'territory-quota'], colapsadoPorDefeito: true },
+  supply: { nome: 'Supply Chain', membros: ['ibp', 'ewm', 'tm', 'digital-manufacturing', 'apm', 'yard-logistics', 'warehouse-insights', 'ipd', 'service-asset-manager', 'gbt', 'event-management', 'snc', 'fnr', 'returns-management', 'bn-freight', 'bn-gtt', 'bn-traceability', 'bn-planning', 'bn-scc'], colapsadoPorDefeito: true },
   'finance-ext': { nome: 'Finance Extended', membros: ['central-finance', 'treasury', 'cash-application', 'rar', 'disclosure-management'], colapsadoPorDefeito: true },
   pme: { nome: 'PME', membros: ['business-one', 'bydesign'], colapsadoPorDefeito: false },
   runtimes: { nome: 'Runtimes BTP', membros: ['abap-env', 'runtimes-btp'], colapsadoPorDefeito: false },
@@ -4882,6 +4882,1432 @@ export const SERVICOS = [
       rise: 'Opcional.'
     }
   }
+,
+
+  {
+    id: "business-suite",
+    nome: "SAP Business Suite (cloud)",
+    camada: "core",
+    tipo: "Suite comercial",
+    cluster: null,
+    cenarios: ["cloud", "rise"],
+    perfisRecomendados: ["greenfield", "brownfield"],
+    aliases: ["SAP Business Suite", "Autonomous Suite", "Business Suite", "suite SAP"],
+    oQueFaz: "Nome comercial actual em sap.com/products.html: o portefólio cloud que junta Cloud ERP (aplicações), Business AI (Joule e agentes), Business Data Cloud e BTP. Não é a Business Suite 7 on-prem (ECC). A página oficial descreve-a como suite autónoma: finanças, spend, supply chain, HCM, CX e indústria, com agentes Joule a executar sobre dados e processos SAP.",
+    paraQueServe: "Ler o mapa como a SAP vende em 2026, não só como lista de SKUs. Mistura: Business Suite = s4hana cloud + LoB + bdc + joule + btp. RISE e GROW são as vias de contrato para entrar nesta suite.",
+    exemploReal: "sap.com/products.html e sap.com/products/business-suite.html posicionam Business Suite como produto de destaque, alimentado por Business AI + BDC + aplicações, sobre BTP.",
+    ligaA: ["s4hana", "joule", "bdc", "btp", "successfactors", "ariba", "ibp", "commerce-cloud"],
+    naoConfundir: "NÃO é SAP Business Suite 7 / ECC. Esse ancestral é o card ecc.",
+    nesteCenario: {
+      onprem: "Irrelevante (a suite cloud). O ancestral on-prem é ECC / Business Suite 7.",
+      cloud: "Activo como guarda-chuva comercial do GROW.",
+      rise: "Activo como guarda-chuva comercial do RISE."
+    }
+  },
+  {
+    id: "cloud-erp",
+    nome: "SAP Cloud ERP",
+    camada: "core",
+    tipo: "ERP Cloud (marca)",
+    cluster: null,
+    cenarios: ["cloud", "rise"],
+    perfisRecomendados: ["greenfield", "brownfield"],
+    aliases: ["Cloud ERP", "SAP Cloud ERP", "ready-to-run ERP"],
+    oQueFaz: "Nome comercial em sap.com/products.html e /erp.html para o ERP na cloud. Na prática é o S/4HANA Cloud (Public Edition no GROW, Private Edition no RISE). A página fala de ERP ready-to-run com AI embutida em finanças, supply chain e procurement.",
+    paraQueServe: "Quando o cliente ouve 'Cloud ERP' e não 'S/4'. Este card aponta para s4hana. Não duplica o digital core: é a etiqueta de marketing.",
+    exemploReal: "Featured product em sap.com/products.html com link para /products/erp/s4hana.html.",
+    ligaA: ["s4hana", "business-suite", "btp", "joule"],
+    naoConfundir: "Não é um terceiro ERP além do S/4 Cloud. É o mesmo motor com outro nome comercial.",
+    nesteCenario: {
+      onprem: "Irrelevante.",
+      cloud: "Activo. Sinónimo comercial do Public Edition.",
+      rise: "Activo. Sinónimo comercial do Private Edition / RISE Cloud ERP."
+    }
+  },
+
+  /* ===== A-Z sap.com/products/a-z.html ===== */
+
+  {
+    id: 'visual-enterprise',
+    nome: 'SAP 3D Visual Enterprise',
+    camada: 'lob',
+    tipo: 'PLM 3D',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria'],
+    oQueFaz: 'Visualização 3D ligada a dados de negócio. A-Z: SAP 3D Visual Enterprise. Irmão do Product Model Viewer.',
+    paraQueServe: 'Ver o gémeo 3D no chão de fábrica e no serviço.',
+    exemploReal: 'sap.com/products/a-z.html entrada #.',
+    ligaA: ['ipd', 'product-model-viewer', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['3D Visual Enterprise']
+  },
+
+  {
+    id: 'absence-wfs',
+    nome: 'SAP Absence and Leave Management by WorkForce Software',
+    camada: 'lob',
+    tipo: 'Ausências',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['workforce'],
+    oQueFaz: 'Pedidos de ausência by WorkForce Software. A-Z HCM.',
+    paraQueServe: 'Férias e leaves quando o WFS está no landscape (além do SF Time).',
+    exemploReal: 'A-Z: Absence and Leave Management.',
+    ligaA: ['successfactors', 'workforce-forecast'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'access-control',
+    nome: 'SAP Access Control',
+    camada: 'lob',
+    tipo: 'GRC SoD',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['regulado'],
+    oQueFaz: 'SoD e provisionamento on-prem. A-Z: Access Control. Família GRC; IAG é o irmão cloud.',
+    paraQueServe: 'Aprovar acessos e detectar conflitos no ECC/S/4 on-prem.',
+    exemploReal: 'A-Z Financial management / Access Control.',
+    ligaA: ['grc', 'iag', 's4-any'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['Access Control', 'GRC AC']
+  },
+
+  {
+    id: 'avm-pathlock',
+    nome: 'SAP Access Violation Management by Pathlock',
+    camada: 'lob',
+    tipo: 'SoD parceiro',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['regulado'],
+    oQueFaz: 'Violations de acesso by Pathlock. A-Z.',
+    paraQueServe: 'Analisar violações SoD em landscapes híbridos.',
+    exemploReal: 'A-Z.',
+    ligaA: ['access-control', 'grc', 'iag'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'blackline-asa',
+    nome: 'SAP Account Substantiation and Automation by BlackLine',
+    camada: 'core',
+    tipo: 'Fecho parceiro',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['regulado'],
+    oQueFaz: 'Substantiation e automação de contas by BlackLine. A-Z.',
+    paraQueServe: 'Reconciliar contas no fecho, ao lado do Closing Cockpit.',
+    exemploReal: 'A-Z.',
+    ligaA: ['financial-closing', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['BlackLine']
+  },
+
+  {
+    id: 'ase',
+    nome: 'SAP Adaptive Server Enterprise',
+    camada: 'dados',
+    tipo: 'DB OLTP',
+    cluster: null,
+    cenarios: ['onprem'],
+    perfisRecomendados: [],
+    oQueFaz: 'ASE / Sybase SQL Server. A-Z. Distinto de HANA e de SQL Anywhere.',
+    paraQueServe: 'OLTP clássico que ainda corre em muitos clientes.',
+    exemploReal: 'A-Z: Adaptive Server Enterprise.',
+    ligaA: ['sql-anywhere', 'hana-onprem', 'replication-server'],
+    nesteCenario: { onprem: 'Opcional legado.', cloud: 'Escondido.', rise: 'Escondido.' },
+    aliases: ['ASE', 'Sybase ASE']
+  },
+
+  {
+    id: 'syniti-adm',
+    nome: 'SAP Advanced Data Migration by Syniti',
+    camada: 'dados',
+    tipo: 'Migração',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['brownfield'],
+    oQueFaz: 'Migração e qualidade de dados by Syniti. A-Z.',
+    paraQueServe: 'Cargas brownfield / S/4 conversion.',
+    exemploReal: 'A-Z.',
+    ligaA: ['btc', 'mdg', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['Syniti', 'ADM']
+  },
+
+  {
+    id: 'afc',
+    nome: 'SAP Advanced Financial Closing',
+    camada: 'core',
+    tipo: 'Fecho cloud',
+    cluster: null,
+    cenarios: ['cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Fecho financeiro avançado na cloud. A-Z. Evolução do Closing Cockpit.',
+    paraQueServe: 'Orquestrar o fecho no S/4 Cloud / RISE.',
+    exemploReal: 'A-Z: Advanced Financial Closing.',
+    ligaA: ['financial-closing', 's4hana', 'group-reporting'],
+    nesteCenario: { onprem: 'Atenuado (usar FCC).', cloud: 'Recomendado.', rise: 'Recomendado.' },
+    aliases: ['AFC', 'Advanced Financial Closing']
+  },
+
+  {
+    id: 'apo',
+    nome: 'SAP Advanced Planning and Optimization',
+    camada: 'lob',
+    tipo: 'APO legado',
+    cluster: null,
+    cenarios: ['onprem'],
+    perfisRecomendados: [],
+    oQueFaz: 'APO clássico. A-Z. Destino: IBP + S/4 PP/DS + eATP.',
+    paraQueServe: 'SNP/DP/PP-DS em Business Suite 7.',
+    exemploReal: 'A-Z.',
+    ligaA: ['ibp', 'scm-classic', 's4-any'],
+    nesteCenario: { onprem: 'Legado.', cloud: 'Escondido.', rise: 'Atenuado.' },
+    aliases: ['APO']
+  },
+
+  {
+    id: 'att-pharma',
+    nome: 'SAP Advanced Track and Trace for Pharmaceuticals',
+    camada: 'lob',
+    tipo: 'T&T pharma',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria', 'regulado'],
+    oQueFaz: 'Track and trace farmacêutico no S/4. A-Z.',
+    paraQueServe: 'Serialização e compliance DSCSA/EU-FMD.',
+    exemploReal: 'A-Z.',
+    ligaA: ['gbt', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['ATTP']
+  },
+
+  {
+    id: 'agent-lm',
+    nome: 'SAP Agent Lifecycle Management',
+    camada: 'lob',
+    tipo: 'Agentes',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Ciclo de vida de agentes (seguros / canais). A-Z.',
+    paraQueServe: 'Onboarding e compliance de agentes.',
+    exemploReal: 'A-Z.',
+    ligaA: ['agent-compliance', 'successfactors', 'insurance-underwriting'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'agent-pm',
+    nome: 'SAP Agent Performance Management',
+    camada: 'lob',
+    tipo: 'Agentes',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Performance e comissões de agentes. A-Z.',
+    paraQueServe: 'Incentivos de canal.',
+    exemploReal: 'A-Z.',
+    ligaA: ['agent-lm', 'incentive-mgmt'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'acm',
+    nome: 'SAP Agricultural Contract Management',
+    camada: 'lob',
+    tipo: 'Agro contratos',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria'],
+    oQueFaz: 'Contratos agrícolas. A-Z.',
+    paraQueServe: 'Compra de colheita e posições.',
+    exemploReal: 'A-Z.',
+    ligaA: ['rural-sourcing', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['ACM']
+  },
+
+  {
+    id: 'ai-agent-hub',
+    nome: 'SAP AI Agent Hub',
+    camada: 'plataforma',
+    tipo: 'Agentes IA',
+    cluster: null,
+    cenarios: ['cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Hub de agentes IA. A-Z: SAP AI Agent Hub. Sítio onde se publicam e governam agentes Joule.',
+    paraQueServe: 'Catálogo e governação de agentes no BTP.',
+    exemploReal: 'A-Z.',
+    ligaA: ['joule', 'ai-foundation', 'btp'],
+    nesteCenario: { onprem: 'Ausente.', cloud: 'Recomendado com Joule.', rise: 'Recomendado com Joule.' }
+  },
+
+  {
+    id: 'aif',
+    nome: 'SAP Application Interface Framework',
+    camada: 'integracao',
+    tipo: 'AIF',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Framework de interfaces no ECC/S/4. A-Z. Complementa PI/PO e Integration Suite no lado aplicativo.',
+    paraQueServe: 'Monitorizar e mapear IDocs/proxies no ERP.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4-any', 'pipo', 'integration-suite'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['AIF']
+  },
+
+  {
+    id: 'opentext-archive',
+    nome: 'SAP Archiving and Document Access by OpenText',
+    camada: 'dados',
+    tipo: 'Arquivo',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Arquivo e acesso a documentos by OpenText. A-Z.',
+    paraQueServe: 'Arquivar documentos de negócio fora do HANA.',
+    exemploReal: 'A-Z.',
+    ligaA: ['ilm', 's4hana', 'vim'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'asset-workbench',
+    nome: 'SAP Asset Information Workbench',
+    camada: 'lob',
+    tipo: 'Activos',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria'],
+    oQueFaz: 'Workbench de informação de activos. A-Z.',
+    paraQueServe: 'Dados técnicos do activo para APM/EAM.',
+    exemploReal: 'A-Z.',
+    ligaA: ['apm', 'mdg'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'audit-mgmt',
+    nome: 'SAP Audit Management',
+    camada: 'lob',
+    tipo: 'Auditoria GRC',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['regulado'],
+    oQueFaz: 'Auditoria interna. A-Z. Família GRC.',
+    paraQueServe: 'Plano de auditoria e working papers.',
+    exemploReal: 'A-Z.',
+    ligaA: ['grc', 'process-control', 'risk-mgmt'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'batch-release-ls',
+    nome: 'SAP Batch Release Hub for Life Sciences',
+    camada: 'lob',
+    tipo: 'Life sciences',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria', 'regulado'],
+    oQueFaz: 'Libertação de lotes farmacêuticos. A-Z.',
+    paraQueServe: 'Batch release com dados de qualidade e compliance.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4hana', 'att-pharma', 'qir'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'broker-reconciliation',
+    nome: 'SAP Broker Reconciliation for Commodity Derivatives',
+    camada: 'core',
+    tipo: 'Commodities',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Reconciliação de brokers em derivados. A-Z.',
+    paraQueServe: 'Tesouraria de commodities.',
+    exemploReal: 'A-Z.',
+    ligaA: ['treasury', 'commodity-mgmt'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'bas',
+    nome: 'SAP Business Application Studio',
+    camada: 'plataforma',
+    tipo: 'IDE cloud',
+    cluster: null,
+    cenarios: ['cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'IDE cloud do BTP. A-Z. Sucessor do Web IDE.',
+    paraQueServe: 'Desenvolver CAP, Fiori, extensões clean core.',
+    exemploReal: 'A-Z.',
+    ligaA: ['btp', 'build', 'abap-env'],
+    nesteCenario: { onprem: 'Ausente.', cloud: 'Activo com BTP.', rise: 'Activo com BTP.' },
+    aliases: ['BAS', 'Business Application Studio']
+  },
+
+  {
+    id: 'integrity-screening',
+    nome: 'SAP Business Integrity Screening',
+    camada: 'lob',
+    tipo: 'Fraude',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['regulado'],
+    oQueFaz: 'Screening de integridade / fraude. A-Z.',
+    paraQueServe: 'Detectar pagamentos e parceiros suspeitos.',
+    exemploReal: 'A-Z.',
+    ligaA: ['grc', 'watch-list'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'bn-asset',
+    nome: 'SAP Business Network Asset Collaboration',
+    camada: 'lob',
+    tipo: 'Rede activos',
+    cluster: 'spend',
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Colaboração de activos na Business Network. A-Z.',
+    paraQueServe: 'OEM e operador partilham o gémeo do activo.',
+    exemploReal: 'A-Z.',
+    ligaA: ['business-network', 'apm'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'bn-commerce',
+    nome: 'SAP Business Network Commerce Automation',
+    camada: 'lob',
+    tipo: 'Rede compras',
+    cluster: 'spend',
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Automação comercial na Network (PO, ASN, invoice). A-Z.',
+    paraQueServe: 'Transaccionar com fornecedores na rede.',
+    exemploReal: 'A-Z.',
+    ligaA: ['business-network', 'ariba'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'bn-freight',
+    nome: 'SAP Business Network Freight Collaboration',
+    camada: 'lob',
+    tipo: 'Rede freight',
+    cluster: 'supply',
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Colaboração com transportadores. A-Z.',
+    paraQueServe: 'Tendering e tracking de freight.',
+    exemploReal: 'A-Z.',
+    ligaA: ['business-network', 'tm'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'bn-gtt',
+    nome: 'SAP Business Network Global Track and Trace',
+    camada: 'lob',
+    tipo: 'GTT',
+    cluster: 'supply',
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Track and trace global na Network. A-Z.',
+    paraQueServe: 'Visibilidade multi-modal da encomenda.',
+    exemploReal: 'A-Z.',
+    ligaA: ['business-network', 'gbt', 'event-management'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['GTT', 'Global Track and Trace']
+  },
+
+  {
+    id: 'bn-traceability',
+    nome: 'SAP Business Network Material Traceability',
+    camada: 'lob',
+    tipo: 'Rastreio material',
+    cluster: 'supply',
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Rastreio de material na Network. A-Z.',
+    paraQueServe: 'Origem do lote ao longo da rede.',
+    exemploReal: 'A-Z.',
+    ligaA: ['business-network', 'gbt'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'bn-planning',
+    nome: 'SAP Business Network Planning Collaboration',
+    camada: 'lob',
+    tipo: 'Rede planning',
+    cluster: 'supply',
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Colaboração de planos com parceiros. A-Z.',
+    paraQueServe: 'Partilhar previsões IBP com fornecedores.',
+    exemploReal: 'A-Z.',
+    ligaA: ['business-network', 'ibp'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'bn-scc',
+    nome: 'SAP Business Network Supply Chain Collaboration',
+    camada: 'lob',
+    tipo: 'SCC',
+    cluster: 'supply',
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Supply Chain Collaboration na Network. A-Z.',
+    paraQueServe: 'Forecast, inventory e ordens com o fornecedor.',
+    exemploReal: 'A-Z.',
+    ligaA: ['business-network', 'snc', 'ibp'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['BN SCC']
+  },
+
+  {
+    id: 'vistex-channel',
+    nome: 'SAP Channel Program Management by Vistex',
+    camada: 'lob',
+    tipo: 'Canal Vistex',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Programas de canal by Vistex. A-Z.',
+    paraQueServe: 'Incentivos e programas a revendedores.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4hana', 'incentive-mgmt'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'mirakl',
+    nome: 'SAP Commerce Marketplace Management by Mirakl',
+    camada: 'lob',
+    tipo: 'Marketplace',
+    cluster: 'cx',
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Marketplace no Commerce Cloud by Mirakl. A-Z.',
+    paraQueServe: 'Multi-seller na loja.',
+    exemploReal: 'A-Z.',
+    ligaA: ['commerce-cloud'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'commodity-mgmt',
+    nome: 'SAP Commodity Management',
+    camada: 'core',
+    tipo: 'Commodities',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria'],
+    oQueFaz: 'Gestão de commodities no S/4. A-Z.',
+    paraQueServe: 'Contratos e risco de commodities.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4hana', 'treasury', 'broker-reconciliation'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'complaint-handling',
+    nome: 'SAP Complaint Handling',
+    camada: 'lob',
+    tipo: 'Reclamações',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Tratamento de reclamações. A-Z.',
+    paraQueServe: 'Reclamações de qualidade / cliente.',
+    exemploReal: 'A-Z.',
+    ligaA: ['qir', 'service-cloud', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'opentext-cms',
+    nome: 'SAP Content Management Core by OpenText',
+    camada: 'dados',
+    tipo: 'ECM',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Content management core by OpenText. A-Z.',
+    paraQueServe: 'Repositório ECM junto ao S/4.',
+    exemploReal: 'A-Z.',
+    ligaA: ['opentext-archive', 'vim', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'skillsoft',
+    nome: 'SAP Content Stream by Skillsoft',
+    camada: 'alm',
+    tipo: 'Learning content',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Conteúdos Skillsoft no Learning. A-Z.',
+    paraQueServe: 'Catálogo de formação.',
+    exemploReal: 'A-Z.',
+    ligaA: ['successfactors', 'enable-now'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'serialization',
+    nome: 'SAP Corporate Serialization',
+    camada: 'lob',
+    tipo: 'Serialização',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria'],
+    oQueFaz: 'Serialização corporativa. A-Z.',
+    paraQueServe: 'Números de série ponta-a-ponta.',
+    exemploReal: 'A-Z.',
+    ligaA: ['gbt', 'att-pharma', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'crystal',
+    nome: 'SAP Crystal Reports',
+    camada: 'dados',
+    tipo: 'Reporting',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Crystal Reports / Crystal Server / Crystal Solutions. A-Z. Distinto do SAC.',
+    paraQueServe: 'Reports pixel-perfect clássicos.',
+    exemploReal: 'A-Z.',
+    ligaA: ['businessobjects', 'sac'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['Crystal Reports', 'Crystal Server']
+  },
+
+  {
+    id: 'car',
+    nome: 'SAP Customer Activity Repository',
+    camada: 'lob',
+    tipo: 'Retalho CAR',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'CAR — repositório de actividade do cliente retalho. A-Z.',
+    paraQueServe: 'POS, stock e procura numa vista.',
+    exemploReal: 'A-Z.',
+    ligaA: ['customer-checkout', 's4hana', 'fnr'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['CAR']
+  },
+
+  {
+    id: 'cdp',
+    nome: 'SAP Customer Data Platform',
+    camada: 'lob',
+    tipo: 'CDP',
+    cluster: 'cx',
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'CDP. A-Z. Irmão do Customer Data Cloud (CIAM); o CDP perfila o cliente 360.',
+    paraQueServe: 'Unificar eventos de cliente para CX.',
+    exemploReal: 'A-Z.',
+    ligaA: ['customer-data-cloud', 'emarsys', 'sales-cloud'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['CDP'],
+    naoConfundir: 'Não é o Customer Data Cloud (esse é CIAM/Gigya).'
+  },
+
+  {
+    id: 'dairy-msg',
+    nome: 'SAP Dairy Management by msg',
+    camada: 'lob',
+    tipo: 'Lacticínios',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria'],
+    oQueFaz: 'Dairy by msg. A-Z.',
+    paraQueServe: 'Recepção de leite e yield.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4hana', 'industry-cloud'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'vistex-data',
+    nome: 'SAP Data Maintenance by Vistex',
+    camada: 'dados',
+    tipo: 'Master data Vistex',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Manutenção de dados by Vistex. A-Z.',
+    paraQueServe: 'Preços e masters Vistex.',
+    exemploReal: 'A-Z.',
+    ligaA: ['mdg', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'dqm-location',
+    nome: 'SAP Data Quality Management, location microservices',
+    camada: 'dados',
+    tipo: 'DQ moradas',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Microserviços de qualidade de morada. A-Z.',
+    paraQueServe: 'Validar moradas em apps BTP/S/4.',
+    exemploReal: 'A-Z.',
+    ligaA: ['btp', 'mdg', 'data-services'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'opentext-dam',
+    nome: 'SAP Digital Asset Management Cloud by OpenText',
+    camada: 'lob',
+    tipo: 'DAM',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'DAM cloud by OpenText. A-Z.',
+    paraQueServe: 'Activos digitais (imagens, vídeo) para CX/PLM.',
+    exemploReal: 'A-Z.',
+    ligaA: ['commerce-cloud', 'opentext-cms'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'document-ai',
+    nome: 'SAP Document AI',
+    camada: 'plataforma',
+    tipo: 'IA documentos',
+    cluster: null,
+    cenarios: ['cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Document AI no BTP (ex-Document Information Extraction). A-Z.',
+    paraQueServe: 'Extrair facturas, encomendas e IDs com IA.',
+    exemploReal: 'A-Z.',
+    ligaA: ['btp', 'ai-foundation', 'vim', 'joule'],
+    nesteCenario: { onprem: 'Atenuado.', cloud: 'Recomendado.', rise: 'Recomendado.' },
+    aliases: ['Document Information Extraction', 'DOX']
+  },
+
+  {
+    id: 'opentext-presentment',
+    nome: 'SAP Document Presentment by OpenText',
+    camada: 'lob',
+    tipo: 'Presentment',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Presentment de documentos by OpenText. A-Z.',
+    paraQueServe: 'Enviar facturas/extractos ao cliente.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4hana', 'opentext-cms'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'e-mobility',
+    nome: 'SAP E-Mobility',
+    camada: 'lob',
+    tipo: 'Mobilidade eléctrica',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria'],
+    oQueFaz: 'E-Mobility. A-Z.',
+    paraQueServe: 'Carregamento e frota eléctrica.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4hana', 'iot', 'industry-cloud'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'ectr',
+    nome: 'SAP Engineering Control Center',
+    camada: 'lob',
+    tipo: 'ECTR',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria'],
+    oQueFaz: 'Engineering Control Center (integra CAD no SAP). A-Z.',
+    paraQueServe: 'Engenheiro grava o modelo no S/4/PLM.',
+    exemploReal: 'A-Z.',
+    ligaA: ['ipd', 'plm-onprem', 'teamcenter-gw'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['ECTR']
+  },
+
+  {
+    id: 'vistex-excise',
+    nome: 'SAP Excise Tax Management by Vistex',
+    camada: 'lob',
+    tipo: 'Imposto especial',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['regulado'],
+    oQueFaz: 'Impostos especiais de consumo by Vistex. A-Z.',
+    paraQueServe: 'Excise em bebidas, tabaco, combustível.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4hana', 'document-compliance'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'opentext-xecm',
+    nome: 'SAP Extended ECM by OpenText',
+    camada: 'dados',
+    tipo: 'xECM',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Extended ECM by OpenText. A-Z.',
+    paraQueServe: 'ECM alargado ligado a objectos SAP.',
+    exemploReal: 'A-Z.',
+    ligaA: ['opentext-cms', 'opentext-archive', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'vistex-price',
+    nome: 'SAP Extended Price Management by Vistex',
+    camada: 'lob',
+    tipo: 'Preço Vistex',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Preços alargados by Vistex. A-Z.',
+    paraQueServe: 'Price lists complexas e channel price.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4hana', 'ssc'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'vistex-grower',
+    nome: 'SAP Grower Management for Perishables by Vistex',
+    camada: 'lob',
+    tipo: 'Produtores',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria'],
+    oQueFaz: 'Growers de perecíveis by Vistex. A-Z.',
+    paraQueServe: 'Contratos com agricultores.',
+    exemploReal: 'A-Z.',
+    ligaA: ['acm', 'rural-sourcing'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'incentive-mgmt',
+    nome: 'SAP Incentive Management',
+    camada: 'lob',
+    tipo: 'Incentivos',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Incentive Management (e Vistex Incentive Administration). A-Z.',
+    paraQueServe: 'Comissões de força de vendas.',
+    exemploReal: 'A-Z.',
+    ligaA: ['successfactors', 's4hana', 'agent-pm'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['Incentive Administration by Vistex']
+  },
+
+  {
+    id: 'information-steward',
+    nome: 'SAP Information Steward',
+    camada: 'dados',
+    tipo: 'DQ clássico',
+    cluster: null,
+    cenarios: ['onprem', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Information Steward. A-Z. Família EIM com Data Services.',
+    paraQueServe: 'Perfilar e validar qualidade de dados on-prem.',
+    exemploReal: 'A-Z.',
+    ligaA: ['data-services', 'metadata-management'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'intelligent-agriculture',
+    nome: 'SAP Intelligent Agriculture',
+    camada: 'lob',
+    tipo: 'Agro',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria'],
+    oQueFaz: 'Agricultura inteligente. A-Z.',
+    paraQueServe: 'Talhões, safras e compliance agrícola.',
+    exemploReal: 'A-Z.',
+    ligaA: ['acm', 'iot', 'industry-cloud'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'icsm',
+    nome: 'SAP Intelligent Clinical Supply Management',
+    camada: 'lob',
+    tipo: 'Ensaios clínicos',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria', 'regulado'],
+    oQueFaz: 'Supply de ensaios clínicos. A-Z.',
+    paraQueServe: 'Kits clínicos e blinding.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4hana', 'ibp'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['ICSM']
+  },
+
+  {
+    id: 'blackline-ic',
+    nome: 'SAP Intercompany Governance by BlackLine',
+    camada: 'core',
+    tipo: 'Intercompany',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Governação intercompany by BlackLine. A-Z.',
+    paraQueServe: 'Reconciliar IC no grupo.',
+    exemploReal: 'A-Z.',
+    ligaA: ['blackline-asa', 's4hana', 'group-reporting'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'iq',
+    nome: 'SAP IQ',
+    camada: 'dados',
+    tipo: 'Colunar clássico',
+    cluster: null,
+    cenarios: ['onprem'],
+    perfisRecomendados: [],
+    oQueFaz: 'Sybase IQ, warehouse colunar. A-Z. Destino: HANA Cloud / Datasphere / BDC.',
+    paraQueServe: 'DWH clássico SAP Sybase.',
+    exemploReal: 'A-Z.',
+    ligaA: ['hana-cloud', 'datasphere', 'ase'],
+    nesteCenario: { onprem: 'Legado.', cloud: 'Atenuado.', rise: 'Atenuado.' },
+    aliases: ['Sybase IQ']
+  },
+
+  {
+    id: 'joule-studio',
+    nome: 'SAP Joule Studio',
+    camada: 'plataforma',
+    tipo: 'Studio agentes',
+    cluster: null,
+    cenarios: ['cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Studio para criar skills e agentes Joule. A-Z e o post Alok. Esquema SCH-JOULE-STUDIO.',
+    paraQueServe: 'Estender o Joule sem mexer no core.',
+    exemploReal: 'A-Z: Joule Studio.',
+    ligaA: ['joule', 'ai-agent-hub', 'build', 'ai-foundation'],
+    nesteCenario: { onprem: 'Ausente.', cloud: 'Recomendado com Joule.', rise: 'Recomendado.' },
+    aliases: ['Joule Studio']
+  },
+
+  {
+    id: 'joule-consultants',
+    nome: 'SAP Joule for Consultants',
+    camada: 'alm',
+    tipo: 'IA consultores',
+    cluster: null,
+    cenarios: ['cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Joule para consultores (activar, configurar, explorar). A-Z.',
+    paraQueServe: 'Acelerar projectos Activate / RISE.',
+    exemploReal: 'A-Z.',
+    ligaA: ['joule', 'btc', 'cloud-alm', 'enable-now'],
+    nesteCenario: { onprem: 'Atenuado.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'joule-developers',
+    nome: 'Joule for developers',
+    camada: 'plataforma',
+    tipo: 'IA dev',
+    cluster: null,
+    cenarios: ['cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Joule no BAS / ABAP / Build Code. A-Z.',
+    paraQueServe: 'Gerar e explicar código nas extensões.',
+    exemploReal: 'A-Z.',
+    ligaA: ['joule', 'bas', 'build', 'abap-env'],
+    nesteCenario: { onprem: 'Atenuado.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'knowledge-central',
+    nome: 'SAP Knowledge Central by NICE',
+    camada: 'lob',
+    tipo: 'Knowledge CX',
+    cluster: 'cx',
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Knowledge central by NICE. A-Z.',
+    paraQueServe: 'Base de conhecimento no service desk.',
+    exemploReal: 'A-Z.',
+    ligaA: ['service-cloud'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'knowledge-graph',
+    nome: 'SAP Knowledge Graph',
+    camada: 'dados',
+    tipo: 'Grafo',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Knowledge Graph (HANA Cloud / BDC). A-Z.',
+    paraQueServe: 'Relações semânticas para grounding do Joule.',
+    exemploReal: 'A-Z.',
+    ligaA: ['hana-cloud', 'bdc', 'joule', 'ai-foundation'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['Knowledge Graph']
+  },
+
+  {
+    id: 'slt',
+    nome: 'SAP Landscape Transformation Replication Server',
+    camada: 'dados',
+    tipo: 'SLT',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'SLT — replicação trigger-based para HANA / CFIN / Datasphere. A-Z. Distinto do Sybase Replication Server.',
+    paraQueServe: 'Replicar ECC/S/4 para HANA, BW, CFIN, BTC.',
+    exemploReal: 'A-Z.',
+    ligaA: ['hana-onprem', 'central-finance', 'btc', 'datasphere'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['SLT', 'LT Replication Server'],
+    naoConfundir: 'Não é o Sybase Replication Server (card replication-server).'
+  },
+
+  {
+    id: 'lt',
+    nome: 'SAP Landscape Transformation',
+    camada: 'alm',
+    tipo: 'Conversão landscape',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['brownfield'],
+    oQueFaz: 'LT — transformações de landscape (carve-out, merge). A-Z.',
+    paraQueServe: 'M&A e carve-out de clientes SAP.',
+    exemploReal: 'A-Z.',
+    ligaA: ['btc', 'slt', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'learning-hub',
+    nome: 'SAP Learning Hub',
+    camada: 'alm',
+    tipo: 'Formação',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Learning Hub. A-Z.',
+    paraQueServe: 'Formação oficial SAP para o projecto.',
+    exemploReal: 'A-Z.',
+    ligaA: ['enable-now', 'knowledge-acceleration'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'linear-asset',
+    nome: 'SAP Linear Asset Management',
+    camada: 'lob',
+    tipo: 'Activos lineares',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria'],
+    oQueFaz: 'Activos lineares (pipeline, via, rede). A-Z.',
+    paraQueServe: 'EAM de infra-estruturas lineares.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4hana', 'apm'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'market-rates',
+    nome: 'SAP Market Rates Management',
+    camada: 'core',
+    tipo: 'Tesouraria',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Market Rates Management. A-Z.',
+    paraQueServe: 'Câmbios e curvas para TRM.',
+    exemploReal: 'A-Z.',
+    ligaA: ['treasury'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'meat-msg',
+    nome: 'SAP Meat and Fish Management by msg',
+    camada: 'lob',
+    tipo: 'Carne e peixe',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria'],
+    oQueFaz: 'Meat and Fish by msg. A-Z.',
+    paraQueServe: 'Desossa, yield e catch weight.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4hana', 'industry-cloud'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'osta',
+    nome: 'SAP Omnichannel Sales Transfer and Audit',
+    camada: 'lob',
+    tipo: 'Retalho audit',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Transfer e audit de vendas omnichannel. A-Z.',
+    paraQueServe: 'Fechar o dia da loja contra o CAR/S/4.',
+    exemploReal: 'A-Z.',
+    ligaA: ['car', 'customer-checkout', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'vistex-paybacks',
+    nome: 'SAP Paybacks and Chargebacks by Vistex',
+    camada: 'lob',
+    tipo: 'Chargebacks',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Paybacks e chargebacks by Vistex. A-Z.',
+    paraQueServe: 'Liquidar programas de canal.',
+    exemploReal: 'A-Z.',
+    ligaA: ['vistex-channel', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'postgres-btp',
+    nome: 'PostgreSQL on SAP BTP',
+    camada: 'plataforma',
+    tipo: 'DB BTP',
+    cluster: null,
+    cenarios: ['cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'PostgreSQL hyperscaler option no BTP. A-Z.',
+    paraQueServe: 'BD relacional das extensões CAP.',
+    exemploReal: 'A-Z.',
+    ligaA: ['btp', 'runtimes-btp', 'hana-cloud'],
+    nesteCenario: { onprem: 'Ausente.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'vistex-price-hub',
+    nome: 'SAP Price Staging Hub by Vistex',
+    camada: 'lob',
+    tipo: 'Preço',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Price staging hub by Vistex. A-Z.',
+    paraQueServe: 'Staging de preços antes do S/4.',
+    exemploReal: 'A-Z.',
+    ligaA: ['vistex-price', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'prm',
+    nome: 'SAP Project and Resource Management',
+    camada: 'core',
+    tipo: 'Projectos cloud',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Project and Resource Management. A-Z. Irmão cloud do PPM.',
+    paraQueServe: 'Staffing e projectos sem o PPM on-prem.',
+    exemploReal: 'A-Z.',
+    ligaA: ['ppm', 's4hana', 'successfactors'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'digitalroute-rdo',
+    nome: 'SAP Revenue Data Orchestration by DigitalRoute',
+    camada: 'lob',
+    tipo: 'Uso / receita',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Orquestração de dados de receita by DigitalRoute. A-Z. Alimenta BRIM.',
+    paraQueServe: 'Mediar eventos de uso até à factura.',
+    exemploReal: 'A-Z.',
+    ligaA: ['brim'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['DigitalRoute']
+  },
+
+  {
+    id: 'vistex-rights',
+    nome: 'SAP Rights and Royalty Management by Vistex',
+    camada: 'lob',
+    tipo: 'Royalties',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Rights and royalties by Vistex. A-Z.',
+    paraQueServe: 'Media, pharma e IP royalties.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4hana', 'industry-cloud'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'risk-assurance',
+    nome: 'SAP Risk and Assurance Management',
+    camada: 'lob',
+    tipo: 'GRC cloud',
+    cluster: null,
+    cenarios: ['cloud', 'rise'],
+    perfisRecomendados: ['regulado'],
+    oQueFaz: 'Risk and Assurance Management (GRC cloud). A-Z.',
+    paraQueServe: 'Riscos e assurance no S/4 Cloud.',
+    exemploReal: 'A-Z.',
+    ligaA: ['grc', 'risk-mgmt', 'process-control'],
+    nesteCenario: { onprem: 'Atenuado.', cloud: 'Recomendado vs GRC on-prem.', rise: 'Recomendado.' }
+  },
+
+  {
+    id: 'secure-login',
+    nome: 'SAP Secure Login Service for SAP GUI',
+    camada: 'plataforma',
+    tipo: 'SSO GUI',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Secure Login para SAP GUI. A-Z. Irmão cloud do SSO clássico.',
+    paraQueServe: 'SSO moderno no GUI em RISE.',
+    exemploReal: 'A-Z.',
+    ligaA: ['sso-classic', 'ias', 's4-any'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['Secure Login']
+  },
+
+  {
+    id: 'smartrecruiters',
+    nome: 'SmartRecruiters for SAP SuccessFactors',
+    camada: 'lob',
+    tipo: 'Recruiting',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['workforce'],
+    oQueFaz: 'SmartRecruiters bundled com SuccessFactors. A-Z.',
+    paraQueServe: 'Recruiting moderno ligado ao SF.',
+    exemploReal: 'A-Z.',
+    ligaA: ['successfactors'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'spend-analytics',
+    nome: 'SAP Spend Analytics',
+    camada: 'lob',
+    tipo: 'Analytics spend',
+    cluster: 'spend',
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Spend analytics. A-Z.',
+    paraQueServe: 'Ver o gasto além do Ariba reporting.',
+    exemploReal: 'A-Z.',
+    ligaA: ['ariba', 'sac', 'spend-control-tower'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'student-lm',
+    nome: 'SAP Student Lifecycle Management',
+    camada: 'lob',
+    tipo: 'Ensino',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria'],
+    oQueFaz: 'Student Lifecycle no S/4 Private. A-Z.',
+    paraQueServe: 'Universidades: matrícula a diploma.',
+    exemploReal: 'A-Z.',
+    ligaA: ['s4hana', 'successfactors'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'territory-quota',
+    nome: 'SAP Territory and Quota',
+    camada: 'lob',
+    tipo: 'Territórios',
+    cluster: 'cx',
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Territórios e quotas de vendas. A-Z.',
+    paraQueServe: 'Desenhar territórios no Sales Cloud.',
+    exemploReal: 'A-Z.',
+    ligaA: ['sales-cloud'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'time-attendance',
+    nome: 'SAP Time and Attendance Management by WorkForce Software',
+    camada: 'lob',
+    tipo: 'Ponto',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['workforce'],
+    oQueFaz: 'Time and Attendance by WFS. A-Z.',
+    paraQueServe: 'Relógio de ponto e turnos.',
+    exemploReal: 'A-Z.',
+    ligaA: ['successfactors', 'absence-wfs', 'workforce-forecast'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'twm',
+    nome: 'SAP Total Workforce Management',
+    camada: 'lob',
+    tipo: 'Workforce total',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['workforce'],
+    oQueFaz: 'Total Workforce (próprios + contingentes). A-Z.',
+    paraQueServe: 'Ler SF + Fieldglass como uma força de trabalho.',
+    exemploReal: 'A-Z.',
+    ligaA: ['successfactors', 'fieldglass'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['Total Workforce Management']
+  },
+
+  {
+    id: 'us-benefits',
+    nome: 'SAP U.S. Benefits Administration by Benefitfocus',
+    camada: 'lob',
+    tipo: 'Benefícios US',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['workforce'],
+    oQueFaz: 'Benefícios EUA by Benefitfocus. A-Z.',
+    paraQueServe: 'Open enrollment US.',
+    exemploReal: 'A-Z.',
+    ligaA: ['successfactors', 'budget-benefits'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'ui-logging',
+    nome: 'UI data protection logging',
+    camada: 'plataforma',
+    tipo: 'Audit UI',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['regulado'],
+    oQueFaz: 'Logging de acesso a dados no UI. A-Z. Irmão do masking.',
+    paraQueServe: 'Quem viu o IBAN.',
+    exemploReal: 'A-Z.',
+    ligaA: ['ui-masking', 'grc'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'knoa',
+    nome: 'SAP User Experience Management by Knoa',
+    camada: 'alm',
+    tipo: 'UX analytics',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'UX management by Knoa. A-Z.',
+    paraQueServe: 'Medir fricção no GUI/Fiori.',
+    exemploReal: 'A-Z.',
+    ligaA: ['fiori', 'walkme', 'enable-now'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'utilities-core',
+    nome: 'SAP Utilities Core foundation',
+    camada: 'lob',
+    tipo: 'IS-U core',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['industria', 'regulado'],
+    oQueFaz: 'Foundation utilities no S/4. A-Z.',
+    paraQueServe: 'Core IS-U (contrato, medição) além do Cloud for Energy.',
+    exemploReal: 'A-Z.',
+    ligaA: ['cloud-for-energy', 's4hana'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'vc-pricing',
+    nome: 'SAP Variant Configuration and Pricing',
+    camada: 'lob',
+    tipo: 'VC / preço',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Variant configuration and pricing (CPS). A-Z. Irmão do SSC/CPQ.',
+    paraQueServe: 'Configurar produto + preço em runtime.',
+    exemploReal: 'A-Z.',
+    ligaA: ['ssc', 'cpq', 's4hana', 'commerce-cloud'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['CPS', 'Variant Configuration']
+  },
+
+  {
+    id: 'vistex-vendor',
+    nome: 'SAP Vendor Program Management by Vistex',
+    camada: 'lob',
+    tipo: 'Programas fornecedor',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: [],
+    oQueFaz: 'Programas de fornecedor by Vistex. A-Z.',
+    paraQueServe: 'Billbacks e programas lado compra.',
+    exemploReal: 'A-Z.',
+    ligaA: ['vistex-channel', 'ariba'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' }
+  },
+
+  {
+    id: 'watch-list',
+    nome: 'SAP Watch List Screening',
+    camada: 'lob',
+    tipo: 'Screening',
+    cluster: null,
+    cenarios: ['onprem', 'cloud', 'rise'],
+    perfisRecomendados: ['regulado'],
+    oQueFaz: 'Watch list screening (sancções). A-Z.',
+    paraQueServe: 'Filtrar parceiros contra listas oficiais.',
+    exemploReal: 'A-Z.',
+    ligaA: ['gts', 'integrity-screening', 'grc'],
+    nesteCenario: { onprem: 'Opcional.', cloud: 'Opcional.', rise: 'Opcional.' },
+    aliases: ['Watch List Screening']
+  }
+
 
 ]
 

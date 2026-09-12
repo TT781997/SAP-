@@ -2460,6 +2460,754 @@ const servicesEN = {
     exemploReal: 'All Products.',
     nesteCenario: { onprem: 'Optional / dimmed.', cloud: 'Optional.', rise: 'Optional.' }
   },
+  'business-suite': {
+    nome: 'SAP Business Suite (cloud)',
+    tipo: 'Commercial suite',
+    oQueFaz: "Current commercial name on sap.com/products.html: the cloud portfolio joining Cloud ERP (applications), Business AI (Joule and agents), Business Data Cloud and BTP. Not the on-premise Business Suite 7 (ECC). The official page describes it as an autonomous suite: finance, spend, supply chain, HCM, CX and industry, with Joule agents executing over SAP data and processes.",
+    paraQueServe: "Reading the map the way SAP sells in 2026, not just as a SKU list. Mix: Business Suite = s4hana cloud + LoB + bdc + joule + btp. RISE and GROW are the contract routes into this suite.",
+    exemploReal: 'sap.com/products.html and sap.com/products/business-suite.html position Business Suite as a flagship product, powered by Business AI + BDC + applications, on top of BTP.',
+    naoConfundir: 'NOT SAP Business Suite 7 / ECC. That ancestor is the ecc card.',
+    nesteCenario: {
+      onprem: 'Not relevant (the cloud suite). The on-premise ancestor is ECC / Business Suite 7.',
+      cloud: 'Active as the commercial umbrella of GROW.',
+      rise: 'Active as the commercial umbrella of RISE.'
+    }
+  },
+  'cloud-erp': {
+    nome: 'SAP Cloud ERP',
+    tipo: 'Cloud ERP (brand)',
+    oQueFaz: 'Commercial name on sap.com/products.html and /erp.html for the ERP in the cloud. In practice this is S/4HANA Cloud (Public Edition on GROW, Private Edition on RISE). The page talks about a ready-to-run ERP with embedded AI in finance, supply chain and procurement.',
+    paraQueServe: "When the customer hears 'Cloud ERP' rather than 'S/4'. This card points to s4hana. It doesn't duplicate the digital core: it's the marketing label.",
+    exemploReal: 'Featured product on sap.com/products.html linking to /products/erp/s4hana.html.',
+    naoConfundir: 'Not a third ERP alongside S/4 Cloud. Same engine, different commercial name.',
+    nesteCenario: {
+      onprem: 'Not relevant.',
+      cloud: 'Active. Commercial synonym for Public Edition.',
+      rise: 'Active. Commercial synonym for Private Edition / RISE Cloud ERP.'
+    }
+  },
+  'visual-enterprise': {
+    nome: 'SAP 3D Visual Enterprise',
+    tipo: 'PLM 3D',
+    oQueFaz: '3D visualization tied to business data. A-Z: SAP 3D Visual Enterprise. Sibling of Product Model Viewer.',
+    paraQueServe: 'Viewing the 3D twin on the shop floor and in service.',
+    exemploReal: 'sap.com/products/a-z.html entry.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'absence-wfs': {
+    nome: 'SAP Absence and Leave Management by WorkForce Software',
+    tipo: 'Absence',
+    oQueFaz: 'Absence requests by WorkForce Software. A-Z HCM.',
+    paraQueServe: 'Vacation and leave when WFS is in the landscape (beyond SF Time).',
+    exemploReal: 'A-Z: Absence and Leave Management.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'access-control': {
+    nome: 'SAP Access Control',
+    tipo: 'GRC SoD',
+    oQueFaz: 'On-premise SoD and provisioning. A-Z: Access Control. GRC family; IAG is the cloud sibling.',
+    paraQueServe: 'Approving access and detecting conflicts in on-premise ECC/S/4.',
+    exemploReal: 'A-Z Financial management / Access Control.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'avm-pathlock': {
+    nome: 'SAP Access Violation Management by Pathlock',
+    tipo: 'Partner SoD',
+    oQueFaz: 'Access violations by Pathlock. A-Z.',
+    paraQueServe: 'Analyzing SoD violations in hybrid landscapes.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'blackline-asa': {
+    nome: 'SAP Account Substantiation and Automation by BlackLine',
+    tipo: 'Partner close',
+    oQueFaz: 'Account substantiation and automation by BlackLine. A-Z.',
+    paraQueServe: 'Reconciling accounts at close, alongside the Closing Cockpit.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  ase: {
+    nome: 'SAP Adaptive Server Enterprise',
+    tipo: 'OLTP DB',
+    oQueFaz: 'ASE / Sybase SQL Server. A-Z. Distinct from HANA and SQL Anywhere.',
+    paraQueServe: 'Classic OLTP still running at many customers.',
+    exemploReal: 'A-Z: Adaptive Server Enterprise.',
+    nesteCenario: { onprem: 'Optional legacy.', cloud: 'Hidden.', rise: 'Hidden.' }
+  },
+  'syniti-adm': {
+    nome: 'SAP Advanced Data Migration by Syniti',
+    tipo: 'Migration',
+    oQueFaz: 'Data migration and quality by Syniti. A-Z.',
+    paraQueServe: 'Brownfield loads / S/4 conversion.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  afc: {
+    nome: 'SAP Advanced Financial Closing',
+    tipo: 'Cloud close',
+    oQueFaz: 'Advanced financial close in the cloud. A-Z. Evolution of the Closing Cockpit.',
+    paraQueServe: 'Orchestrating the close in S/4 Cloud / RISE.',
+    exemploReal: 'A-Z: Advanced Financial Closing.',
+    nesteCenario: { onprem: 'Dimmed (use FCC).', cloud: 'Recommended.', rise: 'Recommended.' }
+  },
+  apo: {
+    nome: 'SAP Advanced Planning and Optimization',
+    tipo: 'Legacy APO',
+    oQueFaz: 'Classic APO. A-Z. Destination: IBP + S/4 PP/DS + eATP.',
+    paraQueServe: 'SNP/DP/PP-DS in Business Suite 7.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Legacy.', cloud: 'Hidden.', rise: 'Dimmed.' }
+  },
+  'att-pharma': {
+    nome: 'SAP Advanced Track and Trace for Pharmaceuticals',
+    tipo: 'Pharma T&T',
+    oQueFaz: 'Pharmaceutical track and trace in S/4. A-Z.',
+    paraQueServe: 'Serialization and DSCSA/EU-FMD compliance.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'agent-lm': {
+    nome: 'SAP Agent Lifecycle Management',
+    tipo: 'Agents',
+    oQueFaz: 'Agent lifecycle (insurance / channel). A-Z.',
+    paraQueServe: 'Agent onboarding and compliance.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'agent-pm': {
+    nome: 'SAP Agent Performance Management',
+    tipo: 'Agents',
+    oQueFaz: 'Agent performance and commissions. A-Z.',
+    paraQueServe: 'Channel incentives.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  acm: {
+    nome: 'SAP Agricultural Contract Management',
+    tipo: 'Agro contracts',
+    oQueFaz: 'Agricultural contracts. A-Z.',
+    paraQueServe: 'Buying crops and positions.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'ai-agent-hub': {
+    nome: 'SAP AI Agent Hub',
+    tipo: 'AI agents',
+    oQueFaz: 'AI agent hub. A-Z: SAP AI Agent Hub. Where Joule agents are published and governed.',
+    paraQueServe: 'Catalog and governance of agents on BTP.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Absent.', cloud: 'Recommended with Joule.', rise: 'Recommended with Joule.' }
+  },
+  aif: {
+    nome: 'SAP Application Interface Framework',
+    tipo: 'AIF',
+    oQueFaz: 'Interface framework in ECC/S/4. A-Z. Complements PI/PO and Integration Suite on the application side.',
+    paraQueServe: 'Monitoring and mapping IDocs/proxies in the ERP.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'opentext-archive': {
+    nome: 'SAP Archiving and Document Access by OpenText',
+    tipo: 'Archiving',
+    oQueFaz: 'Archiving and document access by OpenText. A-Z.',
+    paraQueServe: 'Archiving business documents outside HANA.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'asset-workbench': {
+    nome: 'SAP Asset Information Workbench',
+    tipo: 'Assets',
+    oQueFaz: 'Asset information workbench. A-Z.',
+    paraQueServe: 'Technical asset data for APM/EAM.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'audit-mgmt': {
+    nome: 'SAP Audit Management',
+    tipo: 'GRC audit',
+    oQueFaz: 'Internal audit. A-Z. GRC family.',
+    paraQueServe: 'Audit plan and working papers.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'batch-release-ls': {
+    nome: 'SAP Batch Release Hub for Life Sciences',
+    tipo: 'Life sciences',
+    oQueFaz: 'Pharmaceutical batch release. A-Z.',
+    paraQueServe: 'Batch release with quality data and compliance.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'broker-reconciliation': {
+    nome: 'SAP Broker Reconciliation for Commodity Derivatives',
+    tipo: 'Commodities',
+    oQueFaz: 'Broker reconciliation in derivatives. A-Z.',
+    paraQueServe: 'Commodity treasury.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  bas: {
+    nome: 'SAP Business Application Studio',
+    tipo: 'Cloud IDE',
+    oQueFaz: "BTP's cloud IDE. A-Z. Successor to Web IDE.",
+    paraQueServe: 'Developing CAP, Fiori, clean-core extensions.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Absent.', cloud: 'Active with BTP.', rise: 'Active with BTP.' }
+  },
+  'integrity-screening': {
+    nome: 'SAP Business Integrity Screening',
+    tipo: 'Fraud',
+    oQueFaz: 'Integrity / fraud screening. A-Z.',
+    paraQueServe: 'Detecting suspicious payments and partners.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'bn-asset': {
+    nome: 'SAP Business Network Asset Collaboration',
+    tipo: 'Network assets',
+    oQueFaz: 'Asset collaboration on the Business Network. A-Z.',
+    paraQueServe: 'OEM and operator share the asset twin.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'bn-commerce': {
+    nome: 'SAP Business Network Commerce Automation',
+    tipo: 'Network procurement',
+    oQueFaz: 'Commercial automation on the Network (PO, ASN, invoice). A-Z.',
+    paraQueServe: 'Transacting with suppliers on the network.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'bn-freight': {
+    nome: 'SAP Business Network Freight Collaboration',
+    tipo: 'Network freight',
+    oQueFaz: 'Collaboration with carriers. A-Z.',
+    paraQueServe: 'Freight tendering and tracking.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'bn-gtt': {
+    nome: 'SAP Business Network Global Track and Trace',
+    tipo: 'GTT',
+    oQueFaz: 'Global track and trace on the Network. A-Z.',
+    paraQueServe: 'Multi-modal shipment visibility.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'bn-traceability': {
+    nome: 'SAP Business Network Material Traceability',
+    tipo: 'Material traceability',
+    oQueFaz: 'Material traceability on the Network. A-Z.',
+    paraQueServe: 'Batch origin across the network.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'bn-planning': {
+    nome: 'SAP Business Network Planning Collaboration',
+    tipo: 'Network planning',
+    oQueFaz: 'Plan collaboration with partners. A-Z.',
+    paraQueServe: 'Sharing IBP forecasts with suppliers.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'bn-scc': {
+    nome: 'SAP Business Network Supply Chain Collaboration',
+    tipo: 'SCC',
+    oQueFaz: 'Supply Chain Collaboration on the Network. A-Z.',
+    paraQueServe: 'Forecast, inventory and orders with the supplier.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'vistex-channel': {
+    nome: 'SAP Channel Program Management by Vistex',
+    tipo: 'Vistex channel',
+    oQueFaz: 'Channel programs by Vistex. A-Z.',
+    paraQueServe: 'Incentives and reseller programs.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  mirakl: {
+    nome: 'SAP Commerce Marketplace Management by Mirakl',
+    tipo: 'Marketplace',
+    oQueFaz: 'Marketplace on Commerce Cloud by Mirakl. A-Z.',
+    paraQueServe: 'Multi-seller storefront.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'commodity-mgmt': {
+    nome: 'SAP Commodity Management',
+    tipo: 'Commodities',
+    oQueFaz: 'Commodity management in S/4. A-Z.',
+    paraQueServe: 'Commodity contracts and risk.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'complaint-handling': {
+    nome: 'SAP Complaint Handling',
+    tipo: 'Complaints',
+    oQueFaz: 'Complaint handling. A-Z.',
+    paraQueServe: 'Quality / customer complaints.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'opentext-cms': {
+    nome: 'SAP Content Management Core by OpenText',
+    tipo: 'ECM',
+    oQueFaz: 'Content management core by OpenText. A-Z.',
+    paraQueServe: 'ECM repository alongside S/4.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  skillsoft: {
+    nome: 'SAP Content Stream by Skillsoft',
+    tipo: 'Learning content',
+    oQueFaz: 'Skillsoft content in Learning. A-Z.',
+    paraQueServe: 'Training catalog.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  serialization: {
+    nome: 'SAP Corporate Serialization',
+    tipo: 'Serialization',
+    oQueFaz: 'Corporate serialization. A-Z.',
+    paraQueServe: 'End-to-end serial numbers.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  crystal: {
+    nome: 'SAP Crystal Reports',
+    tipo: 'Reporting',
+    oQueFaz: 'Crystal Reports / Crystal Server / Crystal Solutions. A-Z. Distinct from SAC.',
+    paraQueServe: 'Classic pixel-perfect reports.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  car: {
+    nome: 'SAP Customer Activity Repository',
+    tipo: 'Retail CAR',
+    oQueFaz: 'CAR — retail customer activity repository. A-Z.',
+    paraQueServe: 'POS, stock and demand in one view.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  cdp: {
+    nome: 'SAP Customer Data Platform',
+    tipo: 'CDP',
+    oQueFaz: 'CDP. A-Z. Sibling of Customer Data Cloud (CIAM); the CDP profiles the customer 360.',
+    paraQueServe: 'Unifying customer events for CX.',
+    exemploReal: 'A-Z.',
+    naoConfundir: 'Not Customer Data Cloud (that is CIAM/Gigya).',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'dairy-msg': {
+    nome: 'SAP Dairy Management by msg',
+    tipo: 'Dairy',
+    oQueFaz: 'Dairy by msg. A-Z.',
+    paraQueServe: 'Milk intake and yield.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'vistex-data': {
+    nome: 'SAP Data Maintenance by Vistex',
+    tipo: 'Vistex master data',
+    oQueFaz: 'Data maintenance by Vistex. A-Z.',
+    paraQueServe: 'Vistex pricing and master data.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'dqm-location': {
+    nome: 'SAP Data Quality Management, location microservices',
+    tipo: 'Address DQ',
+    oQueFaz: 'Address quality microservices. A-Z.',
+    paraQueServe: 'Validating addresses in BTP/S/4 apps.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'opentext-dam': {
+    nome: 'SAP Digital Asset Management Cloud by OpenText',
+    tipo: 'DAM',
+    oQueFaz: 'Cloud DAM by OpenText. A-Z.',
+    paraQueServe: 'Digital assets (images, video) for CX/PLM.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'document-ai': {
+    nome: 'SAP Document AI',
+    tipo: 'Document AI',
+    oQueFaz: 'Document AI on BTP (ex-Document Information Extraction). A-Z.',
+    paraQueServe: 'Extracting invoices, orders and IDs with AI.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Dimmed.', cloud: 'Recommended.', rise: 'Recommended.' }
+  },
+  'opentext-presentment': {
+    nome: 'SAP Document Presentment by OpenText',
+    tipo: 'Presentment',
+    oQueFaz: 'Document presentment by OpenText. A-Z.',
+    paraQueServe: 'Sending invoices/statements to the customer.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'e-mobility': {
+    nome: 'SAP E-Mobility',
+    tipo: 'Electric mobility',
+    oQueFaz: 'E-Mobility. A-Z.',
+    paraQueServe: 'Charging and electric fleet.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  ectr: {
+    nome: 'SAP Engineering Control Center',
+    tipo: 'ECTR',
+    oQueFaz: 'Engineering Control Center (CAD integration into SAP). A-Z.',
+    paraQueServe: 'Engineer saves the model into S/4/PLM.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'vistex-excise': {
+    nome: 'SAP Excise Tax Management by Vistex',
+    tipo: 'Excise tax',
+    oQueFaz: 'Excise duties by Vistex. A-Z.',
+    paraQueServe: 'Excise on beverages, tobacco, fuel.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'opentext-xecm': {
+    nome: 'SAP Extended ECM by OpenText',
+    tipo: 'xECM',
+    oQueFaz: 'Extended ECM by OpenText. A-Z.',
+    paraQueServe: 'Extended ECM linked to SAP objects.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'vistex-price': {
+    nome: 'SAP Extended Price Management by Vistex',
+    tipo: 'Vistex pricing',
+    oQueFaz: 'Extended pricing by Vistex. A-Z.',
+    paraQueServe: 'Complex price lists and channel price.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'vistex-grower': {
+    nome: 'SAP Grower Management for Perishables by Vistex',
+    tipo: 'Growers',
+    oQueFaz: 'Perishables growers by Vistex. A-Z.',
+    paraQueServe: 'Contracts with farmers.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'incentive-mgmt': {
+    nome: 'SAP Incentive Management',
+    tipo: 'Incentives',
+    oQueFaz: 'Incentive Management (and Vistex Incentive Administration). A-Z.',
+    paraQueServe: 'Sales force commissions.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'information-steward': {
+    nome: 'SAP Information Steward',
+    tipo: 'Classic DQ',
+    oQueFaz: 'Information Steward. A-Z. EIM family with Data Services.',
+    paraQueServe: 'Profiling and validating data quality on-premise.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'intelligent-agriculture': {
+    nome: 'SAP Intelligent Agriculture',
+    tipo: 'Agro',
+    oQueFaz: 'Intelligent agriculture. A-Z.',
+    paraQueServe: 'Plots, harvests and agricultural compliance.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  icsm: {
+    nome: 'SAP Intelligent Clinical Supply Management',
+    tipo: 'Clinical trials',
+    oQueFaz: 'Clinical trial supply. A-Z.',
+    paraQueServe: 'Clinical kits and blinding.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'blackline-ic': {
+    nome: 'SAP Intercompany Governance by BlackLine',
+    tipo: 'Intercompany',
+    oQueFaz: 'Intercompany governance by BlackLine. A-Z.',
+    paraQueServe: 'Reconciling IC across the group.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  iq: {
+    nome: 'SAP IQ',
+    tipo: 'Classic columnar',
+    oQueFaz: 'Sybase IQ, columnar warehouse. A-Z. Destination: HANA Cloud / Datasphere / BDC.',
+    paraQueServe: 'Classic SAP Sybase DWH.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Legacy.', cloud: 'Dimmed.', rise: 'Dimmed.' }
+  },
+  'joule-studio': {
+    nome: 'SAP Joule Studio',
+    tipo: 'Agent studio',
+    oQueFaz: 'Studio for building Joule skills and agents. A-Z and the Alok post. SCH-JOULE-STUDIO schematic.',
+    paraQueServe: 'Extending Joule without touching the core.',
+    exemploReal: 'A-Z: Joule Studio.',
+    nesteCenario: { onprem: 'Absent.', cloud: 'Recommended with Joule.', rise: 'Recommended.' }
+  },
+  'joule-consultants': {
+    nome: 'SAP Joule for Consultants',
+    tipo: 'AI for consultants',
+    oQueFaz: 'Joule for consultants (activate, configure, explore). A-Z.',
+    paraQueServe: 'Accelerating Activate / RISE projects.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Dimmed.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'joule-developers': {
+    nome: 'Joule for developers',
+    tipo: 'AI for dev',
+    oQueFaz: 'Joule in BAS / ABAP / Build Code. A-Z.',
+    paraQueServe: 'Generating and explaining code in extensions.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Dimmed.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'knowledge-central': {
+    nome: 'SAP Knowledge Central by NICE',
+    tipo: 'CX knowledge',
+    oQueFaz: 'Knowledge central by NICE. A-Z.',
+    paraQueServe: 'Knowledge base in the service desk.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'knowledge-graph': {
+    nome: 'SAP Knowledge Graph',
+    tipo: 'Graph',
+    oQueFaz: 'Knowledge Graph (HANA Cloud / BDC). A-Z.',
+    paraQueServe: 'Semantic relationships for Joule grounding.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  slt: {
+    nome: 'SAP Landscape Transformation Replication Server',
+    tipo: 'SLT',
+    oQueFaz: 'SLT — trigger-based replication to HANA / CFIN / Datasphere. A-Z. Distinct from the Sybase Replication Server.',
+    paraQueServe: 'Replicating ECC/S/4 to HANA, BW, CFIN, BTC.',
+    exemploReal: 'A-Z.',
+    naoConfundir: 'Not the Sybase Replication Server (replication-server card).',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  lt: {
+    nome: 'SAP Landscape Transformation',
+    tipo: 'Landscape conversion',
+    oQueFaz: 'LT — landscape transformations (carve-out, merge). A-Z.',
+    paraQueServe: 'M&A and carve-out of SAP customers.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'learning-hub': {
+    nome: 'SAP Learning Hub',
+    tipo: 'Training',
+    oQueFaz: 'Learning Hub. A-Z.',
+    paraQueServe: 'Official SAP training for the project.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'linear-asset': {
+    nome: 'SAP Linear Asset Management',
+    tipo: 'Linear assets',
+    oQueFaz: 'Linear assets (pipeline, rail, network). A-Z.',
+    paraQueServe: 'EAM for linear infrastructure.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'market-rates': {
+    nome: 'SAP Market Rates Management',
+    tipo: 'Treasury',
+    oQueFaz: 'Market Rates Management. A-Z.',
+    paraQueServe: 'FX and curves for TRM.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'meat-msg': {
+    nome: 'SAP Meat and Fish Management by msg',
+    tipo: 'Meat and fish',
+    oQueFaz: 'Meat and Fish by msg. A-Z.',
+    paraQueServe: 'Deboning, yield and catch weight.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  osta: {
+    nome: 'SAP Omnichannel Sales Transfer and Audit',
+    tipo: 'Retail audit',
+    oQueFaz: 'Omnichannel sales transfer and audit. A-Z.',
+    paraQueServe: "Closing the store's day against CAR/S/4.",
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'vistex-paybacks': {
+    nome: 'SAP Paybacks and Chargebacks by Vistex',
+    tipo: 'Chargebacks',
+    oQueFaz: 'Paybacks and chargebacks by Vistex. A-Z.',
+    paraQueServe: 'Settling channel programs.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'postgres-btp': {
+    nome: 'PostgreSQL on SAP BTP',
+    tipo: 'BTP DB',
+    oQueFaz: 'PostgreSQL hyperscaler option on BTP. A-Z.',
+    paraQueServe: 'Relational DB for CAP extensions.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Absent.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'vistex-price-hub': {
+    nome: 'SAP Price Staging Hub by Vistex',
+    tipo: 'Pricing',
+    oQueFaz: 'Price staging hub by Vistex. A-Z.',
+    paraQueServe: 'Staging prices before S/4.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  prm: {
+    nome: 'SAP Project and Resource Management',
+    tipo: 'Cloud projects',
+    oQueFaz: 'Project and Resource Management. A-Z. Cloud sibling of PPM.',
+    paraQueServe: 'Staffing and projects without on-premise PPM.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'digitalroute-rdo': {
+    nome: 'SAP Revenue Data Orchestration by DigitalRoute',
+    tipo: 'Usage / revenue',
+    oQueFaz: 'Revenue data orchestration by DigitalRoute. A-Z. Feeds BRIM.',
+    paraQueServe: 'Mediating usage events through to the invoice.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'vistex-rights': {
+    nome: 'SAP Rights and Royalty Management by Vistex',
+    tipo: 'Royalties',
+    oQueFaz: 'Rights and royalties by Vistex. A-Z.',
+    paraQueServe: 'Media, pharma and IP royalties.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'risk-assurance': {
+    nome: 'SAP Risk and Assurance Management',
+    tipo: 'Cloud GRC',
+    oQueFaz: 'Risk and Assurance Management (cloud GRC). A-Z.',
+    paraQueServe: 'Risk and assurance in S/4 Cloud.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Dimmed.', cloud: 'Recommended vs on-premise GRC.', rise: 'Recommended.' }
+  },
+  'secure-login': {
+    nome: 'SAP Secure Login Service for SAP GUI',
+    tipo: 'GUI SSO',
+    oQueFaz: 'Secure Login for SAP GUI. A-Z. Cloud sibling of classic SSO.',
+    paraQueServe: 'Modern SSO in the GUI under RISE.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  smartrecruiters: {
+    nome: 'SmartRecruiters for SAP SuccessFactors',
+    tipo: 'Recruiting',
+    oQueFaz: 'SmartRecruiters bundled with SuccessFactors. A-Z.',
+    paraQueServe: 'Modern recruiting linked to SF.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'spend-analytics': {
+    nome: 'SAP Spend Analytics',
+    tipo: 'Spend analytics',
+    oQueFaz: 'Spend analytics. A-Z.',
+    paraQueServe: 'Seeing spend beyond Ariba reporting.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'student-lm': {
+    nome: 'SAP Student Lifecycle Management',
+    tipo: 'Education',
+    oQueFaz: 'Student Lifecycle on S/4 Private. A-Z.',
+    paraQueServe: 'Universities: enrollment through to degree.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'territory-quota': {
+    nome: 'SAP Territory and Quota',
+    tipo: 'Territories',
+    oQueFaz: 'Sales territories and quotas. A-Z.',
+    paraQueServe: 'Designing territories in Sales Cloud.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'time-attendance': {
+    nome: 'SAP Time and Attendance Management by WorkForce Software',
+    tipo: 'Timekeeping',
+    oQueFaz: 'Time and Attendance by WFS. A-Z.',
+    paraQueServe: 'Time clock and shifts.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  twm: {
+    nome: 'SAP Total Workforce Management',
+    tipo: 'Total workforce',
+    oQueFaz: 'Total Workforce (employees + contingent). A-Z.',
+    paraQueServe: 'Reading SF + Fieldglass as one workforce.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'us-benefits': {
+    nome: 'SAP U.S. Benefits Administration by Benefitfocus',
+    tipo: 'US benefits',
+    oQueFaz: 'US benefits by Benefitfocus. A-Z.',
+    paraQueServe: 'US open enrollment.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'ui-logging': {
+    nome: 'UI data protection logging',
+    tipo: 'UI audit',
+    oQueFaz: 'Logging of data access in the UI. A-Z. Sibling of masking.',
+    paraQueServe: 'Who viewed the IBAN.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  knoa: {
+    nome: 'SAP User Experience Management by Knoa',
+    tipo: 'UX analytics',
+    oQueFaz: 'UX management by Knoa. A-Z.',
+    paraQueServe: 'Measuring friction in GUI/Fiori.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'utilities-core': {
+    nome: 'SAP Utilities Core foundation',
+    tipo: 'IS-U core',
+    oQueFaz: 'Utilities foundation in S/4. A-Z.',
+    paraQueServe: 'IS-U core (contract, metering) beyond Cloud for Energy.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'vc-pricing': {
+    nome: 'SAP Variant Configuration and Pricing',
+    tipo: 'VC / pricing',
+    oQueFaz: 'Variant configuration and pricing (CPS). A-Z. Sibling of SSC/CPQ.',
+    paraQueServe: 'Configuring product + price at runtime.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'vistex-vendor': {
+    nome: 'SAP Vendor Program Management by Vistex',
+    tipo: 'Vendor programs',
+    oQueFaz: 'Vendor programs by Vistex. A-Z.',
+    paraQueServe: 'Billbacks and buy-side programs.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
+  'watch-list': {
+    nome: 'SAP Watch List Screening',
+    tipo: 'Screening',
+    oQueFaz: 'Watch list screening (sanctions). A-Z.',
+    paraQueServe: 'Screening partners against official lists.',
+    exemploReal: 'A-Z.',
+    nesteCenario: { onprem: 'Optional.', cloud: 'Optional.', rise: 'Optional.' }
+  },
 }
 
 export default {
@@ -2499,6 +3247,9 @@ export default {
     zoomOut: 'Zoom out',
     closeDrawer: 'Close',
     back: 'Back',
+    viewMap: 'Map',
+    viewSchema: 'Schema',
+    esquemaFocusLegend: 'Focus components for this scenario',
     profiles: {
       greenfield: 'Mid-market greenfield',
       brownfield: 'Complex ECC brownfield',

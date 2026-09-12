@@ -8,6 +8,7 @@ const ids = SERVICOS.map((s) => s.id)
 const idsUnicos = new Set(ids)
 if (idsUnicos.size !== ids.length) falha(`ids duplicados: ${ids.length - idsUnicos.size}`)
 console.log(`Total de serviços: ${SERVICOS.length}`)
+if (SERVICOS.length !== 340) falha(`esperados 340 serviços, encontrados ${SERVICOS.length}`)
 
 // 2. campos obrigatórios
 const obrigatorios = ['id', 'nome', 'camada', 'tipo', 'cenarios', 'oQueFaz', 'paraQueServe', 'exemploReal', 'ligaA', 'nesteCenario']

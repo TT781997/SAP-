@@ -6,6 +6,7 @@ import { ORDEM_IDIOMAS, IDIOMAS } from '../i18n/index.js'
 export default function Header({
   cenario, onCenario, hyperscaler, onHyperscaler, mostrarLegado, onMostrarLegado,
   perfisActivos, onAlternarPerfil, onSeleccionarResultado, idioma, onIdioma, t, tCamada, tPreset,
+  modoVista, onModoVista,
 }) {
   const [query, setQuery] = useState('')
   const [aberto, setAberto] = useState(false)
@@ -57,6 +58,23 @@ export default function Header({
         </label>
       </div>
 
+      <div className="flex flex-wrap items-center gap-2">
+        <div className="flex gap-1 rounded-xl border border-white/10 bg-white/5 p-1" role="group" aria-label="Mapa / Esquema">
+          {['mapa', 'esquema'].map((id) => (
+            <button
+              key={id}
+              type="button"
+              onClick={() => onModoVista(id)}
+              aria-pressed={modoVista === id}
+              className={`rounded-lg px-3 py-1.5 text-[12px] font-semibold transition-colors ${modoVista === id ? 'bg-fuchsia-500/80 text-white' : 'text-gray-300 hover:bg-white/10'}`}
+            >
+              {t(id === 'mapa' ? 'viewMap' : 'viewSchema')}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {modoVista === 'mapa' && (<>
       <div className="flex flex-wrap items-center gap-2">
         <div className="flex flex-wrap gap-1 rounded-xl border border-white/10 bg-white/5 p-1" role="group" aria-label="Preset">
           {ORDEM_CENARIOS.map((id) => (
@@ -152,6 +170,7 @@ export default function Header({
           )
         })}
       </div>
+      </>)}
     </header>
   )
 }
