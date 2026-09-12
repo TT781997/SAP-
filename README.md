@@ -1,98 +1,91 @@
-# Mapa do Ecossistema SAP
+# Mapa do Ecossistema SAP — v3 (248 serviços, i18n, Vercel)
 
-Aplicação web single-page, 100% client-side, que mapeia o ecossistema
-tecnológico SAP em 6 camadas — de infraestrutura a LoB/SaaS/IA — através de
-três cenários de adopção: **On-Premise Tradicional**, **Cloud Pública** e
-**Híbrido (RISE with SAP)**.
+SPA React + Vite, 100% client-side, sem backend. `src/data.js` é a fonte
+única — 248 serviços, 7 camadas, 7 clusters, 3 presets.
 
-Sem backend, sem APIs externas, sem login. Todos os dados vivem em
-`src/data.js` e são compilados para um bundle estático.
+## Deploy
 
-## Como correr
-
-```bash
+```
 npm i
-npm run dev
+npm run dev       # desenvolvimento local
+npm run build     # gera dist/
+npx vercel --yes  # deploy (framework Vite, output dist/, sem variáveis de ambiente)
 ```
 
-Abre o URL que o Vite mostrar no terminal (por defeito `http://localhost:5173`).
+`vercel.json` já tem o rewrite SPA (`/(.*) → /index.html`), necessário para
+o preview não dar 404 no refresh de uma rota.
 
-Para gerar a versão de produção (ficheiros estáticos prontos a alojar em
-qualquer servidor HTTP, sem Node):
+## O que está completo nesta entrega
 
-```bash
-npm run build
-npm run preview   # opcional: pré-visualiza o build de produção localmente
+- **Catálogo dos 248 serviços em `src/data.js`**, todos os campos
+  obrigatórios (`id, nome, camada, tipo, cenarios, oQueFaz, paraQueServe,
+  exemploReal, ligaA, nesteCenario`), validado (`node validar.mjs`): ids
+  únicos, todo `ligaA` resolve, 7 clusters consistentes, os 12
+  `LEGADO_IDS` válidos, espinhas ≤6 hops.
+- **Modelo de ligações corrigido** (secção 1 do brief, a marcar como bug a
+  corrigir de iterações anteriores): zero edges por defeito; hover/selecção
+  mostra só as ligações de 1.º grau desse card, no máximo 8, prioridade
+  para activo/recomendado, com chip "+N ligações no drawer" quando há mais;
+  linhas ortogonais (elbow, 3 segmentos) com label no meio — nunca diagonais
+  a atravessar camadas; toggle "Só espinha do cenário" com a sequência fixa
+  de ≤6 hops por preset; botão "Limpar selecção".
+- **Busca corrigida** (secção 8): normalização NFD + remoção de
+  diacríticos + colapso de espaços/hífenes + prefixo "sap" opcional;
+  `aliases[]` e `satelitesHelp` indexados; ranking por exact-match antes de
+  substring, para "SCI" devolver `sci` antes de `Integration Suite` e "S4"
+  devolver `s4hana` antes de `s4-any`. Testado com os casos do brief
+  ("SAP For me", "sap for me", "forme", "SCI", "S4") — ver `validar.mjs`.
+- **Drawer** com a ordem exacta de secções, incluindo a nova "Satélites no
+  índice Help" (condicional, split por `;`).
+- **7 clusters** (spend/cx/supply/finance-ext colapsados por defeito;
+  pme/runtimes/dados-ext expandidos).
+- **Selector de infraestrutura L0 com 4 opções** (AWS/Azure/GCP/SCI).
+- **i18n**: mecanismo completo (`src/i18n/`), selector no header,
+  persistido em `localStorage("sap-map-lang")`, fallback campo-a-campo
+  para PT-PT com aviso na consola (nunca string vazia), não perde
+  card/preset/pesquisa ao mudar de língua. `ui`, `presets` e `layers`
+  traduzidos a 100% nas 5 línguas (PT/EN/FR/DE/ES).
+- **Conteúdo dos 248 serviços traduzido para inglês** (`src/i18n/en.js`):
+  nome/tipo/oQueFaz/paraQueServe/exemploReal/nesteCenario/naoConfundir de
+  todos os 248, validado 1:1 contra os ids de `data.js` (zero em falta,
+  zero incompletos). PT e EN estão ambos completos.
+- Ficheiros Vercel exactos (`vercel.json`, scripts do `package.json`,
+  `vite.config.js` com `base:"/"` e `outDir:"dist"`).
+- Zero ficheiros Python/Streamlit no repositório (verificado).
+
+## O que fica para uma próxima iteração (não está nesta entrega)
+
+Dado o tamanho real do pedido, priorizei terminar bem uma língua de cada
+vez em vez de espalhar a tradução por quatro e não terminar nenhuma.
+Ficou por fazer:
+
+1. **Tradução do conteúdo dos 248 serviços para FR/DE/ES.** PT e EN estão
+   ambos completos e validados; `services` em `fr.js/de.js/es.js` continua
+   vazio, com fallback correcto para PT-PT (`tServico()` já testado). São
+   mais ~3000 blocos de texto técnico (3 línguas × 248 serviços × ~4-7
+   campos) — o mesmo trabalho que já foi feito para inglês, repetido para
+   as outras três.
+2. **Vista "Esquema"** (secções 12-14 do brief): os 8 diagramas de
+   arquitectura com React Flow/@xyflow/react (Azure RISE, SCI RISE, S/4
+   Public simples, interior do BTP, Build+BPA, Joule Studio, GenAI on BTP,
+   camadas do S/4 Private) com contentores aninhados, setas etiquetadas
+   animadas e toggle Mapa|Esquema. É, na prática, uma segunda aplicação
+   completa; não foi iniciada.
+
+## Decisão de interpretação a assinalar
+
+O brief contradiz-se num ponto: a secção 1 diz explicitamente "zero edges
+por defeito" (e lista isto como correcção a um erro de iterações
+anteriores), mas a secção 4 ("Estado inicial") pede edges de governação
+já visíveis entre 6 ids específicos sem nada seleccionado. Priorizei a
+regra da secção 1 — está mais desenvolvida, é repetida, e é apresentada
+como o fix de um problema concreto — pelo que o canvas arranca mesmo sem
+nenhuma ligação desenhada. `IDS_GOVERNANCA_INICIAL` continua definido em
+`data.js` caso queiras reverter esta escolha.
+
+## Validação
+
 ```
-
-## Como usar
-
-- **Três botões de cenário** no topo alternam a "história" do diagrama —
-  os cards e ligações relevantes ganham destaque, o resto atenua ou some.
-- **"Mostrar legado"** revela, como fantasmas tracejados, os sistemas
-  on-premise que um cenário cloud/híbrido deixa para trás (data center,
-  HANA on-premise, S/4 any-premise, PI/PO).
-- **Seletor de hyperscaler** (AWS/Azure/GCP) só é relevante em Cloud
-  Pública e RISE — troca o card de infraestrutura L0 e o respectivo texto.
-- **Clicar num card** abre o painel de detalhes à direita (ou em bottom-sheet
-  em ecrãs < 1024px); os chips em "Relaciona-se com" saltam para o serviço
-  ligado.
-- **Clicar numa ligação** mostra a origem, o destino e o padrão de
-  integração (API, evento, iFlow, replicação, etc.).
-- **Pesquisa** no cabeçalho encontra um serviço por nome mesmo que esteja
-  escondido no cenário actual.
-
-## Editar o conteúdo (`src/data.js`)
-
-Este é o único ficheiro que precisa de ser tocado para manter o conteúdo:
-
-- `LAYERS` — as 6 camadas e a cor de cada uma.
-- `SCENARIOS` — nome, frase do chip e resumo de cada cenário.
-- `SERVICOS` — o catálogo completo. Cada serviço tem `oQueFaz`,
-  `paraQueServe`, `exemploReal` (texto do painel) e `contextoPorCenario`
-  (a frase "Neste cenário" para cada um dos 3 cenários).
-- `TABELA_CENARIOS` — quem está *activo* ou *atenuado* em cada cenário;
-  tudo o resto fica automaticamente *escondido*. Esta é a tabela a editar
-  se quiseres mudar quem aparece onde.
-- `classificarLigacao` — heurística (editável) que decide se uma ligação é
-  "rede", "extensão" ou "nativa" consoante os ids dos dois extremos.
-
-Para adicionar um serviço novo: acrescenta uma entrada em `SERVICOS`
-(incluindo `contextoPorCenario` para os 3 cenários), escolhe um ícone
-existente em `src/icons.js` (ou acrescenta um novo par
-`chave: ÍconeLucide`), e decide em `TABELA_CENARIOS` onde deve aparecer
-como activo/atenuado.
-
-## Stack
-
-React 19 + Vite 8, Tailwind CSS v4 (config "CSS-first" em `src/index.css`,
-sem ficheiro `tailwind.config.js`), Framer Motion para as transições e
-`lucide-react` para os ícones — sempre genéricos/geométricos, nunca
-logótipos reais de marcas (SAP, AWS, Azure, GCP).
-
-## Correr dentro do Streamlit
-
-A app é React puro — o Streamlit não a executa nativamente, só a pode
-**incorporar**. `streamlit_app.py` faz isso: lê o build de produção,
-embebe o CSS e o JS compilados directamente no HTML (referências para
-`/assets/...` quebrariam dentro do iframe) e mostra o resultado via
-`st.iframe`, que mede a altura real do conteúdo.
-
-```bash
-npm i && npm run build   # streamlit_app.py corre isto sozinho se faltar dist/
-pip install -r requirements.txt
-streamlit run streamlit_app.py
+node validar.mjs   # estrutura do catálogo + casos de teste da busca
+npm run build      # build de produção
 ```
-
-Duas coisas a saber antes de decidir se isto é o caminho certo:
-
-- É sempre um iframe: a app corre isolada dentro da página Streamlit, sem
-  ligação entre o estado Python e o estado React (não dá, por exemplo,
-  para ler o cenário seleccionado a partir de código Streamlit à volta).
-  Para este mapa — que já é 100% autónomo — isso não perde funcionalidade
-  nenhuma, só significa que o Streamlit está a servir de "moldura".
-- Se só precisas de mostrar isto a alguém ou alojá-lo algures, sem
-  precisares que viva dentro de uma app Streamlit existente, é mais
-  simples pôr `dist/` (depois de `npm run build`) em qualquer alojamento
-  estático — `npx serve dist`, Azure Static Web Apps, GitHub Pages, etc.
-  — do que passar pelo Streamlit.

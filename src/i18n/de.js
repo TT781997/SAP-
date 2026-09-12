@@ -1,0 +1,78 @@
+// HINWEIS: Die Texte der einzelnen Services (services[id]) sind noch nicht
+// ins Deutsche übersetzt — sie fehlen, und useIdioma() greift auf PT-PT
+// zurück und protokolliert eine Warnung in der Konsole. Das gesamte
+// UI-Chrome, die Presets und die Ebenennamen sind zu 100 % übersetzt. Siehe
+// README für den Übersetzungsplan der 248 Service-Inhalte.
+export default {
+  meta: { code: 'de', label: 'Deutsch', dir: 'ltr' },
+  ui: {
+    title: 'SAP-Ökosystem-Karte',
+    subtitle: 'Das SAP-Portfolio: was es gibt, wie es sich verbindet, und wie man eine Landschaft passend zum Kunden mischt.',
+    searchPlaceholder: 'Suchen (Name, Akronym, SCI, SAP for Me...)',
+    searchEmpty: 'Kein Service gefunden. Versuchen Sie das Akronym (SCI, BTP, ALM) oder den Produktnamen (SAP for Me).',
+    showLegacy: 'Legacy anzeigen',
+    language: 'Sprache',
+    layers: 'Schichten',
+    edgeNative: 'Nativ',
+    edgeCleanCore: 'Clean Core (BTP)',
+    edgeNetwork: 'Netzwerk',
+    edgeGov: 'Steuert',
+    stateActive: 'Aktiv',
+    stateRecommended: 'Empfohlen',
+    stateOptional: 'Optional',
+    stateLegacy: 'Legacy',
+    stateIrrelevant: 'Nicht relevant',
+    drawerWhat: 'Was es tut',
+    drawerUsedFor: 'Wofür es genutzt wird',
+    drawerMix: 'Wie es sich einfügt',
+    drawerExample: 'Praxisbeispiel',
+    drawerRelated: 'Verbunden mit',
+    drawerDontConfuse: 'Nicht zu verwechseln mit',
+    drawerSatellites: 'Satelliten im Help-Index',
+    drawerFeatures: 'Funktionen dieses Produkts: help.sap.com und Feature Documentation.',
+    drawerScenario: 'Schicht, Typ und Status in diesem Szenario',
+    resetView: 'Ansicht zurücksetzen',
+    selectedEdges: 'Verbindungen',
+    hiddenEdgesSuffix: 'Verbindungen im Detailbereich',
+    clearSelection: 'Auswahl aufheben',
+    spineOnly: 'Nur Szenario-Rückgrat',
+    zoomIn: 'Vergrößern',
+    zoomOut: 'Verkleinern',
+    closeDrawer: 'Schließen',
+    back: 'Zurück',
+    profiles: {
+      greenfield: 'Mid-Market Greenfield',
+      brownfield: 'Komplexes ECC-Brownfield',
+      industria: 'Industrie / Shopfloor',
+      regulado: 'Reguliert / Datensouveränität',
+      spend: 'Hohes Beschaffungsvolumen / Lieferantennetzwerk',
+      workforce: 'Hoher Anteil externer Arbeitskräfte',
+    },
+    infraSelector: { aws: 'AWS', azure: 'Azure', gcp: 'GCP', sci: 'SCI' },
+    footerDisclaimer: 'Lehrinhalt auf Basis öffentlicher SAP-Angebote und des Index help.sap.com/docs/all-products. Fallbeispiele auf Basis öffentlicher Berichte zusammengefasst. Deploy with Confidence ist eine interne SAP-Engineering-Methodik, kein SKU. Der All-Products-Index umfasst rund 1.248 Dokumentationseinträge; diese Karte zeigt die Architekturbausteine.',
+  },
+  presets: {
+    onprem: {
+      title: 'Klassisches On-Premise',
+      hero: 'Der Kunde betreibt das Rechenzentrum, NetWeaver, HANA, ECC oder S/4 any-premise, PI/PO und Solution Manager. Volle Kontrolle, TCO und Upgrades liegen bei der IT. Cloud-LoB-Anwendungen (SuccessFactors, Ariba, Concur) können bereits als Inseln existieren — ein unbeabsichtigtes Hybridmodell. Zielpfad: RISE oder GROW, wobei PI/PO und SolMan bis 2027 auslaufen.',
+    },
+    cloud: {
+      title: 'Public Cloud — GROW',
+      hero: 'S/4HANA Cloud Public Edition beim Hyperscaler, Standardprozesse, BTP für Erweiterungen, Integration Suite als iPaaS, SaaS-LoB nach Bedarf, Cloud ALM inklusive. DRC und Multi-Bank gehören zum ehrlichen Finance-Minimum. Signavio steuert den Fit-to-Standard. Deploy with Confidence ermöglicht auf SAP-Seite, dass Public Edition und Signavio Innovationen in kurzen Zyklen erhalten; auf Kundenseite bedeutet es, den Core nicht zu customizen.',
+    },
+    rise: {
+      title: 'Hybrid — RISE with SAP',
+      hero: 'Ein Vertrag: Software + BTP + von SAP beim Hyperscaler (oder CDC) betriebene Infrastruktur. S/4 Private Edition \u2248 On-Premise-Umfang mit SAP-Betrieb. Signavio entscheidet über den Prozess, LeanIX über die Landschaft, BTC über die Daten, Tricentis über die Regressionstests, Cloud ALM führt aus und misst den Clean Core, und Deploy with Confidence ist die Disziplin, den To-be-Zustand auszurollen, ohne das nächste Upgrade zu gefährden. Verbleibende On-Premise-Systeme werden über Cloud Connector / Edge Integration Cell angebunden. PI/PO und SolMan laufen bis 2027 aus. Konzerne mit mehreren ECC-Systemen können Central Finance als Zwischenschritt nutzen.',
+    },
+  },
+  layers: {
+    infra: 'Infrastruktur',
+    dados: 'Daten',
+    plataforma: 'Plattform (SAP BTP)',
+    integracao: 'Integration',
+    core: 'Core-ERP / Digital Core',
+    lob: 'LoB / SaaS / Industrie / Experience / KI',
+    alm: 'Lebenszyklus, Architektur und Transformation',
+  },
+  services: {},
+}
