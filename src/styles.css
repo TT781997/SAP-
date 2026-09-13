@@ -1,0 +1,218 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+@theme {
+  --font-sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --color-bg: var(--bg);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-subtle: var(--bg-subtle);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-subtle: var(--fg-subtle);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-gold: var(--gold);
+  --color-container: var(--container);
+  --color-container-border: var(--container-border);
+  --color-card: var(--card);
+  --color-step-1: var(--step-1);
+  --color-step-2: var(--step-2);
+  --color-step-3: var(--step-3);
+  --color-step-4: var(--step-4);
+  --color-identity: var(--identity);
+
+  --color-layer-infra: #64748b;
+  --color-layer-dados: #06b6d4;
+  --color-layer-plataforma: #6366f1;
+  --color-layer-integracao: #8b5cf6;
+  --color-layer-core: #0ea5e9;
+  --color-layer-lob: #10b981;
+  --color-layer-ia: #f59e0b;
+  --color-layer-alm: #f43f5e;
+  --color-layer-metodo: #fb7185;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
+
+  --shadow-border: var(--elev-border);
+  --shadow-border-hover: var(--elev-hover);
+}
+
+:root {
+  --bg: #f4f7fb;
+  --bg-elevated: #ffffff;
+  --bg-subtle: #e8f1fa;
+  --fg: #1e3a5f;
+  --fg-muted: #4a6584;
+  --fg-subtle: #7b93ab;
+  --accent: #0ea5e9;
+  --accent-fg: #f4f7fb;
+  --border: color-mix(in oklab, #1e3a5f 14%, transparent);
+  --border-strong: color-mix(in oklab, #1e3a5f 26%, transparent);
+  --gold: #b45309;
+  --container: #e8f1fa;
+  --container-border: #7ba3c9;
+  --card: #ffffff;
+  --step-1: #f59e0b;
+  --step-2: #d946ef;
+  --step-3: #10b981;
+  --step-4: #0ea5e9;
+  --identity: #059669;
+  --elev-border: 0 0 0 1px color-mix(in oklab, #1e3a5f 10%, transparent),
+    0 1px 2px color-mix(in oklab, #1e3a5f 6%, transparent);
+  --elev-hover: 0 0 0 1px color-mix(in oklab, #0ea5e9 45%, transparent),
+    0 8px 24px -12px color-mix(in oklab, #1e3a5f 22%, transparent);
+}
+
+html.dark {
+  --bg: #070b14;
+  --bg-elevated: #10161f;
+  --bg-subtle: #161d28;
+  --fg: #e8edf4;
+  --fg-muted: #9aa6b5;
+  --fg-subtle: #6b7787;
+  --accent: #0ea5e9;
+  --accent-fg: #041018;
+  --border: color-mix(in oklab, #e8edf4 12%, transparent);
+  --border-strong: color-mix(in oklab, #e8edf4 22%, transparent);
+  --gold: #d4b46a;
+  --container: color-mix(in oklab, #1e3a5f 40%, #070b14);
+  --container-border: #7ba3c9;
+  --card: #10161f;
+  --step-1: #f59e0b;
+  --step-2: #d946ef;
+  --step-3: #10b981;
+  --step-4: #0ea5e9;
+  --identity: #34d399;
+  --elev-border: 0 0 0 1px rgba(255, 255, 255, 0.08);
+  --elev-hover: 0 0 0 1px rgba(255, 255, 255, 0.14),
+    0 8px 24px -12px rgba(0, 0, 0, 0.55);
+}
+
+@layer base {
+  html,
+  body,
+  #root, #app {
+    min-height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer utilities {
+  .app-grid {
+    background-color: var(--color-bg);
+    background-image:
+      linear-gradient(color-mix(in oklab, var(--fg) 5%, transparent) 1px, transparent 1px),
+      linear-gradient(90deg, color-mix(in oklab, var(--fg) 5%, transparent) 1px, transparent 1px);
+    background-size: 24px 24px, 24px 24px;
+  }
+
+  .glass-card {
+    background: var(--color-card);
+    box-shadow: var(--shadow-border);
+  }
+
+  .hyph {
+    overflow-wrap: anywhere;
+    hyphens: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.react-flow {
+  background: transparent !important;
+}
+.react-flow__attribution {
+  background: transparent !important;
+  color: var(--color-fg-subtle) !important;
+  font-size: 10px;
+}
+.react-flow__controls {
+  box-shadow: var(--shadow-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.react-flow__controls-button {
+  background: var(--color-bg-elevated) !important;
+  border-bottom: 1px solid var(--color-border) !important;
+  fill: var(--color-fg) !important;
+}
+.react-flow__minimap {
+  background: var(--color-bg-elevated) !important;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.react-flow__edge-path {
+  stroke-linecap: round;
+}
+.react-flow__edge.animated path {
+  stroke-dasharray: 6 8;
+}
+.react-flow__node {
+  cursor: pointer;
+}
+.react-flow__handle {
+  pointer-events: none !important;
+  width: 6px !important;
+  height: 6px !important;
+}
+.react-flow__node-group {
+  border-radius: 12px !important;
+  color: var(--color-fg-muted);
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -80;
+  }
+}
+
+.edge-flow {
+  stroke-dasharray: 8 10;
+  animation: dash-flow 2.4s linear infinite;
+}
+
+.edge-identity {
+  stroke-dasharray: 6 6;
+}
