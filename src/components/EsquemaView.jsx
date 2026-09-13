@@ -11,9 +11,10 @@ import genaiBtp from '../schematics/genai-btp.js'
 import jouleStack from '../schematics/joule-stack.js'
 import eventsActions from '../schematics/events-actions.js'
 import safetyInspection from '../schematics/safety-inspection.js'
+import identityServices from '../schematics/identity-services.js'
 
 // Ordem: 3 cenários (a "aula" de cada preset) + aprofundamentos.
-export const ESQUEMAS = [onprem, grow, riseAzure, s4Public, genaiBtp, jouleStack, eventsActions, safetyInspection]
+export const ESQUEMAS = [onprem, grow, riseAzure, s4Public, identityServices, genaiBtp, jouleStack, eventsActions, safetyInspection]
 const DOMINIOS = [
   { id: 'todos', pt: 'Todos os domínios', en: 'All domains' },
   { id: 'ai', pt: 'AI & Machine Learning', en: 'AI & Machine Learning' },
@@ -29,7 +30,8 @@ const CHIPS = [
 ]
 const LEGENDA_EDGES = [
   ['nativa', '#38bdf8', 'dados / nativa'], ['extensao', '#a78bfa', 'clean core / BTP'], ['rede', '#94a3b8', 'rede'],
-  ['governa', '#fb7185', 'governa'], ['auth', '#22c55e', 'trust / auth'], ['dr', '#f97316', 'replicação DR'],
+  ['governa', '#fb7185', 'governa'], ['auth', '#22c55e', 'autenticação'], ['delegada', '#22c55e', 'auth. delegada'],
+  ['provisioning', '#cbd5e1', 'aprovisionamento'], ['dr', '#f97316', 'replicação DR'],
 ]
 const MAX_ANIMADAS = 8
 

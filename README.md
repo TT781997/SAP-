@@ -128,7 +128,7 @@ Ficou por fazer:
    mais ~4000 blocos de texto técnico (3 línguas × 340 serviços × ~4-7
    campos) — o mesmo trabalho que já foi feito para inglês, repetido para
    as outras três.
-2. **Vista "Esquema" — 8 esquemas construídos, 5 por fazer.** É agora a
+2. **Vista "Esquema" — 9 esquemas construídos, 4 por fazer.** É agora a
    vista inicial (secção 13/17: "o mapa é o atlas; o esquema é a aula").
    Contrato React Flow da secção 14: `colorMode="dark"`, `Background dots
    gap 24`, `MiniMap` colorido por domínio, `Controls`, `Panel` top-left com
@@ -147,9 +147,13 @@ Ficou por fazer:
    01aa03 Basic Prompting a esbater o resto), `joule-stack` (imagem 1 /
    North Star), `events-actions` (imagem 3 / 2a28bd — com a nota, confirmada
    no site, de que o framework CAP "não é produto standard"),
-   `safety-inspection` (9ca181). Validados: ids únicos, arestas resolvem,
+   `safety-inspection` (9ca181), `identity-services` (SAP Cloud Identity
+   Services: autenticação vs aprovisionamento, delegação no IdP da empresa,
+   Cloud Connector para user stores on-premise — com os três tipos de seta
+   da legenda original preservados: autenticação sólida, delegada tracejada,
+   aprovisionamento a claro). Validados: ids únicos, arestas resolvem,
    `cardId` existem, ≤8 animadas. **Por fazer**: `rise-sci`, `btp-interior`,
-   `bpa`, `private-layers`, `joule-studio`; zoom L1→L2; export SVG/PNG;
+   `bpa`, `private-layers`; zoom L1→L2; export SVG/PNG;
    breadcrumb; secção "Neste esquema" no drawer.
 
 ## Fontes lidas nesta iteração

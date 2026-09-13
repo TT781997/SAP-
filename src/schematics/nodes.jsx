@@ -116,8 +116,8 @@ export function NetworkDivider({ data }) {
 // label SEMPRE visível. data.tipo escolhe cor/traço; data.animado liga o loop
 // dashoffset (respeita prefers-reduced-motion via a classe .ligacao-animada
 // já definida em index.css).
-const COR_TIPO_EDGE = { nativa: '#38bdf8', extensao: '#a78bfa', rede: '#94a3b8', governa: '#fb7185', auth: '#22c55e', dr: '#f97316', destaque: '#d946ef' }
-const TRACO_TIPO_EDGE = { nativa: undefined, extensao: '6 4', rede: '2 3', governa: '7 3 1 3', auth: '4 3', dr: '8 4', destaque: undefined }
+const COR_TIPO_EDGE = { nativa: '#38bdf8', extensao: '#a78bfa', rede: '#94a3b8', governa: '#fb7185', auth: '#22c55e', delegada: '#22c55e', provisioning: '#cbd5e1', dr: '#f97316', destaque: '#d946ef' }
+const TRACO_TIPO_EDGE = { nativa: undefined, extensao: '6 4', rede: '2 3', governa: '7 3 1 3', auth: undefined, delegada: '7 5', provisioning: undefined, dr: '8 4', destaque: undefined }
 
 export function SapEdge({ id, sourceX, sourceY, targetX, targetY, sourcePosition, targetPosition, label, data = {}, markerEnd }) {
   const [caminho, labelX, labelY] = getSmoothStepPath({ sourceX, sourceY, targetX, targetY, sourcePosition, targetPosition, borderRadius: 8 })
