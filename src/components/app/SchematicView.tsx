@@ -9,7 +9,6 @@ import {
   useEdgesState,
   useNodesState,
   useReactFlow,
-  MarkerType,
   type Edge,
   type Node,
 } from "@xyflow/react";
@@ -27,12 +26,29 @@ const edgeTypes = { sapEdge: SapEdge };
 const LAYER_COLOR: Record<string, string> = {
   infra: "#64748b",
   dados: "#06b6d4",
-  plataforma: "#6366f1",
+  plataforma: "#0070F2",
   integracao: "#8b5cf6",
-  core: "#0ea5e9",
-  lob: "#10b981",
-  alm: "#f43f5e",
+  core: "#0070F2",
+  lob: "#0f7a54",
+  alm: "#0070F2",
 };
+
+function groupSkin(camada: string | undefined, dark: boolean): Record<string, string | number> {
+  const border = LAYER_COLOR[camada ?? "core"] ?? "#0070F2";
+  const dashed = camada === "infra";
+  const fill = dark
+    ? `color-mix(in oklab, ${border} 14%, #10161f)`
+    : `color-mix(in oklab, ${border} 7%, #ffffff)`;
+  return {
+    width: 0,
+    height: 0,
+    background: fill,
+    border: dashed ? `2px dashed ${border}` : `2px solid ${border}`,
+    borderRadius: 16,
+    padding: 10,
+    boxShadow: dark ? "none" : "0 1px 0 rgba(15, 42, 80, 0.04)",
+  };
+}
 
 function toFlow(
   sch: Schematic,
@@ -53,20 +69,7 @@ function toFlow(
       parentId: n.parentId,
       extent: n.extent,
       style: isGroup
-        ? {
-            width: w,
-            height: h,
-            background:
-              n.data.camada === "core"
-                ? "color-mix(in oklab, var(--color-layer-core) 12%, var(--color-container))"
-                : "var(--color-container)",
-            border:
-              n.data.camada === "core"
-                ? "2px solid var(--color-layer-core)"
-                : "1px solid var(--color-container-border)",
-            borderRadius: 12,
-            padding: 8,
-          }
+        ? { ...groupSkin(n.data.camada, dark), width: w, height: h }
         : { width: w, height: h },
       data: { ...n.data, lang },
       selectable: !isGroup && n.type !== "sapLabel" && Boolean(serviceId),
@@ -84,18 +87,15 @@ function toFlow(
     type: "sapEdge",
     animated: reduced ? false : Boolean(e.animated),
     label: e.label,
-    markerEnd: {
-      type: MarkerType.ArrowClosed,
-      width: 14,
-      height: 14,
-      color: dark ? "#94a3b8" : "#1e3a5f",
-    },
+    zIndex: 1000,
     data: {
       kind: e.kind,
       labelOffset: e.labelOffset ?? 0,
       labelDx: e.labelDx ?? 0,
       number: e.number,
       dashed: e.dashed,
+      pathOffset: e.pathOffset ?? 22,
+      dark,
     },
   }));
   return { nodes, edges };

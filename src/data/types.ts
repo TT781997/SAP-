@@ -26,7 +26,7 @@ export type Status =
 
 export type EdgeKind = "nativo" | "cleancore" | "rede" | "governa";
 export type Lang = "pt" | "en" | "fr" | "de" | "es";
-export type ViewMode = "map" | "schematic";
+export type ViewMode = "home" | "map" | "schematic";
 
 export type TemplateId =
   | "A"
@@ -119,6 +119,7 @@ export interface SchematicEdge {
   targetHandle?: string;
   labelOffset?: number;
   labelDx?: number;
+  pathOffset?: number;
 }
 
 export interface Schematic {

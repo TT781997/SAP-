@@ -109,6 +109,7 @@ function edge(
     th?: string;
     dy?: number;
     dx?: number;
+    offset?: number;
   },
 ): SchematicEdge {
   return {
@@ -124,6 +125,7 @@ function edge(
     targetHandle: extra?.th,
     labelOffset: extra?.dy,
     labelDx: extra?.dx,
+    pathOffset: extra?.offset,
   };
 }
 
@@ -942,10 +944,10 @@ export function buildJourney(input: JourneyInput): Schematic {
   );
   edges.push(edge(firstActor, "n-menu", pick(loc("abre o menu", "opens the menu", "ouvre le menu", "öffnet das Menü", "abre el menú"), lang), "nativo", { animated: true, number: 1, sh: "sr", th: "tl" }));
   edges.push(edge("n-menu", "n-auth", "SSO", "nativo", { animated: true, number: 2, sh: "b", th: "t" }));
-  edges.push(edge("n-idp", "n-auth", pick(loc("login delegado", "delegated login", "login délégué", "delegiertes Login", "login delegado"), lang), "cleancore", { dashed: true, sh: "st", th: "tb" }));
+  edges.push(edge("n-idp", "n-auth", pick(loc("login delegado", "delegated login", "login délégué", "delegiertes Login", "login delegado"), lang), "cleancore", { dashed: true, sh: "sr", th: "tr", offset: 18, dx: 10 }));
   edges.push(edge("n-auth", "n-dir", pick(loc("persistir dados", "persist data", "persister les données", "Daten halten", "persistir datos"), lang), "nativo", { sh: "b", th: "t" }));
   edges.push(edge("n-dir", "n-prov", pick(loc("cria / desliga contas", "creates / disables accounts", "crée / désactive les comptes", "legt an / sperrt Konten", "crea / desactiva cuentas"), lang), "nativo", { sh: "b", th: "t" }));
-  edges.push(edge("n-auth", "n-core", pick(loc("entra reconhecido", "enters recognised", "entre reconnu", "tritt erkannt ein", "entra reconocido"), lang), "nativo", { animated: true, number: 3, sh: "sr", th: "tl" }));
+  edges.push(edge("n-auth", "n-core", pick(loc("entra reconhecido", "enters recognised", "entre reconnu", "tritt erkannt ein", "entra reconocido"), lang), "nativo", { animated: true, number: 3, sh: "sr", th: "tl", dy: -18 }));
 
   const hopFactura = hopIds.includes("factura") ? "hop-factura" : hopIds[0] ? `hop-${hopIds[0]}` : "n-core";
   if (hopIds[0]) {
@@ -961,7 +963,7 @@ export function buildJourney(input: JourneyInput): Schematic {
   const spoke = nodes.find((n) => n.id.startsWith("l0-") && (n.id.includes("spoke") || n.id.includes("sci-net") || n.id.includes("op-dc") || n.id.includes("grow-net")));
   const floorTarget = spoke?.id ?? nodes.find((n) => n.id.startsWith("l0-"))?.id;
   if (floorTarget) {
-    edges.push(edge("n-core", floorTarget, runsHere, "rede", { animated: true, number: 7, sh: "b", th: "t" }));
+    edges.push(edge("n-core", floorTarget, runsHere, "rede", { animated: true, number: 7, sh: "sl", th: "t", offset: 36, dx: -12 }));
   }
 
   const otherActors = roleIds.slice(1);
@@ -976,11 +978,9 @@ export function buildJourney(input: JourneyInput): Schematic {
     const ccTarget = floorTarget ?? "n-core";
     edges.push(edge("n-cc", ccTarget, pick(loc("o que ficou em casa", "what stayed at home", "ce qui est resté à la maison", "was zu Hause blieb", "lo que quedó en casa"), lang), "rede"));
   }
-  edges.push(edge("n-core", "n-btp", pick(loc("extensões à volta", "extensions around", "extensions autour", "Erweiterungen darum", "extensiones alrededor"), lang), "cleancore", { sh: "b", th: "t" }));
-  edges.push(edge("n-build", "n-dest", pick(loc("pede, não altera", "asks, does not change", "demande, ne change pas", "fragt, ändert nicht", "pide, no cambia"), lang), "cleancore", { sh: "sr", th: "tl" }));
-  edges.push(edge("n-dest", "n-core", pick(loc("bate à porta do cofre", "knocks on the vault door", "frappe à la porte du coffre", "klopft an die Tresor-Tür", "llama a la puerta de la caja"), lang), "cleancore", { sh: "st", th: "tb" }));
-  edges.push(edge("n-core", "n-mesh", pick(loc("aviso", "notice", "avis", "Hinweis", "aviso"), lang), "cleancore", { sh: "b", th: "t" }));
-  edges.push(edge("n-joule", "n-menu", pick(loc("pergunta no menu", "asks in the menu", "demande dans le menu", "fragt im Menü", "pregunta en el menú"), lang), "nativo", { sh: "st", th: "tb" }));
+  edges.push(edge("n-core", "n-btp", pick(loc("extensões à volta", "extensions around", "extensions autour", "Erweiterungen darum", "extensiones alrededor"), lang), "cleancore", { sh: "sl", th: "t", offset: 22, dx: 14 }));
+  edges.push(edge("n-build", "n-dest", pick(loc("pede, não altera", "asks, does not change", "demande, ne change pas", "fragt, ändert nicht", "pide, no cambia"), lang), "cleancore", { sh: "sr", th: "tl", dy: -14 }));
+  edges.push(edge("n-dest", "n-mesh", pick(loc("aviso", "notice", "avis", "Hinweis", "aviso"), lang), "cleancore", { sh: "sr", th: "tl" }));
 
   const mixName = `${presetWord(preset, lang)} · ${infraWord(infra, preset)} · ${pick(tpl.nome, lang)}`;
   const titleMap = loc(

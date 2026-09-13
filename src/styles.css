@@ -185,9 +185,21 @@ html.dark {
 }
 .react-flow__edge-path {
   stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.react-flow__edges {
+  z-index: 6 !important;
+  pointer-events: none !important;
+}
+.react-flow__edgelabel-renderer {
+  z-index: 8 !important;
+  pointer-events: none !important;
+}
+.react-flow__nodes {
+  z-index: 4 !important;
 }
 .react-flow__edge.animated path {
-  stroke-dasharray: 6 8;
+  stroke-dasharray: 7 8;
 }
 .react-flow__node {
   cursor: pointer;
@@ -198,8 +210,8 @@ html.dark {
   height: 6px !important;
 }
 .react-flow__node-group {
-  border-radius: 12px !important;
-  color: var(--color-fg-muted);
+  border-radius: 16px !important;
+  color: #16324f;
 }
 
 @keyframes dash-flow {

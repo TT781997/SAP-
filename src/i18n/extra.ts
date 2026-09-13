@@ -55,6 +55,8 @@ const pt: Dict = {
   zoomPorter: "Ver o porteiro por dentro",
   zoomFloor: "Ver o chão ao pormenor",
   hopHint: "Cada cartão no meio é um passo do trabalho — não um módulo.",
+  home: "Como a SAP vende",
+  situations: "Situação da empresa",
 };
 
 const en: Dict = {
@@ -107,6 +109,8 @@ const en: Dict = {
   zoomPorter: "See inside the porter",
   zoomFloor: "See the floor in detail",
   hopHint: "Each card in the middle is a work step — not a module.",
+  home: "How SAP sells",
+  situations: "Company situation",
 };
 
 const fr: Dict = {
@@ -159,6 +163,8 @@ const fr: Dict = {
   zoomPorter: "Voir le portier de l'intérieur",
   zoomFloor: "Voir le sol en détail",
   hopHint: "Chaque carte au milieu est une étape de travail — pas un module.",
+  home: "Comment SAP vend",
+  situations: "Situation de l'entreprise",
 };
 
 const de: Dict = {
@@ -211,6 +217,8 @@ const de: Dict = {
   zoomPorter: "Den Pförtner von innen sehen",
   zoomFloor: "Den Boden im Detail sehen",
   hopHint: "Jede Karte in der Mitte ist ein Arbeitsschritt — kein Modul.",
+  home: "Wie SAP verkauft",
+  situations: "Situation der Firma",
 };
 
 const es: Dict = {
@@ -263,6 +271,8 @@ const es: Dict = {
   zoomPorter: "Ver el portero por dentro",
   zoomFloor: "Ver el suelo al detalle",
   hopHint: "Cada tarjeta del centro es un paso de trabajo — no un módulo.",
+  home: "Cómo vende SAP",
+  situations: "Situación de la empresa",
 };
 
 export const EXTRA: Record<Lang, Dict> = { pt, en, fr, de, es };

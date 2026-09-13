@@ -70,6 +70,7 @@ export function Header({ pathLine }: { pathLine: string }) {
             value={view}
             onChange={setView}
             options={[
+              ["home", t(lang, "home")],
               ["schematic", t(lang, "schematic")],
               ["map", t(lang, "map")],
             ]}
@@ -108,6 +109,7 @@ export function Header({ pathLine }: { pathLine: string }) {
         </div>
       </div>
 
+      {view !== "home" ? (
       <div className="px-3 pb-1.5 lg:px-4">
         <div className="flex flex-wrap items-center gap-1.5">
           {PRESETS.map((p) => (
@@ -127,17 +129,18 @@ export function Header({ pathLine }: { pathLine: string }) {
           ))}
           <span className="mx-1 hidden h-4 w-px bg-border sm:block" />
           <label className="sr-only" htmlFor="template">
-            {t(lang, "whatCompanyNeeds")}
+            {t(lang, "situations")}
           </label>
           <select
             id="template"
             value={template}
             onChange={(e) => setTemplate(e.target.value as TemplateId)}
-            className="h-8 max-w-[280px] rounded-full border border-border bg-bg-subtle px-2.5 text-[11px] font-medium text-fg"
+            title={tpl?.perfil[lang]}
+            className="h-8 max-w-[min(420px,70vw)] rounded-full border border-border bg-bg-subtle px-2.5 text-[11px] font-medium text-fg"
           >
             {TEMPLATES.map((item) => (
               <option key={item.id} value={item.id}>
-                {item.letter} · {item.nome[lang]}
+                {item.nome[lang]}
               </option>
             ))}
           </select>
@@ -151,6 +154,9 @@ export function Header({ pathLine }: { pathLine: string }) {
             {t(lang, "showRest")}
           </Chip>
         </div>
+        {tpl ? (
+          <p className="mt-1 text-[11px] leading-snug text-fg-muted">{tpl.perfil[lang]}</p>
+        ) : null}
         <div className={cn("mt-1.5", filtersOpen ? "block" : "hidden")}>
           <div className="flex flex-wrap items-center gap-1.5">
             {PROFILES.map((p) => (
@@ -169,6 +175,7 @@ export function Header({ pathLine }: { pathLine: string }) {
         </div>
         <p className="mt-1 hidden text-[11px] text-fg-muted sm:block">{pathLine}</p>
       </div>
+      ) : null}
     </header>
   );
 }

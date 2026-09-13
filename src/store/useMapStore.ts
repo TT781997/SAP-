@@ -68,7 +68,7 @@ export const useMapStore = create<MapStore>((set, get) => ({
   infra: "azure",
   profiles: [],
   showLegacy: false,
-  view: "schematic",
+  view: "home",
   schematicId: "journey",
   family: "journey",
   focus: "overview",

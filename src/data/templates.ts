@@ -592,7 +592,7 @@ export const TEMPLATES: SituationTemplate[] = [
   {
     id: "H",
     letter: "H",
-    nome: loc("ECC → RISE", "ECC → RISE", "ECC → RISE", "ECC → RISE", "ECC → RISE"),
+    nome: loc("Já temos SAP antigo — passar a RISE", "We already have old SAP — move to RISE", "On a déjà du SAP ancien — passer à RISE", "Wir haben schon altes SAP — nach RISE", "Ya tenemos SAP antiguo — pasar a RISE"),
     perfil: loc(
       "Já tem SAP há anos. A conversa é o código à medida, não os módulos.",
       "Has had SAP for years. The conversation is custom code, not modules.",
@@ -624,7 +624,13 @@ export const TEMPLATES: SituationTemplate[] = [
   {
     id: "I",
     letter: "I",
-    nome: loc("Empresa nova GROW", "New company GROW", "Nouvelle entreprise GROW", "Neues Unternehmen GROW", "Empresa nueva GROW"),
+    nome: loc(
+      "Nunca tivemos SAP — empresa nova na nuvem pública (GROW)",
+      "Never had SAP — new company on public cloud (GROW)",
+      "Jamais eu SAP — nouvelle entreprise en cloud public (GROW)",
+      "Nie SAP gehabt — neues Unternehmen in der Public Cloud (GROW)",
+      "Nunca tuvimos SAP — empresa nueva en nube pública (GROW)",
+    ),
     perfil: loc(
       "Processo standard, sem SAP antigo: o programa de facturas na nuvem pública.",
       "Standard process, no legacy SAP: the invoicing program on public cloud.",
@@ -656,7 +662,13 @@ export const TEMPLATES: SituationTemplate[] = [
   {
     id: "J",
     letter: "J",
-    nome: loc("Soberania", "Sovereignty", "Souveraineté", "Souveränität", "Soberanía"),
+    nome: loc(
+      "Os dados não podem sair — nuvem da própria SAP (SCI)",
+      "Data cannot leave — SAP’s own cloud (SCI)",
+      "Les données ne peuvent pas sortir — cloud de SAP (SCI)",
+      "Daten dürfen nicht raus — SAPs eigene Cloud (SCI)",
+      "Los datos no pueden salir — nube de la propia SAP (SCI)",
+    ),
     perfil: loc(
       "Os computadores ficam nos da SAP (SCI), não na Amazon/Azure/Google.",
       "The computers stay on SAP’s (SCI), not Amazon/Azure/Google.",

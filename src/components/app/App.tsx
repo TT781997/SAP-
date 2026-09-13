@@ -4,6 +4,7 @@ import { DARK_KEY, LANG_KEY, useMapStore } from "@/store/useMapStore";
 import type { Lang } from "@/data/types";
 import type { MixState } from "@/data/status";
 import { Header } from "./Header";
+import { HomeView } from "./HomeView";
 import { MapView } from "./MapView";
 import { SchematicView } from "./SchematicView";
 import { Drawer } from "./Drawer";
@@ -56,7 +57,9 @@ export function App() {
       <Header pathLine={pathLine} />
       <div className="relative flex min-h-0 flex-1">
         <main className="flex min-w-0 flex-1 flex-col">
-          {view === "schematic" ? (
+          {view === "home" ? (
+            <HomeView />
+          ) : view === "schematic" ? (
             <div className="relative flex min-h-0 flex-1 flex-col">
               <SchematicView />
             </div>
@@ -64,7 +67,7 @@ export function App() {
             <MapView mix={mix} />
           )}
         </main>
-        <Drawer mix={mix} />
+        {view !== "home" ? <Drawer mix={mix} /> : null}
       </div>
       <footer className="border-t border-border px-4 py-2 text-[10px] leading-snug text-fg-subtle">
         {t(lang, "footerDisclaimer")}
