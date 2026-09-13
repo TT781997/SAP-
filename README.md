@@ -20,6 +20,53 @@ npx vercel --yes  # deploy (framework Vite, output dist/, sem variáveis de ambi
 `vercel.json` já tem o rewrite SPA (`/(.*) → /index.html`), necessário para
 o preview não dar 404 no refresh de uma rota.
 
+## Necessidades — começar pelo negócio, não pelo catálogo (novo)
+
+Modo inicial da app. Responde à pergunta que um dono de empresa faz:
+*"só quero facturar e gerir a logística — o que preciso da SAP, e o que dou
+aos meus empregados?"*
+
+Três colunas: **a sua situação** (6 pacotes prontos + capacidades avulsas),
+**o que precisa de contratar** (as peças por camada, cada uma com a razão
+por que lá está), e **o que dar aos empregados** (por função, as apps que
+cada pessoa abre).
+
+- **14 capacidades de negócio** em linguagem de negócio ("emitir facturas a
+  clientes", "gerir armazém e stock"), não de produto. Cada uma declara o
+  seu `nucleo` (sem isto não funciona), `conformidade` (exigido por lei) e
+  `apoio` (só entra se a condição for verdade).
+- **15 papéis com 56 apps** — a parte "o que dar aos empregados". São nomes
+  de apps Fiori standard do S/4HANA Cloud, com o aparelho onde se usam
+  (browser, telemóvel, terminal RF no armazém). O rodapé diz onde confirmar
+  o app ID e o business role: a SAP Fiori Apps Reference Library da release
+  contratada.
+- **6 pacotes** para situações reais: só facturar+logística, distribuidor,
+  PME industrial, serviços profissionais, retalho omnicanal, grupo a sair
+  de ECC.
+- **Nada aparece sem razão.** Cada peça mostra a etiqueta (base / essencial
+  / obrigatório em PT / escolhido / dependência) e a frase que a justifica,
+  vinda da capacidade que a pediu.
+- **Apps bloqueadas são mostradas, não escondidas.** Sem EWM no landscape,
+  o operador de armazém vê as suas 2 apps do S/4 e, a cinzento, as 2 de RF
+  que só existem com EWM. É assim que se percebe o que se ganha ao comprar.
+- **Via de contrato explicada**: GROW / RISE / on-prem consoante dimensão,
+  se já tem SAP e se tem muito código à medida — com a frase que justifica.
+
+Portugal está tratado a sério: facturar puxa sempre o **SAP Document and
+Reporting Compliance** (ATCUD, código QR, SAF-T (PT), comunicação do
+documento de transporte antes de a mercadoria circular). O texto pede para
+confirmar o âmbito da localização e a certificação junto da SAP/parceiro —
+não afirma que está tudo coberto.
+
+Um aviso que ficou escrito no próprio produto, por ser onde mais gente se
+engana: o **processamento salarial português** é o ponto a confirmar caso a
+caso; muitas PME mantêm a folha num sistema local e integram só os custos.
+
+`node validar-necessidades.mjs` verifica que todos os ids referidos existem
+no catálogo de 340, que cada papel tem apps, que os 6 pacotes produzem
+landscape e papéis, que facturar em PT puxa o DRC, e que as apps de EWM só
+aparecem quando o EWM está no landscape.
+
 ## O que está completo nesta entrega
 
 - **Catálogo dos 340 serviços em `src/data.js`** (248 do catálogo base +

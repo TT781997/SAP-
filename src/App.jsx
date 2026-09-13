@@ -4,6 +4,7 @@ import Header from './components/Header.jsx'
 import DiagramCanvas from './components/DiagramCanvas.jsx'
 import EsquemaView from './components/EsquemaView.jsx'
 import BuilderView from './components/BuilderView.jsx'
+import NecessidadesView from './components/NecessidadesView.jsx'
 import ServiceDrawer from './components/ServiceDrawer.jsx'
 import Legend from './components/Legend.jsx'
 import useWindowWidth from './hooks/useWindowWidth.js'
@@ -17,7 +18,7 @@ export default function App() {
   const [servicoAbertoId, setServicoAbertoId] = useState(null)
   const [servicoDestacadoId, setServicoDestacadoId] = useState(null)
   const [historicoDrawer, setHistoricoDrawer] = useState([])
-  const [modoVista, setModoVista] = useState('esquema')
+  const [modoVista, setModoVista] = useState('necessidades')
   const destaqueTimeoutRef = useRef(null)
 
   const { idioma, mudarIdioma, t, tCamada, tPreset, tServico } = useIdioma()
@@ -92,6 +93,12 @@ export default function App() {
           cenario={cenario} hyperscaler={hyperscaler}
           onAbrirServico={abrirServico}
           onVerNoMapa={() => { setModoVista('mapa'); if (servicoAbertoId) seleccionarResultadoBusca(servicoAbertoId) }}
+        />
+      ) : modoVista === 'necessidades' ? (
+        <NecessidadesView
+          t={t} idioma={idioma}
+          onAbrirServico={abrirServico}
+          onVerNoMapa={() => setModoVista('mapa')}
         />
       ) : (
         <BuilderView
