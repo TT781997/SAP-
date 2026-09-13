@@ -3,6 +3,7 @@ import { AnimatePresence } from 'framer-motion'
 import Header from './components/Header.jsx'
 import DiagramCanvas from './components/DiagramCanvas.jsx'
 import EsquemaView from './components/EsquemaView.jsx'
+import BuilderView from './components/BuilderView.jsx'
 import ServiceDrawer from './components/ServiceDrawer.jsx'
 import Legend from './components/Legend.jsx'
 import useWindowWidth from './hooks/useWindowWidth.js'
@@ -16,7 +17,7 @@ export default function App() {
   const [servicoAbertoId, setServicoAbertoId] = useState(null)
   const [servicoDestacadoId, setServicoDestacadoId] = useState(null)
   const [historicoDrawer, setHistoricoDrawer] = useState([])
-  const [modoVista, setModoVista] = useState('mapa')
+  const [modoVista, setModoVista] = useState('esquema')
   const destaqueTimeoutRef = useRef(null)
 
   const { idioma, mudarIdioma, t, tCamada, tPreset, tServico } = useIdioma()
@@ -85,12 +86,22 @@ export default function App() {
           onAbrirServico={abrirServico}
           t={t} tCamada={tCamada} tServico={tServico}
         />
+      ) : modoVista === 'esquema' ? (
+        <EsquemaView
+          t={t} idioma={idioma}
+          cenario={cenario} hyperscaler={hyperscaler}
+          onAbrirServico={abrirServico}
+          onVerNoMapa={() => { setModoVista('mapa'); if (servicoAbertoId) seleccionarResultadoBusca(servicoAbertoId) }}
+        />
       ) : (
-        <EsquemaView t={t} idioma={idioma} />
+        <BuilderView
+          cenario={cenario}
+          perfisActivos={perfisActivos}
+          t={t} idioma={idioma} tServico={tServico}
+        />
       )}
 
       {modoVista === 'mapa' && <Legend t={t} tCamada={tCamada} />}
-
       <footer className="px-2 text-center text-[10px] leading-relaxed text-gray-500">
         {t('footerDisclaimer')}
       </footer>
