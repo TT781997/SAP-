@@ -7,6 +7,7 @@ window.createAtlasScope = function (data) {
   function allowedNode(state, node) {
     if (!node || node.hiddenInTree) return false;
     const ids = lineage(node);
+    if (ids.includes('supply-planning')) return true;
     if (state.model === 'onprem' || state.provider === 'On-premise') {
       if (ids.includes('s4-public') || ids.includes('s4-private')) return false;
       if (node.infrastructure) return provider(node) === 'On-premise';

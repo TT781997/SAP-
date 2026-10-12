@@ -24,3 +24,9 @@ No Vercel, usar `npm run build` e o diretório `dist`. As três páginas estão 
 Os dois anexos contêm a mesma aplicação. Do pacote completo foram também incluídos os diagramas JSON de apoio; capturas de ecrã, históricos de recolha e scripts de revisão não fazem parte do site publicado.
 
 O mapa e os dados funcionam localmente. Vídeos, áudio ambiente, fontes tipográficas e ligações documentais externas dependem da Internet. Os limites e a proveniência dos dados encontram-se em `public/LEIA-ME.md`, `public/fontes.md` e `public/validacao.json`. As contagens declaradas nesses documentos pertencem ao material fornecido.
+
+## Navegação e planeamento
+
+O painel de detalhes pode ser recolhido e reaberto no cabeçalho; a preferência é conservada no navegador. A navegação separa produtos/processos, plataforma/integração/identidade e infraestrutura/operação. O mapa mostra todas as relações por omissão; a vista BTP inclui um atalho para a estrutura de contas, distinguindo composição de tráfego.
+
+A secção «Planeamento da cadeia logística» explica capacidades de SAP IBP e SAP APO a partir do catálogo fornecido, com ligações à documentação por versão. São sínteses funcionais, não uma validação da instalação, do licenciamento ou dos mecanismos de integração. Os agrupamentos de capacidades não representam tráfego ou componentes obrigatórios.

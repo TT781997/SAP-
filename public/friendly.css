@@ -11,3 +11,13 @@
 .hosting-evidence{border:1px solid #dba33a;border-left:4px solid #dba33a;background:#fff8e8}.hosting-evidence strong{color:#795400}.research-view select{max-width:100%;padding:8px;background:white;border:1px solid #bfd4e5;border-radius:6px}.research-view .notice{margin:16px 0}.research-view a{color:#0064d9}
 
 .research-view{min-width:0}.research-view .record-toolbar{flex-wrap:wrap}.research-view select{background:white;color:#19364d;border:1px solid #b9d2e6;padding:8px;max-width:100%}.research-view .inventory-table{table-layout:fixed}.research-view td,.research-view th{overflow-wrap:anywhere}.canvas:has(.research-view) .canvas-tools{display:none}
+
+/* Reclaim the full map width when the details panel is closed. */
+main.inspector-collapsed{grid-template-columns:250px minmax(0,1fr)}
+#inspector[hidden]{display:none}
+#inspector-toggle{font-size:12px;padding:7px 10px;white-space:nowrap}
+.tree-section{padding:16px 10px 6px;color:#426c8b;font-weight:600;letter-spacing:.5px}
+@media(min-width:1650px){main.inspector-collapsed{grid-template-columns:270px minmax(0,1fr)}}
+@media(max-width:1250px){main.inspector-collapsed{grid-template-columns:215px minmax(0,1fr)}}
+@media(max-width:1050px){main.inspector-collapsed{grid-template-columns:200px minmax(0,1fr)}}
+@media(max-width:600px){main.inspector-collapsed{grid-template-columns:1fr}#inspector-toggle{font-size:11px;padding:5px}.topright{gap:5px}}
