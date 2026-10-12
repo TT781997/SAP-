@@ -1,0 +1,386 @@
+[
+  {
+    "product": {
+      "product_id": "technology-platform__low-code-app-builder",
+      "product_name": "Build apps quickly with low-code",
+      "category": "SAP Business Technology Platform",
+      "categories": [
+        "SAP Business Technology Platform"
+      ],
+      "description": "Build enterprise-grade custom apps with an intuitive drag-and-drop experience.",
+      "key_capabilities_for_customer_mapping": [],
+      "source_url": "https://www.sap.com/products/technology-platform/low-code-app-builder.html",
+      "extraction_confidence": "medium"
+    },
+    "deployment": {
+      "productId": "technology-platform__low-code-app-builder",
+      "productName": "Build apps quickly with low-code",
+      "model": "Por confirmar por produto / edição",
+      "owner": "Por confirmar na oferta e contrato",
+      "target": null,
+      "providers": {
+        "AWS": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        },
+        "Azure": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        },
+        "GCP": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        }
+      },
+      "requirements": [
+        "Identificar edição, versão e oferta contratada",
+        "Validar matriz específica de região/provider, operação, identidade e integração"
+      ],
+      "configuration": [
+        "A página de marketing não constitui uma matriz de suporte ou uma lista de VMs a instalar"
+      ],
+      "pageAudit": {
+        "id": "technology-platform__low-code-app-builder",
+        "name": "Build apps quickly with low-code",
+        "url": "https://www.sap.com/products/technology-platform/low-code-app-builder.html",
+        "http": 200,
+        "finalUrl": "https://www.sap.com/products/technology-platform/build.html",
+        "readable": true,
+        "providerMentions": []
+      }
+    }
+  },
+  {
+    "product": {
+      "product_id": "business-network__freight-collaboration",
+      "product_name": "SAP Business Network Freight Collaboration",
+      "category": "SAP Business Network",
+      "categories": [
+        "SAP Business Network"
+      ],
+      "description": "Reduce logistics costs and automate the contract-to-settlement process with visibility and insight across a global network of carriers and service providers.",
+      "key_capabilities_for_customer_mapping": [
+        "Reduce logistics costs",
+        "Optimize utilization",
+        "Improve performance",
+        "Save time and money through real-time transparency of competitive market prices and multimodal shipment tracking.",
+        "Gain flexible capacity and greater agility with extended reach into a global network of multimodal carriers and logistics service providers.",
+        "Connect core warehouse, yard, and manufacturing processes for integration that can improve on-time, in-full (OTIF) performance and customer satisfaction.",
+        "Shop carriers competitively to send digital requests for quotation and freight orders through the network",
+        "Collaborate with carriers though the network from multimodal order contracting through settlement",
+        "Onboard once and collaborate with many on a global cloud platform",
+        "Optimize operations by enabling self-services for creating, rescheduling, and cancelling dock appointments",
+        "Reduce idling, product spoilage, carbon emissions, and noise pollution",
+        "Exchange business documents such as a bill of lading",
+        "Gain milestone transparency into shipment execution progress such as proof of pickup and proof of delivery",
+        "Enable full lifecycle collaboration through standard and open API integration with transportation management and partner solutions"
+      ],
+      "source_url": "https://www.sap.com/products/business-network/freight-collaboration.html",
+      "extraction_confidence": "high"
+    },
+    "deployment": {
+      "productId": "business-network__freight-collaboration",
+      "productName": "SAP Business Network Freight Collaboration",
+      "model": "Por confirmar por produto / edição",
+      "owner": "Por confirmar na oferta e contrato",
+      "target": null,
+      "providers": {
+        "AWS": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        },
+        "Azure": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        },
+        "GCP": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        }
+      },
+      "requirements": [
+        "Identificar edição, versão e oferta contratada",
+        "Validar matriz específica de região/provider, operação, identidade e integração"
+      ],
+      "configuration": [
+        "A página de marketing não constitui uma matriz de suporte ou uma lista de VMs a instalar"
+      ],
+      "pageAudit": {
+        "id": "business-network__freight-collaboration",
+        "name": "SAP Business Network Freight Collaboration",
+        "url": "https://www.sap.com/products/business-network/freight-collaboration.html",
+        "http": 200,
+        "finalUrl": "https://www.sap.com/products/scm/freight-collaboration.html",
+        "readable": true,
+        "providerMentions": []
+      }
+    }
+  },
+  {
+    "product": {
+      "product_id": "business-network__global-track-and-trace",
+      "product_name": "SAP Business Network Global Track and Trace",
+      "category": "SAP Business Network",
+      "categories": [
+        "SAP Business Network"
+      ],
+      "description": "Connecting physical movement with information flow improves situational awareness beyond milestone reporting, enabling exception detection, revealing actionable insights, and breaking down company silos.",
+      "key_capabilities_for_customer_mapping": [
+        "Reduce costs",
+        "Mitigate risk",
+        "Elevate your customer experience",
+        "Predict and overcome internal and external influences, enabling more-reliable delivery dates and reducing the need for excess inventory and rush transportation.",
+        "Increase situational awareness beyond milestone reporting with geolocation tracking and rule-based predictive alerts to reduce risk and revenue loss.",
+        "Improve customer satisfaction and sustainability with performance insights into fulfillment execution.",
+        "Track shipments visually through global geolocation-enriched real-time insights and predictive arrival times",
+        "Monitor order fulfillment for on-time, in-full performance",
+        "See and communicate the impact of delays on customers and critical business processes",
+        "Capture actual transportation emissions data from carriers",
+        "Leverage extensible standard tracking and model custom processes, events, and properties with business rules",
+        "Detect deviations and delays triggering automated alerts, e-mail notifications, and rule-based actions",
+        "Extend your reach to a global network of multimodal carriers, third-party logistics, and location data providers",
+        "Connect with mode-specific and regional visibility data providers",
+        "Capture and analyze environmental and sustainability data throughout shipment"
+      ],
+      "source_url": "https://www.sap.com/products/business-network/global-track-and-trace.html",
+      "extraction_confidence": "high"
+    },
+    "deployment": {
+      "productId": "business-network__global-track-and-trace",
+      "productName": "SAP Business Network Global Track and Trace",
+      "model": "Por confirmar por produto / edição",
+      "owner": "Por confirmar na oferta e contrato",
+      "target": null,
+      "providers": {
+        "AWS": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        },
+        "Azure": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        },
+        "GCP": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        }
+      },
+      "requirements": [
+        "Identificar edição, versão e oferta contratada",
+        "Validar matriz específica de região/provider, operação, identidade e integração"
+      ],
+      "configuration": [
+        "A página de marketing não constitui uma matriz de suporte ou uma lista de VMs a instalar"
+      ],
+      "pageAudit": {
+        "id": "business-network__global-track-and-trace",
+        "name": "SAP Business Network Global Track and Trace",
+        "url": "https://www.sap.com/products/business-network/global-track-and-trace.html",
+        "http": 200,
+        "finalUrl": "https://www.sap.com/products/scm/global-track-and-trace.html",
+        "readable": true,
+        "providerMentions": []
+      }
+    }
+  },
+  {
+    "product": {
+      "product_id": "scm__digital-vehicle-suite",
+      "product_name": "SAP Digital Vehicle Suite",
+      "category": "Supply chain management",
+      "categories": [
+        "Supply chain management"
+      ],
+      "description": "Focus on the future of mobility with solutions that provide a vehicle-centric view of sales and car-as-a-service processes.",
+      "key_capabilities_for_customer_mapping": [
+        "Speed order fulfillment",
+        "Enable greater flexibility",
+        "Improve operational insights",
+        "Cut the time to fulfill orders by digitalizing processes and integrating them into core sales and customer applications.",
+        "Navigate disruption and industry challenges as you quickly reinvent your processes to meet customer demand.",
+        "Break down silos that separate important vehicle-related data insights to create a digital twin of each vehicle.",
+        "Execute all vehicle-related activities from one place",
+        "Manage new sales channels and markets across a complex landscape",
+        "Standardize, digitalize, and integrate sales and customer processes to innovate new business models and improve performance",
+        "Address your unique needs and specific requirements with an extensible data model",
+        "Connect to your systems through a scalable system with an open architecture",
+        "Gain a central repository for digital twins of vehicles with master, transactional, and usage data"
+      ],
+      "source_url": "https://www.sap.com/products/scm/digital-vehicle-suite.html",
+      "extraction_confidence": "high"
+    },
+    "deployment": {
+      "productId": "scm__digital-vehicle-suite",
+      "productName": "SAP Digital Vehicle Suite",
+      "model": "Por confirmar por produto / edição",
+      "owner": "Por confirmar na oferta e contrato",
+      "target": null,
+      "providers": {
+        "AWS": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        },
+        "Azure": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        },
+        "GCP": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        }
+      },
+      "requirements": [
+        "Identificar edição, versão e oferta contratada",
+        "Validar matriz específica de região/provider, operação, identidade e integração"
+      ],
+      "configuration": [
+        "A página de marketing não constitui uma matriz de suporte ou uma lista de VMs a instalar"
+      ],
+      "pageAudit": {
+        "id": "scm__digital-vehicle-suite",
+        "name": "SAP Digital Vehicle Suite",
+        "url": "https://www.sap.com/products/scm/digital-vehicle-suite.html",
+        "http": 200,
+        "finalUrl": "https://www.sap.com/industries/automotive.html",
+        "readable": true,
+        "providerMentions": []
+      }
+    }
+  },
+  {
+    "product": {
+      "product_id": "hcm__enable-now",
+      "product_name": "SAP Enable Now transitions to WalkMe",
+      "category": "Human capital management",
+      "categories": [
+        "Human capital management"
+      ],
+      "description": "SAP’s digital enablement solution provides content creation capabilities to help you improve the adoption, productivity, and efficiency of your software.",
+      "key_capabilities_for_customer_mapping": [],
+      "source_url": "https://www.sap.com/products/hcm/enable-now.html",
+      "extraction_confidence": "medium"
+    },
+    "deployment": {
+      "productId": "hcm__enable-now",
+      "productName": "SAP Enable Now transitions to WalkMe",
+      "model": "Por confirmar por produto / edição",
+      "owner": "Por confirmar na oferta e contrato",
+      "target": null,
+      "providers": {
+        "AWS": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        },
+        "Azure": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        },
+        "GCP": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        }
+      },
+      "requirements": [
+        "Identificar edição, versão e oferta contratada",
+        "Validar matriz específica de região/provider, operação, identidade e integração"
+      ],
+      "configuration": [
+        "A página de marketing não constitui uma matriz de suporte ou uma lista de VMs a instalar"
+      ],
+      "pageAudit": {
+        "id": "hcm__enable-now",
+        "name": "SAP Enable Now transitions to WalkMe",
+        "url": "https://www.sap.com/products/hcm/enable-now.html",
+        "http": 200,
+        "finalUrl": "https://www.sap.com/products/hcm/walkme.html",
+        "readable": true,
+        "providerMentions": []
+      }
+    }
+  },
+  {
+    "product": {
+      "product_id": "crm__recommerce",
+      "product_name": "SAP Recommerce",
+      "category": "CRM and customer experience",
+      "categories": [
+        "CRM and customer experience"
+      ],
+      "description": "The SAP Recommerce solution allows you to take back, manage, and resell preowned inventory. The solution helps you accelerate the shift from a linear to a circular business model, extending customer lifetime value, and promoting more-sustainable consumption.",
+      "key_capabilities_for_customer_mapping": [
+        "Create new revenue streams",
+        "Extend customer and product lifetime value",
+        "Measure sustainability impact",
+        "Grow your business by selling used, upcycled, or archive inventory with a resale channel, while providing an exceptional customer experience.",
+        "Build strong brand loyalty, use data and intelligence across new customer touch points, and expand the product lifespan.",
+        "Track your sustainability progress and deliver on your promises while driving sustainable business outcomes by giving your customers a greener choice.",
+        "Create a smooth experience for bringing back preowned goods",
+        "Provide instant gratification with store credit or loyalty points for new value creation",
+        "Offer the option of contributing to sustainable consumption",
+        "Get visibility throughout the different stages of preparing products for resale",
+        "Monitor process efficiencies and react quickly if issues arise",
+        "Establish one source of truth across the end-to-end process",
+        "Create new revenue without manufacturing more",
+        "Attract new customer segments",
+        "Track progress toward your commitment to a greener future"
+      ],
+      "source_url": "https://www.sap.com/products/crm/recommerce.html",
+      "extraction_confidence": "high"
+    },
+    "deployment": {
+      "productId": "crm__recommerce",
+      "productName": "SAP Recommerce",
+      "model": "Por confirmar por produto / edição",
+      "owner": "Por confirmar na oferta e contrato",
+      "target": null,
+      "providers": {
+        "AWS": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        },
+        "Azure": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        },
+        "GCP": {
+          "status": "Não confirmado",
+          "detail": "O catálogo não especifica uma combinação produto / edição / provider / região. Falta evidência específica; não significa indisponibilidade.",
+          "sourceIds": []
+        }
+      },
+      "requirements": [
+        "Identificar edição, versão e oferta contratada",
+        "Validar matriz específica de região/provider, operação, identidade e integração"
+      ],
+      "configuration": [
+        "A página de marketing não constitui uma matriz de suporte ou uma lista de VMs a instalar"
+      ],
+      "pageAudit": {
+        "id": "crm__recommerce",
+        "name": "SAP Recommerce",
+        "url": "https://www.sap.com/products/crm/recommerce.html",
+        "http": 403,
+        "finalUrl": "https://www.sap.com/products/crm/recommerce.html",
+        "readable": false,
+        "providerMentions": []
+      }
+    }
+  }
+]

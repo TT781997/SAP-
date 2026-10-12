@@ -1,0 +1,106 @@
+# Fontes técnicas
+
+- [AWS · Plan SAP HANA deployment](https://docs.aws.amazon.com/sap/latest/sap-hana/planning-the-deployment.html) · 2026-10-08
+- [AWS · HANA EBS sizing and persistence](https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html) · 2026-10-08
+- [AWS · HANA reference disk layouts](https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html) · 2026-10-08
+- [AWS · FSx for ONTAP restrictions for HANA](https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.html) · 2026-10-08
+- [AWS · HANA HA and disaster recovery](https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html) · 2026-10-08
+- [AWS · ASCS, ERS, overlay IP and fencing](https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-concepts.html) · 2026-10-08
+- [AWS · SAP NetWeaver cluster infrastructure](https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-infra-setup.html) · 2026-10-08
+- [AWS · Pacemaker resource configuration](https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html) · 2026-10-08
+- [AWS · Backint prerequisites](https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3-prerequisites.html) · 2026-10-08
+- [AWS · HANA backup and recovery to S3](https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-amazon-s3.html) · 2026-10-08
+- [AWS · Launch Wizard prerequisites](https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-setting-up.html) · 2026-10-08
+- [AWS · Launch Wizard deployment workflow](https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html) · 2026-10-08
+- [AWS · CloudWatch Application Insights for HANA](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html) · 2026-10-08
+- [Microsoft · SAP S/4HANA on Azure](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana) · 2026-10-08
+- [Microsoft · SAP storage support matrix](https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage) · 2026-10-08
+- [Microsoft · HANA HA on RHEL](https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel) · 2026-10-08
+- [Microsoft · HANA Backint backup](https://learn.microsoft.com/en-us/azure/backup/backup-azure-sap-hana-database) · 2026-10-08
+- [Microsoft · SAP monitoring providers](https://learn.microsoft.com/en-us/azure/sap/monitor/providers) · 2026-10-08
+- [Microsoft · HANA monitoring account and permissions](https://learn.microsoft.com/en-us/azure/sap/monitor/provider-hana) · 2026-10-08
+- [Microsoft · Monitor deployment prerequisites](https://learn.microsoft.com/en-us/azure/sap/monitor/quickstart-portal) · 2026-10-08
+- [Microsoft · SAP application and shared storage architecture](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/sap/run-sap-bw4hana-with-linux-virtual-machines) · 2026-10-08
+- [Google · S/4HANA reference architectures](https://docs.cloud.google.com/sap/docs/architectures/sap-s4hana-on-gcp) · 2026-10-08
+- [Google · HANA planning and disk layout](https://docs.cloud.google.com/sap/docs/sap-hana-planning-guide) · 2026-10-08
+- [Google · Certified HANA machines and operating systems](https://docs.cloud.google.com/sap/docs/certifications-sap-hana) · 2026-10-08
+- [Google · SAP HANA checklist](https://docs.cloud.google.com/sap/docs/checklist-sap-hana) · 2026-10-08
+- [Google · HANA HA Terraform deployment](https://docs.cloud.google.com/sap/docs/sap-hana-ha-tf-deployment) · 2026-10-08
+- [Google · NetWeaver HA and shared storage](https://docs.cloud.google.com/sap/docs/netweaver-ha-planning-guide) · 2026-10-08
+- [Google · Agent for SAP Backint](https://docs.cloud.google.com/sap/docs/agent-for-sap/latest/backint-backup-recovery) · 2026-10-08
+- [Google · HA validation checklist](https://docs.cloud.google.com/sap/docs/checklist-sap-high-availability) · 2026-10-08
+- [SAP · BTP account model](https://help.sap.com/docs/btp/sap-business-technology-platform/account-model) · 2026-10-08
+- [SAP · Entitlements and quotas](https://help.sap.com/docs/btp/sap-business-technology-platform/configure-entitlements-and-quotas-for-subaccounts) · 2026-10-08
+- [SAP · Regional platform responsibility](https://help.sap.com/docs/btp/sap-business-technology-platform/350356d1dc314d3199dca15bd2ab9b0e.html) · 2026-10-08
+- [SAP · ABAP environment availability](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-for-abap-environment) · 2026-10-08
+- [SAP · Application Router](https://help.sap.com/docs/btp/sap-business-technology-platform/application-router) · 2026-10-08
+- [SAP · Application routes, destinations and connectivity](https://help.sap.com/docs/btp/sap-business-technology-platform/application-routes-and-destinations) · 2026-10-08
+- [SAP · Application router service bindings](https://help.sap.com/docs/btp/sap-business-technology-platform/application-router-configuration) · 2026-10-08
+- [SAP · Cloud Connector](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/cloud-connector) · 2026-10-08
+- [SAP · Principal propagation trust](https://help.sap.com/docs/connectivity/sap-btp-connectivity-cf/set-up-trust-for-principal-propagation) · 2026-10-08
+- [SAP · TLS tunnel connectivity prerequisites (Neo)](https://help.sap.com/docs/connectivity/sap-btp-connectivity-neo/prerequisites) · 2026-10-08
+- [SAP · Cloud Identity Services components](https://help.sap.com/docs/SAP_S4HANA_CLOUD/53e36b5493804bcdb3f6f14de8b487dd/1ce6bc78d57e4975a43f26ab062e04e1.html) · 2026-10-08
+- [SAP · OIDC authorization code flow](https://help.sap.com/docs/identity-authentication/identity-authentication/using-authorization-code-flow) · 2026-10-08
+- [SAP · Provisioning systems and certificates](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/configuring-provisioning-systems) · 2026-10-08
+- [SAP · Cloud Integration](https://help.sap.com/docs/cloud-integration/sap-cloud-integration/what-is-sap-cloud-integration) · 2026-10-08
+- [SAP · API Management](https://help.sap.com/docs/integration-suite/isuite-integrations-and-apis/api-management) · 2026-10-08
+- [SAP · Publish and consume events](https://help.sap.com/docs/integration-suite/sap-integration-suite/publish-and-consume-events) · 2026-10-08
+- [SAP · Activate Edge Integration Cell](https://help.sap.com/docs/integration-suite/sap-integration-suite/activate-edge-integration-cell) · 2026-10-08
+- [SAP · Edge virtual host, TLS and deployment](https://help.sap.com/docs/integration-suite/sap-integration-suite/ab81b845230742b4aa863fb27644d439.html) · 2026-10-08
+- [SAP · RFC SNC on Edge Integration Cell](https://help.sap.com/docs/integration-suite/isuite-edge-integration-cell/set-up-snc-on-edge-integration-cell) · 2026-10-08
+- [SAP · Edge Prometheus monitoring](https://help.sap.com/docs/integration-suite/sap-integration-suite/set-up-external-prometheus-monitoring) · 2026-10-08
+- [SAP · AI Core architectural overview](https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/Generative-AI-Hub) · 2026-10-08
+- [SAP · Orchestration deployment and plans](https://help.sap.com/docs/ai-launchpad/sap-ai-launchpad/create-deployment-for-orchestration) · 2026-10-08
+- [SAP · HANA Cloud client connections](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-getting-started-guide/connecting-to-sap-hana-database-in-sap-hana-cloud) · 2026-10-08
+- [SAP · HANA Cloud federation and replication](https://help.sap.com/docs/hana-cloud-database/sap-hana-cloud-sap-hana-database-data-access-guide/data-access-in-sap-hana-cloud-sap-hana-database) · 2026-10-08
+- [SAP · Tenant database SQL port assignments](https://help.sap.com/docs/r/6b94445c94ae495c83a19646e7c3fd56/2.0.08/en-US/440f6efe693d4b82ade2d8b182eb1efb.html) · 2026-10-08
+- [SAP · HANA database server components](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/f0e6eb689f5648899749389c0894fd25.html) · 2026-10-08
+- [SAP · Architecture Center](https://github.com/SAP/architecture-center) · 2026-10-08
+- [AWS · Network foundation and endpoints](https://docs.aws.amazon.com/sap/latest/general/arch-guide-architecture-guidelines-and-decisions.html) · 2026-10-08
+- [AWS · PrivateLink for Systems Manager for SAP](https://docs.aws.amazon.com/ssm-sap/latest/userguide/privatelink.html) · 2026-10-08
+- [AWS · SAP deployment networking](https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploying-console.html) · 2026-10-08
+- [Microsoft · SAP enterprise landscape](https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape) · 2026-10-08
+- [Microsoft · VM baseline and Key Vault / Bastion](https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas) · 2026-10-08
+- [AWS · Customer account connectivity to RISE](https://docs.aws.amazon.com/sap/latest/general/rise-connection-accounts.html) · 2026-10-08
+- [Microsoft · RISE ownership and integration](https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration) · 2026-10-08
+- [Google · RISE connectivity and peering](https://docs.cloud.google.com/sap/docs/rise-connectivity) · 2026-10-08
+- [Google · RISE service responsibility](https://docs.cloud.google.com/sap/docs/rise-overview) · 2026-10-08
+- [SAP Datasphere in Business Data Cloud](https://www.sap.com/products/data-cloud/datasphere.html) · 2026-10-08
+- [SAP Business Data Cloud](https://www.sap.com/products/data-cloud.html) · 2026-10-08
+- [Process Automation with SAP Build](https://www.sap.com/products/technology-platform/process-automation.html) · 2026-10-08
+- [SAP SuccessFactors Career and Talent Development](https://www.sap.com/products/hcm/career-talent-development.html) · 2026-10-08
+- [SAP Ariba Catalog](https://www.sap.com/products/spend-management/ariba-catalog.html) · 2026-10-08
+- [SAP Analytics Cloud in Business Data Cloud](https://www.sap.com/products/data-cloud/cloud-analytics.html) · 2026-10-08
+- [SAP · Cloud Foundry regions and infrastructure providers](https://github.com/SAP-docs/btp-cloud-platform/blob/main/docs/10-concepts/regions-and-api-endpoints-available-for-the-cloud-foundry-environment-f344a57.md) · 2026-10-08
+- [SAP · Autenticação: platform users e business users](https://help.sap.com/docs/btp/btp-admin-guide/setting-up-authentication) · 2026-10-09
+- [SAP · Trust para utilizadores da plataforma](https://help.sap.com/docs/btp/sap-business-technology-platform/establish-trust-and-federation-of-custom-identity-providers-for-platform-users) · 2026-10-09
+- [SAP · Trust entre UAA e Identity Authentication](https://help.sap.com/docs/btp/sap-business-technology-platform/establish-trust-and-federation-between-uaa-and-identity-authentication) · 2026-10-09
+- [SAP · Ferramentas suportadas com IdP personalizado](https://help.sap.com/docs/authorization-and-trust-management-service/authorization-and-trust-management/supported-tools-and-services-when-using-custom-identity-providers-for-platform-users) · 2026-10-09
+- [SAP · Commerce Cloud: containers, Kubernetes, Azure e Blob](https://help.sap.com/docs/SAP_COMMERCE_CLOUD_PUBLIC_CLOUD/20125f0eca6340dba918bda360e3cdfa/e61d0cc9e61648639f2e4be264120fc8.html) · 2026-10-09
+- [SAP · Commerce Cloud: Azure SQL operado pela SAP](https://help.sap.com/docs/SAP_COMMERCE_CLOUD_PUBLIC_CLOUD/51e59196a5fc4bcb94300e50652e454f/a4371e2bb1ab4021b62c4cafd9b68a21.html) · 2026-10-09
+- [SAP · Commerce Cloud Portal em BTP e hosting em Azure](https://help.sap.com/docs/SAP_COMMERCE_CLOUD_PUBLIC_CLOUD/51e59196a5fc4bcb94300e50652e454f/da852a7931c64cabae5bf30ccdac8bd1.html) · 2026-10-09
+- [SAP · Disponibilidade de cada componente Business Data Cloud](https://help.sap.com/docs/business-data-cloud/product-availability-information/data-center-availability-in-sap-business-data-cloud) · 2026-10-09
+- [SAP · Regiões HANA Cloud: AWS, Azure, Google e SAP](https://help.sap.com/docs/hana-cloud/sap-hana-cloud-administration-guide/data-center-availability-in-sap-hana-cloud) · 2026-10-09
+- [SAP · HANA Cloud: contas geridas pelo cliente e SAP](https://help.sap.com/docs/hana-cloud/feature-scope-description-for-sap-hana-cloud-3dd959f1b8574cb0ba19ab05cfc0d3ae/service-availability) · 2026-10-09
+- [SAP · Analytics Cloud: exemplos de tenants AWS, Azure e Google](https://help.sap.com/docs/SAP_ANALYTICS_CLOUD/00f68c2e08b941f081002fd3691d86a7/121c342e23124efb8295f1bb785b2cc0.html) · 2026-10-09
+- [SAP · SuccessFactors: plataforma e servidores por data center](https://help.sap.com/docs/successfactors-platform/sap-successfactors-hcm-suite-sfapi-developer-guide/list-of-sap-successfactors-api-servers) · 2026-10-09
+- [SAP · Identity Authentication: infraestruturas e mapeamento regional](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/access-audit-logs-aws-azure-infrastructure) · 2026-10-09
+- [SAP · Work Zone: região BTP e região DWS são distintas](https://help.sap.com/docs/build-work-zone-advanced-edition/sap-build-work-zone-advanced-edition/prerequisites) · 2026-10-09
+- [SAP · Cloud Appliance Library: contas AWS, Azure e Google](https://www.sap.com/products/technology-platform/cloud-appliance-library.html) · 2026-10-09
+- [SAP · Document AI: data centers AWS, Azure e Google](https://www.sap.com/products/artificial-intelligence/document-ai.html) · 2026-10-09
+- [SAP · Integration Suite: providers e adaptadores por capacidade](https://help.sap.com/doc/e50e61e7b66c4b60ae5e88c00c01486a/CLOUD/en-US/FSD_IntegrationSuite.pdf) · 2026-10-09
+- [SAP · Service Cloud Version 2: infraestrutura Amazon e segurança](https://help.sap.com/docs/CX_NG_SVC/86460d5a012440698a48c67a669d9730/96835421040c498c8bf989a544d39f15.html) · 2026-10-09
+- [SAP · Signavio Process Modeler: backend AWS](https://help.sap.com/docs/signavio-process-modeler/security-guide/data-storage-security) · 2026-10-09
+- [Microsoft · Entra ID federado com SAP Cloud Identity Services](https://learn.microsoft.com/en-us/entra/identity/saas-apps/sap-hana-cloud-platform-identity-authentication-tutorial) · 2026-10-09
+- [SAP · Capacidades de Integration Suite](https://help.sap.com/docs/SAP_INTEGRATION_SUITE/51ab953548be4459bfe8539ecaeee98d/develop) · 2026-10-09
+- [SAP S/4HANA 2025 · Installation Guide](https://help.sap.com/doc/6b11678926d3409bbfea8897cb34d10f/2025/en-US/INST_OP2025.pdf) · 2026-10-09
+- [SAP S/4HANA Cloud Private Edition · documentação do produto](https://help.sap.com/s4hana_PCE_2023) · 2026-10-09
+- [SAP S/4HANA · instalação e operação pelo cliente](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE) · 2026-10-09
+- [SAP S/4HANA Cloud Public Edition · acesso e utilizadores técnicos](https://help.sap.com/docs/abap-cloud/abap-cloud-background-concepts-and-overview/conceptual-background-access-management) · 2026-10-09
+- [SAP S/4HANA Cloud Public Edition · exemplo de integração SAP_COM_0531](https://help.sap.com/docs/SAP_SUS_SDI/b15a1be1941c44d4be60ba206536283d/845de5cb04df44de812d7f5276e94c4d.html) · 2026-10-09
+- [SAP S/4HANA Cloud Public Edition · Identity Authentication](https://help.sap.com/docs/SAP_S4HANA_CLOUD/1e9ba004e0504506a135afda960e9495/5d867592753c465aadb81115de672f91.html?locale=en-US&state=PRODUCTION&version=2602.500) · 2026-10-09
+- [SAP S/4HANA · SAP Fiori front-end server e opções de deployment](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/22bbe89ef68b4d0e98d05f0d56a7f6c8/4cca4152fc94b610e10000000a44176d.html) · 2026-10-09
+- [SAP Cloud Identity Services · componentes envolvidos](https://help.sap.com/docs/SAP_S4HANA_CLOUD/53e36b5493804bcdb3f6f14de8b487dd/76f89df8310a4532a005c540bc8b45cf.html?locale=en-US) · 2026-10-09
+- [SAP HANA 2.0 SPS 08 · On-Premise Deployment](https://help.sap.com/docs/SAP_HANA_PLATFORM/eb3777d5495d46c5b2fa773206bbfb46/d3008f76cb5248809e623f8dff6763af.html) · 2026-10-09
+- [SAP S/4HANA · configuração de backup SAP HANA (filesystem / Backint)](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/a0dcc12ff0e94ee7a1b0f2369c59eccf/875be1668d20486d9b44fe26d4a4656c.html?version=2023.latest) · 2026-10-09
+- [SAP Commerce Cloud 2211 · hosting Azure; Cloud Portal em SAP BTP](https://help.sap.com/docs/SAP_COMMERCE_CLOUD_PUBLIC_CLOUD/51e59196a5fc4bcb94300e50652e454f/da852a7931c64cabae5bf30ccdac8bd1.html) · 2026-10-09

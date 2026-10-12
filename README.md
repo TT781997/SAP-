@@ -1,62 +1,26 @@
-# Mapa do Ecossistema SAP
+# SAP Atlas
 
-SPA pedagógica, 100 % client-side. Sem backend, sem login, sem variáveis de ambiente.
+Aplicação de exploração da arquitetura SAP, AWS, Azure e Google Cloud, aplicada a partir dos pacotes SAP Atlas fornecidos. A página principal abre o explorador técnico, os inventários, as relações e as fontes documentais.
 
-Do portátil até ao chão: o que os empregados precisam no ecrã, no mundo SAP.
+## Desenvolvimento
 
-## Stack
-
-Vite + React 19 + Tailwind v4 + Zustand + React Flow (`@xyflow/react`).
-
-## Local
+Requer Node.js 24 e npm. Sem backend, login ou variáveis de ambiente.
 
 ```bash
-npm i
+npm install --package-lock=false
 npm run dev
 npm run build
+npm run preview
 ```
 
-## GitHub → Vercel
+A compilação verifica também os tipos do código React anterior, conservado em `src/`. A aplicação principal é agora a versão estática SAP Atlas: `index.html`, `explorer.html` e `publicar.html`. Os scripts clássicos, estilos, dados e 159 diagramas ficam em `public/` e são copiados para `dist/` pelo Vite. Os scripts usam dados globais e conservam a ordem de carregamento original.
 
-1. Cria um repositório vazio no GitHub (sem README, para não haver conflito).
-2. Neste pasta:
+## Publicação
 
-```bash
-git init
-git add .
-git commit -m "Mapa do Ecossistema SAP"
-git branch -M main
-git remote add origin https://github.com/SEU-USER/SEU-REPO.git
-git push -u origin main
-```
+No Vercel, usar `npm run build` e o diretório `dist`. As três páginas estão incluídas na compilação. A configuração SPA existente permanece disponível. Nenhuma publicação automática é executada.
 
-3. Em [vercel.com/new](https://vercel.com/new) importa o repositório.
+## Conteúdo e limitações
 
-Definições que o Vercel detecta sozinho (Vite):
+Os dois anexos contêm a mesma aplicação. Do pacote completo foram também incluídos os diagramas JSON de apoio; capturas de ecrã, históricos de recolha e scripts de revisão não fazem parte do site publicado.
 
-| Campo | Valor |
-|---|---|
-| Framework Preset | Vite |
-| Build Command | `npm run build` |
-| Output Directory | `dist` |
-| Install Command | `npm install` |
-| Root Directory | `.` (raiz do repo) |
-| Environment Variables | nenhuma |
-
-O `vercel.json` já tem o rewrite SPA (`/(.*) → /index.html`), necessário para o refresh não dar 404.
-
-CLI, se preferires:
-
-```bash
-npx vercel --yes
-```
-
-## Uso
-
-1. Escolhe o cenário (On-prem / GROW / RISE) — o esquema troca.
-2. Escolhe o chão (Azure / AWS / GCP / SCI) no RISE.
-3. Clica um bloco para o detalhe (o que faz, o que liga, o que depende).
-4. «Ver portefólio» abre o mapa de ~340 serviços por camada.
-5. A lupa encontra «SAP For me», «SCI», acrónimos e aliases.
-
-Língua por omissão: Português (PT-PT).
+O mapa e os dados funcionam localmente. Vídeos, áudio ambiente, fontes tipográficas e ligações documentais externas dependem da Internet. Os limites e a proveniência dos dados encontram-se em `public/LEIA-ME.md`, `public/fontes.md` e `public/validacao.json`. As contagens declaradas nesses documentos pertencem ao material fornecido.
