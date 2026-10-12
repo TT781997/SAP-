@@ -21,3 +21,5 @@ main.inspector-collapsed{grid-template-columns:250px minmax(0,1fr)}
 @media(max-width:1250px){main.inspector-collapsed{grid-template-columns:215px minmax(0,1fr)}}
 @media(max-width:1050px){main.inspector-collapsed{grid-template-columns:200px minmax(0,1fr)}}
 @media(max-width:600px){main.inspector-collapsed{grid-template-columns:1fr}#inspector-toggle{font-size:11px;padding:5px}.topright{gap:5px}}
+
+.picture-link{display:inline-flex;align-items:center;border:1px solid #b9d2e6;border-radius:5px;padding:6px 9px;color:#0057b8;background:#fff;text-decoration:none;font-size:12px}.picture-link:hover{background:#e7f2fc}.picture-link:focus-visible{outline:3px solid #0070f2}

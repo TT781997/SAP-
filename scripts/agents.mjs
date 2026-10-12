@@ -1,0 +1,12 @@
+import { spawn } from 'node:child_process';
+import { existsSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { resolve, delimiter } from 'node:path';
+import { homedir } from 'node:os';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const existing=resolve(homedir(),'.pi/agent');
+const env={...process.env,LIMEN_HOME:resolve(root,'.limen/home'),LIMEN_PACKAGE:resolve(root,'vendor/limen'),LIMEN_ENGINE:process.env.LIMEN_ENGINE||'pi',PATH:resolve(root,'node_modules/.bin')+delimiter+(process.env.PATH||'')};
+env.PI_CODING_AGENT_DIR ||= existsSync(resolve(existing,'auth.json'))?existing:resolve(root,'.limen/pi-agent');
+const child=spawn(resolve(root,'node_modules/.bin/pi'),process.argv.slice(2),{cwd:root,env,stdio:'inherit'});
+child.on('error',e=>{console.error(e.message);process.exitCode=1});
+child.on('exit',(code,signal)=>{process.exitCode=code??(signal?1:0)});

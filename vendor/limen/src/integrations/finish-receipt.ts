@@ -1,0 +1,155 @@
+import { createHash } from "node:crypto";
+import { open } from "node:fs/promises";
+import { basename } from "node:path";
+import { textFile } from "../job/record.ts";
+import { inspectFinishTurns, MAX_TARGETS } from "./finish-turn.ts";
+
+/** A GitHub login without its `@`. `bin/tony-finish-ping.sh` keeps a literal copy. */
+export const GITHUB_LOGIN = "[a-z\\d](?:[a-z\\d-]{0,37}[a-z\\d])?";
+/** A GitHub noreply email; group 1 is the login. */
+export const GITHUB_NOREPLY = new RegExp(`^(?:\\d+\\+)?(${GITHUB_LOGIN})@users\\.noreply\\.github\\.com$`, "i");
+/** The most bytes Limen reads from the sender's receipt channel and from `finish-webhook-targets`. */
+export const RECEIPT_MAX_BYTES = 32_768;
+type FinishReceipt = {
+	target: number;
+	at: string;
+	transport: "pending" | "accepted" | "rejected" | "unknown";
+	http: "none" | "1xx" | "2xx" | "3xx" | "4xx" | "5xx";
+};
+const FINISH_SELECTION = new RegExp(
+	`^(fan-out|mapped @${GITHUB_LOGIN} -> \\d+(?:, \\d+)*|fallback \\* -> \\d+(?:, \\d+)*|not sent: no author route|invalid author map)$`,
+);
+const AUTHOR = new RegExp(`^@${GITHUB_LOGIN}$`);
+/** A login as a plant webhook author, with its `@`, in any case. */
+export const GITHUB_AUTHOR = new RegExp(`^@${GITHUB_LOGIN}$`, "i");
+export function finishEvent(jobDir: string): string {
+	return `limen-finish-${createHash("sha256").update(basename(jobDir)).digest("hex")}`;
+}
+export function parseFinishSelection(line: string): string | undefined {
+	if (line.length > 256) {
+		return;
+	}
+	try {
+		const value = JSON.parse(line);
+		if (
+			!value ||
+			Object.keys(value).join() !== "selection" ||
+			typeof value.selection !== "string" ||
+			!FINISH_SELECTION.test(value.selection)
+		) {
+			return;
+		}
+		return value.selection;
+	} catch {
+		return;
+	}
+}
+export function parseFinishReceipt(line: string): FinishReceipt | undefined {
+	if (line.length > 256) {
+		return;
+	}
+	try {
+		const value = JSON.parse(line);
+		if (!value || Object.keys(value).sort().join() !== "at,http,target,transport") {
+			return;
+		}
+		const { target, at, transport, http } = value;
+		if (
+			!Number.isInteger(target) ||
+			target < 1 ||
+			target > MAX_TARGETS ||
+			typeof at !== "string" ||
+			!/^\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{3}Z$/.test(at) ||
+			!Number.isFinite(Date.parse(at))
+		) {
+			return;
+		}
+		if (
+			!["pending", "accepted", "rejected", "unknown"].includes(transport) ||
+			!["none", "1xx", "2xx", "3xx", "4xx", "5xx"].includes(http)
+		) {
+			return;
+		}
+		if (
+			transport === "accepted"
+				? http !== "2xx"
+				: transport === "rejected"
+					? !["1xx", "3xx", "4xx", "5xx"].includes(http)
+					: http !== "none"
+		) {
+			return;
+		}
+		return { target, at, transport, http };
+	} catch {
+		return;
+	}
+}
+// biome-ignore lint/complexity/noExcessiveCognitiveComplexity: split pending: finish webhook receipt check
+export async function inspectFinishWebhook(jobDir: string): Promise<string> {
+	const configured = Boolean(await textFile(`${jobDir}/finish-webhook-env`));
+	const lines = [
+		`configured: ${configured ? "yes (a webhook target is recorded; Limen did not check it)" : "no (this job sends no finish webhook)"}`,
+		`event: ${finishEvent(jobDir)} (the ID the receiver uses to match this finish)`,
+	];
+	const state = await textFile(`${jobDir}/state`);
+	if (state === "done") {
+		lines.push("handoff: Job done. Next step: land it, or name the check that still blocks landing.");
+	} else if (state === "failed" || state === "stopped") {
+		lines.push(`handoff: ${state}; inspect failure before proceeding`);
+	}
+	const [first, second, third] = (await textFile(`${jobDir}/finish-webhook-author`)).split("\n");
+	const commit =
+		second && /^[0-9a-f]{40}$|^[0-9a-f]{64}$/.test(second)
+			? second
+			: third && /^[0-9a-f]{40}$|^[0-9a-f]{64}$/.test(third)
+				? third
+				: "";
+	if (first && AUTHOR.test(first)) {
+		lines.push(`author: ${first}${commit ? ` · commit ${commit}` : ""}`);
+	} else if (first === "unavailable" && second && /^[a-zA-Z0-9 :._-]{1,80}$/.test(second)) {
+		lines.push(`author: unavailable · ${second}${third && commit === third ? ` · commit ${third}` : ""}`);
+	} else {
+		lines.push("author: unavailable · missing evidence");
+	}
+	const route = await textFile(`${jobDir}/finish-webhook-route`);
+	if (route && FINISH_SELECTION.test(route)) {
+		lines.push(`route: ${route} (how Limen chose the targets)`);
+	}
+	const targets = new Map<number, FinishReceipt>();
+	const handle = await open(`${jobDir}/finish-webhook-targets`, "r").catch(() => undefined);
+	if (handle) {
+		try {
+			const buffer = Buffer.alloc(RECEIPT_MAX_BYTES);
+			const { bytesRead } = await handle.read(buffer, 0, buffer.length, 0);
+			for (const line of buffer.toString("utf8", 0, bytesRead).split("\n").slice(0, -1)) {
+				const receipt = parseFinishReceipt(line);
+				if (receipt && (!targets.has(receipt.target) || targets.get(receipt.target)?.transport === "pending")) {
+					targets.set(receipt.target, receipt);
+				}
+			}
+		} finally {
+			await handle.close();
+		}
+	}
+	if (!targets.size) {
+		lines.push("transport: unknown (no record that Limen sent the webhook to any target)");
+	}
+	const turns = await inspectFinishTurns(finishEvent(jobDir));
+	for (const ordinal of [...new Set([...targets.keys(), ...turns.keys()])].sort((a, b) => a - b)) {
+		const target = targets.get(ordinal);
+		const transport = target
+			? `${target.transport === "pending" ? "unknown (attempt started; no result)" : target.transport} · HTTP ${target.http} · ${target.at}`
+			: "unknown (no record that Limen sent the webhook to this target)";
+		lines.push(`target ${ordinal}: transport ${transport} · bot-turn ${turns.get(ordinal) ?? "unobserved"}`);
+	}
+	lines.push(
+		turns.size
+			? `bot-turn: observed for ${turns.size} target(s) (a trusted export shows the receiving bot finished a turn for this event; it does not prove who sent the webhook)`
+			: "bot-turn: unobserved (no trusted export shows that a receiving bot finished a turn for this event)",
+	);
+	const aggregate = await textFile(`${jobDir}/finish-webhook`);
+	if (aggregate) {
+		lines.push(`aggregate: ${aggregate} (the overall send result)`);
+	}
+	return lines.join("\n");
+}

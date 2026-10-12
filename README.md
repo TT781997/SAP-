@@ -30,3 +30,7 @@ O mapa e os dados funcionam localmente. Vídeos, áudio ambiente, fontes tipogr�
 O painel de detalhes pode ser recolhido e reaberto no cabeçalho; a preferência é conservada no navegador. A navegação separa produtos/processos, plataforma/integração/identidade e infraestrutura/operação. O mapa mostra todas as relações por omissão; a vista BTP inclui um atalho para a estrutura de contas, distinguindo composição de tráfego.
 
 A secção «Planeamento da cadeia logística» explica capacidades de SAP IBP e SAP APO a partir do catálogo fornecido, com ligações à documentação por versão. São sínteses funcionais, não uma validação da instalação, do licenciamento ou dos mecanismos de integração. Os agrupamentos de capacidades não representam tráfego ou componentes obrigatórios.
+
+## Picture e agentes Limen
+
+O [guia de integração](docs/limen-sap.md) explica o mapa Picture, o workflow de tarefas e a monitorização. O mapa é reconstruído por `npm run picture:build`; os checks estão em `npm run test:picture`. Para trabalhar com agentes, usar `npm run agents:doctor` e `npm run agents`, autenticar no Pi e selecionar provider/modelo antes de executar jobs. A execução autenticada continua pendente.
