@@ -13,11 +13,11 @@ npm run build
 npm run preview
 ```
 
-A compilação verifica também os tipos do código React anterior, conservado em `src/`. A aplicação principal é agora a versão estática SAP Atlas: `index.html`, `explorer.html` e `publicar.html`. Os scripts clássicos, estilos, dados e 159 diagramas ficam em `public/` e são copiados para `dist/` pelo Vite. Os scripts usam dados globais e conservam a ordem de carregamento original.
+A compilação verifica também os tipos do código React anterior, conservado em `src/`. A aplicação principal é agora a versão estática SAP Atlas: `index.html`, `explorer.html`, `knowledge.html` e `publicar.html`. Os scripts clássicos, estilos, dados e 159 diagramas ficam em `public/` e são copiados para `dist/` pelo Vite. Os scripts usam dados globais e conservam a ordem de carregamento original.
 
 ## Publicação
 
-No Vercel, usar `npm run build` e o diretório `dist`. As três páginas estão incluídas na compilação. A configuração SPA existente permanece disponível. Nenhuma publicação automática é executada.
+No Vercel, usar `npm run build` e o diretório `dist`. As quatro páginas estão incluídas na compilação. A configuração SPA existente permanece disponível. Nenhuma publicação automática é executada.
 
 ## Conteúdo e limitações
 
@@ -29,7 +29,13 @@ O mapa e os dados funcionam localmente. Vídeos, áudio ambiente, fontes tipogr�
 
 O painel de detalhes pode ser recolhido e reaberto no cabeçalho; a preferência é conservada no navegador. A navegação separa produtos/processos, plataforma/integração/identidade e infraestrutura/operação. O mapa mostra todas as relações por omissão; a vista BTP inclui um atalho para a estrutura de contas, distinguindo composição de tráfego.
 
-A secção «Planeamento da cadeia logística» explica capacidades de SAP IBP e SAP APO a partir do catálogo fornecido, com ligações à documentação por versão. São sínteses funcionais, não uma validação da instalação, do licenciamento ou dos mecanismos de integração. Os agrupamentos de capacidades não representam tráfego ou componentes obrigatórios.
+A secção «Planeamento da cadeia logística» explica capacidades de SAP IBP e SAP APO, complementadas com guias oficiais de exportação/integração IBP 2502 e operações APO 7.0 EHP4. Os exemplos de formação, o material descontinuado e os cenários de implantação têm âmbito explícito. Os agrupamentos de capacidades não representam tráfego ou componentes obrigatórios.
+
+## Produtos e biblioteca documental
+
+`knowledge.html` organiza as fichas, guias explicados, cobertura e documentos SAP/parceiros. A documentação licenciada recolhida no GitHub pode ser lida no painel recolhível; os guias PDF SAP conservam versão, metadados e ligação original. Cada afirmação revista tem uma citação. A biblioteca identifica material arquivado e distingue candidatos GitHub de fontes verificadas.
+
+O [guia de recolha e proveniência](docs/knowledge-research.md) explica o âmbito, licenças, reprodução, testes e lacunas reais. `npm run test:knowledge` valida os documentos, hashes, referências, associações e estados históricos.
 
 ## Picture e agentes Limen
 

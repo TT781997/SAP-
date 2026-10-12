@@ -25,6 +25,7 @@ export default defineConfig({
       input: {
         main: fileURLToPath(new URL("./index.html", import.meta.url)),
         explorer: fileURLToPath(new URL("./explorer.html", import.meta.url)),
+        knowledge: fileURLToPath(new URL("./knowledge.html", import.meta.url)),
         publicar: fileURLToPath(new URL("./publicar.html", import.meta.url)),
       },
     },

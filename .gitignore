@@ -7,3 +7,6 @@ __pycache__/
 /public/sap-picture.html
 /public/sap-picture-model.json
 /public/sap-picture-layers.html
+# Local evidence caches; reviewed summaries, metadata and licensed prose are committed.
+/research/refresh-2026-10-12/pdf-cache/
+/research/refresh-2026-10-12/*.html

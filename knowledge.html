@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SAP Atlas · Produtos e documentação</title>
+  <meta name="description" content="Produtos SAP, guias explicados e biblioteca documental com atribuição, âmbito e estado das fontes.">
+  <link rel="stylesheet" href="/knowledge.css"><script type="module" src="/knowledge.js"></script>
+</head>
+<body>
+  <header><a class="brand" href="/index.html"><b>A</b> SAP <span>ATLAS</span></a><nav aria-label="Vistas do Atlas"><a href="/sap-picture.html">Mapa de produtos</a><a href="/explorer.html">Arquitetura técnica</a></nav><button id="toggle-details" aria-controls="details" aria-expanded="true">Recolher documento</button></header>
+  <div class="layout">
+    <aside class="navigation"><label class="search-label" for="product-search">PRODUTOS E GUIAS</label><input id="product-search" type="search" placeholder="IBP, APO, integração…" autocomplete="off"><nav id="product-list" aria-label="Produtos e guias"></nav></aside>
+    <main id="content" tabindex="-1"><p role="status">A carregar a biblioteca…</p></main>
+    <aside id="details" class="details" aria-label="Documento de origem"><p>Abre um documento para consultar o texto recolhido, o âmbito e a origem.</p></aside>
+  </div>
+  <dialog id="limitations"><button id="close-limitations" aria-label="Fechar">×</button><h2>Âmbito da recolha</h2><div id="limitations-content"></div></dialog>
+</body>
+</html>

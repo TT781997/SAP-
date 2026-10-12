@@ -1,0 +1,651 @@
+{
+  "schema": "sap-curation/1",
+  "reviewedAt": "2026-10-12",
+  "references": {
+    "accounts": {
+      "repository": "SAP-docs/btp-cloud-platform",
+      "path": "docs/10-concepts/account-model-8ed4a70.md"
+    },
+    "quotas": {
+      "repository": "SAP-docs/btp-cloud-platform",
+      "path": "docs/10-concepts/entitlements-and-quotas-00aa2c2.md"
+    },
+    "cf": {
+      "repository": "SAP-docs/btp-cloud-platform",
+      "path": "docs/10-concepts/cloud-foundry-environment-9c7092c.md"
+    },
+    "ibp-excel": {
+      "repository": "SAP-samples/integrated-business-planning-excel-add-in-templates",
+      "path": "README.md"
+    },
+    "ibp-prep": {
+      "repository": "SAP-samples/teched2024-IN280",
+      "path": "exercises/ex0/README.md"
+    },
+    "ibp-integration": {
+      "repository": "SAP-samples/teched2024-IN280",
+      "path": "exercises/ex1/README.md"
+    },
+    "ibp-workshop": {
+      "repository": "SAP-samples/teched2024-IN280",
+      "path": "README.md"
+    },
+    "ibp-prophet": {
+      "repository": "SAP-samples/ibp-data-intelligence-forecasting-prophet",
+      "path": "README.md"
+    },
+    "livecache": {
+      "repository": "MicrosoftDocs/azure-docs",
+      "path": "articles/sap/workloads/dbms-guide-maxdb.md"
+    },
+    "integration": {
+      "repository": "SAP-docs/btp-integration-suite",
+      "path": "docs/ISuite/what-is-sap-integration-suite-5cc6987.md"
+    },
+    "datasphere-spaces": {
+      "repository": "SAP-docs/sap-datasphere",
+      "path": "docs/Acquiring-Preparing-Modeling-Data/Creating-Finding-Sharing-Objects/working-in-sap-datasphere-spaces-6a396f6.md"
+    },
+    "identity": {
+      "repository": "SAP-docs/btp-cloud-identity-services",
+      "path": "docs/identity-authentication-f217bd3.md"
+    },
+    "ai-core": {
+      "repository": "SAP-docs/sap-artificial-intelligence",
+      "path": "docs/sap-ai-core/what-is-sap-ai-core-d029a32.md"
+    },
+    "bas": {
+      "repository": "SAP-docs/btp-business-application-studio",
+      "path": "docs/what-is-sap-business-application-studio-8f46c6e.md"
+    },
+    "suse-ha": {
+      "repository": "SUSE/SAPHanaSR",
+      "path": "README.md"
+    },
+    "gcp-automation": {
+      "repository": "GoogleCloudPlatform/sap-deployment-automation",
+      "path": "README.md"
+    },
+    "aws-restore": {
+      "repository": "aws-samples/aws-ssm-automation-for-sap-hana-restore",
+      "path": "README.md"
+    },
+    "apo-operations": {
+      "repository": "SAP Help Portal",
+      "url": "https://help.sap.com/doc/debc1f3afa1144e68126d5745d8f7b82/7.0.4/en-US/AOG_APO_704.pdf"
+    },
+    "ibp-export": {
+      "repository": "SAP Help Portal",
+      "url": "https://help.sap.com/doc/aff1bed98c0d4692afbd1ce7af519a33/2502/en-US/loioc3c84f54b22caf07e10000000a44538d_00044104.pdf"
+    },
+    "ibp-customer": {
+      "repository": "SAP Help Portal",
+      "url": "https://help.sap.com/doc/6f91803797d842fe97908d7ac34ead9f/2502/en-US/loio579ba45f14ab4afaab44a2112711c481.pdf"
+    }
+  },
+  "topics": [
+    {
+      "id": "btp",
+      "title": "SAP BTP · contas, ambientes e serviços",
+      "productNames": [],
+      "nodeIds": [
+        "btp",
+        "global-account",
+        "subaccount",
+        "entitlements",
+        "cloud-foundry",
+        "kyma"
+      ],
+      "repositories": [
+        "SAP-docs/btp-cloud-platform",
+        "SAP-docs/btp-connectivity",
+        "SAP-docs/btp-runtime-comparison-guide",
+        "SAP-docs/btp-best-practices-guide"
+      ],
+      "sections": {
+        "purpose": [
+          {
+            "text": "A global account representa o contrato SAP. Gere membros, subaccounts, entitlements e quotas; não está associada a uma região ou a um runtime específico.",
+            "refs": [
+              "accounts"
+            ]
+          }
+        ],
+        "components": [
+          {
+            "text": "Hierarquia: global account → diretórios opcionais → subaccounts. Uma subaccount pertence a uma região; subaccounts são independentes e também independentes das contas dos utilizadores.",
+            "refs": [
+              "accounts"
+            ]
+          },
+          {
+            "text": "Cloud Foundry: ativar o ambiente cria uma org em relação 1:1 com a subaccount. Os spaces organizam aplicações, serviços e equipas dentro dessa org.",
+            "refs": [
+              "accounts",
+              "cf"
+            ]
+          },
+          {
+            "text": "Kyma: uma subaccount pode ter vários clusters; cada cluster pode conter vários namespaces. Os ambientes são alternativas escolhidas para o cenário.",
+            "refs": [
+              "accounts"
+            ]
+          }
+        ],
+        "prerequisites": [
+          {
+            "text": "O entitlement é o direito a um service plan; a quota é a quantidade permitida. Os direitos são geridos na global account e distribuídos pelas subaccounts, eventualmente através de diretórios.",
+            "refs": [
+              "quotas"
+            ]
+          }
+        ],
+        "integration": [
+          {
+            "text": "Cockpit, btp CLI e APIs REST permitem administrar a hierarquia. A estrutura de contas não representa chamadas de rede entre servidores.",
+            "refs": [
+              "accounts"
+            ]
+          }
+        ],
+        "operations": [
+          {
+            "text": "Diretórios podem gerir autorizações e reservar/distribuir entitlements quando essas funções são ativadas. Serviços são consumidos nas subaccounts, não nos diretórios.",
+            "refs": [
+              "accounts",
+              "quotas"
+            ]
+          },
+          {
+            "text": "Cloud Foundry como ambiente não é um entitlement; o plano e a quota do runtime são conceitos distintos. Kyma requer entitlement de quota do ambiente.",
+            "refs": [
+              "quotas"
+            ]
+          }
+        ]
+      },
+      "gaps": [
+        "Disponibilidade do serviço/plano na região, contrato e desenho de autorizações da organização devem ser confirmados para cada implementação."
+      ]
+    },
+    {
+      "id": "ibp",
+      "title": "SAP IBP · dados, planeamento e integração",
+      "productNames": [
+        "SAP Integrated Business Planning"
+      ],
+      "nodeIds": [
+        "sap-ibp",
+        "ibp-demand",
+        "ibp-supply",
+        "ibp-sop",
+        "ibp-response"
+      ],
+      "repositories": [
+        "SAP-samples/integrated-business-planning-excel-add-in-templates",
+        "SAP-samples/integrated-business-planning-excel-addin-vba-samples",
+        "SAP-samples/teched2024-IN280"
+      ],
+      "sections": {
+        "purpose": [
+          {
+            "text": "IBP é uma solução cloud de planeamento que integra dados de sistemas operacionais, incluindo ERP e APO, e devolve resultados aos sistemas de execução. Os guias recolhidos aprofundam exportação e integração na versão 2502.",
+            "refs": [
+              "ibp-export",
+              "ibp-customer"
+            ]
+          },
+          {
+            "text": "Para explorar o planeamento no exemplo SAP, prepara-se uma planning area, dados mestre e séries temporais antes de executar o processo. O cenário TechEd recolhido é de demand planning e integração, não uma descrição de todas as edições IBP.",
+            "refs": [
+              "ibp-prep"
+            ]
+          }
+        ],
+        "components": [
+          {
+            "text": "No cenário de exportação IBP 2502, a planning area gera um calculation scenario que permite ler key figures. O guia também cobre dados mestre; a integração usa datastores de origem/destino, projetos, tasks e data flows.",
+            "refs": [
+              "ibp-export"
+            ]
+          },
+          {
+            "text": "O exemplo usa produtos, locais, clientes e unidades de medida como dados mestre; vendas ACTUALSQTY e previsão CONSDEMANDQTY como key figures de séries temporais.",
+            "refs": [
+              "ibp-prep"
+            ]
+          },
+          {
+            "text": "O add-in SAP IBP para Excel permite usar planning views e templates. Requer instalação do add-in e acesso a um sistema IBP.",
+            "refs": [
+              "ibp-excel"
+            ]
+          }
+        ],
+        "prerequisites": [
+          {
+            "text": "A exportação exige uma planning area disponível e, para key figures, um calculation scenario gerado. O utilizador precisa das autorizações de visibilidade indicadas no guia; o ambiente de integração e os datastores devem estar configurados.",
+            "refs": [
+              "ibp-export"
+            ]
+          },
+          {
+            "text": "O exercício de integração exige IBP licenciado, uma planning area preparada e direitos de administração de comunicação. Integration Suite, staging e Snowflake têm acessos e configuração próprios.",
+            "refs": [
+              "ibp-prep"
+            ]
+          }
+        ],
+        "integration": [
+          {
+            "text": "IBP 2502: SAP Cloud Integration for data services permite exportar key figures e dados mestre para sistemas locais através de ficheiros, web services ou RFC, conforme o cenário. Esse serviço tem configuração e agentes próprios. O workshop TechEd usa Cloud Integration da Integration Suite noutro cenário.",
+            "refs": [
+              "ibp-export",
+              "ibp-integration"
+            ]
+          },
+          {
+            "text": "O guia de ligação a SAP Cloud for Customer descreve um report na origem, datastores, data flow e execução de uma task; os resultados são depois consultados em IBP. A configuração é específica do processo e da versão 2502.",
+            "refs": [
+              "ibp-customer"
+            ]
+          },
+          {
+            "text": "Exemplo SAP TechEd 2024: IBP ↔ Cloud Integration ↔ staging em Amazon S3 ↔ Snowflake. A configuração utiliza communication user, communication system, communication arrangement SAP_COM_0931 e uma destination BTP. É um cenário de formação, não um fluxo obrigatório de todo o IBP.",
+            "refs": [
+              "ibp-workshop",
+              "ibp-integration"
+            ]
+          }
+        ],
+        "operations": [
+          {
+            "text": "O guia de exportação recomenda filtrar os dados extraídos e agendar tasks sem execução simultânea para limitar o impacto no sistema IBP. Inclui procedimentos de troubleshooting para o fluxo escolhido.",
+            "refs": [
+              "ibp-export"
+            ]
+          },
+          {
+            "text": "Os templates de Excel são exemplos fornecidos sem suporte para uso produtivo. O template de fórmulas tem limite de 300 linhas e suporta apenas inglês; não há suporte nativo para copiar/mover uma sheet IBP preenchida.",
+            "refs": [
+              "ibp-excel"
+            ]
+          }
+        ],
+        "historical": [
+          {
+            "text": "O exemplo IBP + Data Intelligence + Prophet está explicitamente marcado NO LONGER SUPPORTED. É conservado como referência histórica e não como recomendação atual.",
+            "refs": [
+              "ibp-prophet"
+            ]
+          }
+        ]
+      },
+      "gaps": [
+        "Foram recolhidos dois guias primários IBP 2502. Faltam manuais completos de cálculo e configuração de cada módulo e a revisão correspondente à versão atual do tenant. O catálogo Help consultado também contém IBP 2608; os guias 2502 não são transpostos automaticamente para essa versão.",
+        "O acesso público do workshop terminou em 2024. O exemplo contém uma opção que desativa a validação TLS; essa opção não é transportada para a configuração do Atlas."
+      ]
+    },
+    {
+      "id": "apo",
+      "title": "SAP APO · planeamento, CIF, liveCache e operação",
+      "productNames": [
+        "SAP Advanced Planning and Optimization"
+      ],
+      "nodeIds": [
+        "sap-apo",
+        "apo-demand",
+        "apo-network",
+        "apo-production",
+        "apo-promise"
+      ],
+      "repositories": [],
+      "sections": {
+        "components": [
+          {
+            "text": "O landscape operacional distingue aplicação APO, SAP liveCache e SCM Optimizer. A opção APO como parte de SCM difere de APO como add-on no ERP; os componentes e funções necessários dependem do cenário. O guia remete para o Master Guide para a matriz completa de componentes.",
+            "refs": [
+              "apo-operations"
+            ]
+          },
+          {
+            "text": "A documentação Microsoft recolhida descreve liveCache em Azure VMs, baseado em tecnologia SAP MaxDB. Este guia confirma o cenário de implantação liveCache; não documenta sozinho a arquitetura funcional completa de APO.",
+            "refs": [
+              "livecache"
+            ]
+          }
+        ],
+        "prerequisites": [
+          {
+            "text": "No cenário Windows/Azure descrito, o guia indica LC/LCAPPS 10.0 SP25, liveCache 7.9.08.31 e LCA Build25 como versões mínimas, para EhP2 de SAP SCM7.0 e posteriores. SO e VMs suportados devem ser conferidos na PAM e na SAP Note1928533; a nota não foi recolhida.",
+            "refs": [
+              "livecache"
+            ]
+          }
+        ],
+        "operations": [
+          {
+            "text": "CCMS/RZ20 permite monitorizar APO, SCM Basis, liveCache e SCM Optimizer. DBA Cockpit (DBACOCKPIT) é a ferramenta preferida para administrar e iniciar/parar liveCache; /SAPAPO/OM17 suporta verificações de consistência conforme o procedimento do guia.",
+            "refs": [
+              "apo-operations"
+            ]
+          },
+          {
+            "text": "A recuperação deve cobrir cada componente e as dependências dos dados entre sistemas. O guia pede backups regulares e uma estratégia integrada com os processos e a recuperação de desastre; recuperar só um componente pode criar inconsistências.",
+            "refs": [
+              "apo-operations"
+            ]
+          },
+          {
+            "text": "Para liveCache produtivo em Azure, o guia recomenda uma VM dedicada; RAM e CPU influenciam fortemente o cálculo. As recomendações de storage e backup/restore MaxDB do mesmo guia aplicam-se ao cenário liveCache.",
+            "refs": [
+              "livecache"
+            ]
+          }
+        ],
+        "purpose": [
+          {
+            "text": "O guia oficial de operações APO 7.0 EHP4 cobre a aplicação, liveCache, SCM Optimizer e a integração CIF. É documentação da versão 7.0.4, com edição do documento de 2016; não demonstra suporte atual de qualquer instalação.",
+            "refs": [
+              "apo-operations"
+            ]
+          }
+        ],
+        "integration": [
+          {
+            "text": "CIF (Core Interface) integra os sistemas SAP conectados. O guia descreve filas qRFC de entrada e saída, reconciliação CIF, pós-processamento e monitorização de filas bloqueadas. SMQ1/SMQ2 são monitores de filas; os destinos e a direção usada dependem da configuração.",
+            "refs": [
+              "apo-operations"
+            ]
+          }
+        ]
+      },
+      "gaps": [
+        "O guia de operações foi recolhido. Falta aprofundar os manuais funcionais e o Master Guide da instalação para DP, SNP, PP/DS, confirmação e configuração detalhada de CIF. As SAP Notes citadas pelo guia não foram recolhidas.",
+        "O cenário Microsoft é específico de Windows/Azure. Não confirma que toda a instalação APO use esse layout ou essas versões."
+      ]
+    },
+    {
+      "id": "integration",
+      "title": "SAP Integration Suite · capacidades e execução",
+      "productNames": [
+        "SAP Integration Suite"
+      ],
+      "nodeIds": [
+        "integration"
+      ],
+      "repositories": [
+        "SAP-docs/btp-integration-suite",
+        "SAP-docs/btp-process-orchestration-migration-guide"
+      ],
+      "sections": {
+        "purpose": [
+          {
+            "text": "Plataforma de integração para aplicações, dados e processos em cenários cloud, locais e híbridos. O guia distingue as capacidades e os locais onde o conteúdo de integração pode executar.",
+            "refs": [
+              "integration"
+            ]
+          }
+        ],
+        "components": [
+          {
+            "text": "Cloud Integration integra processos; API Management e API Composition gerem APIs; Integration Advisor e Trading Partner Management apoiam B2B; Advanced Event Mesh suporta eventos; Open Connectors liga aplicações externas; Data Space Integration suporta partilha entre ecossistemas.",
+            "refs": [
+              "integration"
+            ]
+          }
+        ],
+        "deployment": [
+          {
+            "text": "O serviço corre em SAP BTP Cloud Foundry. Edge Integration Cell permite executar integrações no ambiente gerido pelo cliente quando o cenário o exige; não se deve desenhar toda a Suite como VMs na conta do cliente.",
+            "refs": [
+              "integration"
+            ]
+          }
+        ],
+        "operations": [
+          {
+            "text": "O corpus inclui configuração inicial, controlo de acessos, desenho de integrações, adaptadores, troubleshooting e avaliação de migração de Process Orchestration. As capacidades devem ser ativadas de acordo com o plano e o processo escolhido.",
+            "refs": [
+              "integration"
+            ]
+          }
+        ]
+      },
+      "gaps": [
+        "A ficha explica o âmbito da Suite; cada adapter, protocolo e cenário B2B tem pré-requisitos próprios nos documentos recolhidos."
+      ]
+    },
+    {
+      "id": "datasphere",
+      "title": "SAP Datasphere · spaces e ciclo dos dados",
+      "productNames": [
+        "SAP Datasphere"
+      ],
+      "nodeIds": [
+        "business-datasphere"
+      ],
+      "repositories": [
+        "SAP-docs/sap-datasphere"
+      ],
+      "sections": {
+        "components": [
+          {
+            "text": "A aquisição, preparação e modelação de dados acontecem dentro de spaces. Um space delimita o acesso aos dados; a partilha com outro space ou a exposição para consumo é explícita.",
+            "refs": [
+              "datasphere-spaces"
+            ]
+          }
+        ],
+        "prerequisites": [
+          {
+            "text": "O administrador do tenant cria os spaces e atribui recursos. Scoped roles associam utilizadores aos papéis de space administrator, modeler, viewer e consumer.",
+            "refs": [
+              "datasphere-spaces"
+            ]
+          }
+        ],
+        "integration": [
+          {
+            "text": "O ciclo documentado inclui ligações a fontes, carregamento, preparação e modelação, partilha entre spaces e exposição/consumo. Data Builder trabalha no space selecionado; Repository Explorer mostra os objetos dos spaces a que o utilizador tem acesso.",
+            "refs": [
+              "datasphere-spaces"
+            ]
+          }
+        ]
+      },
+      "gaps": [
+        "Capacidade, conectores, autorizações de fontes e semântica dos modelos dependem do tenant e do caso de uso."
+      ]
+    },
+    {
+      "id": "identity",
+      "title": "Cloud Identity Services · autenticação e provisionamento",
+      "productNames": [
+        "Identity and Access Management"
+      ],
+      "nodeIds": [
+        "identity-services",
+        "ias",
+        "ips"
+      ],
+      "repositories": [
+        "SAP-docs/btp-cloud-identity-services",
+        "SAP-docs/btp-cloud-identity-services-system-integration-guide"
+      ],
+      "sections": {
+        "purpose": [
+          {
+            "text": "Identity Authentication oferece autenticação e SSO; Identity Provisioning lê utilizadores de sistemas de origem e provisiona utilizadores, grupos e membros em sistemas de destino.",
+            "refs": [
+              "identity"
+            ]
+          }
+        ],
+        "integration": [
+          {
+            "text": "No conector IAS como destino, Identity Provisioning usa SCIM2.0. A comunicação requer um utilizador técnico do tipo System com autorizações adequadas; a SAP recomenda autenticação por certificado nesse procedimento.",
+            "refs": [
+              "identity"
+            ]
+          }
+        ],
+        "operations": [
+          {
+            "text": "O guia anuncia a descontinuação da Identity Authentication SCIM API versão1 em 30/11/2026. A versão2 usa Identity Directory SCIM API; a gestão de membros deve usar o recurso group, porque groups no recurso user é só de leitura.",
+            "refs": [
+              "identity"
+            ]
+          }
+        ]
+      },
+      "gaps": [
+        "Esta ficha revê o conector de provisionamento. O trust de login, os utilizadores de plataforma e a autorização das aplicações têm configurações próprias."
+      ]
+    },
+    {
+      "id": "ai",
+      "title": "SAP AI Core · execução, modelos e ciclo de vida",
+      "productNames": [],
+      "nodeIds": [
+        "ai-core"
+      ],
+      "repositories": [
+        "SAP-docs/sap-artificial-intelligence"
+      ],
+      "sections": {
+        "purpose": [
+          {
+            "text": "AI Core gere execução e operação de ativos de IA: pipelines batch, inferência e ciclo de vida de modelos. Generative AI hub acrescenta acesso a modelos generativos e gestão de prompts.",
+            "refs": [
+              "ai-core"
+            ]
+          }
+        ],
+        "components": [
+          {
+            "text": "AI Core executa workloads; AI Launchpad gere cenários em runtimes; AI API oferece uma interface para o ciclo de vida. O guia refere Argo Workflow e KServe na integração dos workloads.",
+            "refs": [
+              "ai-core"
+            ]
+          }
+        ],
+        "integration": [
+          {
+            "text": "O cenário pode registar um container registry, sincronizar conteúdo Git e ligar object stores para dados e modelos. Os runtimes externos que usam AI API têm de fornecer um runtime adapter.",
+            "refs": [
+              "ai-core"
+            ]
+          }
+        ]
+      },
+      "gaps": [
+        "Planos, modelos disponíveis, regiões e condições de utilização exigem consulta por cenário; não se deduzem do catálogo de IA."
+      ]
+    },
+    {
+      "id": "bas",
+      "title": "Business Application Studio · desenvolvimento",
+      "productNames": [
+        "SAP Business Application Studio"
+      ],
+      "nodeIds": [],
+      "repositories": [
+        "SAP-docs/btp-business-application-studio"
+      ],
+      "sections": {
+        "purpose": [
+          {
+            "text": "IDE cloud baseado em Code-OSS, com dev spaces que incluem ferramentas e runtimes adequados ao cenário de desenvolvimento SAP.",
+            "refs": [
+              "bas"
+            ]
+          }
+        ],
+        "components": [
+          {
+            "text": "Um dev space é um ambiente de desenvolvimento isolado com terminal, filesystem, editores e extensões. Pode executar testes locais sem publicar a aplicação no runtime de destino.",
+            "refs": [
+              "bas"
+            ]
+          }
+        ],
+        "operations": [
+          {
+            "text": "O ciclo descrito inclui clonar ou criar um projeto, desenvolver, testar consumindo serviços remotos, construir e publicar a aplicação como MTA. A disponibilidade regional é consultada no Discovery Center.",
+            "refs": [
+              "bas"
+            ]
+          }
+        ]
+      },
+      "gaps": [
+        "O dev space não substitui o plano e os recursos do runtime produtivo; tipos, quotas e disponibilidade devem ser consultados nos guias recolhidos."
+      ]
+    },
+    {
+      "id": "hana-operations",
+      "title": "HANA · alta disponibilidade e automação",
+      "productNames": [],
+      "nodeIds": [
+        "hana",
+        "hana-secondary",
+        "pacemaker"
+      ],
+      "repositories": [
+        "SUSE/SAPHanaSR",
+        "MicrosoftDocs/azure-docs",
+        "GoogleCloudPlatform/sap-deployment-automation",
+        "aws-samples/aws-ssm-automation-for-sap-hana-restore"
+      ],
+      "sections": {
+        "operations": [
+          {
+            "text": "SAPHanaSR-angi fornece agentes de cluster para HANA system replication em scale-up e scale-out. Os atributos CIB não são compatíveis com a geração clássica; a migração exige o procedimento e os cenários suportados pela SUSE.",
+            "refs": [
+              "suse-ha"
+            ]
+          },
+          {
+            "text": "A automação Google combina Terraform para infraestrutura com Ansible para instalação/configuração, incluindo stacks HANA e NetWeaver. Requer media de instalação, licenças e configuração de rede adequada.",
+            "refs": [
+              "gcp-automation"
+            ]
+          },
+          {
+            "text": "O exemplo AWS cria um documento de automação SSM para recuperar HANA a partir de data/log backups, com identificação de instâncias e hdbuserstore. É uma amostra de automação; não confirma por si só uma estratégia de backup produtiva.",
+            "refs": [
+              "aws-restore"
+            ]
+          }
+        ]
+      },
+      "gaps": [
+        "Os exemplos de automação precisam de adaptação. Sizing, fencing, certificação, RPO/RTO e testes de recuperação devem ser revistos para o sistema real."
+      ]
+    }
+  ],
+  "additionalProductRepositories": {
+    "SAP Data Intelligence Cloud": [
+      "SAP-docs/sap-hana-cloud-data-intelligence"
+    ],
+    "SAP Build Work Zone": [
+      "SAP-docs/btp-build-work-zone-advanced"
+    ],
+    "SAP Advanced Financial Closing": [
+      "SAP-docs/s4hana-cloud-advanced-financial-closing"
+    ],
+    "Concur Expense": [
+      "SAP-docs/preview.developer.concur.com"
+    ],
+    "Concur Invoice": [
+      "SAP-docs/preview.developer.concur.com"
+    ],
+    "Concur Travel": [
+      "SAP-docs/preview.developer.concur.com"
+    ],
+    "Concur TripLink": [
+      "SAP-docs/preview.developer.concur.com"
+    ]
+  }
+}

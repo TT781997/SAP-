@@ -13,6 +13,7 @@
     "agents": "node scripts/agents.mjs",
     "picture:live": "node scripts/serve-sap-picture.mjs",
     "test:picture": "node --test test/sap-picture.test.mjs",
+    "test:knowledge": "node --test test/sap-knowledge.test.mjs",
     "predev": "npm run picture:build"
   },
   "dependencies": {

@@ -29,7 +29,9 @@ test('no dangling nodes, overlays, or source references are introduced',()=>{
  assert.deepEqual(model.diagnostics.filter(d=>d.level==='error'),[]);
  const ids=new Set(model.nodes.map(n=>n.id));
  for(const j of model.journeys)for(const id of j.steps)assert.ok(ids.has(id));
- assert.ok(model.nodes.every(n=>n.status==='partial'));
+ const reviewed=model.nodes.filter(n=>n.status==='ready');assert.ok(reviewed.length>0);
+ for(const n of reviewed)assert.ok(data.nodes.find(x=>x.id===n.id)?.knowledgeReviewedAt);
+ assert.ok(model.nodes.filter(n=>n.meta['catalog-url']).every(n=>n.status==='partial'));
 });
 test('JSON input does not execute code and model embedding cannot terminate its script',()=>{
  assert.throws(()=>parseAtlas('window.ATLAS = doSomething();'));

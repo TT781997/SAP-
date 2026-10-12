@@ -2,6 +2,8 @@
 
 ## Estado real da recolha
 
+Atualização de 12/10/2026: a nova biblioteca recolheu documentação SAP e de parceiros no GitHub, todos os 119 artigos do sitemap atual, o índice Help e guias PDF públicos. Ver [recolha atual, âmbito e reprodução](../docs/knowledge-research.md) e `public/knowledge/manifest.json`. A secção seguinte conserva o diagnóstico histórico de 11/10 e a proveniência dos anexos.
+
 Em 11 de outubro de 2026, os três sites solicitados responderam com `Tunnel connection failed: 403 Forbidden` no proxy do ambiente. Não existe uma nova recolha online concluída. Os domínios `www.sap.com`, `help.sap.com` e `architecture.learning.sap.com` foram guardados no rascunho da configuração de rede; a alteração tem de ser guardada nas definições do ambiente antes de retomar.
 
 Enquanto o acesso está bloqueado, foi organizado o conteúdo do ZIP fornecido pelo utilizador. A data de origem declarada é 9 de outubro de 2026. Os hashes de todas as 121 páginas HTML de arquitetura coincidem com os hashes dos metadados do pacote. Isto confirma consistência interna do pacote, não a atualidade nem uma verificação independente junto da SAP.
