@@ -10,6 +10,15 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
+  server: {
+    proxy: {
+      "/sap-live": {
+        target: "http://127.0.0.1:4747",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/sap-live/, ""),
+      },
+    },
+  },
   build: {
     outDir: "dist",
     rollupOptions: {

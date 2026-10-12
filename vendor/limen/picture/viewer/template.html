@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Picture</title>
+<!-- ARCHMAP:CSS -->
+</head>
+<body>
+<header class="mast" id="mast"></header>
+<main class="main">
+  <section class="atlas" id="atlas" aria-label="Plant architecture">
+    <div class="atlas-head">
+      <div>
+        <div class="eyebrow">Plant · architecture</div>
+        <h1><a href="#plant" id="plantLink">Plant</a></h1>
+        <p class="gloss" id="plantGloss"></p>
+      </div>
+      <div class="facts" id="facts"></div>
+    </div>
+    <div class="lightline" id="lightline" role="status"></div>
+    <button type="button" id="wireOverview" aria-pressed="false">Show all module connections</button>
+    <section class="atlas-map" id="atlasMap" aria-label="Plant map">
+      <div class="stage" id="stage">
+        <svg class="base" id="base" aria-hidden="true"></svg>
+        <svg class="over" id="over" aria-hidden="true"></svg>
+      </div>
+    </section>
+    <div class="legend">
+      <span title="Hover or focus a connection in the reading column to trace it"><i class="k-wire"></i>code connection, arrow shows direction</span>
+      <span>number = connections between two modules</span>
+      <span><i class="k-journey"></i>journey step order, not code</span>
+      <span><i class="k-crossing"></i>route crosses a card</span>
+      <span><i class="k-lit"></i>lit: touched by the selection</span>
+      <span><i class="k-focus"></i>place you opened</span>
+      <span><i class="k-pd"></i>partly described</span>
+      <span><i class="k-n">3</i>work items on the place</span>
+    </div>
+  </section>
+  <section class="read" id="read" aria-label="Work, journeys, days, and places"></section>
+</main>
+<noscript><p class="noscript">This picture needs JavaScript.</p></noscript>
+<!-- ARCHMAP:DATA -->
+<!-- ARCHMAP:JS -->
+</body>
+</html>

@@ -1,0 +1,57 @@
+{
+	"name": "@overment/limen",
+	"version": "0.1.0",
+	"description": "A minimal one-human-many-agents harness built from files, git, and one CLI.",
+	"type": "module",
+	"bin": {
+		"limen": "bin/limen"
+	},
+	"files": [
+		"bin",
+		"src",
+		"hook",
+		"picture",
+		"templates",
+		"docs/seat",
+		"docs/*.md",
+		"docs/assets",
+		"README.md",
+		"SECURITY.md",
+		"CONTRIBUTING.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"test": "node --test --test-concurrency=4 --test-timeout=180000 --test-force-exit test/*.test.ts",
+		"typecheck": "tsc --noEmit",
+		"format": "biome format --write .",
+		"check": "tsc --noEmit && biome check --error-on-warnings . && node --test --test-concurrency=4 --test-timeout=180000 --test-force-exit test/*.test.ts"
+	},
+	"engines": {
+		"node": ">=24"
+	},
+	"os": [
+		"darwin",
+		"linux"
+	],
+	"keywords": [
+		"pi",
+		"coding-agent",
+		"git-worktree"
+	],
+	"license": "MIT",
+	"author": "Adam Gospodarczyk <adam@overment.com>",
+	"homepage": "https://github.com/overment/limen#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/overment/limen.git"
+	},
+	"bugs": {
+		"url": "https://github.com/overment/limen/issues"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.8",
+		"@types/node": "^24.0.0",
+		"typescript": "^5.9.0"
+	}
+}

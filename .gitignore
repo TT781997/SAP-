@@ -2,3 +2,7 @@ node_modules/
 dist/
 __pycache__/
 *.pyc
+/.limen/
+# Generated SAP Picture page and model; rebuilt from the source corpus.
+/public/sap-picture.html
+/public/sap-picture-model.json
