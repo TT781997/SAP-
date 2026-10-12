@@ -34,3 +34,5 @@ A secção «Planeamento da cadeia logística» explica capacidades de SAP IBP e
 ## Picture e agentes Limen
 
 O [guia de integração](docs/limen-sap.md) explica o mapa Picture, o workflow de tarefas e a monitorização. O mapa é reconstruído por `npm run picture:build`; os checks estão em `npm run test:picture`. Para trabalhar com agentes, usar `npm run agents:doctor` e `npm run agents`, autenticar no Pi e selecionar provider/modelo antes de executar jobs. A execução autenticada continua pendente.
+
+A página Picture principal usa agora a vista por níveis observada no vídeo fornecido: tema escuro por omissão, relações destacadas ao passar o rato e detalhes à direita. A vista em camadas continua disponível através do link no cabeçalho.

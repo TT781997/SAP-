@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/overment/limen",
+  "commit": "ef12ece8661c349df3fcf9b59c7bbef7118f5d55",
+  "path": "picture/viewer",
+  "license": "MIT",
+  "localChanges": false,
+  "purpose": "Drill-down viewer matching the supplied video; current Limen harness remains separate."
+}

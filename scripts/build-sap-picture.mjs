@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { resolve } from 'node:path';
 import { readPicture } from '../vendor/limen/src/picture/picture-build.ts';
 import { assembleHtml, readViewer } from '../vendor/limen/src/picture/html.ts';
+import { renderDrilldown } from './sap-drilldown.mjs';
 import { parseAtlas, makeDataset, restoreSapRelations } from './sap-picture-model.mjs';
 export const root=fileURLToPath(new URL('../',import.meta.url));
 export const dataset=resolve(root,'.limen/picture');
@@ -48,6 +49,7 @@ export async function buildSapPicture(live) {
   return {model,html};
 }
 const {model,html}=await buildSapPicture();
-await writeFile(resolve(root,'public/sap-picture.html'),html);
+await writeFile(resolve(root,'public/sap-picture-layers.html'),html);
+await writeFile(resolve(root,'public/sap-picture.html'),await renderDrilldown(model,data.relations));
 await writeFile(resolve(root,'public/sap-picture-model.json'),JSON.stringify(model)+'\n');
 console.log(`SAP Picture: ${model.nodes.length} componentes/produtos, ${model.edges.length} relações, ${model.journeys.length} percursos. Sem chamadas a modelos.`);

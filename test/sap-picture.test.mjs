@@ -36,3 +36,27 @@ test('JSON input does not execute code and model embedding cannot terminate its 
  const unsafe={...model,project:{...model.project,title:'</script><script>alert(1)</script>'}};
  assert.ok(!embedJson(unsafe).includes('</script>'));
 });
+
+test('video map keeps SAP relationships while scenario associations remain explicitly separate',async()=>{
+ const {drilldownModel}=await import('../scripts/sap-drilldown.mjs');
+ const map=drilldownModel(model);
+ const technical=map.edges.filter(e=>e.meta['semantic-role']!=='scenario-overlay');
+ assert.equal(technical.length,model.edges.length);
+ for(const e of technical){const source=data.edges.find(x=>x.id===e.id);assert.equal(e.kind,source.type);assert.equal(e.from,source.from);assert.equal(e.to,source.to)}
+ const scenarios=map.nodes.filter(n=>n.kind==='feature');assert.equal(scenarios.length,model.features.length);
+ const links=map.edges.filter(e=>e.meta['semantic-role']==='scenario-overlay');assert.ok(links.length>0);
+ assert.ok(links.every(e=>e.kind==='scenario-association'&&e.title.includes('não representa tráfego')));
+});
+
+test('legacy renderer is standalone, dark by default, and keeps the layered alternative',async()=>{
+ const {renderDrilldown}=await import('../scripts/sap-drilldown.mjs');
+ const html=await renderDrilldown(model,data.relations);
+ assert.match(html,/data-sap-theme="dark"/);
+ assert.match(html,/id="panel-toggle"/);
+ assert.match(html,/id="search-input"/);
+ assert.match(html,/sap-picture-layers\.html/);
+ assert.match(html,/architecture-map-model\/2/);
+ assert.match(html,/\.rk-authenticates\{--kc:var\(--k-authenticates\)/);
+ assert.match(html,/\.rk-scenario-association\{--kc:var\(--k-scenario-association\)/);
+ assert.ok(!/<script[^>]+src=/.test(html));
+});
