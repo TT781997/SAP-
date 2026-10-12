@@ -1,0 +1,12 @@
+{
+  "origin": "User-supplied SAP-Atlas-projeto-completo ZIP",
+  "archiveSha256": "16feb03a0dfb87e92af76bd607ef34106e82897c39a33b62913b95a51b65d8d9",
+  "sourceDate": "2026-10-09T08:14:09.335Z",
+  "liveVerified": false,
+  "commercialProducts": 258,
+  "documentationRecords": 1493,
+  "referenceArticles": 121,
+  "articlesWithText": 121,
+  "metadataHashMatches": 121,
+  "scope": "Archived indices and full extracted reference-architecture article text. Not the full SAP Help manuals or all commercial subpages. Matching candidates do not establish edition, provider support, or dependencies."
+}

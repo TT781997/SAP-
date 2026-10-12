@@ -1,0 +1,18 @@
+{
+  "checked": "2026-10-09T08:14:09.335Z",
+  "commercialIndexEntries": 258,
+  "commercialUniqueUrls": 258,
+  "helpProductRecords": 1493,
+  "helpHierarchyRecords": 1737,
+  "architectureRoutesDiscovered": 121,
+  "architecturePagesReadable": 121,
+  "requests": 122,
+  "failed": [],
+  "scope": "Complete records returned by the three discovered index sources; all discovered reference-architecture route pages. Full text of every Help Portal topic and every commercial product subpage is not crawled.",
+  "inferencePolicy": "Provider mentions never establish hosting exclusivity; availability requires version/region-specific documentation.",
+  "helpRecordsWithUrl": 1260,
+  "helpVisibleRecordsWithUrl": 1236,
+  "productsWithExactDocumentationCandidate": 143,
+  "retainedTechnicalProductRecords": 231,
+  "archivedPreviousProductRecords": 6
+}

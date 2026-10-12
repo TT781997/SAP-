@@ -1,0 +1,42 @@
+{
+  "checked": "2026-10-09T14:59:11.512Z",
+  "technicalNodes": 195,
+  "technicalEdges": 327,
+  "sources": 104,
+  "checks": [
+    "AWS: infraestrutura e extremos das ligações isolados",
+    "Azure: infraestrutura e extremos das ligações isolados",
+    "GCP: infraestrutura e extremos das ligações isolados",
+    "On-premise: infraestrutura e extremos das ligações isolados",
+    "On-premise exclui BTP; Commerce tem exceção Azure documentada em AWS"
+  ],
+  "errors": [],
+  "crawl": {
+    "checked": "2026-10-09T08:14:09.335Z",
+    "commercialIndexEntries": 258,
+    "commercialUniqueUrls": 258,
+    "helpProductRecords": 1493,
+    "helpHierarchyRecords": 1737,
+    "architectureRoutesDiscovered": 121,
+    "architecturePagesReadable": 121,
+    "requests": 122,
+    "failed": [],
+    "scope": "Complete records returned by the three discovered index sources; all discovered reference-architecture route pages. Full text of every Help Portal topic and every commercial product subpage is not crawled.",
+    "inferencePolicy": "Provider mentions never establish hosting exclusivity; availability requires version/region-specific documentation.",
+    "helpRecordsWithUrl": 1260,
+    "helpVisibleRecordsWithUrl": 1236,
+    "productsWithExactDocumentationCandidate": 143,
+    "retainedTechnicalProductRecords": 231,
+    "archivedPreviousProductRecords": 6
+  },
+  "browserChecks": [
+    "ABAP Platform: 12 → 17 → 12 blocos ao expandir e recolher",
+    "On-premise: recursos locais sem infraestrutura AWS/Azure/GCP",
+    "AWS → Azure: recursos substituídos no mesmo grupo SAP S/4HANA",
+    "Pesquisa Help Portal por S/4HANA: 129 resultados",
+    "Commerce Cloud 2211 em AWS: exceção Azure com fontes",
+    "Login BTP a partir de on-premise: muda para BTP e apresenta IAS, trust e XSUAA",
+    "Índice de arquiteturas: detalhes e ligações de Edge Integration Cell on GCP abrem",
+    "Nenhum erro JavaScript observado durante os percursos testados"
+  ]
+}

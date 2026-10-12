@@ -12,5 +12,12 @@ export default defineConfig({
   },
   build: {
     outDir: "dist",
+    rollupOptions: {
+      input: {
+        main: fileURLToPath(new URL("./index.html", import.meta.url)),
+        explorer: fileURLToPath(new URL("./explorer.html", import.meta.url)),
+        publicar: fileURLToPath(new URL("./publicar.html", import.meta.url)),
+      },
+    },
   },
 });

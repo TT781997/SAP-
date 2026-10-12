@@ -1,0 +1,2736 @@
+[
+  {
+    "name": "SAP 3D Visual Enterprise",
+    "url": "https://www.sap.com/products/scm/product-visualization.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_3D_Visual_Enterprise",
+        "url": "https://help.sap.com/docs/SAP_3D_Visual_Enterprise?locale=en-US&state=PRODUCTION&version=9.0.0.0",
+        "name": "SAP 3D Visual Enterprise"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "ABAP",
+    "url": "https://www.sap.com/products/technology-platform/abap/environment.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "abap-env"
+  },
+  {
+    "name": "ABAP environments",
+    "url": "https://www.sap.com/products/technology-platform/abap.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "abap-env"
+  },
+  {
+    "name": "SAP Absence and Leave Management",
+    "url": "https://www.sap.com/products/hcm/leave-absence-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Access Control",
+    "url": "https://www.sap.com/products/financial-management/access-control.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ACCESS_CONTROL",
+        "url": "https://help.sap.com/docs/SAP_ACCESS_CONTROL?locale=en-US&state=PRODUCTION&version=12.0.33",
+        "name": "SAP Access Control"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Access Violation Management by Pathlock",
+    "url": "https://www.sap.com/products/financial-management/access-violation-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Account Substantiation and Automation by BlackLine",
+    "url": "https://www.sap.com/products/financial-management/account-substantiation-automation-blackline.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Adaptive Server Enterprise",
+    "url": "https://www.sap.com/products/data-cloud/sybase-ase.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ASE",
+        "url": "https://help.sap.com/docs/SAP_ASE?locale=en-US&state=PRODUCTION&version=16.1.0.2",
+        "name": "SAP Adaptive Server Enterprise"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Advanced Data Migration and Management by Syniti",
+    "url": "https://www.sap.com/products/data-cloud/advanced-data-migration-software.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ADVANCED_DATA_MIGRATION_AND_MANAGEMENT_BY_SYNITI",
+        "url": "https://help.sap.com/docs/SAP_ADVANCED_DATA_MIGRATION_AND_MANAGEMENT_BY_SYNITI?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Advanced Data Migration and Management by Syniti"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "Advanced Event Mesh",
+    "url": "https://www.sap.com/products/technology-platform/integration-suite/advanced-event-mesh.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Advanced Financial Closing",
+    "url": "https://www.sap.com/products/financial-management/advanced-financial-closing.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "AFC",
+        "url": "https://help.sap.com/docs/AFC?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Advanced Financial Closing"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Advanced Planning and Optimization",
+    "url": "https://www.sap.com/products/scm/advanced-planning-optimization.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ADVANCED_PLANNING_AND_OPTIMIZATION",
+        "url": "https://help.sap.com/docs/SAP_ADVANCED_PLANNING_AND_OPTIMIZATION?locale=en-US&state=PRODUCTION&version=7.0.4",
+        "name": "SAP Advanced Planning and Optimization"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Advanced Track and Trace for Pharmaceuticals on SAP S/4HANA",
+    "url": "https://www.sap.com/products/scm/track-trace-pharmaceuticals.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "S4_ADV_TRACK_TRACE_PHARMA",
+        "url": "https://help.sap.com/docs/S4_ADV_TRACK_TRACE_PHARMA?locale=en-US&state=PRODUCTION&version=2310%20FP02",
+        "name": "SAP Advanced Track and Trace for Pharmaceuticals on SAP S/4HANA"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Agent Lifecycle Management",
+    "url": "https://www.sap.com/products/crm/agent-lifecycle-mgmt.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "APM_Producer_Manager",
+        "url": "https://help.sap.com/docs/APM_Producer_Manager?locale=en-US&state=PRODUCTION&version=2610",
+        "name": "SAP Agent Lifecycle Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Agent Performance Management",
+    "url": "https://www.sap.com/products/crm/agent-performance-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "APM_ICM",
+        "url": "https://help.sap.com/docs/APM_ICM?locale=en-US&state=PRODUCTION&version=2610",
+        "name": "SAP Agent Performance Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Agricultural Contract Management",
+    "url": "https://www.sap.com/products/financial-management/agricultural-contract.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_AGRICULTURAL_CONTRACT_MANAGEMENT",
+        "url": "https://help.sap.com/docs/SAP_AGRICULTURAL_CONTRACT_MANAGEMENT?locale=en-US&state=PRODUCTION&version=4.0%20SP01",
+        "name": "SAP Agricultural Contract Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP AI Agent Hub",
+    "url": "https://www.sap.com/products/artificial-intelligence/ai-agent-hub.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Analytics Cloud",
+    "url": "https://www.sap.com/products/data-cloud/cloud-analytics.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ANALYTICS_CLOUD",
+        "url": "https://help.sap.com/docs/SAP_ANALYTICS_CLOUD?locale=en-US&state=PRODUCTION&version=release",
+        "name": "SAP Analytics Cloud"
+      }
+    ],
+    "technicalTarget": "business-sac"
+  },
+  {
+    "name": "SAP Application Interface Framework",
+    "url": "https://www.sap.com/products/technology-platform/application-interface-mgmt.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_APPLICATION_INTERFACE_FRAMEWORK",
+        "url": "https://help.sap.com/docs/SAP_APPLICATION_INTERFACE_FRAMEWORK?locale=en-US&state=PRODUCTION&version=4.0",
+        "name": "SAP Application Interface Framework"
+      },
+      {
+        "id": "SAP_APPLICATION_INTERFACE_FRAMEWORK_OVERVIEW",
+        "url": "https://help.sap.com/docs/SAP_APPLICATION_INTERFACE_FRAMEWORK_OVERVIEW?locale=en-US&state=PRODUCTION&version=1.0",
+        "name": "SAP Application Interface Framework"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Archiving and Document Access by OpenText",
+    "url": "https://www.sap.com/products/technology-platform/documents-access-archiving.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ARCH_DOCUACCESS_BY_OT",
+        "url": "https://help.sap.com/docs/SAP_ARCH_DOCUACCESS_BY_OT?locale=en-US&state=PRODUCTION&version=latest",
+        "name": "SAP Archiving and Document Access by OpenText"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Ariba Buying and Invoicing",
+    "url": "https://www.sap.com/products/spend-management/procure-to-pay.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Ariba Catalog",
+    "url": "https://www.sap.com/products/spend-management/ariba-catalog.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Ariba Category Management",
+    "url": "https://www.sap.com/products/spend-management/category-management-software.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "CATMAN",
+        "url": "https://help.sap.com/docs/CATMAN?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Ariba Category Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Ariba Central Procurement",
+    "url": "https://www.sap.com/products/spend-management/centralized-procurement.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Ariba Contract Intelligence by Icertis",
+    "url": "https://www.sap.com/products/spend-management/ariba-contract-intelligence-by-icertis.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Ariba Contracts",
+    "url": "https://www.sap.com/products/spend-management/contract-management-software.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Ariba Direct Materials Sourcing",
+    "url": "https://www.sap.com/products/spend-management/direct-procurement-software.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Ariba Invoice Management",
+    "url": "https://www.sap.com/products/spend-management/ariba-invoice-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Ariba Invoicing",
+    "url": "https://www.sap.com/products/spend-management/ariba-invoicing.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "CENTRAL_INVOICE_MANAGEMENT",
+        "url": "https://help.sap.com/docs/CENTRAL_INVOICE_MANAGEMENT?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Ariba Invoicing"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Ariba Snap",
+    "url": "https://www.sap.com/products/spend-management/ariba-snap.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Ariba Sourcing",
+    "url": "https://www.sap.com/products/spend-management/ariba-sourcing.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Ariba Supplier Lifecycle and Performance",
+    "url": "https://www.sap.com/products/spend-management/supplier-lifecycle.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Ariba Supplier Risk",
+    "url": "https://www.sap.com/products/spend-management/supplier-risk.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Asset Information Workbench",
+    "url": "https://www.sap.com/products/data-cloud/asset-information-workbench.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Asset Performance Management",
+    "url": "https://www.sap.com/products/scm/apm.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_APM",
+        "url": "https://help.sap.com/docs/SAP_APM?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Asset Performance Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Audit Management",
+    "url": "https://www.sap.com/products/financial-management/audit-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ASSURANCE_AND_COMPLIANCE_SOFTWARE_-_SAP_AUDIT_MANAGEMENT",
+        "url": "https://help.sap.com/docs/SAP_ASSURANCE_AND_COMPLIANCE_SOFTWARE_-_SAP_AUDIT_MANAGEMENT?locale=en-US&state=PRODUCTION&version=1.7.0.0",
+        "name": "SAP Audit Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "Automotive Consulting Services",
+    "url": "https://www.sap.com/services-support/automotive-industry-consulting.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Batch Release Hub for Life Sciences",
+    "url": "https://www.sap.com/products/scm/batch-release-hub.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "BATCH_RELEASE_HUB_LS_CLOUD",
+        "url": "https://help.sap.com/docs/BATCH_RELEASE_HUB_LS_CLOUD?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Batch Release Hub for Life Sciences"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Billing and Revenue Innovation Management",
+    "url": "https://www.sap.com/products/financial-management/billing-revenue-innovation-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Broker Reconciliation for Commodity Derivatives",
+    "url": "https://www.sap.com/products/financial-management/broker-reconciliation-commodity-derivatives.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_BROKER_RECONCILIATION_FOR_COMMODITY_DERIVATIVES",
+        "url": "https://help.sap.com/docs/SAP_BROKER_RECONCILIATION_FOR_COMMODITY_DERIVATIVES?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Broker Reconciliation for Commodity Derivatives"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Build",
+    "url": "https://www.sap.com/products/technology-platform/build.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_BUILD",
+        "url": "https://help.sap.com/docs/SAP_BUILD?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Build"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Build Code",
+    "url": "https://www.sap.com/products/technology-platform/developer-tools.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "build_code",
+        "url": "https://help.sap.com/docs/build_code?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Build Code"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Build Process Automation",
+    "url": "https://www.sap.com/products/technology-platform/process-automation.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "PROCESS_AUTOMATION",
+        "url": "https://help.sap.com/docs/PROCESS_AUTOMATION?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Build Process Automation"
+      }
+    ],
+    "technicalTarget": "business-build"
+  },
+  {
+    "name": "SAP Build Process Automation add-ons by UiPath",
+    "url": "https://www.sap.com/products/technology-platform/process-automation-extensions.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Build Work Zone",
+    "url": "https://www.sap.com/products/technology-platform/workzone.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Business Application Studio",
+    "url": "https://www.sap.com/products/technology-platform/business-application-studio.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP Business Application Studio",
+        "url": "https://help.sap.com/docs/SAP%20Business%20Application%20Studio?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Business Application Studio"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Business ByDesign",
+    "url": "https://www.sap.com/products/erp/business-bydesign.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_BUSINESS_BYDESIGN",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_BYDESIGN?locale=en-US&state=PRODUCTION&version=2608",
+        "name": "SAP Business ByDesign"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Business Data Cloud",
+    "url": "https://www.sap.com/products/data-cloud.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_BUSINESS_DATA_CLOUD",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_DATA_CLOUD?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Business Data Cloud"
+      }
+    ],
+    "technicalTarget": "business-bdc"
+  },
+  {
+    "name": "SAP Business Integrity Screening",
+    "url": "https://www.sap.com/products/financial-management/fraud-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_BUSINESS_INTEGRITY_SCREENING",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_INTEGRITY_SCREENING?locale=en-US&state=PRODUCTION&version=1.7.0.0",
+        "name": "SAP Business Integrity Screening"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Business Network Asset Collaboration",
+    "url": "https://www.sap.com/products/business-network/asset-collaboration.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ASSET_INTELLIGENCE_NETWORK",
+        "url": "https://help.sap.com/docs/SAP_ASSET_INTELLIGENCE_NETWORK?locale=en-US&state=PRODUCTION&version=2210",
+        "name": "SAP Asset Intelligence Network"
+      },
+      {
+        "id": "SAP_BUSINESS_NETWORK_ASSET_COLLABORATION",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_NETWORK_ASSET_COLLABORATION?locale=en-US&state=PRODUCTION&version=Production",
+        "name": "SAP Business Network Asset Collaboration"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Business Network Commerce Automation",
+    "url": "https://www.sap.com/products/business-network/commerce-automation.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Business Network Freight Collaboration",
+    "url": "https://www.sap.com/products/scm/freight-collaboration.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "SAP_LBN_FC_OPTION",
+        "url": "https://help.sap.com/docs/SAP_LBN_FC_OPTION?locale=en-US&state=PRODUCTION&version=LBN",
+        "name": "SAP Business Network Freight Collaboration"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Business Network Global Track and Trace",
+    "url": "https://www.sap.com/products/scm/global-track-and-trace.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "SAP_LBN_GTT_OPTION",
+        "url": "https://help.sap.com/docs/SAP_LBN_GTT_OPTION?locale=en-US&state=PRODUCTION&version=LBN",
+        "name": "SAP Business Network Global Track and Trace"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Business Network Material Traceability",
+    "url": "https://www.sap.com/products/business-network/material-traceability.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_LBN_MT_OPTION",
+        "url": "https://help.sap.com/docs/SAP_LBN_MT_OPTION?locale=en-US&state=PRODUCTION&version=LBN",
+        "name": "SAP Business Network Material Traceability"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Business Network Planning Collaboration",
+    "url": "https://www.sap.com/products/business-network/planning-collaboration.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Business Network Supply Chain Collaboration",
+    "url": "https://www.sap.com/products/business-network/supply-chain-collaboration.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Business One",
+    "url": "https://www.sap.com/products/erp/business-one.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_BUSINESS_ONE",
+        "url": "https://help.sap.com/docs/SAP_BUSINESS_ONE?locale=en-US&state=PRODUCTION&version=10.0",
+        "name": "SAP Business One"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Business Planning and Consolidation",
+    "url": "https://www.sap.com/products/data-cloud/bpc.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP BusinessObjects Business Intelligence",
+    "url": "https://www.sap.com/products/data-cloud/bi-platform.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "Career and Talent Development",
+    "url": "https://www.sap.com/products/hcm/career-talent-development.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "business-successfactors"
+  },
+  {
+    "name": "SAP Cash Application",
+    "url": "https://www.sap.com/products/financial-management/cash-application.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_CASH_APPLICATION",
+        "url": "https://help.sap.com/docs/SAP_CASH_APPLICATION?locale=en-US&state=PRODUCTION&version=Latest",
+        "name": "SAP Cash Application"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Central Finance Master Data Replication by insightsoftware",
+    "url": "https://www.sap.com/products/financial-management/central-finance-master-data.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Central Finance Transaction Replication by insightsoftware",
+    "url": "https://www.sap.com/products/financial-management/central-finance-transaction-replication.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Certification",
+    "url": "https://www.sap.com/training-certification/sap-certification.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Change Impact Analysis by Tricentis",
+    "url": "https://www.sap.com/products/technology-platform/change-impact-analysis.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_CHANGE_IMPACT_ANALYSIS_BY_TRICENTIS",
+        "url": "https://help.sap.com/docs/SAP_CHANGE_IMPACT_ANALYSIS_BY_TRICENTIS?locale=en-US&state=PRODUCTION&version=2026.1",
+        "name": "SAP Change Impact Analysis by Tricentis"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Channel Program Management by Vistex",
+    "url": "https://www.sap.com/products/financial-management/channel-program-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_CPM_BY_VISTEX",
+        "url": "https://help.sap.com/docs/SAP_CPM_BY_VISTEX?locale=en-US&state=PRODUCTION&version=5.0",
+        "name": "SAP Channel Program Management by Vistex"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Cloud Appliance Library",
+    "url": "https://www.sap.com/products/technology-platform/cloud-appliance-library.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_CLOUD_APPLIANCE_LIBRARY",
+        "url": "https://help.sap.com/docs/SAP_CLOUD_APPLIANCE_LIBRARY?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Cloud Appliance Library"
+      }
+    ],
+    "technicalTarget": "cloud-appliance-library"
+  },
+  {
+    "name": "SAP Cloud ERP",
+    "url": "https://www.sap.com/products/erp/s4hana.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "s4-public"
+  },
+  {
+    "name": "SAP Cloud ERP Private",
+    "url": "https://www.sap.com/products/erp/cloud-erp-private.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "s4-private"
+  },
+  {
+    "name": "SAP Cloud for Energy",
+    "url": "https://www.sap.com/products/scm/cloud-for-energy.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "SAP_Cloud_for_Energy",
+        "url": "https://help.sap.com/docs/SAP_Cloud_for_Energy?locale=en-US&state=PRODUCTION&version=CLOUD",
+        "name": "SAP Cloud for Energy"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Cloud Identity Access Governance",
+    "url": "https://www.sap.com/products/financial-management/cloud-iam.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_CLOUD_IDENTITY_ACCESS_GOVERNANCE",
+        "url": "https://help.sap.com/docs/SAP_CLOUD_IDENTITY_ACCESS_GOVERNANCE?locale=en-US&state=PRODUCTION&version=CLOUDFOUNDRY",
+        "name": "SAP Cloud Identity Access Governance"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Commerce Cloud",
+    "url": "https://www.sap.com/products/crm/commerce-cloud.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_COMMERCE_CLOUD_PUBLIC_CLOUD",
+        "url": "https://help.sap.com/docs/SAP_COMMERCE_CLOUD_PUBLIC_CLOUD?locale=en-US&state=PRODUCTION&version=v2211",
+        "name": "SAP Commerce Cloud in the Public Cloud"
+      },
+      {
+        "id": "SAP_COMMERCE_CLOUD_HOSTED",
+        "url": "https://help.sap.com/docs/SAP_COMMERCE_CLOUD_HOSTED?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Commerce Cloud on SAP Infrastructure"
+      }
+    ],
+    "technicalTarget": "commerce-cloud"
+  },
+  {
+    "name": "SAP Commerce Marketplace Management by Mirakl",
+    "url": "https://www.sap.com/products/crm/commerce-marketplace-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_COMMERCE_MARKETPLACE_MANAGEMENT_BY_MIRAKL",
+        "url": "https://help.sap.com/docs/SAP_COMMERCE_MARKETPLACE_MANAGEMENT_BY_MIRAKL?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Commerce Marketplace Management by Mirakl"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Commodity Management",
+    "url": "https://www.sap.com/products/scm/commodity-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Complaint Handling",
+    "url": "https://www.sap.com/products/scm/complaint-handling.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "SAP_CMH",
+        "url": "https://help.sap.com/docs/SAP_CMH?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Complaint Handling"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "Concur Expense",
+    "url": "https://www.concur.com/en-us/expense-management",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "CONCUR_EXPENSE",
+        "url": "https://help.sap.com/docs/CONCUR_EXPENSE?locale=en-US&state=PRODUCTION&version=2026_09",
+        "name": "Concur Expense"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "Concur Invoice",
+    "url": "https://www.concur.com/en-us/invoice-management",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "CONCUR_INVOICE",
+        "url": "https://help.sap.com/docs/CONCUR_INVOICE?locale=en-US&state=PRODUCTION&version=2026_09",
+        "name": "Concur Invoice"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "Concur Travel",
+    "url": "https://www.concur.com/en-us/travel-booking",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "CONCUR_TRAVEL",
+        "url": "https://help.sap.com/docs/CONCUR_TRAVEL?locale=en-US&state=PRODUCTION&version=2026_09",
+        "name": "Concur Travel"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "Concur TripLink",
+    "url": "https://www.concur.com/en-us/triplink",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Content Management Core by OpenText | Content Management",
+    "url": "https://www.sap.com/products/technology-platform/content-management-core.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Content Stream by Skillsoft",
+    "url": "https://www.sap.com/products/hcm/content-stream-skillsoft.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Corporate Serialization",
+    "url": "https://www.sap.com/products/scm/corporate-serialization.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_CORPORATE_SERIALIZATION",
+        "url": "https://help.sap.com/docs/SAP_CORPORATE_SERIALIZATION?locale=en-US&state=PRODUCTION&version=1.3",
+        "name": "SAP Corporate Serialization"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP CPQ",
+    "url": "https://www.sap.com/products/financial-management/cpq.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_CPQ",
+        "url": "https://help.sap.com/docs/SAP_CPQ?locale=en-US&state=PRODUCTION&version=2609",
+        "name": "SAP CPQ"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Crystal Reports",
+    "url": "https://www.sap.com/products/data-cloud/crystal-reports.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_CRYSTAL_REPORTS",
+        "url": "https://help.sap.com/docs/SAP_CRYSTAL_REPORTS?locale=en-US&state=PRODUCTION&version=2025",
+        "name": "SAP Crystal Reports"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Crystal Server",
+    "url": "https://www.sap.com/products/data-cloud/crystal-server.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_CRYSTAL_SERVER",
+        "url": "https://help.sap.com/docs/SAP_CRYSTAL_SERVER?locale=en-US&state=PRODUCTION&version=2025",
+        "name": "SAP Crystal Server"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Crystal Solutions",
+    "url": "https://www.sap.com/products/data-cloud/crystal-bi.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Customer Activity Repository applications bundle",
+    "url": "https://www.sap.com/products/crm/customer-activity-repository.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "CARAB",
+        "url": "https://help.sap.com/docs/CARAB?locale=en-US&state=PRODUCTION&version=6.0.2",
+        "name": "SAP Customer Activity Repository applications bundle"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Customer Data Platform",
+    "url": "https://www.sap.com/products/data-cloud/customer-data-platform.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_CUSTOMER_DATA_PLATFORM",
+        "url": "https://help.sap.com/docs/SAP_CUSTOMER_DATA_PLATFORM?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Customer Data Platform"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Customer Identity and Access Management",
+    "url": "https://www.sap.com/products/technology-platform/customer-identity.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Dairy Management by msg",
+    "url": "https://www.sap.com/products/scm/dairy-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_DAIRY_MANAGEMENT_BY_MSG",
+        "url": "https://help.sap.com/docs/SAP_DAIRY_MANAGEMENT_BY_MSG?locale=en-US&state=PRODUCTION&version=4.5.3.0",
+        "name": "SAP Dairy Management by msg"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Data Intelligence Cloud",
+    "url": "https://www.sap.com/products/data-cloud/data-intelligence.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_DATA_INTELLIGENCE",
+        "url": "https://help.sap.com/docs/SAP_DATA_INTELLIGENCE?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Data Intelligence Cloud"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Data Maintenance by Vistex",
+    "url": "https://www.sap.com/products/financial-management/data-maintenance.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Data Quality Management, microservices for location data",
+    "url": "https://www.sap.com/products/data-cloud/data-quality-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_Data_Quality_Management_microservices_for_location_data",
+        "url": "https://help.sap.com/docs/SAP_Data_Quality_Management_microservices_for_location_data?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Data Quality Management, microservices for location data"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Data Services",
+    "url": "https://www.sap.com/products/data-cloud/data-services.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_DATA_SERVICES",
+        "url": "https://help.sap.com/docs/SAP_DATA_SERVICES?locale=en-US&state=PRODUCTION&version=2025.00",
+        "name": "SAP Data Services"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Datasphere",
+    "url": "https://www.sap.com/products/data-cloud/datasphere.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_DATASPHERE",
+        "url": "https://help.sap.com/docs/SAP_DATASPHERE?locale=en-US&state=PRODUCTION&version=cloud",
+        "name": "SAP Datasphere"
+      },
+      {
+        "id": "SAP_BW_BRIDGE",
+        "url": "https://help.sap.com/docs/SAP_BW_BRIDGE?locale=en-US&state=PRODUCTION&version=cloud",
+        "name": "SAP Datasphere, SAP BW Bridge"
+      }
+    ],
+    "technicalTarget": "business-datasphere"
+  },
+  {
+    "name": "SAP Digital Access",
+    "url": "https://www.sap.com/products/financial-management/digital-access.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Digital Asset Management Cloud by OpenText",
+    "url": "https://www.sap.com/products/crm/digital-asset-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Digital Manufacturing",
+    "url": "https://www.sap.com/products/scm/digital-manufacturing.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_DIGITAL_MANUFACTURING",
+        "url": "https://help.sap.com/docs/SAP_DIGITAL_MANUFACTURING?locale=en-US&state=PRODUCTION&version=latest",
+        "name": "SAP Digital Manufacturing"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Document AI",
+    "url": "https://www.sap.com/products/artificial-intelligence/document-ai.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "document-ai"
+  },
+  {
+    "name": "SAP Document and Reporting Compliance",
+    "url": "https://www.sap.com/products/financial-management/document-reporting-compliance.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Document and Reporting Compliance, cloud edition, starter option",
+    "url": "https://www.sap.com/products/financial-management/document-and-reporting-compliance-cloud-edition-starter-option.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Document Presentment by OpenText",
+    "url": "https://www.sap.com/products/technology-platform/document-presentment.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_DOCUMENT_PRESENTMENT_BY_OPENTEXT",
+        "url": "https://help.sap.com/docs/SAP_DOCUMENT_PRESENTMENT_BY_OPENTEXT?locale=en-US&state=PRODUCTION&version=CONTINUOUS",
+        "name": "SAP Document Presentment by OpenText"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP E-Mobility",
+    "url": "https://www.sap.com/products/scm/e-mobility.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_E_MOBILITY",
+        "url": "https://help.sap.com/docs/SAP_E_MOBILITY?locale=en-US&state=PRODUCTION&version=CLOUD",
+        "name": "SAP E-Mobility"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Engagement Cloud",
+    "url": "https://www.sap.com/products/crm/engagement-cloud.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ENGAGEMENT_CLOUD",
+        "url": "https://help.sap.com/docs/SAP_ENGAGEMENT_CLOUD?locale=en-US&state=PRODUCTION&version=CLOUD",
+        "name": "SAP Engagement Cloud, enterprise edition"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Engineering Control Center",
+    "url": "https://www.sap.com/products/scm/engineering-control-center.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ENGINEERING_CONTROL_CENTER",
+        "url": "https://help.sap.com/docs/SAP_ENGINEERING_CONTROL_CENTER?locale=en-US&state=PRODUCTION&version=5.2",
+        "name": "SAP Engineering Control Center"
+      },
+      {
+        "id": "SAP_ECTR_INTERFACE_TO_ECAD",
+        "url": "https://help.sap.com/docs/SAP_ECTR_INTERFACE_TO_ECAD?locale=en-US&state=PRODUCTION&version=1.1",
+        "name": "SAP Engineering Control Center Interface to ECAD"
+      },
+      {
+        "id": "SAP_ECTR_INTERFACE_TO_NX",
+        "url": "https://help.sap.com/docs/SAP_ECTR_INTERFACE_TO_NX?locale=en-US&state=PRODUCTION&version=5.2",
+        "name": "SAP Engineering Control Center Interface to NX"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Enterprise Continuous Testing by Tricentis",
+    "url": "https://www.sap.com/products/technology-platform/enterprise-continuous-testing.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ENTERPRISE_CONTINUOUS_TESTING_BY_TRICENTIS",
+        "url": "https://help.sap.com/docs/SAP_ENTERPRISE_CONTINUOUS_TESTING_BY_TRICENTIS?locale=en-US&state=PRODUCTION&version=2025.2",
+        "name": "SAP Enterprise Continuous Testing by Tricentis"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Enterprise Data Integrity Testing by Tricentis",
+    "url": "https://www.sap.com/products/technology-platform/enterprise-data-testing.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Enterprise Performance Testing by Tricentis",
+    "url": "https://www.sap.com/products/technology-platform/enterprise-performance-testing.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ENTERPRISE_PERFORMANCE_TESTING_BY_TRICENTIS",
+        "url": "https://help.sap.com/docs/SAP_ENTERPRISE_PERFORMANCE_TESTING_BY_TRICENTIS?locale=en-US&state=PRODUCTION&version=2025.1",
+        "name": "SAP Enterprise Performance Testing by Tricentis"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Enterprise Portfolio and Project Management",
+    "url": "https://www.sap.com/products/scm/project-portfolio-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Enterprise Service Management",
+    "url": "https://www.sap.com/products/crm/enterprise-service-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "CX_CNS_ESM",
+        "url": "https://help.sap.com/docs/CX_CNS_ESM?locale=en-US&state=PRODUCTION&version=CSS_SHIP",
+        "name": "SAP Enterprise Service Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Enterprise Service Management Free Trial",
+    "url": "https://www.sap.com/products/crm/enterprise-service-management/trial.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Enterprise Threat Detection",
+    "url": "https://www.sap.com/products/financial-management/enterprise-threat-detection.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ENTERPRISE_THREAT_DETECTION",
+        "url": "https://help.sap.com/docs/SAP_ENTERPRISE_THREAT_DETECTION?locale=en-US&state=PRODUCTION&version=2.7",
+        "name": "SAP Enterprise Threat Detection"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Entitlement Management",
+    "url": "https://www.sap.com/products/financial-management/entitlement-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ENTITLEMENT_MANAGEMENT",
+        "url": "https://help.sap.com/docs/SAP_ENTITLEMENT_MANAGEMENT?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Entitlement Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP ERP",
+    "url": "https://www.sap.com/products/erp/what-is-sap-erp.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_INTEGRATION_WITH_CONCUR_SOLUTIONS",
+        "url": "https://help.sap.com/docs/SAP_INTEGRATION_WITH_CONCUR_SOLUTIONS?locale=en-US&state=PRODUCTION&version=2605",
+        "name": "Integrating SAP On-Premise Systems with SAP Concur"
+      },
+      {
+        "id": "SAP_ERP",
+        "url": "https://help.sap.com/docs/SAP_ERP?locale=en-US&state=PRODUCTION&version=6.18.latest",
+        "name": "SAP ERP"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Event Ticketing",
+    "url": "https://www.sap.com/products/crm/event-ticketing.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_EVENT_TICKETING",
+        "url": "https://help.sap.com/docs/SAP_EVENT_TICKETING?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Event Ticketing"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Excise Tax Management by Vistex",
+    "url": "https://www.sap.com/products/financial-management/excise-tax-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ETM_BY_VISTEX",
+        "url": "https://help.sap.com/docs/SAP_ETM_BY_VISTEX?locale=en-US&state=PRODUCTION&version=5.0",
+        "name": "SAP Excise Tax Management by Vistex"
+      },
+      {
+        "id": "SAP_S4HANA_ETM_BY_VISTEX",
+        "url": "https://help.sap.com/docs/SAP_S4HANA_ETM_BY_VISTEX?locale=en-US&state=PRODUCTION&version=2023.3",
+        "name": "SAP S/4HANA, excise tax management by Vistex"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Extended Enterprise Content Management by OpenText",
+    "url": "https://www.sap.com/products/technology-platform/enterprise-content-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_EXTD_ECM_BY_OT",
+        "url": "https://help.sap.com/docs/SAP_EXTD_ECM_BY_OT?locale=en-US&state=PRODUCTION&version=latest",
+        "name": "SAP Extended Enterprise Content Management by OpenText"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Extended Price Management by Vistex",
+    "url": "https://www.sap.com/products/financial-management/extended-price-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_EPM_BY_VISTEX",
+        "url": "https://help.sap.com/docs/SAP_EPM_BY_VISTEX?locale=en-US&state=PRODUCTION&version=5.0",
+        "name": "SAP Extended Price Management by Vistex"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Extended Warehouse Management",
+    "url": "https://www.sap.com/products/scm/extended-warehouse-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_EWM_Add-on_for_Consumer_Products_for_SAP_S_4HANA",
+        "url": "https://help.sap.com/docs/SAP_EWM_Add-on_for_Consumer_Products_for_SAP_S_4HANA?locale=en-US&state=PRODUCTION&version=1.0.1.1",
+        "name": "SAP EWM Add-on for Consumer Products for SAP S/4HANA"
+      },
+      {
+        "id": "SAP_EXTENDED_WAREHOUSE_MANAGEMENT",
+        "url": "https://help.sap.com/docs/SAP_EXTENDED_WAREHOUSE_MANAGEMENT?locale=en-US&state=PRODUCTION&version=9.5.0.2",
+        "name": "SAP Extended Warehouse Management (SAP EWM)"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Field Service and Asset Management",
+    "url": "https://www.sap.com/products/scm/field-service-and-asset-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_FIELD_SERVICE_MANAGEMENT",
+        "url": "https://help.sap.com/docs/SAP_FIELD_SERVICE_MANAGEMENT?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Field Service and Asset Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Fieldglass Contingent Workforce Management",
+    "url": "https://www.sap.com/products/hcm/contingent-workforce-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Fieldglass Services Procurement",
+    "url": "https://www.sap.com/products/spend-management/services-procurement.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Fieldglass Worker Profile Management",
+    "url": "https://www.sap.com/products/hcm/worker-profile-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Global Batch Traceability",
+    "url": "https://www.sap.com/products/scm/global-batch-traceability.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_GLOBAL_BATCH_TRACEABILITY",
+        "url": "https://help.sap.com/docs/SAP_GLOBAL_BATCH_TRACEABILITY?locale=en-US&state=PRODUCTION&version=3.0.5",
+        "name": "SAP Global Batch Traceability"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Global Trade Services",
+    "url": "https://www.sap.com/products/financial-management/global-trade-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_GLOBAL_TRADE_SERVICES",
+        "url": "https://help.sap.com/docs/SAP_GLOBAL_TRADE_SERVICES?locale=en-US&state=PRODUCTION&version=11.0.26",
+        "name": "SAP Global Trade Services"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Green Token",
+    "url": "https://www.sap.com/products/scm/green-token.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_GreenToken",
+        "url": "https://help.sap.com/docs/SAP_GreenToken?locale=en-US&state=PRODUCTION&version=Latest",
+        "name": "SAP Green Token"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Grower Management for Perishables by Vistex",
+    "url": "https://www.sap.com/products/scm/grower-management-for-perishables.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_GROWER_MANAGEMENT_FOR_PERISHABLES_BY_VISTEX",
+        "url": "https://help.sap.com/docs/SAP_GROWER_MANAGEMENT_FOR_PERISHABLES_BY_VISTEX?locale=en-US&state=PRODUCTION&version=6.1",
+        "name": "SAP Grower Management for Perishables by Vistex"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "Guided buying",
+    "url": "https://www.sap.com/products/spend-management/procure-to-pay/features/guided-buying.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP HANA Cloud",
+    "url": "https://www.sap.com/products/data-cloud/hana.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "HANA_CLOUD",
+        "url": "https://help.sap.com/docs/HANA_CLOUD?locale=en-US&state=PRODUCTION&version=hanacloud",
+        "name": "SAP HANA Cloud"
+      }
+    ],
+    "technicalTarget": "hana-cloud"
+  },
+  {
+    "name": "Identity and Access Management",
+    "url": "https://www.sap.com/products/financial-management/identity-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Incentive Administration by Vistex",
+    "url": "https://www.sap.com/products/financial-management/incentive-administration.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Incentive Management",
+    "url": "https://www.sap.com/products/crm/incentive-compensation-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_Commissions",
+        "url": "https://help.sap.com/docs/SAP_Commissions?locale=en-US&state=PRODUCTION&version=2610",
+        "name": "SAP Incentive Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Information Lifecycle Management",
+    "url": "https://www.sap.com/products/technology-platform/information-lifecycle-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_INFORMATION_LIFECYCLE_MANAGEMENT",
+        "url": "https://help.sap.com/docs/SAP_INFORMATION_LIFECYCLE_MANAGEMENT?locale=en-US&state=PRODUCTION&version=750%20SP31",
+        "name": "SAP Information Lifecycle Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Information Steward",
+    "url": "https://www.sap.com/products/data-cloud/data-profiling-steward.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_INFORMATION_STEWARD",
+        "url": "https://help.sap.com/docs/SAP_INFORMATION_STEWARD?locale=en-US&state=PRODUCTION&version=2025",
+        "name": "SAP Information Steward"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Integrated Business Planning",
+    "url": "https://www.sap.com/products/scm/integrated-business-planning.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_INTEGRATED_BUSINESS_PLANNING",
+        "url": "https://help.sap.com/docs/SAP_INTEGRATED_BUSINESS_PLANNING?locale=en-US&state=PRODUCTION&version=2608",
+        "name": "SAP Integrated Business Planning"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Integrated Product Development",
+    "url": "https://www.sap.com/products/scm/integrated-product-development.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "PLM_EPD",
+        "url": "https://help.sap.com/docs/PLM_EPD?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Integrated Product Development"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Integration Suite",
+    "url": "https://www.sap.com/products/technology-platform/integration-suite.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_INTEGRATION_SUITE",
+        "url": "https://help.sap.com/docs/SAP_INTEGRATION_SUITE?locale=en-US&state=PRODUCTION&version=CLOUD",
+        "name": "SAP Integration Suite"
+      }
+    ],
+    "technicalTarget": "integration"
+  },
+  {
+    "name": "SAP Intelligent Agriculture",
+    "url": "https://www.sap.com/products/scm/intelligent-agriculture.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_INTELLIGENT_AGRICULTURE",
+        "url": "https://help.sap.com/docs/SAP_INTELLIGENT_AGRICULTURE?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Intelligent Agriculture"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Intelligent Clinical Supply Management",
+    "url": "https://www.sap.com/products/scm/intelligent-clinical-supply-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "S4_INTELLCLINICSUPPLYMGMT",
+        "url": "https://help.sap.com/docs/S4_INTELLCLINICSUPPLYMGMT?locale=en-US&state=PRODUCTION&version=2605",
+        "name": "SAP Intelligent Clinical Supply Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Intercompany Governance by BlackLine",
+    "url": "https://www.sap.com/products/financial-management/intercompany-governance-blackline.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Invoice Management by OpenText",
+    "url": "https://www.sap.com/products/financial-management/invoice-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP INVOICE MGMT BY OT",
+        "url": "https://help.sap.com/docs/SAP%20INVOICE%20MGMT%20BY%20OT?locale=en-US&state=PRODUCTION&version=1.0",
+        "name": "SAP Invoice Management by OpenText"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP IQ",
+    "url": "https://www.sap.com/products/data-cloud/sybase-iq-big-data-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP IQ",
+        "url": "https://help.sap.com/docs/SAP%20IQ?locale=en-US&state=PRODUCTION&version=CURRENT_VERSION",
+        "name": "DBA Cockpit for SAP IQ"
+      },
+      {
+        "id": "SAP_IQ",
+        "url": "https://help.sap.com/docs/SAP_IQ?locale=en-US&state=PRODUCTION&version=16.2.0",
+        "name": "SAP IQ"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "Joule Agents and Joule Assistants",
+    "url": "https://www.sap.com/products/artificial-intelligence/ai-agents.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Joule for Consultants",
+    "url": "https://www.sap.com/products/artificial-intelligence/sap-consulting-capability.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "Joule for developers",
+    "url": "https://www.sap.com/products/artificial-intelligence/joule-for-developers.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "Joule Studio",
+    "url": "https://www.sap.com/products/artificial-intelligence/joule-studio.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Knowledge Central by NICE",
+    "url": "https://www.sap.com/products/crm/knowledge-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Knowledge Graph",
+    "url": "https://www.sap.com/products/artificial-intelligence/knowledge-graph.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Landscape Transformation",
+    "url": "https://www.sap.com/products/data-cloud/landscape-transformation.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_LANDSCAPE_TRANSFORMATION",
+        "url": "https://help.sap.com/docs/SAP_LANDSCAPE_TRANSFORMATION?locale=en-US&state=PRODUCTION&version=2.0.14",
+        "name": "SAP Landscape Transformation"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Landscape Transformation Replication Server",
+    "url": "https://www.sap.com/products/data-cloud/landscape-replication-server.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_LANDSCAPE_TRANSFORMATION_REPLICATION_SERVER",
+        "url": "https://help.sap.com/docs/SAP_LANDSCAPE_TRANSFORMATION_REPLICATION_SERVER?locale=en-US&state=PRODUCTION&version=3.0.15",
+        "name": "SAP Landscape Transformation Replication Server"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP LeanIX",
+    "url": "https://www.sap.com/products/business-transformation-management/enterprise-architecture-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "LEANIX",
+        "url": "https://help.sap.com/docs/LEANIX?locale=en-US&state=PRODUCTION&version=CLOUD",
+        "name": "SAP LeanIX"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Learning Hub",
+    "url": "https://www.sap.com/training-certification/learning-hub.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Linear Asset Management",
+    "url": "https://www.sap.com/products/scm/linear-asset-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Management of Change",
+    "url": "https://www.sap.com/products/scm/management-of-change-moc.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_MANAGEMENT_OF_CHANGE",
+        "url": "https://help.sap.com/docs/SAP_MANAGEMENT_OF_CHANGE?locale=en-US&state=PRODUCTION&version=1.0",
+        "name": "SAP Management of Change"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Market Rates Management",
+    "url": "https://www.sap.com/products/financial-management/market-rates-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_CP_BUS_REUSE_SERVICE_MRM",
+        "url": "https://help.sap.com/docs/SAP_CP_BUS_REUSE_SERVICE_MRM?locale=en-US&state=PRODUCTION&version=DEV",
+        "name": "SAP Market Rates Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Master Data Governance",
+    "url": "https://www.sap.com/products/data-cloud/master-data-governance.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "MASTER_DATA_GOVERNANCE",
+        "url": "https://help.sap.com/docs/MASTER_DATA_GOVERNANCE?locale=en-US&state=PRODUCTION&version=OVERVIEW",
+        "name": "Master Data Governance"
+      },
+      {
+        "id": "SAP_MASTER_DATA_GOVERNANCE",
+        "url": "https://help.sap.com/docs/SAP_MASTER_DATA_GOVERNANCE?locale=en-US&state=PRODUCTION&version=MDG92.latest",
+        "name": "SAP Master Data Governance"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Master Data Governance, EAM extension",
+    "url": "https://www.sap.com/products/data-cloud/master-data-governance-eam.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Master Data Governance, retail and fashion management extension",
+    "url": "https://www.sap.com/products/data-cloud/master-data-governance-fashion-retail.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Meat and Fish Management by msg",
+    "url": "https://www.sap.com/products/scm/management-meat-fish.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Multi-Bank Connectivity",
+    "url": "https://www.sap.com/products/financial-management/multi-bank-connectivity.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_MULTI_BANK_CONNECTIVITY",
+        "url": "https://help.sap.com/docs/SAP_MULTI_BANK_CONNECTIVITY?locale=en-US&state=PRODUCTION&version=CLOUD",
+        "name": "SAP Multi-Bank Connectivity"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Omnichannel Promotion Pricing",
+    "url": "https://www.sap.com/products/crm/omnichannel-promotion-pricing.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "OPP",
+        "url": "https://help.sap.com/docs/OPP?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Omnichannel Promotion Pricing"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Omnichannel Sales Transfer and Audit",
+    "url": "https://www.sap.com/products/crm/omnichannel-sales-transfer-and-audit.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_OMNICHANNEL_SALES_TRANSFER_AND_AUDIT",
+        "url": "https://help.sap.com/docs/SAP_OMNICHANNEL_SALES_TRANSFER_AND_AUDIT?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Omnichannel Sales Transfer and Audit"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Order Management for sourcing and availability",
+    "url": "https://www.sap.com/products/crm/sourcing-and-availability.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_Order_Management_for_Sourcing_and_Availability",
+        "url": "https://help.sap.com/docs/SAP_Order_Management_for_Sourcing_and_Availability?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Order Management for Sourcing and Availability"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Order Management foundation",
+    "url": "https://www.sap.com/products/crm/order-management-system.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_Order_Management_Foundation",
+        "url": "https://help.sap.com/docs/SAP_Order_Management_Foundation?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Order Management Foundation"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Paybacks and Chargebacks by Vistex",
+    "url": "https://www.sap.com/products/financial-management/paybacks-chargebacks.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "PLM System Integration",
+    "url": "https://www.sap.com/products/scm/plm-integration.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "PostgreSQL on SAP BTP - hyperscaler option",
+    "url": "https://www.sap.com/products/technology-platform/postgresql-on-sap-btp-hyperscaler-option.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Price Staging Hub by Vistex",
+    "url": "https://www.sap.com/products/financial-management/price-staging-hub.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_PSH_BY_VISTEX",
+        "url": "https://help.sap.com/docs/SAP_PSH_BY_VISTEX?locale=en-US&state=PRODUCTION&version=5.0",
+        "name": "SAP Price Staging Hub by Vistex"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Process Control",
+    "url": "https://www.sap.com/products/financial-management/internal-control.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_PROCESS_CONTROL",
+        "url": "https://help.sap.com/docs/SAP_PROCESS_CONTROL?locale=en-US&state=PRODUCTION&version=12.0.27",
+        "name": "SAP Process Control"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "Procurement expansion package for SAP Cloud ERP | SAP Ariba",
+    "url": "https://www.sap.com/products/spend-management/procurement-expansion-package.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Product Lifecycle Costing",
+    "url": "https://www.sap.com/products/scm/product-lifecycle-costing.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_PRODUCT_LIFECYCLE_COSTING",
+        "url": "https://help.sap.com/docs/SAP_PRODUCT_LIFECYCLE_COSTING?locale=en-US&state=PRODUCTION&version=4.12",
+        "name": "SAP Product Lifecycle Costing"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Product and Process Governance by BDF",
+    "url": "https://www.sap.com/products/scm/product-and-process-governance.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "PPG_ECC",
+        "url": "https://help.sap.com/docs/PPG_ECC?locale=en-US&state=PRODUCTION&version=2.1",
+        "name": "SAP Product and Process Governance by BDF"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Profitability and Performance Management",
+    "url": "https://www.sap.com/products/financial-management/profitability-and-performance-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_PROFITABILITY_PERFORMANCE_MANAGEMENT",
+        "url": "https://help.sap.com/docs/SAP_PROFITABILITY_PERFORMANCE_MANAGEMENT?locale=en-US&state=PRODUCTION&version=3.28",
+        "name": "SAP Profitability and Performance Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Project and Resource Management",
+    "url": "https://www.sap.com/products/scm/project-resource-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "PPRM_OD",
+        "url": "https://help.sap.com/docs/PPRM_OD?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Project and Resource Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "Public Sector Procurement Solutions | SAP Ariba",
+    "url": "https://www.sap.com/products/spend-management/public-sector-procurement-solutions.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Replication Server",
+    "url": "https://www.sap.com/products/data-cloud/data-replication-integration.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_REPLICATION_SERVER",
+        "url": "https://help.sap.com/docs/SAP_REPLICATION_SERVER?locale=en-US&state=PRODUCTION&version=16.1.0.2",
+        "name": "SAP Replication Server"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Responsible Design and Production",
+    "url": "https://www.sap.com/products/scm/responsible-design-and-production.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_RESPONSIBLE_DESIGN_AND_PRODUCTION",
+        "url": "https://help.sap.com/docs/SAP_RESPONSIBLE_DESIGN_AND_PRODUCTION?locale=en-US&state=PRODUCTION&version=latest",
+        "name": "SAP Responsible Design and Production"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Revenue Data Orchestration by DigitalRoute",
+    "url": "https://www.sap.com/products/financial-management/revenue-data-orchestration.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Revenue Growth Management",
+    "url": "https://www.sap.com/products/crm/revenue-growth-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_REVENUE_GROWTH_MANAGEMENT",
+        "url": "https://help.sap.com/docs/SAP_REVENUE_GROWTH_MANAGEMENT?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Revenue Growth Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Rights and Royalty Management by Vistex",
+    "url": "https://www.sap.com/products/financial-management/ip-rights-and-royalty-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "RISE with SAP",
+    "url": "https://www.sap.com/products/erp/rise.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Risk and Assurance Management",
+    "url": "https://www.sap.com/products/financial-management/financial-compliance-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "FINANCIAL_COMPLIANCE_CF",
+        "url": "https://help.sap.com/docs/FINANCIAL_COMPLIANCE_CF?locale=en-US&state=PRODUCTION&version=1.0",
+        "name": "SAP Risk and Assurance Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Risk Management",
+    "url": "https://www.sap.com/products/financial-management/risk-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_RISK_MANAGEMENT",
+        "url": "https://help.sap.com/docs/SAP_RISK_MANAGEMENT?locale=en-US&state=PRODUCTION&version=12.0.29",
+        "name": "SAP Risk Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Rural Sourcing Management",
+    "url": "https://www.sap.com/products/scm/agriculture-supply-chain-mgmt.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_RURAL_SOURCING_MANAGEMENT",
+        "url": "https://help.sap.com/docs/SAP_RURAL_SOURCING_MANAGEMENT?locale=en-US&state=PRODUCTION&version=2311",
+        "name": "SAP Rural Sourcing Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP S/4HANA Asset Management for resource scheduling",
+    "url": "https://www.sap.com/products/scm/resource-scheduling.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "sap-core"
+  },
+  {
+    "name": "SAP S/4HANA Cloud for advanced payment mgt.",
+    "url": "https://www.sap.com/products/financial-management/advanced-payment-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP S/4HANA Cloud for cash management",
+    "url": "https://www.sap.com/products/financial-management/cash-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP S/4HANA Cloud for central finance",
+    "url": "https://www.sap.com/products/financial-management/central-finance.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP S/4HANA Cloud for contract accounting and invoicing",
+    "url": "https://www.sap.com/products/financial-management/cloud-accounting-invoicing.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP S/4HANA Cloud for EHS workplace safety",
+    "url": "https://www.sap.com/products/scm/safety-management-software.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "sap-core"
+  },
+  {
+    "name": "SAP S/4HANA Cloud for receivables mgt.",
+    "url": "https://www.sap.com/products/financial-management/accounts-receivable-automation.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP S/4HANA Cloud for treasury and risk management",
+    "url": "https://www.sap.com/products/financial-management/treasury-risk-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP S/4HANA Finance for group reporting",
+    "url": "https://www.sap.com/products/financial-management/s4hana-financial-consolidation.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "sap-core"
+  },
+  {
+    "name": "SAP S/4HANA for advanced ATP",
+    "url": "https://www.sap.com/products/scm/aatp.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "sap-core"
+  },
+  {
+    "name": "SAP S/4HANA for contract, lease, and real estate mgt.",
+    "url": "https://www.sap.com/products/financial-management/real-estate-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "sap-core"
+  },
+  {
+    "name": "SAP S/4HANA for EHS environment management | Environmental Management Software",
+    "url": "https://www.sap.com/products/scm/environmental-management-software.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "sap-core"
+  },
+  {
+    "name": "SAP S/4HANA for fashion and vertical business",
+    "url": "https://www.sap.com/products/scm/s4hana-fashion.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "sap-core"
+  },
+  {
+    "name": "SAP S/4HANA for product compliance",
+    "url": "https://www.sap.com/products/scm/product-compliance.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP S/4HANA for Spatial Asset Management",
+    "url": "https://www.sap.com/products/scm/spatial-asset-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "sap-core"
+  },
+  {
+    "name": "SAP S/4HANA Manufacturing for planning and scheduling",
+    "url": "https://www.sap.com/products/scm/manufacturing-for-planning-and-scheduling.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "sap-core"
+  },
+  {
+    "name": "SAP S/4HANA Manufacturing solutions",
+    "url": "https://www.sap.com/products/scm/s4hana-manufacturing-solutions.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "sap-core"
+  },
+  {
+    "name": "SAP S/4HANA Retail for merchandise management",
+    "url": "https://www.sap.com/products/scm/retail-merchandise-mgmt.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "sap-core"
+  },
+  {
+    "name": "SAP S/4HANA Supply Chain for extended service parts planning",
+    "url": "https://www.sap.com/products/scm/extended-service-parts-planning.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "sap-core"
+  },
+  {
+    "name": "SAP Sales Cloud",
+    "url": "https://www.sap.com/products/crm/sales-cloud.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Secure Login Service",
+    "url": "https://www.sap.com/products/financial-management/secure-login-service-for-gui.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Self-Service for Utilities by SEW",
+    "url": "https://www.sap.com/products/crm/self-service-utilities.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Service and Asset Manager",
+    "url": "https://www.sap.com/products/scm/asset-manager.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_ASSET_MANAGER",
+        "url": "https://help.sap.com/docs/SAP_ASSET_MANAGER?locale=en-US&state=PRODUCTION&version=2110",
+        "name": "SAP Asset Manager"
+      },
+      {
+        "id": "SAP_SERVICE_ASSET_MANAGER",
+        "url": "https://help.sap.com/docs/SAP_SERVICE_ASSET_MANAGER?locale=en-US&state=PRODUCTION&version=2511.2",
+        "name": "SAP Service and Asset Manager"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Service Cloud",
+    "url": "https://www.sap.com/products/crm/service-cloud.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "service-cloud-v2"
+  },
+  {
+    "name": "SAP Signavio Journey Modeler",
+    "url": "https://www.signavio.com/products/journey-modeler",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "SIGNAVIO_JOURNEY_MODELER",
+        "url": "https://help.sap.com/docs/SIGNAVIO_JOURNEY_MODELER?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Signavio Journey Modeler"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Signavio Process Collaboration Hub",
+    "url": "https://www.signavio.com/products/collaboration-hub",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "SIGNAVIO_PROCESS_COLLABORATION_HUB",
+        "url": "https://help.sap.com/docs/SIGNAVIO_PROCESS_COLLABORATION_HUB?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Signavio Process Collaboration Hub"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Signavio Process Governance",
+    "url": "https://www.signavio.com/products/process-governance",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "SIGNAVIO_PROCESS_GOVERNANCE",
+        "url": "https://help.sap.com/docs/SIGNAVIO_PROCESS_GOVERNANCE?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Signavio Process Governance"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Signavio Process Intelligence",
+    "url": "https://www.signavio.com/products/process-intelligence",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "SIGNAVIO_PROCESS_INTELLIGENCE",
+        "url": "https://help.sap.com/docs/SIGNAVIO_PROCESS_INTELLIGENCE?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Signavio Process Intelligence"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Signavio Process Manager",
+    "url": "https://www.signavio.com/products/process-manager",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "SIGNAVIO_PROCESS_MANAGER",
+        "url": "https://help.sap.com/docs/SIGNAVIO_PROCESS_MANAGER?locale=en-US&state=PRODUCTION&version=SHIP",
+        "name": "SAP Signavio Process Manager"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Single Sign-On",
+    "url": "https://www.sap.com/products/financial-management/single-sign-on-solution.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_SINGLE_SIGN-ON",
+        "url": "https://help.sap.com/docs/SAP_SINGLE_SIGN-ON?locale=en-US&state=PRODUCTION&version=3.0",
+        "name": "SAP Single Sign-On"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SmartRecruiters for SAP SuccessFactors",
+    "url": "https://www.sap.com/products/hcm/recruiting-software.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Solution Sales Configuration",
+    "url": "https://www.sap.com/products/financial-management/solution-sales-configuration.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "SAP_SOLUTION_SALES_CONFIGURATION",
+        "url": "https://help.sap.com/docs/SAP_SOLUTION_SALES_CONFIGURATION?locale=en-US&state=PRODUCTION&version=3.1.0.6",
+        "name": "SAP Solution Sales Configuration"
+      },
+      {
+        "id": "SAP_SOL_SALES_CONFIG_OD",
+        "url": "https://help.sap.com/docs/SAP_SOL_SALES_CONFIG_OD?locale=en-US&state=PRODUCTION&version=2211.JDK21.CCV2",
+        "name": "SAP Solution Sales Configuration for SAP Commerce Cloud"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Sovereign Cloud",
+    "url": "https://www.sap.com/products/security-and-sovereignty.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "Spend Analytics Software",
+    "url": "https://www.sap.com/products/spend-management/spend-analytics-software.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Sports One",
+    "url": "https://www.sap.com/products/data-cloud/sports-one.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_SPORTS_ONE",
+        "url": "https://help.sap.com/docs/SAP_SPORTS_ONE?locale=en-US&state=PRODUCTION&version=Latest",
+        "name": "SAP Sports One"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "Spot Buy Capability",
+    "url": "https://www.sap.com/products/spend-management/procure-to-pay/features/spot-buy.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP SQL Anywhere",
+    "url": "https://www.sap.com/products/data-cloud/sql-anywhere.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_SQL_Anywhere",
+        "url": "https://help.sap.com/docs/SAP_SQL_Anywhere?locale=en-US&state=PRODUCTION&version=17.0.01",
+        "name": "SAP SQL Anywhere"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Student Lifecycle Management for SAP S/4HANA Cloud Private Edition",
+    "url": "https://www.sap.com/products/erp/student-lifecycle-management-for-sap-s4hana-cloud-private-edition.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Subscription Billing",
+    "url": "https://www.sap.com/products/financial-management/subscription-billing.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "CLOUD_TO_CASH_OD",
+        "url": "https://help.sap.com/docs/CLOUD_TO_CASH_OD?locale=en-US&state=PRODUCTION&version=2026-09-14",
+        "name": "SAP Subscription Billing"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP SuccessFactors Compensation",
+    "url": "https://www.sap.com/products/hcm/compensation-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_SUCCESSFACTORS_COMPENSATION",
+        "url": "https://help.sap.com/docs/SAP_SUCCESSFACTORS_COMPENSATION?locale=en-US&state=PRODUCTION&version=2611",
+        "name": "SAP SuccessFactors Compensation"
+      }
+    ],
+    "technicalTarget": "business-successfactors"
+  },
+  {
+    "name": "SAP SuccessFactors Document Management",
+    "url": "https://www.sap.com/products/hcm/intelligent-document-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP SuccessFactors Employee Central",
+    "url": "https://www.sap.com/products/hcm/employee-central-hris.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL",
+        "url": "https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL?locale=en-US&state=PRODUCTION&version=2611",
+        "name": "SAP SuccessFactors Employee Central"
+      }
+    ],
+    "technicalTarget": "business-successfactors"
+  },
+  {
+    "name": "SAP SuccessFactors Employee Central Payroll",
+    "url": "https://www.sap.com/products/hcm/employee-central-payroll.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL",
+        "url": "https://help.sap.com/docs/SAP_SUCCESSFACTORS_EMPLOYEE_CENTRAL_PAYROLL?locale=en-US&state=PRODUCTION&version=2611",
+        "name": "SAP SuccessFactors Employee Central Payroll"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP SuccessFactors Enterprise Service Management",
+    "url": "https://www.sap.com/products/hcm/enterprise-service-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_SUCCESSFACTORS_ENTERPRISE_SERVICE_MANAGEMENT",
+        "url": "https://help.sap.com/docs/SAP_SUCCESSFACTORS_ENTERPRISE_SERVICE_MANAGEMENT?locale=en-US&state=PRODUCTION&version=2611",
+        "name": "SAP SuccessFactors Enterprise Service Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP SuccessFactors Learning",
+    "url": "https://www.sap.com/products/hcm/corporate-lms.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_SUCCESSFACTORS_LEARNING",
+        "url": "https://help.sap.com/docs/SAP_SUCCESSFACTORS_LEARNING?locale=en-US&state=PRODUCTION&version=2611",
+        "name": "SAP SuccessFactors Learning"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP SuccessFactors Onboarding",
+    "url": "https://www.sap.com/products/hcm/employee-onboarding.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_SUCCESSFACTORS_ONBOARDING",
+        "url": "https://help.sap.com/docs/SAP_SUCCESSFACTORS_ONBOARDING?locale=en-US&state=PRODUCTION&version=2611",
+        "name": "SAP SuccessFactors Onboarding"
+      }
+    ],
+    "technicalTarget": "business-successfactors"
+  },
+  {
+    "name": "SAP SuccessFactors Performance & Goals",
+    "url": "https://www.sap.com/products/hcm/performance-goals.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": "business-successfactors"
+  },
+  {
+    "name": "SAP SuccessFactors Talent Management",
+    "url": "https://www.sap.com/products/hcm/talent-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP SuccessFactors Time Tracking",
+    "url": "https://www.sap.com/products/hcm/employee-time-tracking-software.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_SUCCESSFACTORS_TIME_TRACKING",
+        "url": "https://help.sap.com/docs/SAP_SUCCESSFACTORS_TIME_TRACKING?locale=en-US&state=PRODUCTION&version=2611",
+        "name": "SAP SuccessFactors Time Tracking"
+      }
+    ],
+    "technicalTarget": "business-successfactors"
+  },
+  {
+    "name": "SAP SuccessFactors Work Zone",
+    "url": "https://www.sap.com/products/hcm/workzone-hr.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_SUCCESSFACTORS_WORK_ZONE",
+        "url": "https://help.sap.com/docs/SAP_SUCCESSFACTORS_WORK_ZONE?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP SuccessFactors Work Zone"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Sustainability Control Tower",
+    "url": "https://www.sap.com/products/financial-management/sustainability-control-tower.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_SUS_SCT",
+        "url": "https://help.sap.com/docs/SAP_SUS_SCT?locale=en-US&state=PRODUCTION&version=LATEST",
+        "name": "SAP Sustainability Control Tower"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Sustainability Data Exchange",
+    "url": "https://www.sap.com/products/business-network/sustainability-data-exchange.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_Sustainability_Data_Exchange",
+        "url": "https://help.sap.com/docs/SAP_Sustainability_Data_Exchange?locale=en-US&state=PRODUCTION&version=Latest",
+        "name": "SAP Sustainability Data Exchange"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Sustainability Footprint Management",
+    "url": "https://www.sap.com/products/scm/sustainability-footprint-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_BTP_PFM",
+        "url": "https://help.sap.com/docs/SAP_BTP_PFM?locale=en-US&state=PRODUCTION&version=LATEST",
+        "name": "SAP Sustainability Footprint Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Territory and Quota",
+    "url": "https://www.sap.com/products/crm/territory-and-quota.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_Territory_and_Quota",
+        "url": "https://help.sap.com/docs/SAP_Territory_and_Quota?locale=en-US&state=PRODUCTION&version=K8s%202609",
+        "name": "SAP Territory and Quota"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Test Automation by Tricentis",
+    "url": "https://www.sap.com/products/technology-platform/test-automation.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_TEST_AUTOMATION_BY_TRICENTIS",
+        "url": "https://help.sap.com/docs/SAP_TEST_AUTOMATION_BY_TRICENTIS?locale=en-US&state=PRODUCTION&version=CLOUD",
+        "name": "SAP Test Automation by Tricentis"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Time and Attendance Management",
+    "url": "https://www.sap.com/products/hcm/time-attendance-management-by-workforce.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "Total Workforce Management",
+    "url": "https://www.sap.com/products/hcm/total-workforce-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Trade Management",
+    "url": "https://www.sap.com/products/crm/trade-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_TRADE_MANAGEMENT",
+        "url": "https://help.sap.com/docs/SAP_TRADE_MANAGEMENT?locale=en-US&state=PRODUCTION&version=4.0.10",
+        "name": "SAP Trade Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Translation Hub",
+    "url": "https://www.sap.com/products/artificial-intelligence/translation-hub.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "SAP_TRANSLATION_HUB",
+        "url": "https://help.sap.com/docs/SAP_TRANSLATION_HUB?locale=en-US&state=PRODUCTION&version=Cloud",
+        "name": "SAP Translation Hub"
+      },
+      {
+        "id": "STH",
+        "url": "https://help.sap.com/docs/STH?locale=en-US&state=PRODUCTION&version=1704",
+        "name": "SAP Translation Hub"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Transportation Management",
+    "url": "https://www.sap.com/products/scm/transportation-logistics.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_TRANSPORTATION_MANAGEMENT",
+        "url": "https://help.sap.com/docs/SAP_TRANSPORTATION_MANAGEMENT?locale=en-US&state=PRODUCTION&version=9.6.2",
+        "name": "SAP Transportation Management"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "Trials and tours",
+    "url": "https://www.sap.com/products/hcm/trials-and-tours.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP U.S. Benefits Administration Core by Benefitfocus",
+    "url": "https://www.sap.com/products/hcm/benefits-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "UI data protection logging",
+    "url": "https://www.sap.com/products/financial-management/ui-data-protection-logging.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "UI data protection masking",
+    "url": "https://www.sap.com/products/financial-management/ui-data-protection-masking.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "UI_DATA_PROTECTION_MASKING",
+        "url": "https://help.sap.com/docs/UI_DATA_PROTECTION_MASKING?locale=en-US&state=PRODUCTION&version=1.0.2.0",
+        "name": "UI Data Protection Masking"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP User Experience Management by Knoa",
+    "url": "https://www.sap.com/products/hcm/knoa-user-experience.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Utilities Core foundation",
+    "url": "https://www.sap.com/products/technology-platform/utilities-core-foundation.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Variant Configuration and Pricing",
+    "url": "https://www.sap.com/products/crm/variant-configuration-and-pricing.html",
+    "retainedTechnicalRecord": false,
+    "helpMatches": [
+      {
+        "id": "SAP_VARIANT_CONFIGURATION_AND_PRICING",
+        "url": "https://help.sap.com/docs/SAP_VARIANT_CONFIGURATION_AND_PRICING?locale=en-US&state=PRODUCTION&version=Production",
+        "name": "SAP Variant Configuration and Pricing"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Vendor Program Management by Vistex",
+    "url": "https://www.sap.com/products/financial-management/vendor-program-management.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_VPM_BY_VISTEX",
+        "url": "https://help.sap.com/docs/SAP_VPM_BY_VISTEX?locale=en-US&state=PRODUCTION&version=5.0",
+        "name": "SAP Vendor Program Management by Vistex"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "WalkMe for SAP SuccessFactors HCM",
+    "url": "https://www.sap.com/products/hcm/walkme.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "WalkMe Premium for SAP CX",
+    "url": "https://www.sap.com/products/crm/walkme.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Watch List Screening",
+    "url": "https://www.sap.com/products/financial-management/watch-list-screening.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_WATCH_LIST_SCREENING",
+        "url": "https://help.sap.com/docs/SAP_WATCH_LIST_SCREENING?locale=en-US&state=PRODUCTION&version=1.0.0.0",
+        "name": "SAP Watch List Screening"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Workforce Forecasting and Scheduling by WorkForce Software",
+    "url": "https://www.sap.com/products/hcm/workforce-forecasting-scheduling.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_FORECASTING_SCHEDULING_BY_WFS",
+        "url": "https://help.sap.com/docs/SAP_FORECASTING_SCHEDULING_BY_WFS?locale=en-US&state=PRODUCTION&version=latest",
+        "name": "SAP Workforce Forecasting and Scheduling by Workforce Software"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Yard Logistics",
+    "url": "https://www.sap.com/products/scm/yard-logistics.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_YARD_LOGISTICS",
+        "url": "https://help.sap.com/docs/SAP_YARD_LOGISTICS?locale=en-US&state=PRODUCTION&version=2.0",
+        "name": "SAP Yard Logistics"
+      }
+    ],
+    "technicalTarget": null
+  },
+  {
+    "name": "SAP Customer Checkout, cloud edition",
+    "url": "https://www.sap.com/products/crm/pos-customer-checkout.html",
+    "retainedTechnicalRecord": true,
+    "helpMatches": [
+      {
+        "id": "SAP_CUSTOMER_CHECKOUT_CLOUD",
+        "url": "https://help.sap.com/docs/SAP_CUSTOMER_CHECKOUT_CLOUD?locale=en-US&state=PRODUCTION&version=Internal",
+        "name": "SAP Customer Checkout, cloud edition"
+      }
+    ],
+    "technicalTarget": null
+  }
+]
