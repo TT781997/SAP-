@@ -8,7 +8,7 @@ O Picture original permite seleção de grupos e produtos, pesquisa, relações 
 
 A vista inclui todas as 258 entradas comerciais do corpus, os componentes técnicos, 337 relações existentes e cinco percursos pedagógicos: organização BTP, login BTP, IBP, APO e pedido ERP. A organização comercial é distinta da decomposição técnica. Agrupamentos, planos e percursos não criam relações de rede nem comprovam licenciamento, alojamento ou disponibilidade por região. O conteúdo continua parcial, com proveniência dos anexos; não houve nova recolha online completa.
 
-O vídeo do X não pôde ser consultado devido ao bloqueio de rede. Os comportamentos acima foram implementados e validados a partir do código e da documentação do Limen. A equivalência exata com o vídeo ainda não foi verificada.
+O vídeo fornecido (`tweetsave.mp4`, cerca de 21 segundos) foi analisado. Mostra a versão histórica de navegação por níveis, com mapa escuro, hover de relações, vizinhos externos e painel de detalhes; não apresenta o fluxo de execução de agentes. Essa versão foi recuperada do commit `ef12ece8661c349df3fcf9b59c7bbef7118f5d55` e preservada em `vendor/limen-drilldown`, com a licença MIT. O adaptador em `scripts/sap-drilldown.mjs` monta a vista principal para os dados SAP. A apresentação anterior em camadas permanece em `sap-picture-layers.html`. As cores de estado dos dados SAP continuam a indicar os limites reais do corpus.
 
 ## Construir e abrir
 
@@ -19,7 +19,7 @@ npm run build
 npm run dev
 ```
 
-Abrir «Mapa de produtos · Picture» no explorador ou «Mapa Picture» na página inicial. O build gera `public/sap-picture.html` e `public/sap-picture-model.json`, depois o Vite copia-os para `dist/`. O ficheiro HTML é autónomo; o renderizador não faz chamadas a modelos. O link de regresso e as fontes documentais exigem o site ou Internet. O dataset Markdown em `.limen/picture` e as páginas geradas são ignorados pelo Git; fontes e gerador permanecem versionados. Não editar outputs.
+Abrir «Mapa de produtos · Picture» no explorador ou «Mapa Picture» na página inicial. O build gera a vista do vídeo em `public/sap-picture.html`, a alternativa em `public/sap-picture-layers.html` e o modelo em `public/sap-picture-model.json`, depois o Vite copia-os para `dist/`. O ficheiro HTML é autónomo; o renderizador não faz chamadas a modelos. O link de regresso e as fontes documentais exigem o site ou Internet. O dataset Markdown em `.limen/picture` e as páginas geradas são ignorados pelo Git; fontes e gerador permanecem versionados. Não editar outputs.
 
 O vocabulário nativo Limen descreve dependências de código. O adaptador guarda `sap-relation` nos metadados e restaura os rótulos SAP no modelo publicado. Assim, localização, trust e autenticação não aparecem falsamente como dependências de código. Para a página SAP, usar `npm run picture:build`; `npm run limen -- picture build --strict` serve como validação estrutural do dataset nativo.
 
@@ -58,8 +58,14 @@ npm run picture:live
 npm run dev
 ```
 
-O primeiro comando inicia o monitor local na porta 4747. O segundo permite consultar `/sap-live/` através do proxy Vite. O monitor publica eventos SSE dos ficheiros reais de `.limen/jobs`, com o leitor de atividade original do Limen. Não inicia agentes por abrir a página e não inventa jobs ativos. A página estática publicada inclui o mapa e os tickets do build; a atividade em direto exige este processo local. Processos não sobrevivem necessariamente a novas tarefas cloud.
+O primeiro comando inicia o monitor local na porta 4747. O segundo permite consultar `/sap-live/` através do proxy Vite. A monitorização utiliza a vista moderna em camadas. O monitor publica eventos SSE dos ficheiros reais de `.limen/jobs`, com o leitor de atividade original do Limen. Não inicia agentes por abrir a página e não inventa jobs ativos. A página estática publicada inclui o mapa e os tickets do build; a atividade em direto exige este processo local. Processos não sobrevivem necessariamente a novas tarefas cloud.
 
 ## Validação efetuada
 
 Cinco testes automatizados verificam cobertura do catálogo, relações e endpoints, ordem e repetição dos percursos, integridade do modelo e inserção segura do JSON. Build e dataset estrito passaram. Chromium validou pesquisa IBP, fontes nas camadas, camadas aninhadas, Escape, restauro, percurso BTP, Global Account → Subaccount, tarefas planeadas, ecrã estreito e ligação ao monitor. A atividade reportou zero jobs, coerente com o estado real. A execução de um worker foi bloqueada por `not_ready`, antes de criar um job.
+
+## Validação da referência em vídeo
+
+A vista principal utiliza o visualizador histórico do Limen, sem mudanças nos ficheiros vendorizados. O adaptador mantém todos os endpoints e tipos técnicos das relações, acrescentando apenas associações explícitas aos cenários. Essas associações não representam tráfego de rede.
+
+Chromium validou clique para entrar nas partes, vizinhos externos, destaque de relações no hover, Global Account → Subaccount, filtros de relação, painel recolhível, escolha de tema, Escape para subir, pesquisa comercial, decomposição IBP, restauro da seleção, vista em camadas e ecrã estreito, sem exceções JavaScript. Os sete testes automatizados incluem a separação das associações pedagógicas e as cores de relações SAP no visualizador histórico.
