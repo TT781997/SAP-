@@ -1,6 +1,6 @@
 {
   "schema": "sap-curation/1",
-  "reviewedAt": "2026-10-12",
+  "reviewedAt": "2026-10-13",
   "references": {
     "accounts": {
       "repository": "SAP-docs/btp-cloud-platform",
@@ -81,6 +81,10 @@
     "ibp-customer": {
       "repository": "SAP Help Portal",
       "url": "https://help.sap.com/doc/6f91803797d842fe97908d7ac34ead9f/2502/en-US/loio579ba45f14ab4afaab44a2112711c481.pdf"
+    },
+    "ibp-current": {
+      "repository": "SAP Help Portal",
+      "url": "https://help.sap.com/docs/SAP_INTEGRATED_BUSINESS_PLANNING/feae3cea3cc549aaa9d9de7d363a83e6/06224454dafe8b24e10000000a4450e5.html?locale=en-US&state=PRODUCTION&version=2608"
     }
   },
   "topics": [
@@ -189,6 +193,12 @@
       "sections": {
         "purpose": [
           {
+            "text": "A referência atual do índice é IBP 2608. O guia consultado cobre 2608 com hotfix collection 5, documento 1.6 de 09/10/2026. Reúne monitorização da cadeia logística, S&OP, procura, inventário e abastecimento, com aplicações web, add-in Excel e colaboração.",
+            "refs": [
+              "ibp-current"
+            ]
+          },
+          {
             "text": "IBP é uma solução cloud de planeamento que integra dados de sistemas operacionais, incluindo ERP e APO, e devolve resultados aos sistemas de execução. Os guias recolhidos aprofundam exportação e integração na versão 2502.",
             "refs": [
               "ibp-export",
@@ -203,6 +213,12 @@
           }
         ],
         "components": [
+          {
+            "text": "O guia é organizado por áreas funcionais, que não equivalem às aplicações e licenças comerciais. Procura, inventário e abastecimento devem ser apresentados como capacidades do processo; os direitos de utilização dependem do contrato.",
+            "refs": [
+              "ibp-current"
+            ]
+          },
           {
             "text": "No cenário de exportação IBP 2502, a planning area gera um calculation scenario que permite ler key figures. O guia também cobre dados mestre; a integração usa datastores de origem/destino, projetos, tasks e data flows.",
             "refs": [
@@ -224,6 +240,12 @@
         ],
         "prerequisites": [
           {
+            "text": "Para subscrições após 20/04/2026, a foundation license é a base obrigatória e inclui capacidades antes disponíveis nas licenças S&OP e Supply Chain Control Tower. A advanced supply license reúne capacidades anteriormente associadas a S&OP e response and supply. Contratos anteriores têm uma descrição própria no guia.",
+            "refs": [
+              "ibp-current"
+            ]
+          },
+          {
             "text": "A exportação exige uma planning area disponível e, para key figures, um calculation scenario gerado. O utilizador precisa das autorizações de visibilidade indicadas no guia; o ambiente de integração e os datastores devem estar configurados.",
             "refs": [
               "ibp-export"
@@ -237,6 +259,12 @@
           }
         ],
         "integration": [
+          {
+            "text": "IBP integra dados de sistemas externos, incluindo ERP e APO. A application help orienta os utilizadores das apps; a configuração do modelo e as integrações técnicas têm guias próprios em ibp2608. Os exemplos e os procedimentos 2502 desta ficha mantêm a versão explícita.",
+            "refs": [
+              "ibp-current"
+            ]
+          },
           {
             "text": "IBP 2502: SAP Cloud Integration for data services permite exportar key figures e dados mestre para sistemas locais através de ficheiros, web services ou RFC, conforme o cenário. Esse serviço tem configuração e agentes próprios. O workshop TechEd usa Cloud Integration da Integration Suite noutro cenário.",
             "refs": [
@@ -282,8 +310,9 @@
         ]
       },
       "gaps": [
-        "Foram recolhidos dois guias primários IBP 2502. Faltam manuais completos de cálculo e configuração de cada módulo e a revisão correspondente à versão atual do tenant. O catálogo Help consultado também contém IBP 2608; os guias 2502 não são transpostos automaticamente para essa versão.",
-        "O acesso público do workshop terminou em 2024. O exemplo contém uma opção que desativa a validação TLS; essa opção não é transportada para a configuração do Atlas."
+        "A referência editorial 2608 e o modelo de licenciamento foram revistos. Os procedimentos de cálculo e integração detalhados não são transpostos dos guias 2502; a API SAP passou a recusar a recolha desses tópicos com Access Denied.",
+        "O acesso público do workshop terminou em 2024. O exemplo contém uma opção que desativa a validação TLS; essa opção não é transportada para a configuração do Atlas.",
+        "As SAP Notes centrais/de restrição/correções indicadas no guia ainda não foram lidas: é necessário o acesso apropriado a essas notas."
       ]
     },
     {

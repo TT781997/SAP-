@@ -53,6 +53,7 @@ def build(cache):
     repositories, documents = [], []
     for cfg in configs:
         repo, commit = cfg['repository'], cfg['commit']
+        source_date = cfg.get('collectedAt', DATE)
         directory = cache / repo.replace('/', '__')
         if (directory / '.git').exists():
             if run(['git', '-C', str(directory), 'rev-parse', 'HEAD']) != commit:
@@ -83,12 +84,12 @@ def build(cache):
                 'commit': commit, 'url': f'https://github.com/{repo}/blob/{commit}/{quote(path)}',
                 'publisher': repo.split('/')[0], 'publisherClass': 'sap' if repo.startswith(('SAP-docs/', 'SAP-samples/')) else 'partner',
                 'kind': 'documentation' if repo.startswith(('SAP-docs/', 'MicrosoftDocs/')) else 'sample' if repo.startswith(('SAP-samples/', 'aws-samples/')) else 'automation-guide',
-                'collectedAt': DATE, 'sha256': hashlib.sha256(text.encode()).hexdigest(),
+                'collectedAt': source_date, 'sha256': hashlib.sha256(text.encode()).hexdigest(),
                 'excerpt': plain(text)[:420], 'headings': headings[:12], 'flags': flags(text, repo, title),
                 'bundle': bundle, 'license': license_name})
             texts[id_] = text
         dump(OUT / bundle.lstrip('/').removeprefix('knowledge/'), {'repository': repo, 'commit': commit, 'licenses': licenses, 'documents': texts}, True)
-        repositories.append({**cfg, 'documentCount': len(paths), 'bundle': bundle, 'license': license_name, 'collectedAt': DATE})
+        repositories.append({**cfg, 'documentCount': len(paths), 'bundle': bundle, 'license': license_name, 'collectedAt': source_date})
         print(repo, len(paths), flush=True)
 
     articles = json.loads((ROOT / 'research/refresh-2026-10-12/reference-architectures-current.json').read_text())

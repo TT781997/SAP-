@@ -121,7 +121,8 @@
   },
   {
     "repository": "SAP-docs/btp-cloud-identity-services",
-    "commit": "27961251d56cc7c83ff427eadc224544b347bd50"
+    "commit": "715ae1ca6e2146055b2a3e136592d0391558bcf7",
+    "collectedAt": "2026-10-13"
   },
   {
     "repository": "SAP-docs/btp-neo-environment",

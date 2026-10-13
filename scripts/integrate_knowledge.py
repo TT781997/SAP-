@@ -8,7 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'public/knowledge'
-DATE = '2026-10-12'
+DATE = '2026-10-13'
 LABELS = {'purpose':'Função e processo', 'components':'Componentes e dados', 'deployment':'Implantação',
     'prerequisites':'Preparação', 'integration':'Integração', 'operations':'Operação', 'historical':'Referências históricas'}
 TOPIC_WORDS = {'purpose':r'what is|overview|introduc|functional|scope description',
@@ -48,7 +48,7 @@ def integrate():
             for claim in entries:
                 claim['documentIds'] = [references[r]['id'] for r in claim['refs']]
         topic['labels'] = LABELS
-        topic['reviewedAt'] = DATE
+        topic['reviewedAt'] = curation.get('reviewedAt', DATE)
         topics.append(topic)
 
     profiles = []
@@ -117,9 +117,15 @@ def integrate():
         ['accounts','quotas'], ['Org Cloud Foundry'], ['Definir membros e quotas por space quando necessário.'], requirement='Condicional · Cloud Foundry')
     add('kyma-namespace', 'Kyma · namespace', 'kyma', 'Organiza workloads num cluster Kyma. Uma subaccount pode ter vários clusters, cada um com vários namespaces.',
         ['accounts'], ['Runtime Kyma escolhido e cluster disponível'], ['Organizar os workloads e os acessos Kubernetes.'], requirement='Condicional · Kyma')
-    update('sap-ibp', 'Planeamento cloud de procura, abastecimento e S&OP. Os guias primários IBP 2502 aprofundam exportação e integração; os exemplos SAP complementam planning areas, séries temporais e Excel.',
+    update('sap-ibp', 'Planeamento cloud de procura, inventário, abastecimento, S&OP e monitorização. Referência editorial: IBP 2608 HFC5. O licenciamento distingue subscrições anteriores e posteriores a 20/04/2026; os guias de integração 2502 mantêm âmbito próprio.',
         ['Sistema IBP licenciado e acessos apropriados', 'Planning area e dados coerentes para o processo selecionado'],
-        ['Preparar dados mestre e key figures; validar o modelo de planeamento.', 'Configurar o cenário de integração e a visibilidade dos dados.', 'Distinguir os guias IBP 2502 dos exemplos de formação e da versão atual do tenant.'], ['ibp-export','ibp-customer','ibp-prep','ibp-excel'], evidence='Guias SAP IBP 2502 + exemplos com âmbito indicado')
+        ['Preparar dados mestre e key figures; validar o modelo de planeamento.', 'Confirmar as licenças do contrato e a versão do tenant.', 'Distinguir application help 2608 de model configuration, integrações 2502 e exemplos de formação.'], ['ibp-current','ibp-export','ibp-customer','ibp-prep','ibp-excel'], evidence='Guia SAP IBP 2608 HFC5 + integrações 2502 com âmbito indicado')
+    add('ibp-licenses','IBP · aplicações e licenças','sap-ibp','O guia de utilização é organizado por áreas funcionais; as licenças comerciais têm âmbito próprio. A mudança de 20/04/2026 aplica-se a novas subscrições, com orientação separada para contratos anteriores.',
+        ['ibp-current'],['Identificar a data e as condições da subscrição'],['Conferir as capacidades licenciadas antes de escolher o processo de planeamento.'],kind='Modelo comercial',requirement='Conforme contrato')
+    add('ibp-foundation','IBP · foundation license','ibp-licenses','Licença base obrigatória para novas subscrições após 20/04/2026. Integra capacidades antes cobertas por S&OP e Supply Chain Control Tower, incluindo algoritmos de forecasting referidos no guia.',
+        ['ibp-current'],['Confirmar o regime do contrato'],['Validar as funcionalidades disponíveis no tenant.'],kind='Licença comercial',requirement='Subscrições após 20/04/2026')
+    add('ibp-advanced-supply','IBP · advanced supply license','ibp-licenses','No regime posterior a 20/04/2026, reúne capacidades antes associadas às licenças S&OP e response and supply. Não constitui um runtime ou um host separado.',
+        ['ibp-current'],['Processo de abastecimento e direitos contratuais apropriados'],['Conferir o detalhe de funcionalidades na documentação de licenciamento.'],kind='Licença comercial',requirement='Conforme contrato e processo')
     add('ibp-planning-area', 'IBP · planning area', 'sap-ibp', 'O workshop SAP prepara uma planning area configurada para demand planning e séries temporais. O modelo depende do processo.',
         ['ibp-prep'], ['Licença e acesso a IBP', 'Modelo de planeamento adequado'], ['Definir dados mestre e key figures necessários.'], kind='Modelo de planeamento')
     add('ibp-master-data', 'IBP · dados mestre', 'ibp-planning-area', 'No exemplo SAP: produtos, locais, clientes e unidades de medida suportam as séries temporais de planeamento.',
@@ -158,7 +164,7 @@ def integrate():
         for id_ in topic['nodeIds']:
             if id_ in nodes: nodes[id_]['knowledgeTopic'] = topic['id']
     for id_ in ['btp-directory','cf-org','cf-space','kyma-namespace']: nodes[id_]['knowledgeTopic'] = 'btp'
-    for id_ in ['ibp-planning-area','ibp-master-data','ibp-key-figures','ibp-excel','ibp-integration-example','ibp-export']: nodes[id_]['knowledgeTopic'] = 'ibp'
+    for id_ in ['ibp-planning-area','ibp-master-data','ibp-key-figures','ibp-excel','ibp-integration-example','ibp-export','ibp-licenses','ibp-foundation','ibp-advanced-supply']: nodes[id_]['knowledgeTopic'] = 'ibp'
     nodes['apo-livecache-azure']['knowledgeTopic'] = 'apo'
     for id_ in ['apo-technical','apo-application','apo-livecache','apo-optimizer','apo-cif']: nodes[id_]['knowledgeTopic'] = 'apo'
 
@@ -180,6 +186,8 @@ def integrate():
     for parent, child in [('sap-ibp','ibp-planning-area'),('ibp-planning-area','ibp-master-data'),('ibp-planning-area','ibp-key-figures'),('sap-ibp','ibp-excel'),('sap-ibp','ibp-integration-example')]:
         edge(parent+'-'+child,parent,child,'Inclui elemento do cenário de planeamento',['ibp-prep' if child != 'ibp-excel' else 'ibp-excel'],'Elemento do exemplo documentado; validar processo e licença')
     edge('ibp-export','sap-ibp','ibp-export','Inclui cenário de exportação',['ibp-export'],'Processo de integração documentado para IBP 2502')
+    for parent,child in [('sap-ibp','ibp-licenses'),('ibp-licenses','ibp-foundation'),('ibp-licenses','ibp-advanced-supply')]:
+        edge('license-'+child,parent,child,'Organiza o âmbito comercial de licenciamento',['ibp-current'],'Subscrição e capacidades licenciadas conforme contrato; não representa tráfego')
     # A planning product's association with a deployment example is not a network call.
     edge('apo-livecache','sap-apo','apo-livecache-azure','Referencia cenário liveCache Windows/Azure',['livecache'],'Cenário específico documentado pelo parceiro')
     next(e for e in atlas['edges'] if e['id']=='knowledge-apo-livecache')['type'] = 'pattern'

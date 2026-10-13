@@ -10,3 +10,5 @@ __pycache__/
 # Local evidence caches; reviewed summaries, metadata and licensed prose are committed.
 /research/refresh-2026-10-12/pdf-cache/
 /research/refresh-2026-10-12/*.html
+/research/finish-2026-10-13/help-cache/
+/research/finish-2026-10-13/html-cache/

@@ -1,54 +1,80 @@
 # Conteúdo e recolha documental do SAP Atlas
 
-O Atlas inclui uma biblioteca pesquisável em `knowledge.html`, fichas para as 258 entradas comerciais e nove guias explicados com afirmações e fontes revistas. O mapa Picture e o explorador abrem essas fichas e usam a mesma curadoria.
+Revisão de 13/10/2026. `knowledge.html` reúne fichas para 258 entradas comerciais, nove guias explicados com afirmações citadas e uma biblioteca de 16 168 documentos. O Picture e o explorador usam a mesma curadoria. Estes números descrevem a recolha; não demonstram que todas as edições, funções ou regiões SAP tenham sido revistas.
 
-## O que foi efetivamente recolhido
+## Fontes recolhidas
 
-A recolha de 12/10/2026 abrange todos os ficheiros Markdown dos 36 repositórios documentais SAP-docs identificados, exemplos SAP e documentação/automação publicada por Microsoft, Google, AWS e SUSE no GitHub. São 45 repositórios e 14 903 documentos e man pages, conservados por revisão Git, caminho, hash e licença. O texto original é consultável na biblioteca; não se executam comandos, macros, notebooks ou instruções presentes nas fontes.
+| Fonte | Resultado e âmbito |
+| --- | --- |
+| GitHub SAP e parceiros | 14 903 documentos Markdown/man pages, 45 repositórios com revisão, caminho, hash e licença. Inclui os 36 repositórios SAP-docs identificados, exemplos SAP e documentação/automação Microsoft, Google, AWS e SUSE. |
+| Architecture Center | 119 artigos do sitemap, todos recolhidos; 61 arquivados pela SAP e ocultos por omissão. O corpus anterior permanece identificado como histórico. |
+| Help Portal | Índice de 1 493 entradas atualizado em 13/10. Mais 744 tópicos atuais de 70 namespaces, com produto e versão conferidos nas respostas públicas. |
+| Guias PDF SAP | 373 PDFs, 50 684 páginas, das consultas registadas em 12/10. Uma ligação adicional devolveu o shell HTML e não foi contada como PDF recolhido. |
+| AWS/Microsoft | As 29 fontes oficiais ligadas no mapa foram consultadas diretamente em 13/10. |
+| Pesquisa GitHub | Consulta exata para cada uma das 258 entradas comerciais, com até cinco candidatos guardados. Um candidato não é promovido automaticamente a prova técnica. |
 
-O sitemap do Architecture Center forneceu 119 artigos, todos recolhidos. A SAP identifica 61 como arquivados; são excluídos da pesquisa por omissão e continuam disponíveis com esse estado. Os 121 artigos do pacote anterior permanecem no corpus histórico; não são confundidos com a recolha atual.
+Os originais são tratados como fontes de informação. Não se executam comandos, macros, notebooks ou instruções presentes nesses documentos.
 
-O índice público do Help Portal contém 1 493 entradas e foi atualizado. O serviço público de pesquisa foi consultado para cada produto com correspondência documental, conservando versão e produto dos resultados. Todos os PDFs públicos devolvidos pelas consultas registadas são tentados, sem aceder a documentos com bloqueio ou autenticação. Foram recolhidos e analisados 373 PDFs (50 684 páginas). Uma das 374 ligações devolvidas pelo índice redireciona para o shell HTML, e essa limitação fica registada. A contagem, os hashes, páginas, secções e falhas estão em `research/refresh-2026-10-12/help-public-guides.json` e `public/knowledge/manifest.json`.
+## Revisão de produtos e versões
 
-Foi feita uma pesquisa exata no GitHub para cada uma das 258 entradas comerciais. Os primeiros cinco candidatos e o total de resultados ficam registados. Um resultado de pesquisa é um candidato; não é promovido automaticamente a prova técnica.
+Todas as 258 entradas foram comparadas com o índice atual. A associação principal exige título exato único ou alias único; documentação que apenas menciona o produto fica relacionada. Isso corrige, por exemplo, a precedência de um guia Concur sobre SAP ERP.
 
-## Âmbito, versões e direitos de reutilização
+Há 139 referências principais. Commerce Cloud e Extended Warehouse Management têm aliases ambíguos; Application Interface Framework e Translation Hub têm títulos partilhados por diferentes namespaces. Essas quatro associações ficam por resolver, em vez de selecionar uma edição arbitrária. Outras entradas não têm uma associação principal inequívoca. Os candidatos estão registados em `research/finish-2026-10-13/version-review.json`.
 
-A existência de um documento não demonstra que a ficha esteja completa. A cobertura distingue afirmações revistas para o âmbito indicado, secções documentais encontradas por título, descrição comercial e revisão por fazer. A classificação automática de secções é uma ajuda para descobrir documentos; não valida o seu conteúdo. Só a curadoria explícita acrescenta afirmações ao mapa.
+Os IDs de versão são comparados por referência. Uma diferença não estabelece cronologia, incompatibilidade ou fim de suporte. A biblioteca oculta outras versões por omissão e permite incluí-las explicitamente. A versão instalada, o contrato e o suporte da organização exigem confirmação própria.
 
-As fichas IBP usam guias primários da versão 2502 e distinguem o workshop TechEd 2024, os templates Excel e o exemplo Prophet descontinuado. O índice também contém IBP 2608; não se transpõe automaticamente a configuração 2502 para essa versão. APO usa o guia de operações 7.0 EHP4, com edição do documento de 2016, e distingue o cenário Windows/Azure do guia Microsoft. Estes documentos não confirmam suporte atual da instalação.
+As revisões Git dos 45 repositórios foram conferidas: 43 sem alterações; as mudanças globais de `MicrosoftDocs/azure-docs` não afetaram `articles/sap`; um ficheiro de Cloud Identity Services foi atualizado na nova revisão. O inventário conserva os commits e as datas reais de recolha.
 
-O texto licenciado dos repositórios é conservado em arquivos JSON/gzip com a licença e atribuição originais. O leitor mostra esse texto com `textContent`, sem interpretar HTML ou executar instruções. Os arquivos conservam os textos originais; a vista de leitura remove comentários e marcação editorial sem interpretar HTML. Os textos não foram traduzidos; os resumos e a organização do Atlas são derivados e identificados pela data da revisão. SAP-docs e MicrosoftDocs usam CC BY 4.0; os restantes arquivos conservam as respetivas licenças. Os PDFs SAP reservam direitos de reprodução: ficam num cache local ignorado, e o site publica metadados, secções, resumos revistos e a ligação original. Não publica cópias integrais desses PDFs.
+## IBP e APO
 
-O exemplo IBP/Prophet está marcado `NO LONGER SUPPORTED`. O workshop contém uma opção que desativa validação TLS e acessos de formação expirados. Esses elementos ficam identificados na fonte e não são copiados para configuração executável do Atlas.
+O ponto principal do guia IBP 2608 HFC5, edição 1.6 de 09/10/2026, foi lido antes da recusa de acesso. A ficha separa áreas funcionais, aplicações e licenças. Explica foundation e advanced supply e as condições para novas subscrições posteriores a 20/04/2026. Contratos anteriores remetem para um guia distinto; não se deduz uma migração automática de licenças. O índice de 1 246 tópicos desse guia foi conservado, mas não se apresenta como 1 246 tópicos lidos.
 
-## Reproduzir
+Os procedimentos IBP 2502 conservam essa versão. O workshop TechEd 2024, os templates Excel e o exemplo Prophet descontinuado têm âmbito explícito. O exemplo contém `NO LONGER SUPPORTED`; o workshop inclui acessos de formação expirados e uma opção que desativa TLS. Esses elementos são identificados na fonte e não são copiados para configuração executável.
 
-O build normal usa os dados publicados no repositório, sem rede, autenticação ou dependência Python adicional:
+APO usa o guia de operações 7.0 EHP4, com edição documental de 2016, e distingue o cenário Windows/Azure do guia Microsoft. A coincidência com a referência 7.0.4 do índice não confirma suporte atual da instalação. As notas centrais, de restrições e de correções referidas pelos manuais não foram lidas quando exigiam acesso indisponível.
+
+## Direitos e cobertura editorial
+
+O texto licenciado dos repositórios é conservado em JSON/gzip com atribuição e licença originais. SAP-docs e MicrosoftDocs usam CC BY 4.0; os restantes arquivos mantêm as respetivas licenças. O leitor usa `textContent`, sem interpretar HTML nem executar instruções. A vista remove marcação editorial sem alterar os arquivos originais. A documentação conserva a língua original; a organização e os resumos do Atlas são derivados com a data da revisão.
+
+Os PDFs SAP e as páginas de publishers sem licença de redistribuição ficam em caches locais ignorados. O site publica metadados, secções, citações e ligação original, não cópias integrais desses manuais. A cobertura distingue afirmações revistas, secções encontradas por título, descrição comercial e revisão específica por fazer. Uma classificação automática de secções não valida o conteúdo. Só a curadoria explícita acrescenta afirmações ao mapa.
+
+## Acessos que continuam indisponíveis
+
+`public/knowledge/completion-review.json` regista o estado `external-access-required`, as ambiguidades e as ações externas necessárias:
+
+- `www.sap.com` devolveu 403 do próprio site. As descrições comerciais de 09/10 continuam identificadas pela data original.
+- Os endpoints públicos `deliverableMetadata` e `pagecontent` permitiram ler 744 tópicos. Depois, a SAP passou a devolver HTML `Access Denied`/403, inclusive para páginas públicas anteriormente acessíveis. Esta recusa não prova falta de credenciais. O coletor interrompe novos pedidos ao receber 403.
+- Google Cloud redireciona para `docs.cloud.google.com`, bloqueado na verificação deste ambiente. Esse hostname, `me.sap.com` e `support.sap.com` foram guardados no rascunho de rede. Guardar um rascunho não aplica nem publica a configuração.
+- Não há sessão SAP autorizada configurada para SAP Notes ou manuais protegidos. Uma referência a uma nota não é apresentada como uma nota consultada.
+
+Não se percorrem todas as versões, línguas e tópicos do Help Portal. A pesquisa inicial de PDFs guarda até cinco resultados por produto; a revisão de tópicos atuais guarda até vinte resultados por consulta. As lacunas por produto continuam explícitas. Recolher mais metadados não elimina a necessidade de revisão editorial.
+
+## Reproduzir e validar
+
+O site usa os dados publicados no repositório sem scraping ou autenticação durante o build:
 
 ```bash
+npm run test:versions
 npm run test:knowledge
 npm run test:picture
 npm run build
 ```
 
-Para obter novamente a documentação nas revisões Git fixadas e reconstruir o índice:
+Para reconstruir o corpus Git nas revisões fixadas e reaplicar a revisão documental versionada:
 
 ```bash
 python3 scripts/collect_knowledge_sources.py --output-directory /tmp/sap-source-repos
 python3 scripts/build_knowledge.py --sources-directory /tmp/sap-source-repos
-python3 scripts/integrate_knowledge.py
+python3 scripts/review_sap_versions.py
+python3 scripts/finish_sap_knowledge.py
 npm run build
 ```
 
-Os repositórios descarregados são fontes, não novos projetos da aplicação. O coletor usa sparse checkout para obter prosa/licenças e nunca executa código upstream. Valida a revisão de um cache existente e recusa substituí-lo se estiver noutra revisão. O coletor foi executado e repetido com o cache deste ambiente.
+O coletor usa sparse checkout para obter prosa/licenças, não executa código upstream, valida a revisão do cache e recusa substituí-lo se estiver noutra revisão. Os repositórios de fontes não são novos projetos da aplicação. A integração a partir dos metadados versionados pode ser repetida sem rede.
 
-`python3 scripts/collect_sap_help.py` retoma os PDFs das consultas registadas e requer `pdftotext` do Poppler. `python3 scripts/search_sap_github.py` retoma as pesquisas GitHub. Os resultados desta revisão são fixados na pasta de 12/10; iniciar uma nova revisão implica nova data, inventário e revisão das associações. A curadoria é declarada em `research/knowledge-curation.json`; referências ausentes ou ambíguas impedem a integração.
+`collect_sap_help.py` retoma as consultas PDF e requer `pdftotext`/Poppler. `search_sap_github.py` retoma as pesquisas GitHub. Os snapshots de 12/10 e 13/10 ficam separados. A curadoria está em `research/knowledge-curation.json`; referências ausentes ou ambíguas impedem a integração.
 
-## Pendências reais
+`collect_current_sap_help.py` lê apenas tópicos públicos publicados em PRODUCTION. Confere produto, versão e tópico e recusa fallback e respostas fora de PRODUCTION. Os originais ficam em `research/finish-2026-10-13/help-cache` e `html-cache`, ambos ignorados. Só depois de uma alteração real de acesso se deve usar `--retry-denied` para retomar respostas 403; não se deve repetir pedidos recusados sem essa alteração. Não contornar autenticação ou os controlos do publisher.
 
-O catálogo comercial `www.sap.com` respondeu 403 do próprio site. As descrições e capacidades de 09/10 foram preservadas; não são apresentadas como reconfirmadas em 12/10.
-
-AWS Docs, Microsoft Learn e Google Cloud estão bloqueados pela allowlist em execução. Os domínios adicionais foram guardados no rascunho das definições do ambiente; guardar/publicar esse rascunho é necessário para aplicar a alteração. Os repositórios oficiais desses publishers foram recolhidos pelo GitHub.
-
-A pesquisa de PDFs guarda até cinco resultados por consulta de produto, em inglês; não percorre todas as versões, idiomas ou tópicos do Help Portal. As páginas HTML de documentação devolvem o shell JavaScript. SAP Notes e manuais que exigem conta não foram recolhidos. As lacunas por produto estão visíveis nas fichas. Não se deve declarar o conteúdo de todo o ecossistema SAP completo com base nas contagens de documentos.
+A validação inclui hashes e licenças do corpus, referências, associações de produto/versão, estados históricos, build e testes de interface em Chromium. O build não depende dos caches privados da recolha.
