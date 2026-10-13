@@ -1,0 +1,4218 @@
+[
+  {
+    "url": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html",
+    "status": "collected",
+    "sha256": "fcaa3630f20bdd01b35226b9d3498145b60d722cdb14fa92c7590f65a0608a45",
+    "title": "Tutorial: Set up monitoring for SAP HANA - Amazon CloudWatch Tutorial: Set up monitoring for SAP HANA - Amazon CloudWatch",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Tutorial: Set up monitoring for SAP HANA"
+      },
+      {
+        "level": 6,
+        "text": "Application Insights for SAP HANA topics"
+      },
+      {
+        "level": 2,
+        "text": "Supported environments"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "Supported operating systems"
+      },
+      {
+        "level": 2,
+        "text": "Features"
+      },
+      {
+        "level": 2,
+        "text": "Prerequisites"
+      },
+      {
+        "level": 6,
+        "text": "Example"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "Set up your SAP HANA database for monitoring"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "Manage monitoring of your SAP HANA database"
+      },
+      {
+        "level": 2,
+        "text": "View and troubleshoot SAP HANA problems detected by CloudWatch Application Insights"
+      },
+      {
+        "level": 6,
+        "text": "Troubleshooting topics"
+      },
+      {
+        "level": 3,
+        "text": "SAP HANA database reaches memory allocation limit"
+      },
+      {
+        "level": 6,
+        "text": "Description"
+      },
+      {
+        "level": 6,
+        "text": "Resolution"
+      },
+      {
+        "level": 3,
+        "text": "Disk full event"
+      },
+      {
+        "level": 6,
+        "text": "Description"
+      },
+      {
+        "level": 6,
+        "text": "Resolution"
+      },
+      {
+        "level": 3,
+        "text": "SAP HANA backup stopped running"
+      },
+      {
+        "level": 6,
+        "text": "Description"
+      },
+      {
+        "level": 6,
+        "text": "Resolution"
+      },
+      {
+        "level": 2,
+        "text": "Anomaly detection for SAP HANA"
+      },
+      {
+        "level": 2,
+        "text": "Troubleshooting Application Insights for SAP HANA"
+      },
+      {
+        "level": 3,
+        "text": "Unable to add more than 60 monitored metrics"
+      },
+      {
+        "level": 3,
+        "text": "No SAP metrics appear after the onboarding process"
+      },
+      {
+        "level": 4,
+        "text": "Troubleshoot why SAP metrics don't appear after onboarding"
+      },
+      {
+        "level": 6,
+        "text": "Troubleshoot no SAP metrics appear after onboarding using the console"
+      },
+      {
+        "level": 6,
+        "text": "Troubleshoot no SAP metrics appear after onboarding using exporter logs"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 4,
+        "text": "Resolving the common root causes for SAP metrics not appearing after onboarding"
+      }
+    ],
+    "links": [
+      "https://console.aws.amazon.com/cloudwatch",
+      "https://console.aws.amazon.com/systems-manager/",
+      "https://docs.aws.amazon.com/ARG/latest/userguide/resource-groups.html",
+      "https://docs.aws.amazon.com/ARG/latest/userguide/tag-editor.html",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CHAP_using-service-linked-roles-appinsights.html",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Agent-Configuration-File-Details.html",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-iam.html",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#appinsights-tutorial-sap-hana-features",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#appinsights-tutorial-sap-hana-manage",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#appinsights-tutorial-sap-hana-prerequisites",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#appinsights-tutorial-sap-hana-set-up",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#appinsights-tutorial-sap-hana-supported-environments",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#appinsights-tutorial-sap-hana-supported-os",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#appinsights-tutorial-sap-hana-troubleshooting",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#appinsights-tutorial-sap-hana-troubleshooting-anomaly-detection",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#appinsights-tutorial-sap-hana-troubleshooting-backup-stopped",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#appinsights-tutorial-sap-hana-troubleshooting-disk-full",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#appinsights-tutorial-sap-hana-troubleshooting-health-dashboard",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#appinsights-tutorial-sap-hana-troubleshooting-memory",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#install",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.html#step-find-short-name",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/appinsights-tutorial-sap-hana.md",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create-iam-roles-for-cloudwatch-agent.html",
+      "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html",
+      "https://docs.aws.amazon.com/cloudwatch/index.html",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/pdfs/AmazonCloudWatch/latest/monitoring/acw-ug.pdf#appinsights-tutorial-sap-hana",
+      "https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access_examples.html#auth-and-access_examples_create",
+      "https://docs.aws.amazon.com/systems-manager/latest/userguide/auth-and-access-control-iam-identity-based-access-control.html",
+      "https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html",
+      "https://www.python.org/downloads/"
+    ],
+    "textCharacters": 21758
+  },
+  {
+    "url": "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html",
+    "status": "collected",
+    "sha256": "c011bf2603910f1f86ce1853d934d3467670e296b807c00c7298b399d55ef380",
+    "title": "How AWS Launch Wizard for SAP works - AWS Launch Wizard How AWS Launch Wizard for SAP works - AWS Launch Wizard",
+    "headings": [
+      {
+        "level": 1,
+        "text": "How AWS Launch Wizard for SAP works"
+      },
+      {
+        "level": 6,
+        "text": "Deployment aspects"
+      },
+      {
+        "level": 2,
+        "text": "Storage for SAP systems"
+      },
+      {
+        "level": 2,
+        "text": "Amazon Elastic File System setup for transport directory"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "Amazon Elastic File System setup for SAP Central Services instances configured for high availability"
+      },
+      {
+        "level": 2,
+        "text": "Bring your own image (BYOI)"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "Specify private IP address"
+      },
+      {
+        "level": 2,
+        "text": "Configuration settings"
+      },
+      {
+        "level": 2,
+        "text": "Custom deployment configuration scripts"
+      },
+      {
+        "level": 6,
+        "text": "Pre-deployment configuration scripts"
+      },
+      {
+        "level": 6,
+        "text": "Post-deployment configuration scripts"
+      },
+      {
+        "level": 2,
+        "text": "Manual cleanup activities"
+      },
+      {
+        "level": 2,
+        "text": "Default Quotas"
+      },
+      {
+        "level": 2,
+        "text": "AWS Regions and Endpoints"
+      }
+    ],
+    "links": [
+      "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html#EBSVolumeTypes_piops",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html#EBSVolumeTypes_gp2",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/general/latest/gr/launchwizard.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/launchwizard/index.html",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html#launch-wizard-sap-byoi",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html#launch-wizard-sap-config",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html#launch-wizard-sap-default-quotas",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html#launch-wizard-sap-efs",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html#launch-wizard-sap-efs-ha",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html#launch-wizard-sap-how-it-works-scripts",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html#launch-wizard-sap-manual-cleanup",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html#launch-wizard-sap-private-ip",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html#launch-wizard-sap-regions-endpoints",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html#launch-wizard-sap-storage",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.md",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-active-directory-landing.html",
+      "https://docs.aws.amazon.com/pdfs/launchwizard/latest/userguide/launch-wizard-user-guide.pdf#how-launch-wizard-sap-works",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-storage-config.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-amazon-fsx.html",
+      "https://www.sap.com/about/benchmark.html"
+    ],
+    "textCharacters": 16658
+  },
+  {
+    "url": "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploying-console.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploying-console.html",
+    "status": "collected",
+    "sha256": "5058dc6aedaebb66ef24f11d41241705528f2b5597982f2eab505af12d3439eb",
+    "title": "Deploying an SAP application (Console) - AWS Launch Wizard Deploying an SAP application (Console) - AWS Launch Wizard",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Deploying an SAP application (Console)"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      },
+      {
+        "level": 2,
+        "text": "Access AWS Launch Wizard"
+      },
+      {
+        "level": 2,
+        "text": "Deploy an SAP application with AWS Launch Wizard"
+      },
+      {
+        "level": 3,
+        "text": "Create a deployment"
+      },
+      {
+        "level": 3,
+        "text": "Define infrastructure"
+      },
+      {
+        "level": 6,
+        "text": "Important"
+      },
+      {
+        "level": 6,
+        "text": "To create a private subnet"
+      },
+      {
+        "level": 6,
+        "text": "Default NO_PROXY URL details"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 3,
+        "text": "Application and deployment settings"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      },
+      {
+        "level": 4,
+        "text": "NetWeaver stack on SAP HANA database"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 6,
+        "text": "Pre- and post-deployment configuration scripts — optional"
+      },
+      {
+        "level": 6,
+        "text": "Pre-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "Post-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "Pre- and post-deployment configuration scripts — optional"
+      },
+      {
+        "level": 6,
+        "text": "Pre-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "Post-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "Private IP address settings"
+      },
+      {
+        "level": 6,
+        "text": "Pre- and post-deployment configuration scripts — optional"
+      },
+      {
+        "level": 6,
+        "text": "Pre-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "Post-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "Installation details"
+      },
+      {
+        "level": 6,
+        "text": "Additional preferences ."
+      },
+      {
+        "level": 4,
+        "text": "SAP HANA database"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 6,
+        "text": "Pre- and post-deployment configuration scripts — optional"
+      },
+      {
+        "level": 6,
+        "text": "Pre-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "Post-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "SAP HANA on multiple EC2 instances"
+      },
+      {
+        "level": 6,
+        "text": "Pre- and post-deployment configuration scripts — optional"
+      },
+      {
+        "level": 6,
+        "text": "Pre-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "Post-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "Pre- and post-deployment configuration scripts — optional"
+      },
+      {
+        "level": 6,
+        "text": "Pre-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "Post-deployment configuration script — optional"
+      },
+      {
+        "level": 4,
+        "text": "NetWeaver stack on SAP ASE database"
+      },
+      {
+        "level": 6,
+        "text": "Pre- and post-deployment configuration scripts — optional"
+      },
+      {
+        "level": 6,
+        "text": "Pre-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "Post-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "Installation details"
+      },
+      {
+        "level": 6,
+        "text": "Pre- and post-deployment configuration scripts — optional"
+      },
+      {
+        "level": 6,
+        "text": "Pre-deployment configuration script — optional"
+      },
+      {
+        "level": 6,
+        "text": "Post-deployment configuration script — optional"
+      },
+      {
+        "level": 2,
+        "text": "Clone deployment"
+      },
+      {
+        "level": 3,
+        "text": "Cloning inputs"
+      }
+    ],
+    "links": [
+      "https://console.aws.amazon.com/launchwizard",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html",
+      "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-private.html",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/general/latest/gr/rande.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/launchwizard/index.html",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/how-launch-wizard-sap-works.html#launch-wizard-sap-how-it-works-scripts",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-active-directory-landing.html",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-web-dispatcher.html#launch-wizard-sap-deploy-web-dispatcher-architectures",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-web-dispatcher.html#launch-wizard-sap-deploy-web-dispatcher-load-balancers",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploy-web-dispatcher.html#launch-wizard-sap-deploy-web-dispatcher-post-deployment-enable-https",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploying-console.html#accessing-launch-wizard-sap",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploying-console.html#clone-deployment-sap",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploying-console.html#deploy-console-launch-wizard-sap",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploying-console.html#launch-wizard-hana",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploying-console.html#netweaver-on-ase",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploying-console.html#netweaver-on-hana",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deploying-console.md",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-setting-up.html#launch-wizard-sap-iam",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-software-install-details.html",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-structure.html",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-versions.html#launch-wizard-sap-ascs-support-os",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-versions.html#launch-wizard-sap-versions-application",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-security.html#identity-access-management",
+      "https://docs.aws.amazon.com/pdfs/launchwizard/latest/userguide/launch-wizard-user-guide.pdf#launch-wizard-sap-deploying-console",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-prerequisites.html#aws-backint-agent-iam",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-prerequisites.html#aws-backint-agent-s3",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-sap-hana.html",
+      "https://docs.aws.amazon.com/sns/latest/dg/welcome.html",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Internet_Gateway.html",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html#nat-gateway-create-route",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html#nat-gateway-creating",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/working-with-vpcs.html#AddaSubnet"
+    ],
+    "textCharacters": 87137
+  },
+  {
+    "url": "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-setting-up.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-setting-up.html",
+    "status": "collected",
+    "sha256": "49800ab3ca738750bd53a3fceeedd7d3c7ccfced16aff8cf6986cff7a57ca8e0",
+    "title": "Set up for AWS Launch Wizard for SAP - AWS Launch Wizard Set up for AWS Launch Wizard for SAP - AWS Launch Wizard",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Set up for AWS Launch Wizard for SAP"
+      },
+      {
+        "level": 6,
+        "text": "Prerequisites"
+      },
+      {
+        "level": 2,
+        "text": "General prerequisites"
+      },
+      {
+        "level": 2,
+        "text": "AWS Identity and Access Management (IAM)"
+      },
+      {
+        "level": 6,
+        "text": "Launch Wizard for SAP IAM topics"
+      },
+      {
+        "level": 3,
+        "text": "One-time creation of IAM role"
+      },
+      {
+        "level": 3,
+        "text": "Enable users to use Launch Wizard"
+      },
+      {
+        "level": 6,
+        "text": "Important"
+      },
+      {
+        "level": 3,
+        "text": "Add permissions to use AWS KMS keys"
+      },
+      {
+        "level": 6,
+        "text": "How to add permissions to your KMS key policy so that Launch Wizard can use your key for encryption"
+      },
+      {
+        "level": 3,
+        "text": "Add permissions to run custom pre- and post-deployment configuration scripts"
+      },
+      {
+        "level": 3,
+        "text": "Add permissions to save deployment artifacts to Amazon S3"
+      }
+    ],
+    "links": [
+      "https://console.aws.amazon.com/iam",
+      "https://console.aws.amazon.com/kms",
+      "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-idp.html",
+      "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user.html",
+      "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_change-permissions.html#users_change_permissions-add-console",
+      "https://docs.aws.amazon.com/aws-backup/latest/devguide/iam-service-roles.html#creating-default-service-role-console",
+      "https://docs.aws.amazon.com/aws-backup/latest/devguide/security-iam-awsmanpol.html#aws-managed-policies",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/launchwizard/index.html",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-active-directory-landing.html",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-setting-up.html#launch-wizard-sap-iam",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-setting-up.html#launch-wizard-sap-iam-encryption",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-setting-up.html#launch-wizard-sap-iam-role",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-setting-up.html#launch-wizard-sap-iam-s3-artifacts",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-setting-up.html#launch-wizard-sap-iam-scripts",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-setting-up.html#launch-wizard-sap-prerequisites",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-setting-up.html#launch-wizard-user-setup",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-setting-up.md",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-structure.html",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-versions.html#launch-wizard-sap-ascs-support-os",
+      "https://docs.aws.amazon.com/pdfs/launchwizard/latest/userguide/launch-wizard-user-guide.pdf#launch-wizard-sap-setting-up",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-prerequisites.html#aws-backint-agent-iam",
+      "https://docs.aws.amazon.com/singlesignon/latest/userguide/howtocreatepermissionset.html",
+      "https://docs.aws.amazon.com/ssm-sap/latest/userguide/get-started.html#backup-permissions",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-getting-started.html"
+    ],
+    "textCharacters": 11238
+  },
+  {
+    "url": "https://docs.aws.amazon.com/sap/latest/general/arch-guide-architecture-guidelines-and-decisions.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/sap/latest/general/arch-guide-architecture-guidelines-and-decisions.html",
+    "status": "collected",
+    "sha256": "59740720cb6ee44c347886ee18ac1c7f605070e5212b8462fd5fc51e4687537b",
+    "title": "Architecture guidelines and decisions  - General SAP Guides Architecture guidelines and decisions  - General SAP Guides",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Architecture guidelines and decisions"
+      },
+      {
+        "level": 2,
+        "text": "Regions and Availability Zones"
+      },
+      {
+        "level": 3,
+        "text": "Regions"
+      },
+      {
+        "level": 3,
+        "text": "Availability Zones"
+      },
+      {
+        "level": 3,
+        "text": "Services"
+      },
+      {
+        "level": 3,
+        "text": "Selecting the AWS Regions"
+      },
+      {
+        "level": 3,
+        "text": "Multi-Region considerations"
+      },
+      {
+        "level": 4,
+        "text": "Network latency"
+      },
+      {
+        "level": 4,
+        "text": "Cross-Regional data transfer"
+      },
+      {
+        "level": 4,
+        "text": "Tier 0 services"
+      },
+      {
+        "level": 2,
+        "text": "AWS accounts"
+      },
+      {
+        "level": 2,
+        "text": "Compute"
+      },
+      {
+        "level": 3,
+        "text": "Instance types"
+      },
+      {
+        "level": 3,
+        "text": "Reserved Instances"
+      },
+      {
+        "level": 3,
+        "text": "Savings Plans"
+      },
+      {
+        "level": 3,
+        "text": "On-Demand Capacity Reservations"
+      },
+      {
+        "level": 3,
+        "text": "Instance Family Availability across Availability Zones"
+      },
+      {
+        "level": 3,
+        "text": "Amazon EC2 auto recovery"
+      },
+      {
+        "level": 3,
+        "text": "High Memory Bare Metal Dedicated Hosts"
+      },
+      {
+        "level": 3,
+        "text": "Amazon EC2 maintenance"
+      },
+      {
+        "level": 2,
+        "text": "Networking"
+      },
+      {
+        "level": 3,
+        "text": "Amazon Virtual Private Cloud and subnets"
+      },
+      {
+        "level": 3,
+        "text": "Latency across Availability Zones"
+      },
+      {
+        "level": 3,
+        "text": "On premises to AWS connectivity"
+      },
+      {
+        "level": 3,
+        "text": "VPC endpoints"
+      },
+      {
+        "level": 3,
+        "text": "Cross-Region peering"
+      },
+      {
+        "level": 3,
+        "text": "Load balancing"
+      },
+      {
+        "level": 3,
+        "text": "DNS"
+      },
+      {
+        "level": 2,
+        "text": "Storage"
+      },
+      {
+        "level": 3,
+        "text": "Object storage"
+      },
+      {
+        "level": 4,
+        "text": "Amazon S3 replication"
+      },
+      {
+        "level": 3,
+        "text": "Block storage"
+      },
+      {
+        "level": 4,
+        "text": "Amazon EBS snapshots"
+      },
+      {
+        "level": 4,
+        "text": "Restoring snapshots"
+      },
+      {
+        "level": 4,
+        "text": "Fast snapshot restore"
+      },
+      {
+        "level": 3,
+        "text": "File storage"
+      },
+      {
+        "level": 4,
+        "text": "Amazon EFS"
+      },
+      {
+        "level": 4,
+        "text": "Amazon FSx"
+      },
+      {
+        "level": 2,
+        "text": "Monitoring and audit"
+      },
+      {
+        "level": 3,
+        "text": "Amazon CloudWatch"
+      },
+      {
+        "level": 3,
+        "text": "AWS CloudTrail"
+      }
+    ],
+    "links": [
+      "https://aws.amazon.com/about-aws/global-infrastructure",
+      "https://aws.amazon.com/about-aws/global-infrastructure/",
+      "https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services",
+      "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/?p=ngi&loc=2#Availability_Zones",
+      "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/?p=ngi&loc=2#Regions",
+      "https://aws.amazon.com/about-aws/whats-new/2019/05/aws-datasync-now-supports-efs-to-efs-transfer",
+      "https://aws.amazon.com/builders-library/static-stability-using-availability-zones",
+      "https://aws.amazon.com/cloudwatch/pricing",
+      "https://aws.amazon.com/compute/sla",
+      "https://aws.amazon.com/contact-us",
+      "https://aws.amazon.com/datasync",
+      "https://aws.amazon.com/directconnect/sla",
+      "https://aws.amazon.com/ebs/features/#Amazon_EBS_availability_and_durability",
+      "https://aws.amazon.com/ebs/features/#Amazon_EBS_volume_types",
+      "https://aws.amazon.com/ebs/pricing",
+      "https://aws.amazon.com/ec2/dedicated-hosts",
+      "https://aws.amazon.com/ec2/instance-types/high-memory",
+      "https://aws.amazon.com/ec2/nitro",
+      "https://aws.amazon.com/efs/sla",
+      "https://aws.amazon.com/fsx/sla",
+      "https://aws.amazon.com/privatelink/",
+      "https://aws.amazon.com/route53/sla",
+      "https://aws.amazon.com/s3/pricing",
+      "https://aws.amazon.com/s3/pricing/",
+      "https://aws.amazon.com/s3/sla",
+      "https://aws.amazon.com/sap/docs/",
+      "https://aws.amazon.com/sap/instance-types",
+      "https://aws.amazon.com/savingsplans",
+      "https://aws.amazon.com/solutions/implementations/aws-landing-zone/",
+      "https://aws.amazon.com/transit-gateway/pricing",
+      "https://aws.amazon.com/transit-gateway/sla",
+      "https://aws.amazon.com/vpn/site-to-site-vpn-sla",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Stop_Start.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-using.html#capacity-reservations-release",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-recovery.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-copy-snapshot.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instances-status-check_sched.html#schedevents_actions_maintenance",
+      "https://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html",
+      "https://docs.aws.amazon.com/AmazonS3/latest/dev/replication-time-control.html",
+      "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html",
+      "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html",
+      "https://docs.aws.amazon.com/aws-backup/latest/devguide/how-it-works-cross-region-replication.html",
+      "https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/consolidated-billing.html",
+      "https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html",
+      "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html",
+      "https://docs.aws.amazon.com/directconnect/latest/UserGuide/direct-connect-gateways.html",
+      "https://docs.aws.amazon.com/directconnect/latest/UserGuide/resilency_toolkit.html",
+      "https://docs.aws.amazon.com/efs/latest/ug/manage-fs-access-vpc-peering.html",
+      "https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html",
+      "https://docs.aws.amazon.com/elasticloadbalancing/index.html",
+      "https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html",
+      "https://docs.aws.amazon.com/en_us/AWSEC2/latest/UserGuide/ebs-fast-snapshot-restore.html",
+      "https://docs.aws.amazon.com/fsx/latest/WindowsGuide/getting-started.html",
+      "https://docs.aws.amazon.com/fsx/latest/WindowsGuide/sql-server.html",
+      "https://docs.aws.amazon.com/fsx/latest/WindowsGuide/supported-fsx-clients.html",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/general/latest/gr/rande.html#region-names-codes",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html",
+      "https://docs.aws.amazon.com/pdfs/sap/latest/general/general.pdf#arch-guide-architecture-guidelines-and-decisions",
+      "https://docs.aws.amazon.com/sap/latest/general/arch-guide-architecture-guidelines-and-decisions.html#arch-guide-aws-accounts",
+      "https://docs.aws.amazon.com/sap/latest/general/arch-guide-architecture-guidelines-and-decisions.html#arch-guide-compute",
+      "https://docs.aws.amazon.com/sap/latest/general/arch-guide-architecture-guidelines-and-decisions.html#arch-guide-cross-region-peering",
+      "https://docs.aws.amazon.com/sap/latest/general/arch-guide-architecture-guidelines-and-decisions.html#arch-guide-monitoring-and-audit",
+      "https://docs.aws.amazon.com/sap/latest/general/arch-guide-architecture-guidelines-and-decisions.html#arch-guide-networking",
+      "https://docs.aws.amazon.com/sap/latest/general/arch-guide-architecture-guidelines-and-decisions.html#arch-guide-regions-and-availability-zones",
+      "https://docs.aws.amazon.com/sap/latest/general/arch-guide-architecture-guidelines-and-decisions.html#arch-guide-s3-replication",
+      "https://docs.aws.amazon.com/sap/latest/general/arch-guide-architecture-guidelines-and-decisions.html#arch-guide-storage",
+      "https://docs.aws.amazon.com/sap/latest/general/arch-guide-architecture-guidelines-and-decisions.md",
+      "https://docs.aws.amazon.com/sap/latest/general/sap-on-aws-pricing-guide.html",
+      "https://docs.aws.amazon.com/sap/latest/general/sign-up-for-aws.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/sap-oip-overlay-ip-routing-with-network-load-balancer.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/sap-oip-sap-on-aws-high-availability-setup.html",
+      "https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html",
+      "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html",
+      "https://docs.aws.amazon.com/vpc/latest/userguide",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Subnets.html",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+      "https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html"
+    ],
+    "textCharacters": 32691
+  },
+  {
+    "url": "https://docs.aws.amazon.com/sap/latest/general/rise-connection-accounts.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/sap/latest/general/rise-connection-accounts.html",
+    "status": "collected",
+    "sha256": "c13dcc1f573564e5ffaf1d84a10a310cedcdf7c708be13bb1084b1aeb9646113",
+    "title": "Connecting to RISE using your single AWS account - General SAP Guides Connecting to RISE using your single AWS account - General SAP Guides",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Connecting to RISE using your single AWS account"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      }
+    ],
+    "links": [
+      "https://aws.amazon.com/directconnect/pricing/",
+      "https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer",
+      "https://aws.amazon.com/sap/docs/",
+      "https://aws.amazon.com/transit-gateway/pricing/",
+      "https://aws.amazon.com/vpn/pricing/",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/pdfs/sap/latest/general/general.pdf#rise-connection-accounts",
+      "https://docs.aws.amazon.com/sap/latest/general/rise-connection-accounts.md",
+      "https://docs.aws.amazon.com/sap/latest/general/sign-up-for-aws.html",
+      "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-dcg-attachments.html",
+      "https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpn-attachments.html",
+      "https://docs.aws.amazon.com/vpn/latest/s2svpn/how_it_works.html",
+      "https://repost.aws/knowledge-center/create-vpn-direct-connect"
+    ],
+    "textCharacters": 8243
+  },
+  {
+    "url": "https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.html",
+    "status": "collected",
+    "sha256": "151d38a720f8c53c85a4743711f1eb0aa13c2a6b5cd2873218693c50271c7510",
+    "title": "Set up FSx for ONTAP file system, SVMs, and volumes - SAP HANA on AWS Set up FSx for ONTAP file system, SVMs, and volumes - SAP HANA on AWS",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Set up FSx for ONTAP file system, SVMs, and volumes"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      },
+      {
+        "level": 2,
+        "text": "Create storage virtual machines (SVM)"
+      },
+      {
+        "level": 2,
+        "text": "Volume configuration"
+      },
+      {
+        "level": 2,
+        "text": "Sample estimate"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "Volume layout"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      },
+      {
+        "level": 3,
+        "text": "SAP HANA scale-up"
+      },
+      {
+        "level": 3,
+        "text": "SAP HANA scale-out"
+      },
+      {
+        "level": 2,
+        "text": "File system setup"
+      },
+      {
+        "level": 3,
+        "text": "Set administrative password"
+      },
+      {
+        "level": 3,
+        "text": "Sign in to the management endpoint via SSH"
+      },
+      {
+        "level": 3,
+        "text": "Set TCP max transfer size"
+      },
+      {
+        "level": 3,
+        "text": "Set the lease time on NFSv4 protocol"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "Disable snapshots"
+      },
+      {
+        "level": 3,
+        "text": "Data volume"
+      },
+      {
+        "level": 3,
+        "text": "Log volume"
+      },
+      {
+        "level": 2,
+        "text": "Quality of Service (QoS)"
+      },
+      {
+        "level": 2,
+        "text": "Backup"
+      }
+    ],
+    "links": [
+      "https://aws.amazon.com/blogs/storage/using-quality-of-service-in-amazon-fsx-for-netapp-ontap/",
+      "https://aws.amazon.com/sap/docs/",
+      "https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/getting-started-step1.html",
+      "https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-file-systems.html",
+      "https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-storage-capacity.html#storage-tiers",
+      "https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-svms.html",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/pdfs/sap/latest/sap-hana/sap-hana.pdf#amazon-fsx-sap-hana",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.html#filesys-fsx-sap-hana",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.html#fsx-backup",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.html#fsx-qos",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.html#fsx-volume-layout-scaleout",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.html#fsx-volume-layout-scaleup",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.html#sizing-estimation",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.html#snaps-fsx-sap-hana",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.html#svm-sap-hana",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.html#vol-layout-fsx-sap-hana",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.html#volume-fsx-sap-hana",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/amazon-fsx-sap-hana.md",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/architecture-fsx.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/welcome.html",
+      "https://docs.netapp.com/us-en/netapp-solutions-sap/backup/fsxn-overview.html",
+      "https://docs.netapp.com/us-en/snapcenter/protect-hana/concept_snapcenter_plug_in_for_sap_hana_database_overview.html",
+      "https://help.sap.com/docs/SAP_HANA_COCKPIT/afa922439b204e9caf22c78b6b69e4f2/9fd1c8bb3b60455caa93b7491ae6d830.html",
+      "https://repost.aws/knowledge-center/fsx-ontap-optimize-snapmirror"
+    ],
+    "textCharacters": 12669
+  },
+  {
+    "url": "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-amazon-s3.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-amazon-s3.html",
+    "status": "collected",
+    "sha256": "2d5b08315b86cbc8f774b234f8395623dc8d82df6cc31ff436215c8853ce6ab2",
+    "title": "Backup and restore SAP HANA workloads to Amazon S3 - SAP HANA on AWS Backup and restore SAP HANA workloads to Amazon S3 - SAP HANA on AWS",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Backup and restore SAP HANA workloads to Amazon S3"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      }
+    ],
+    "links": [
+      "https://aws.amazon.com/sap/docs/",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/pdfs/sap/latest/sap-hana/sap-hana.pdf#aws-backint-agent-amazon-s3",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-amazon-s3.md",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3-backup-restore.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3-installing-configuring.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3-prerequisites.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/welcome.html"
+    ],
+    "textCharacters": 1046
+  },
+  {
+    "url": "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3-prerequisites.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3-prerequisites.html",
+    "status": "collected",
+    "sha256": "0acbffb3c3614fdf57c612ae6020686c022ee690705c368c9a104a1ce3ee839f",
+    "title": "Prerequisites for use of the AWS Backint Agent for SAP HANA - SAP HANA on AWS Prerequisites for use of the AWS Backint Agent for SAP HANA - SAP HANA on AWS",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Prerequisites for use of the AWS Backint Agent for SAP HANA"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      },
+      {
+        "level": 2,
+        "text": "AWS Identity and Access Management"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "AWS Systems Manager Agent (SSM Agent)"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "Amazon S3 bucket"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "Data perimeter"
+      },
+      {
+        "level": 2,
+        "text": "AWS CLI"
+      }
+    ],
+    "links": [
+      "https://aws.amazon.com/sap/docs/",
+      "https://docs.aws.amazon.com/AmazonS3/latest/dev/example-walkthroughs-managing-access-example2.html",
+      "https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lifecycle-mgmt.html",
+      "https://docs.aws.amazon.com/AmazonS3/latest/dev/object-lock.html",
+      "https://docs.aws.amazon.com/AmazonS3/latest/dev/object-tagging.html",
+      "https://docs.aws.amazon.com/AmazonS3/latest/dev/storage-class-intro.html",
+      "https://docs.aws.amazon.com/AmazonS3/latest/user-guide/default-bucket-encryption.html",
+      "https://docs.aws.amazon.com/AmazonS3/latest/user-guide/view-object-properties.html",
+      "https://docs.aws.amazon.com/AmazonS3/latest/userguide/restoring-objects.html",
+      "https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html",
+      "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_principal.html",
+      "https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/kms/latest/developerguide/services-s3.html",
+      "https://docs.aws.amazon.com/pdfs/sap/latest/sap-hana/sap-hana.pdf#aws-backint-agent-s3-prerequisites",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3-prerequisites.html#aws-backint-agent-iam",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3-prerequisites.html#aws-backint-agent-ssm",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3-prerequisites.html#data-perimeter",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3-prerequisites.html#install-aws-cli",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3-prerequisites.html#s3-bucket",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-s3-prerequisites.md",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/welcome.html",
+      "https://docs.aws.amazon.com/systems-manager/latest/userguide/managed_instances.html",
+      "https://docs.aws.amazon.com/systems-manager/latest/userguide/rc-console.html#rc-console-agentexample",
+      "https://docs.aws.amazon.com/systems-manager/latest/userguide/ssm-agent.html",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html"
+    ],
+    "textCharacters": 9486
+  },
+  {
+    "url": "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html",
+    "status": "collected",
+    "sha256": "a78d584cfcb4cd0317fdd73cfea61c6560a17d1b4d1c1034262aafd3e81a8682",
+    "title": "High availability and disaster recovery - SAP HANA on AWS High availability and disaster recovery - SAP HANA on AWS",
+    "headings": [
+      {
+        "level": 1,
+        "text": "High availability and disaster recovery"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      },
+      {
+        "level": 2,
+        "text": "Amazon EC2 recovery options"
+      },
+      {
+        "level": 6,
+        "text": "Example"
+      },
+      {
+        "level": 2,
+        "text": "SAP HANA service auto-restart"
+      },
+      {
+        "level": 2,
+        "text": "SAP HANA backup/restore"
+      },
+      {
+        "level": 2,
+        "text": "AWS Backint Agent for SAP HANA"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      },
+      {
+        "level": 3,
+        "text": "Example scenario"
+      },
+      {
+        "level": 3,
+        "text": "Time to back up"
+      },
+      {
+        "level": 3,
+        "text": "Recovery time and point objectives"
+      },
+      {
+        "level": 2,
+        "text": "Amazon EBS snapshots"
+      },
+      {
+        "level": 2,
+        "text": "Cluster solutions"
+      },
+      {
+        "level": 2,
+        "text": "Pacemaker cluster"
+      },
+      {
+        "level": 2,
+        "text": "AWS Launch Wizard for SAP"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "AWS Application Migration Service and AWS Elastic Disaster Recovery"
+      }
+    ],
+    "links": [
+      "https://access.redhat.com/articles/3569621",
+      "https://access.redhat.com/articles/6093611",
+      "https://aws.amazon.com/sap/docs/",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-recovery.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-fast-snapshot-restore.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html#cloudwatch-recovery",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html#instance-configuration-recovery",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html",
+      "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/US_SetupSNS.html",
+      "https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap-deployments.html",
+      "https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sap.html",
+      "https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html",
+      "https://docs.aws.amazon.com/pdfs/sap/latest/sap-hana/sap-hana.pdf#hana-ops-ha-dr",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-backup-restore.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-installing-configuring.html#aws-backint-agent-performance-tuning",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-sap-hana.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr-hsr.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr-testing.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr-troubleshoot.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html#backint-hana-hadr",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html#cluster-hana-hadr",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html#ebs-hana-hadr",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html#ec2-recovery-hana-hadr",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html#example-backint-hana-hadr",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html#hana-backup-hana-hadr",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html#hana-restart-hana-hadr",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html#lwsap-hana-hadr",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html#mgn-drs-hana-hadr",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html#pacemaker-hana-hadr",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html#rto-rpo-backint-hana-hadr",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.html#time-backint-hana-hadr",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-ha-dr.md",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/sap-ha-overlay-ip.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-on-aws-ha-cluster-configuration-on-rhel.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-on-aws-ha-cluster-configuration-on-sles.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-on-aws-ha-configuration.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/welcome.html",
+      "https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/1367c8fdefaa4808a7485b09815ae0f3.html",
+      "https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/330e5550b09d4f0f8b6cceb14a64cd22.html"
+    ],
+    "textCharacters": 17070
+  },
+  {
+    "url": "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html",
+    "status": "collected",
+    "sha256": "9db851b58b38d317c5428fee89789ba7884c80698ce68dc74d6834b0b7767c0c",
+    "title": "Calculate EBS Storage Requirements for SAP HANA - SAP HANA on AWS Calculate EBS Storage Requirements for SAP HANA - SAP HANA on AWS",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Calculate EBS Storage Requirements for SAP HANA"
+      },
+      {
+        "level": 2,
+        "text": "Overview"
+      },
+      {
+        "level": 2,
+        "text": "New Amazon EBS Storage Guidelines for SAP HANA"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "Testing with SAP HANA Hardware and Cloud Measurement Tools"
+      },
+      {
+        "level": 2,
+        "text": "EBS Storage Volume Configurations"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      },
+      {
+        "level": 6,
+        "text": "Important"
+      },
+      {
+        "level": 3,
+        "text": "Root and SAP Binary Volumes"
+      },
+      {
+        "level": 6,
+        "text": "Storage Type"
+      },
+      {
+        "level": 6,
+        "text": "Example"
+      },
+      {
+        "level": 6,
+        "text": "Example"
+      },
+      {
+        "level": 3,
+        "text": "HANA Data Volume"
+      },
+      {
+        "level": 6,
+        "text": "Size Calculation"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 6,
+        "text": "Storage Type Selection"
+      },
+      {
+        "level": 6,
+        "text": "Volume Striping"
+      },
+      {
+        "level": 6,
+        "text": "Examples"
+      },
+      {
+        "level": 6,
+        "text": "Example"
+      },
+      {
+        "level": 6,
+        "text": "Example"
+      },
+      {
+        "level": 3,
+        "text": "HANA Log Volume"
+      },
+      {
+        "level": 6,
+        "text": "Size Calculation"
+      },
+      {
+        "level": 6,
+        "text": "Storage Type Selection"
+      },
+      {
+        "level": 6,
+        "text": "Volume Striping"
+      },
+      {
+        "level": 6,
+        "text": "Examples"
+      },
+      {
+        "level": 6,
+        "text": "Example"
+      },
+      {
+        "level": 3,
+        "text": "HANA Shared Volume"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 6,
+        "text": "Size Calculation"
+      },
+      {
+        "level": 6,
+        "text": "Storage Type Selection"
+      },
+      {
+        "level": 6,
+        "text": "Examples"
+      },
+      {
+        "level": 6,
+        "text": "Example"
+      },
+      {
+        "level": 3,
+        "text": "HANA Backup Volume (Optional)"
+      },
+      {
+        "level": 6,
+        "text": "Important"
+      },
+      {
+        "level": 6,
+        "text": "Size Calculation"
+      },
+      {
+        "level": 6,
+        "text": "Storage Type Selection"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 6,
+        "text": "Throughput Formula"
+      },
+      {
+        "level": 3,
+        "text": "When to Stripe Volumes"
+      },
+      {
+        "level": 6,
+        "text": "Important"
+      }
+    ],
+    "links": [
+      "https://aws.amazon.com/sap/docs/",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-optimized.html",
+      "https://docs.aws.amazon.com/ebs/latest/userguide/ebs-volume-types.html",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/pdfs/sap/latest/sap-hana/sap-hana.pdf#hana-storage-config-ebs",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-backup.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/configure-nfs-for-scale-out-workloads.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html#_ebs_storage_volume_configurations",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html#_new_amazon_ebs_storage_guidelines_for_sap_hana",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html#_overview",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html#_testing_with_sap_hana_hardware_and_cloud_measurement_tools",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html#_when_to_stripe_volumes",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html#hana_backup",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html#hana_data",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html#hana_log",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html#hana_shared",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html#root_and_sap",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.md",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/welcome.html",
+      "https://help.sap.com/viewer/product/HANA_HW_CLOUD_TOOLS/latest/en-US",
+      "https://me.sap.com/notes/2493172",
+      "https://www.sap.com/about/benchmark/sizing.html"
+    ],
+    "textCharacters": 17553
+  },
+  {
+    "url": "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html",
+    "status": "collected",
+    "sha256": "3c5514617fbed23d8fb0dcfdb741271cc1ceb92368bd17ef9b45bb115524e819",
+    "title": "SAP HANA EBS Storage Reference - SAP HANA on AWS SAP HANA EBS Storage Reference - SAP HANA on AWS",
+    "headings": [
+      {
+        "level": 1,
+        "text": "SAP HANA EBS Storage Reference"
+      },
+      {
+        "level": 6,
+        "text": "Important"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      },
+      {
+        "level": 2,
+        "text": "Certified Instances - General"
+      },
+      {
+        "level": 3,
+        "text": "256 GiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "384 GiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "488 GiB / 512 GiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "768 GiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "976 GiB / 1024 GiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "1,536 GiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "2 TiB Memory Systems"
+      },
+      {
+        "level": 2,
+        "text": "Certified Instances - High Memory"
+      },
+      {
+        "level": 3,
+        "text": "3 TiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "4 TiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "6 TiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "8 TiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "9 TiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "12 TiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "16 TiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "18 TiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "24 TiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "32 TiB Memory Systems"
+      },
+      {
+        "level": 2,
+        "text": "Suitable for Non-Production Use"
+      },
+      {
+        "level": 3,
+        "text": "64 GiB Memory Systems"
+      },
+      {
+        "level": 3,
+        "text": "128 GiB Memory Systems"
+      }
+    ],
+    "links": [
+      "https://aws.amazon.com/sap/docs/",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/pdfs/sap/latest/sap-hana/sap-hana.pdf#hana-storage-config-reference-layout",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-ebs.html#hana_backup",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#_certified_instances_high_memory",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#_suitable_for_non_production_use",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#general",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-1024",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-128",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-12tb",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-1536",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-16tb",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-18tb",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-24tb",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-256",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-2tb",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-32tb",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-384",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-3tb",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-4tb",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-512",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-64",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-6tb",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-768",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-8tb",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.html#mem-9tb",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-storage-config-reference-layout.md",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/welcome.html"
+    ],
+    "textCharacters": 15000
+  },
+  {
+    "url": "https://docs.aws.amazon.com/sap/latest/sap-hana/planning-the-deployment.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/sap/latest/sap-hana/planning-the-deployment.html",
+    "status": "collected",
+    "sha256": "1506787be9df0f9e8bbdba0afb83f667aaf544fb8ea48039788a99423a90c288",
+    "title": "Plan the deployment - SAP HANA on AWS Plan the deployment - SAP HANA on AWS",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Plan the deployment"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      },
+      {
+        "level": 2,
+        "text": "Compute"
+      },
+      {
+        "level": 2,
+        "text": "Operating System"
+      },
+      {
+        "level": 6,
+        "text": "SLES for SAP"
+      },
+      {
+        "level": 6,
+        "text": "RHEL for SAP"
+      },
+      {
+        "level": 2,
+        "text": "Amazon Machine Image (AMI)"
+      },
+      {
+        "level": 2,
+        "text": "Storage"
+      },
+      {
+        "level": 2,
+        "text": "Network"
+      }
+    ],
+    "links": [
+      "https://access.redhat.com/articles/3490141",
+      "https://access.redhat.com/articles/3671571",
+      "https://aws.amazon.com/sap/docs/",
+      "https://aws.amazon.com/sap/instance-types/",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/pdfs/sap/latest/sap-hana/sap-hana.pdf#planning-the-deployment",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/hana-ops-storage-config.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/planning-the-deployment.html#amazon-machine-image-ami",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/planning-the-deployment.html#compute",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/planning-the-deployment.html#network",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/planning-the-deployment.html#operating-system",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/planning-the-deployment.html#storage",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/planning-the-deployment.md",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/sap-hana-amazon-fsx.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/welcome.html",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-getting-started.html",
+      "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_sap_solutions",
+      "https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=v:deCertified;ve:23",
+      "https://www.suse.com/products/sles-for-sap/"
+    ],
+    "textCharacters": 4276
+  },
+  {
+    "url": "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html",
+    "status": "collected",
+    "sha256": "90b9fd459a7b2ff968f1eed4e396d0a61d9e23027edeec7b4245d9b103fee9d0",
+    "title": "Cluster Configuration - SAP NetWeaver on AWS Cluster Configuration - SAP NetWeaver on AWS",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Cluster Configuration"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      },
+      {
+        "level": 2,
+        "text": "Prepare for Resource Creation"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "Cluster Bootstrap"
+      },
+      {
+        "level": 3,
+        "text": "Configure Cluster Properties"
+      },
+      {
+        "level": 3,
+        "text": "Configure Resource Defaults"
+      },
+      {
+        "level": 3,
+        "text": "Configure Operation Defaults"
+      },
+      {
+        "level": 2,
+        "text": "Create STONITH Fencing Resource"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "Create Filesystem resources (classic only)"
+      },
+      {
+        "level": 2,
+        "text": "Create Overlay IP (aws-vpc-move-ip) resources"
+      },
+      {
+        "level": 2,
+        "text": "Create SAPStartSrv resources (simple-mount only)"
+      },
+      {
+        "level": 2,
+        "text": "Create SAPInstance resources (simple-mount only)"
+      },
+      {
+        "level": 6,
+        "text": "Example"
+      },
+      {
+        "level": 2,
+        "text": "Create SAPInstance resources (classic only)"
+      },
+      {
+        "level": 6,
+        "text": "Example"
+      },
+      {
+        "level": 2,
+        "text": "Create resource groups for aws-vpc-move-ip / SAPStartSrv / SAPInstance (simple-mount only)"
+      },
+      {
+        "level": 2,
+        "text": "Create resource groups for Filesystem / aws-vpc-move-ip / SAPInstance (classic only)"
+      },
+      {
+        "level": 2,
+        "text": "Create resource constraints"
+      },
+      {
+        "level": 3,
+        "text": "Colocation constraint"
+      },
+      {
+        "level": 3,
+        "text": "Order constraint"
+      },
+      {
+        "level": 3,
+        "text": "Location constraint (ENSA1 only)"
+      },
+      {
+        "level": 2,
+        "text": "Reset Configuration – Optional"
+      },
+      {
+        "level": 6,
+        "text": "Important"
+      }
+    ],
+    "links": [
+      "https://aws.amazon.com/sap/docs/",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/pdfs/sap/latest/sap-netweaver/sap-netweaver.pdf#cluster-config-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html#cluster-bootstrap-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html#create-stonith-ec2-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html#filesystem-resources-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html#overlay-ip-resources-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html#prepare-resource-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html#reset-config-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html#resource-constraints-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html#resource-groups-classic-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html#resource-groups-simple-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html#sap-resources-classic-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html#sap-resources-simple-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.html#sapstartsrv-resources-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/cluster-config-nw-sles.md",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-ec2-configuration.html#create-cluster-tags-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-parameters.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/welcome.html"
+    ],
+    "textCharacters": 28791
+  },
+  {
+    "url": "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-concepts.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-concepts.html",
+    "status": "collected",
+    "sha256": "5eb4d349ce25e992076fae0083b3dfb1e80fbe208863f565666fd29b92d8ebf2",
+    "title": "Concepts - SAP NetWeaver on AWS Concepts - SAP NetWeaver on AWS",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Concepts"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      },
+      {
+        "level": 2,
+        "text": "SAP – ABAP SAP Central Services (ASCS)"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "SAP – Enqueue Replication Server (ERS)"
+      },
+      {
+        "level": 2,
+        "text": "AWS – Availability Zones"
+      },
+      {
+        "level": 2,
+        "text": "AWS – Overlay IP"
+      },
+      {
+        "level": 2,
+        "text": "AWS – Shared VPC"
+      },
+      {
+        "level": 2,
+        "text": "Pacemaker - STONITH fencing agent"
+      }
+    ],
+    "links": [
+      "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/",
+      "https://aws.amazon.com/sap/docs/",
+      "https://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html",
+      "https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/pdfs/sap/latest/sap-netweaver/sap-netweaver.pdf#sap-nw-pacemaker-sles-concepts",
+      "https://docs.aws.amazon.com/sap/latest/sap-hana/sap-ha-overlay-ip.html",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-concepts.html#ascs-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-concepts.html#availability-zones-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-concepts.html#ers-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-concepts.html#overlay-ip-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-concepts.html#shared-vpc",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-concepts.html#stonith-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-concepts.md",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sles-netweaver-ha-settings.html#sles-netweaver-ha-shared-vpc",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/welcome.html",
+      "https://docs.aws.amazon.com/vpc/latest/ipam/what-it-is-ipam.html",
+      "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html",
+      "https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/what-is.html",
+      "https://me.sap.com/notes/2630416"
+    ],
+    "textCharacters": 7631
+  },
+  {
+    "url": "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-infra-setup.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-infra-setup.html",
+    "status": "collected",
+    "sha256": "1691c724c8b8fcd3e6347eae37c4144ce3360226ba7ab400a7db063f6cef8d90",
+    "title": "AWS Infrastructure Setup - SAP NetWeaver on AWS AWS Infrastructure Setup - SAP NetWeaver on AWS",
+    "headings": [
+      {
+        "level": 1,
+        "text": "AWS Infrastructure Setup"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 6,
+        "text": "Topics"
+      },
+      {
+        "level": 2,
+        "text": "Create IAM Roles and Policies for Pacemaker"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 3,
+        "text": "STONITH Policy"
+      },
+      {
+        "level": 3,
+        "text": "AWS Overlay IP Policy"
+      },
+      {
+        "level": 3,
+        "text": "Shared VPC (optional)"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 6,
+        "text": "Minimum Version Requirements"
+      },
+      {
+        "level": 6,
+        "text": "IAM Roles and Policies"
+      },
+      {
+        "level": 6,
+        "text": "Sharing VPC Account"
+      },
+      {
+        "level": 2,
+        "text": "Modify Security Groups for Cluster Communication"
+      },
+      {
+        "level": 2,
+        "text": "Add VPC Route Table Entries for Overlay IPs"
+      }
+    ],
+    "links": [
+      "https://aws.amazon.com/sap/docs/",
+      "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#ec2-instance-profile",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/pdfs/sap/latest/sap-netweaver/sap-netweaver.pdf#sap-nw-pacemaker-sles-infra-setup",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-concepts.html#overlay-ip-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-infra-setup.html#iam-roles-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-infra-setup.html#rt-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-infra-setup.html#sg-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-infra-setup.md",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/sap-nw-pacemaker-sles-parameters.html#sap-pacemaker-resource-parameters-nw-sles",
+      "https://docs.aws.amazon.com/sap/latest/sap-netweaver/welcome.html",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-security-groups.html",
+      "https://documentation.suse.com/sle-ha/15-SP6/html/SLE-HA-all/cha-ha-manage-resources.html#sec-conf-hawk2-manage-edit"
+    ],
+    "textCharacters": 9534
+  },
+  {
+    "url": "https://docs.aws.amazon.com/ssm-sap/latest/userguide/privatelink.html",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://docs.aws.amazon.com/ssm-sap/latest/userguide/privatelink.html",
+    "status": "collected",
+    "sha256": "30c4981ac649c6003ee41e684205025218aeeffea87c14aea69824323aa11413",
+    "title": "AWS PrivateLink for AWS Systems Manager for SAP - AWS Systems Manager for SAP AWS PrivateLink for AWS Systems Manager for SAP - AWS Systems Manager for SAP",
+    "headings": [
+      {
+        "level": 1,
+        "text": "AWS PrivateLink for AWS Systems Manager for SAP"
+      },
+      {
+        "level": 2,
+        "text": "Create a VPC endpoint for Systems Manager for SAP"
+      },
+      {
+        "level": 2,
+        "text": "Creating FIPS-compliant VPC endpoints"
+      },
+      {
+        "level": 6,
+        "text": "Note"
+      },
+      {
+        "level": 2,
+        "text": "Verify the endpoint connection"
+      },
+      {
+        "level": 2,
+        "text": "Important Notes About Service Dependencies"
+      },
+      {
+        "level": 2,
+        "text": "Considerations"
+      },
+      {
+        "level": 2,
+        "text": "Additional Resources"
+      }
+    ],
+    "links": [
+      "https://aws.amazon.com/privatelink/pricing/",
+      "https://docs.aws.amazon.com/general/latest/gr/docconventions.html",
+      "https://docs.aws.amazon.com/index.html",
+      "https://docs.aws.amazon.com/pdfs/ssm-sap/latest/userguide/ssm-sap.pdf#privatelink",
+      "https://docs.aws.amazon.com/ssm-sap/latest/userguide/privatelink.html#additional-resources",
+      "https://docs.aws.amazon.com/ssm-sap/latest/userguide/privatelink.html#considerations",
+      "https://docs.aws.amazon.com/ssm-sap/latest/userguide/privatelink.html#create-vpc-endpoint",
+      "https://docs.aws.amazon.com/ssm-sap/latest/userguide/privatelink.html#fips-endpoints",
+      "https://docs.aws.amazon.com/ssm-sap/latest/userguide/privatelink.html#service-dependencies",
+      "https://docs.aws.amazon.com/ssm-sap/latest/userguide/privatelink.html#verify-connection",
+      "https://docs.aws.amazon.com/ssm-sap/latest/userguide/privatelink.md",
+      "https://docs.aws.amazon.com/ssm-sap/latest/userguide/what-is-ssm-for-sap.html",
+      "https://docs.aws.amazon.com/systems-manager/index.html",
+      "https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-create-vpc.html",
+      "https://docs.aws.amazon.com/vpc/latest/privatelink/privatelink-access-aws-services.html",
+      "https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html#vpc-limits-endpoints"
+    ],
+    "textCharacters": 4686
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana",
+    "status": "collected",
+    "sha256": "d65b0cd39588db11a87a98010856a2e95bc4141c81a94066bb29325a888d22bf",
+    "title": "SAP S/4HANA in Linux on Azure - Azure Architecture Center | Microsoft Learn",
+    "headings": [
+      {
+        "level": 1,
+        "text": "SAP S/4HANA in Linux on Azure"
+      },
+      {
+        "level": 2,
+        "text": "In this article"
+      },
+      {
+        "level": 2,
+        "text": "Architecture"
+      },
+      {
+        "level": 2,
+        "text": "Recommendations"
+      },
+      {
+        "level": 3,
+        "text": "VMs"
+      },
+      {
+        "level": 3,
+        "text": "SAP Web Dispatcher"
+      },
+      {
+        "level": 3,
+        "text": "Fiori FES"
+      },
+      {
+        "level": 3,
+        "text": "Application servers pool"
+      },
+      {
+        "level": 3,
+        "text": "SAP Central Services cluster"
+      },
+      {
+        "level": 3,
+        "text": "Networking"
+      },
+      {
+        "level": 3,
+        "text": "Network interface cards"
+      },
+      {
+        "level": 3,
+        "text": "Subnets and NSGs"
+      },
+      {
+        "level": 3,
+        "text": "ExpressRoute Global Reach"
+      },
+      {
+        "level": 3,
+        "text": "FastPath"
+      },
+      {
+        "level": 3,
+        "text": "Load balancers"
+      },
+      {
+        "level": 3,
+        "text": "Storage"
+      },
+      {
+        "level": 4,
+        "text": "Storage recommendations by use case"
+      },
+      {
+        "level": 2,
+        "text": "Performance considerations"
+      },
+      {
+        "level": 2,
+        "text": "Scalability considerations"
+      },
+      {
+        "level": 3,
+        "text": "Application layer scaling"
+      },
+      {
+        "level": 3,
+        "text": "Database layer scaling"
+      },
+      {
+        "level": 2,
+        "text": "Availability considerations"
+      },
+      {
+        "level": 3,
+        "text": "Deployment approaches"
+      },
+      {
+        "level": 4,
+        "text": "Deployment options comparison"
+      },
+      {
+        "level": 3,
+        "text": "Web Dispatcher in the application servers tier"
+      },
+      {
+        "level": 3,
+        "text": "Central Services in the application servers tier"
+      },
+      {
+        "level": 3,
+        "text": "Application servers in the application servers tier"
+      },
+      {
+        "level": 3,
+        "text": "Database tier"
+      },
+      {
+        "level": 4,
+        "text": "HANA replication configuration"
+      },
+      {
+        "level": 3,
+        "text": "Deploy VMs across availability zones"
+      },
+      {
+        "level": 4,
+        "text": "Availability zone requirements"
+      },
+      {
+        "level": 4,
+        "text": "Active/passive deployment example"
+      },
+      {
+        "level": 4,
+        "text": "Active/active deployment example"
+      },
+      {
+        "level": 2,
+        "text": "DR considerations"
+      },
+      {
+        "level": 2,
+        "text": "Cost considerations"
+      },
+      {
+        "level": 3,
+        "text": "VMs"
+      },
+      {
+        "level": 4,
+        "text": "VM payment options"
+      },
+      {
+        "level": 3,
+        "text": "Load Balancer"
+      },
+      {
+        "level": 3,
+        "text": "ExpressRoute"
+      },
+      {
+        "level": 2,
+        "text": "Management and operations considerations"
+      },
+      {
+        "level": 3,
+        "text": "Azure Center for SAP solutions"
+      },
+      {
+        "level": 3,
+        "text": "Backup"
+      },
+      {
+        "level": 3,
+        "text": "Identity management"
+      },
+      {
+        "level": 3,
+        "text": "Monitoring"
+      },
+      {
+        "level": 2,
+        "text": "Security considerations"
+      },
+      {
+        "level": 3,
+        "text": "Application security"
+      },
+      {
+        "level": 3,
+        "text": "Network security"
+      },
+      {
+        "level": 3,
+        "text": "Data encryption"
+      },
+      {
+        "level": 4,
+        "text": "Recommended encryption approaches"
+      },
+      {
+        "level": 4,
+        "text": "Avoid Azure disk encryption for SAP workloads"
+      },
+      {
+        "level": 2,
+        "text": "Communities"
+      },
+      {
+        "level": 2,
+        "text": "Contributors"
+      },
+      {
+        "level": 2,
+        "text": "Next steps"
+      },
+      {
+        "level": 2,
+        "text": "Related resource"
+      },
+      {
+        "level": 2,
+        "text": "Feedback"
+      },
+      {
+        "level": 2,
+        "text": "Additional resources"
+      },
+      {
+        "level": 3,
+        "text": "In this article"
+      }
+    ],
+    "links": [
+      "https://aka.ms/yourcaliforniaprivacychoices",
+      "https://arch-center.azureedge.net/fiori.vsdx",
+      "https://arch-center.azureedge.net/s-4hana.vsdx",
+      "https://azure.microsoft.com/pricing/calculator",
+      "https://azure.microsoft.com/pricing/details/expressroute",
+      "https://azure.microsoft.com/pricing/details/virtual-machines/linux",
+      "https://azure.microsoft.com/support/forums",
+      "https://github.com/Azure/SAP-on-Azure-Scripts-and-Utilities/tree/main/AvZone-Latency-Test",
+      "https://github.com/microsoftdocs/architecture-center/blob/main/docs/guide/sap/sap-s4hana.md",
+      "https://go.microsoft.com/fwlink/?LinkId=521839",
+      "https://go.microsoft.com/fwlink/?linkid=2259814",
+      "https://go.microsoft.com/fwlink/p/?LinkID=2092881 ",
+      "https://help.sap.com/doc/saphelp_nw74/7.4.16/48/8fe37933114e6fe10000000a421937/frameset.htm",
+      "https://help.sap.com/docs/ABAP_PLATFORM_NEW/683d6a1797a34730a6e005d1e8de6f22/488fe37933114e6fe10000000a421937.html",
+      "https://help.sap.com/docs/ABAP_PLATFORM_NEW/683d6a1797a34730a6e005d1e8de6f22/489a9a6b48c673e8e10000000a42189b.html",
+      "https://help.sap.com/docs/SAP_FIORI_OVERVIEW/4694bb95aacb4cdfa1327c6d8735eaad/4d0feecb64fe49ccbe45c3361e71b7c4.html#general-information-about-embedded-deployment-and-hub-deployment",
+      "https://help.sap.com/docs/SAP_NETWEAVER_731_BW_ABAP/683d6a1797a34730a6e005d1e8de6f22/4899ac3a7f020e27e10000000a421937.html?q=web+dispatcher+high+availability",
+      "https://help.sap.com/docs/SUPPORT_CONTENT/si/3362959490.html",
+      "https://launchpad.support.sap.com/#/notes/1928533",
+      "https://launchpad.support.sap.com/#/notes/1943937",
+      "https://launchpad.support.sap.com/#/notes/2015553",
+      "https://launchpad.support.sap.com/#/notes/962955",
+      "https://learn.microsoft.com/en-us/azure/application-gateway",
+      "https://learn.microsoft.com/en-us/azure/architecture/example-scenario/apps/sap-production",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/media/fiori.svg#lightbox",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/media/s-4hana.svg#lightbox",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-internet-inbound-outbound",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana#central-services-in-the-application-servers-tier",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana#main",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana#recommended-encryption-approaches",
+      "https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/dmz/secure-vnet-dmz",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/hybrid-networking/expressroute-vpn-failover",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/overview",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels#supported-service-levels",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/backup-introduction",
+      "https://learn.microsoft.com/en-us/azure/backup/azure-backup-architecture-for-sap-hana-backup",
+      "https://learn.microsoft.com/en-us/azure/backup/backup-azure-backup-faq",
+      "https://learn.microsoft.com/en-us/azure/backup/sap-hana-backup-support-matrix",
+      "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-about",
+      "https://learn.microsoft.com/en-us/azure/bastion/bastion-overview",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "https://learn.microsoft.com/en-us/azure/dns/private-dns-overview",
+      "https://learn.microsoft.com/en-us/azure/expressroute/about-fastpath",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-global-reach",
+      "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-howto-coexist-resource-manager",
+      "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-ha-ports-overview",
+      "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview",
+      "https://learn.microsoft.com/en-us/azure/load-balancer/outbound-rules",
+      "https://learn.microsoft.com/en-us/azure/load-balancer/skus",
+      "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview",
+      "https://learn.microsoft.com/en-us/azure/reliability/reliability-load-balancer",
+      "https://learn.microsoft.com/en-us/azure/reliability/reliability-virtual-network-gateway?pivots=expressroute#resilience-to-availability-zone-failures",
+      "https://learn.microsoft.com/en-us/azure/role-based-access-control/overview",
+      "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/deploy-s4hana",
+      "https://learn.microsoft.com/en-us/azure/sap/center-sap-solutions/overview",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/about-azure-monitor-sap-solutions",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-overview-guide",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-sap-guide",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-multi-sid",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-nfs-azure-files",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker?tabs=msi",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-standard-load-balancer-outbound-connections",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-multi-sid",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-netapp-files",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-nfs-azure-files",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-nfs-simple-mount",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-pacemaker?tabs=msi",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-zones",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-zones?tabs=active#deployment-types",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-zones?tabs=passive#deployment-types",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide#encryption-for-infrastructure-resources",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide#security-for-your-sap-landscape",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/proximity-placement-scenarios",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-azure-files-nfs-encryption-in-transit-guide",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-scale-out-standby-netapp-files-suse",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-high-availability-architecture-scenarios",
+      "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-common-questions#capacity",
+      "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/storage/storage-managed-disks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/co-location",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-ultra-ssd",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared#linux",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types#premium-ssd-v2",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/linux/disks-enable-ultra-ssd",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/premium-storage-performance",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/prepay-reserved-vm-instances",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/get-started",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/hana-vm-operations-netapp",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/high-availability-guide-rhel-glusterfs",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/high-availability-guide-suse-multi-sid",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/high-availability-guide-suse-netapp-files",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/high-availability-guide-suse-nfs-azure-files",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/planning-guide",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/sap-hana-scale-out-standby-netapp-files-suse#sizing-for-hana-database-on-azure-netapp-files",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/workloads/sap/sap-proximity-placement-scenarios",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/security-overview#application-security-groups",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic?tabs=cli#tabpanel_1_cli",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic?tabs=portal#tabpanel_1_portal",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic?tabs=powershell#tabpanel_1_powershell",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-tcpip-performance-tuning",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization",
+      "https://learn.microsoft.com/en-us/contribute",
+      "https://learn.microsoft.com/en-us/entra/identity-platform/v2-oauth2-auth-code-flow",
+      "https://learn.microsoft.com/en-us/entra/identity/saas-apps/sap-fiori-tutorial",
+      "https://learn.microsoft.com/en-us/entra/identity/saas-apps/sap-netweaver-tutorial",
+      "https://learn.microsoft.com/en-us/legal/termsofuse",
+      "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+      "https://learn.microsoft.com/en-us/previous-versions/",
+      "https://learn.microsoft.com/en-us/principles-for-ai-generated-content",
+      "https://learn.microsoft.com/en-us/sysinternals/downloads/psping",
+      "https://sourceforge.net/projects/iperf",
+      "https://techcommunity.microsoft.com/blog/sapapplications/sap-on-azure-product-announcements-summary-%E2%80%93-sap-sapphire-2025/4415281",
+      "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog",
+      "https://us.sios.com/blog/how-to-install-a-sios-protection-suite-for-linux-license-key/",
+      "https://us.sios.com/solutions/sap-high-availability",
+      "https://wiki.scn.sap.com/wiki/display/SI/ABAP+Logon+Group+based+Load+Balancing",
+      "https://www.linkedin.com/in/bentrinh",
+      "https://www.microsoft.com/legal/intellectualproperty/Trademarks/",
+      "https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services?lang=1",
+      "https://www.sap.com/community.html",
+      "https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:24;range%23c:memorySize%23v:ms17%23v:88c8c3d5-03a8-4fa3-bf07-2ab33f35f444&sort=Latest%20Certification&sortDesc=true",
+      "https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=ve:24",
+      "https://www.sap.com/documents/2018/02/f0148939-f27c-0010-82c7-eda71af511fa.html",
+      "https://www.tutorialspoint.com/sap_hana/sap_hana_security_overview.htm"
+    ],
+    "textCharacters": 46551
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape",
+    "status": "collected",
+    "sha256": "08c2447585f66c2899e3280d1d9ccd7bf752061d15a7ad1c0cee93094fd87f43",
+    "title": "SAP Landscape Architecture - Azure Architecture Center | Microsoft Learn",
+    "headings": [
+      {
+        "level": 1,
+        "text": "SAP landscape architecture"
+      },
+      {
+        "level": 2,
+        "text": "In this article"
+      },
+      {
+        "level": 2,
+        "text": "Architecture"
+      },
+      {
+        "level": 3,
+        "text": "Workflow"
+      },
+      {
+        "level": 3,
+        "text": "Azure subscriptions"
+      },
+      {
+        "level": 3,
+        "text": "Network design"
+      },
+      {
+        "level": 4,
+        "text": "Subnets"
+      },
+      {
+        "level": 5,
+        "text": "Number of subnets"
+      },
+      {
+        "level": 5,
+        "text": "Subnet sizing"
+      },
+      {
+        "level": 5,
+        "text": "Application subnet"
+      },
+      {
+        "level": 5,
+        "text": "Database subnet"
+      },
+      {
+        "level": 5,
+        "text": "Perimeter subnets"
+      },
+      {
+        "level": 5,
+        "text": "Azure NetApp Files subnet"
+      },
+      {
+        "level": 5,
+        "text": "Subnet security"
+      },
+      {
+        "level": 4,
+        "text": "Private Link"
+      },
+      {
+        "level": 3,
+        "text": "NFS and SMB file shares"
+      },
+      {
+        "level": 3,
+        "text": "Data services"
+      },
+      {
+        "level": 3,
+        "text": "Shared services"
+      },
+      {
+        "level": 3,
+        "text": "Disaster recovery"
+      },
+      {
+        "level": 3,
+        "text": "Smaller SAP architecture"
+      },
+      {
+        "level": 2,
+        "text": "Contributors"
+      },
+      {
+        "level": 2,
+        "text": "Next steps"
+      },
+      {
+        "level": 2,
+        "text": "Related resources"
+      },
+      {
+        "level": 2,
+        "text": "Feedback"
+      },
+      {
+        "level": 2,
+        "text": "Additional resources"
+      },
+      {
+        "level": 3,
+        "text": "In this article"
+      }
+    ],
+    "links": [
+      "https://aka.ms/yourcaliforniaprivacychoices",
+      "https://arch-center.azureedge.net/sap-whole-landscape.vsdx",
+      "https://github.com/microsoftdocs/architecture-center/blob/main/docs/guide/sap/sap-whole-landscape.md",
+      "https://go.microsoft.com/fwlink/?LinkId=521839",
+      "https://go.microsoft.com/fwlink/?linkid=2259814",
+      "https://go.microsoft.com/fwlink/p/?LinkID=2092881 ",
+      "https://help.sap.com/docs/SAP_NETWEAVER_750/4a368c163b08418890a406d413933ba7/14c795388d62e450e10000009b38f889.html",
+      "https://help.sap.com/docs/SAP_NETWEAVER_750/4a368c163b08418890a406d413933ba7/44b4a0ce7acc11d1899e0000e829fbbd.html",
+      "https://help.sap.com/docs/private-link/private-link1/azure-database-for-mysql",
+      "https://help.sap.com/docs/private-link/private-link1/azure-private-link-service-generic-lb-scenario-for-vms-and-others",
+      "https://launchpad.support.sap.com/#/notes/2015553",
+      "https://learn.microsoft.com/en-us/azure/application-gateway/configuration-infrastructure#virtual-network-and-dedicated-subnet",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/media/sap-whole-landscape-secured-perimeter-peering.svg#lightbox",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/media/sap-whole-landscape.svg#lightbox",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-internet-inbound-outbound",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-netweaver",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape#main",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape#next-steps",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-whole-landscape#perimeter-subnets",
+      "https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/sap/run-sap-hana-for-linux-virtual-machines",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-delegate-subnet",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits",
+      "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/azure-best-practices/perimeter-networks",
+      "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/eslz-network-topology-and-connectivity",
+      "https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/sap/strategy",
+      "https://learn.microsoft.com/en-us/azure/data-factory/concepts-integration-runtime",
+      "https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-business-warehouse-open-hub",
+      "https://learn.microsoft.com/en-us/azure/data-factory/connector-sap-hana?tabs=data-factory",
+      "https://learn.microsoft.com/en-us/azure/data-factory/sap-change-data-capture-shir-preparation",
+      "https://learn.microsoft.com/en-us/azure/expressroute/use-s2s-vpn-as-backup-for-expressroute-privatepeering",
+      "https://learn.microsoft.com/en-us/azure/governance/management-groups/overview",
+      "https://learn.microsoft.com/en-us/azure/governance/policy/overview",
+      "https://learn.microsoft.com/en-us/azure/private-link/private-endpoint-overview",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/deployment-checklist",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/disaster-recovery-overview-guide",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/get-started",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage#azure-premium-files",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/application-security-groups",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-group-how-it-works#intra-subnet-traffic",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/tutorial-filter-network-traffic-cli",
+      "https://learn.microsoft.com/en-us/azure/virtual-wan/how-to-nva-hub",
+      "https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about",
+      "https://learn.microsoft.com/en-us/contribute",
+      "https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem",
+      "https://learn.microsoft.com/en-us/legal/termsofuse",
+      "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+      "https://learn.microsoft.com/en-us/previous-versions/",
+      "https://learn.microsoft.com/en-us/principles-for-ai-generated-content",
+      "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog",
+      "https://www.linkedin.com/in/daniel-crawford-b661373",
+      "https://www.linkedin.com/in/pankaj-meshram-6922981a",
+      "https://www.linkedin.com/in/robert-biro-38991927",
+      "https://www.microsoft.com/legal/intellectualproperty/Trademarks/"
+    ],
+    "textCharacters": 29887
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/baseline",
+    "status": "collected",
+    "sha256": "73bd0e9679f8d366fc82f7480b7f3541eb888364e7bfac6ce640f6baead43996",
+    "title": "Azure Virtual Machines baseline architecture - Azure Architecture Center | Microsoft Learn",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Azure Virtual Machines baseline architecture"
+      },
+      {
+        "level": 2,
+        "text": "In this article"
+      },
+      {
+        "level": 2,
+        "text": "Article layout"
+      },
+      {
+        "level": 2,
+        "text": "Architecture"
+      },
+      {
+        "level": 3,
+        "text": "Components"
+      },
+      {
+        "level": 4,
+        "text": "Workload resources"
+      },
+      {
+        "level": 4,
+        "text": "Workload supporting resources"
+      },
+      {
+        "level": 4,
+        "text": "User flows"
+      },
+      {
+        "level": 5,
+        "text": "Workload user"
+      },
+      {
+        "level": 5,
+        "text": "Operator"
+      },
+      {
+        "level": 2,
+        "text": "VM design choices"
+      },
+      {
+        "level": 4,
+        "text": "Bootstrapping"
+      },
+      {
+        "level": 4,
+        "text": "VM connectivity"
+      },
+      {
+        "level": 4,
+        "text": "Virtual Machine Scale Sets with Flexible orchestration"
+      },
+      {
+        "level": 2,
+        "text": "Disks"
+      },
+      {
+        "level": 2,
+        "text": "Network layout"
+      },
+      {
+        "level": 4,
+        "text": "Virtual network"
+      },
+      {
+        "level": 4,
+        "text": "Subnetting considerations"
+      },
+      {
+        "level": 4,
+        "text": "Ingress traffic"
+      },
+      {
+        "level": 4,
+        "text": "Egress traffic"
+      },
+      {
+        "level": 4,
+        "text": "DNS resolution"
+      },
+      {
+        "level": 2,
+        "text": "Monitoring"
+      },
+      {
+        "level": 3,
+        "text": "Infrastructure-level monitoring"
+      },
+      {
+        "level": 5,
+        "text": "Virtual machines"
+      },
+      {
+        "level": 5,
+        "text": "Networking"
+      },
+      {
+        "level": 5,
+        "text": "Managed disks"
+      },
+      {
+        "level": 3,
+        "text": "Application-level monitoring"
+      },
+      {
+        "level": 2,
+        "text": "Update management"
+      },
+      {
+        "level": 3,
+        "text": "Infrastructure updates"
+      },
+      {
+        "level": 3,
+        "text": "Operating system (OS) image upgrades"
+      },
+      {
+        "level": 3,
+        "text": "Guest OS patching"
+      },
+      {
+        "level": 2,
+        "text": "Considerations"
+      },
+      {
+        "level": 3,
+        "text": "Reliability"
+      },
+      {
+        "level": 4,
+        "text": "Prioritize the reliability assurances per user flow"
+      },
+      {
+        "level": 4,
+        "text": "Identify the potential failure points"
+      },
+      {
+        "level": 4,
+        "text": "Reliability targets"
+      },
+      {
+        "level": 4,
+        "text": "Redundancy"
+      },
+      {
+        "level": 4,
+        "text": "Scaling strategy"
+      },
+      {
+        "level": 4,
+        "text": "Self-healing and recoverability"
+      },
+      {
+        "level": 3,
+        "text": "Security"
+      },
+      {
+        "level": 4,
+        "text": "Segmentation"
+      },
+      {
+        "level": 4,
+        "text": "Identity and access management"
+      },
+      {
+        "level": 4,
+        "text": "Network controls"
+      },
+      {
+        "level": 4,
+        "text": "Encryption"
+      },
+      {
+        "level": 4,
+        "text": "Secret management"
+      },
+      {
+        "level": 3,
+        "text": "Cost Optimization"
+      },
+      {
+        "level": 4,
+        "text": "Component cost"
+      },
+      {
+        "level": 4,
+        "text": "Flow cost"
+      },
+      {
+        "level": 4,
+        "text": "Scaling cost"
+      },
+      {
+        "level": 4,
+        "text": "Operational costs"
+      },
+      {
+        "level": 2,
+        "text": "Next step"
+      },
+      {
+        "level": 2,
+        "text": "Related resources"
+      },
+      {
+        "level": 2,
+        "text": "Feedback"
+      },
+      {
+        "level": 3,
+        "text": "In this article"
+      }
+    ],
+    "links": [
+      "https://aka.ms/yourcaliforniaprivacychoices",
+      "https://arch-center.azureedge.net/baseline-architecture.vsdx",
+      "https://arch-center.azureedge.net/baseline-certificates.vsdx",
+      "https://arch-center.azureedge.net/baseline-monitoring.vsdx",
+      "https://arch-center.azureedge.net/baseline-network-egress.vsdx",
+      "https://arch-center.azureedge.net/baseline-network-ingress.vsdx",
+      "https://azure.com/e/8594eedc1e5847178f6c6d27895e6f51",
+      "https://azure.microsoft.com/pricing/details/monitor/",
+      "https://github.com/microsoftdocs/architecture-center/blob/main/docs/virtual-machines/baseline.yml",
+      "https://go.microsoft.com/fwlink/?LinkId=521839",
+      "https://go.microsoft.com/fwlink/?linkid=2259814",
+      "https://go.microsoft.com/fwlink/p/?LinkID=2092881 ",
+      "https://learn.microsoft.com/en-us/azure/application-gateway/high-traffic-support#alerts-for-application-gateway-v2-sku-standard_v2waf_v2",
+      "https://learn.microsoft.com/en-us/azure/application-gateway/monitor-application-gateway-reference",
+      "https://learn.microsoft.com/en-us/azure/application-gateway/overview-v2",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/spot/spot-eviction",
+      "https://learn.microsoft.com/en-us/azure/architecture/patterns/sharding",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#architecture",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#cost-optimization",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#disks",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#main",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#managed-disks",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#monitoring",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#network-layout",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#related-resources",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#reliability",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#security",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#segmentation",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#update-management",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#user-flows",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#vm-design-choices",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#workload-resources",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/high-security-iaas#workload-supporting-resources",
+      "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/baseline-landing-zone",
+      "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/media/baseline-architecture.svg#lightbox",
+      "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/media/baseline-certificates.png#lightbox",
+      "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/media/baseline-monitoring.svg#lightbox",
+      "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/media/baseline-network-egress.svg#lightbox",
+      "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/media/baseline-network-ingress.svg#lightbox",
+      "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/media/baseline-network.svg#lightbox",
+      "https://learn.microsoft.com/en-us/azure/architecture/virtual-machines/patch-management",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/agents/azure-monitor-agent-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-smart-detections-migration",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-add-modify",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-best-practices#autoscale-best-practices",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/autoscale/autoscale-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/cost-logs",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-overview",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/vm/monitor-vm",
+      "https://learn.microsoft.com/en-us/azure/bastion/",
+      "https://learn.microsoft.com/en-us/azure/bastion/bastion-overview",
+      "https://learn.microsoft.com/en-us/azure/bastion/monitor-bastion",
+      "https://learn.microsoft.com/en-us/azure/ddos-protection/fundamental-best-practices",
+      "https://learn.microsoft.com/en-us/azure/defender-for-cloud/just-in-time-access-overview",
+      "https://learn.microsoft.com/en-us/azure/key-vault/general/",
+      "https://learn.microsoft.com/en-us/azure/key-vault/general/monitor-key-vault#alerts",
+      "https://learn.microsoft.com/en-us/azure/key-vault/general/monitor-key-vault-reference",
+      "https://learn.microsoft.com/en-us/azure/key-vault/general/overview",
+      "https://learn.microsoft.com/en-us/azure/load-balancer/",
+      "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-standard-diagnostics",
+      "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-standard-diagnostics#configure-alerts-for-multi-dimensional-metrics",
+      "https://learn.microsoft.com/en-us/azure/reliability/concept-service-level-agreements",
+      "https://learn.microsoft.com/en-us/azure/update-manager/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-attached-disks#adding-pre-populated-data-disks-to-an-existing-scale-set",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-instance-repairs",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-health-extension",
+      "https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-orchestration-modes#scale-sets-with-flexible-orchestration",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/automatic-vm-guest-patching",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/boot-diagnostics",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disk-bursting",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-change-performance#what-tiers-can-be-changed",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types#disk-type-comparison",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/ephemeral-os-disks",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-linux",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-windows",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-linux",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/extensions/key-vault-windows",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-and-updates",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-configurations",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/maintenance-notifications",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm#alerts",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/monitor-vm-reference",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/accelerated-networking-overview?tabs=redhat#benefits",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/application-security-groups",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/ddos-protection-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/monitor-public-ip",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/monitor-public-ip#alerts",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/monitor-virtual-network#alerts",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/monitor-virtual-network-reference",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+      "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/ag-overview",
+      "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-metrics",
+      "https://learn.microsoft.com/en-us/azure/web-application-firewall/ag/application-gateway-waf-metrics#configure-alerts-in-azure-portal",
+      "https://learn.microsoft.com/en-us/azure/well-architected/",
+      "https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/checklist",
+      "https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-component-costs",
+      "https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-flow-costs",
+      "https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-personnel-time",
+      "https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-scaling-costs",
+      "https://learn.microsoft.com/en-us/azure/well-architected/design-guides/partition-data",
+      "https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/enable-automation?branch=main#bootstrapping",
+      "https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/observability",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/checklist",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/failure-mode-analysis",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/identify-flows",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/metrics",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/redundancy",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/scaling",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/self-preservation",
+      "https://learn.microsoft.com/en-us/azure/well-architected/security/application-secrets",
+      "https://learn.microsoft.com/en-us/azure/well-architected/security/checklist",
+      "https://learn.microsoft.com/en-us/azure/well-architected/security/encryption",
+      "https://learn.microsoft.com/en-us/azure/well-architected/security/identity-access",
+      "https://learn.microsoft.com/en-us/azure/well-architected/security/networking",
+      "https://learn.microsoft.com/en-us/azure/well-architected/security/segmentation",
+      "https://learn.microsoft.com/en-us/azure/well-architected/service-guides/application-insights",
+      "https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-application-gateway",
+      "https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-load-balancer",
+      "https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-log-analytics",
+      "https://learn.microsoft.com/en-us/azure/well-architected/service-guides/virtual-machines",
+      "https://learn.microsoft.com/en-us/azure/well-architected/service-guides/virtual-network",
+      "https://learn.microsoft.com/en-us/cli/azure/vm/boot-diagnostics?view=azure-cli-latest#az-vm-boot-diagnostics-get-boot-log",
+      "https://learn.microsoft.com/en-us/contribute",
+      "https://learn.microsoft.com/en-us/entra/fundamentals/what-is-entra",
+      "https://learn.microsoft.com/en-us/entra/id-governance/privileged-identity-management/pim-configure",
+      "https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-linux",
+      "https://learn.microsoft.com/en-us/entra/identity/devices/howto-vm-sign-in-azure-ad-windows",
+      "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/managed-identities-assignment-restriction",
+      "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/managed-identities-isolation-scope",
+      "https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview#managed-identity-types",
+      "https://learn.microsoft.com/en-us/legal/termsofuse",
+      "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+      "https://learn.microsoft.com/en-us/previous-versions/",
+      "https://learn.microsoft.com/en-us/principles-for-ai-generated-content",
+      "https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F465f0161-0087-490a-9ad9-ad6217f4f43a",
+      "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog",
+      "https://www.microsoft.com/legal/intellectualproperty/Trademarks/"
+    ],
+    "textCharacters": 55399
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/sap/run-sap-bw4hana-with-linux-virtual-machines",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/sap/run-sap-bw4hana-with-linux-virtual-machines",
+    "status": "collected",
+    "sha256": "d22ec9d3a8620fd14bc49fb8875f3e89a63dcb9294cd3758e687ee61367f163f",
+    "title": "Run SAP BW/4HANA with Linux Virtual Machines - Azure Architecture Center | Microsoft Learn",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Run SAP BW/4HANA with Linux virtual machines on Azure"
+      },
+      {
+        "level": 2,
+        "text": "In this article"
+      },
+      {
+        "level": 2,
+        "text": "Architecture"
+      },
+      {
+        "level": 3,
+        "text": "Workflow"
+      },
+      {
+        "level": 3,
+        "text": "Components"
+      },
+      {
+        "level": 3,
+        "text": "Alternatives"
+      },
+      {
+        "level": 2,
+        "text": "Scenario details"
+      },
+      {
+        "level": 3,
+        "text": "Potential use cases"
+      },
+      {
+        "level": 2,
+        "text": "Recommendations"
+      },
+      {
+        "level": 3,
+        "text": "VMs"
+      },
+      {
+        "level": 3,
+        "text": "Application servers pool"
+      },
+      {
+        "level": 3,
+        "text": "SAP Central Services cluster"
+      },
+      {
+        "level": 4,
+        "text": "Multi-SID installation"
+      },
+      {
+        "level": 4,
+        "text": "Proximity placement groups"
+      },
+      {
+        "level": 4,
+        "text": "Azure Virtual Machine Scale Sets"
+      },
+      {
+        "level": 3,
+        "text": "Database"
+      },
+      {
+        "level": 3,
+        "text": "Storage"
+      },
+      {
+        "level": 3,
+        "text": "Networking"
+      },
+      {
+        "level": 2,
+        "text": "Considerations"
+      },
+      {
+        "level": 3,
+        "text": "Reliability"
+      },
+      {
+        "level": 4,
+        "text": "Availability"
+      },
+      {
+        "level": 5,
+        "text": "Load Balancer"
+      },
+      {
+        "level": 5,
+        "text": "Web Dispatcher"
+      },
+      {
+        "level": 5,
+        "text": "Central Services"
+      },
+      {
+        "level": 5,
+        "text": "Other application servers in the application servers tier"
+      },
+      {
+        "level": 4,
+        "text": "Backup"
+      },
+      {
+        "level": 4,
+        "text": "DR"
+      },
+      {
+        "level": 3,
+        "text": "Security"
+      },
+      {
+        "level": 3,
+        "text": "Cost Optimization"
+      },
+      {
+        "level": 3,
+        "text": "Operational Excellence"
+      },
+      {
+        "level": 4,
+        "text": "Monitoring"
+      },
+      {
+        "level": 3,
+        "text": "Performance Efficiency"
+      },
+      {
+        "level": 4,
+        "text": "Scalability"
+      },
+      {
+        "level": 2,
+        "text": "Deploy this scenario"
+      },
+      {
+        "level": 2,
+        "text": "Contributors"
+      },
+      {
+        "level": 2,
+        "text": "Next steps"
+      },
+      {
+        "level": 2,
+        "text": "Related resources"
+      },
+      {
+        "level": 2,
+        "text": "Feedback"
+      },
+      {
+        "level": 3,
+        "text": "In this article"
+      }
+    ],
+    "links": [
+      "https://aka.ms/yourcaliforniaprivacychoices",
+      "https://arch-center.azureedge.net/sap-bw4hana.vsdx",
+      "https://azure.microsoft.com/blog/azure-load-balancer-new-distribution-mode",
+      "https://azure.microsoft.com/blog/linux-and-windows-networking-performance-enhancements-accelerated-networking/",
+      "https://azure.microsoft.com/updates?id=general-availability-azure-premium-ssd-v2-disk-storage",
+      "https://github.com/Azure/SAP-on-Azure-Scripts-and-Utilities",
+      "https://github.com/microsoftdocs/architecture-center/blob/main/docs/reference-architectures/sap/run-sap-bw4hana-with-linux-virtual-machines.yml",
+      "https://go.microsoft.com/fwlink/?LinkId=521839",
+      "https://go.microsoft.com/fwlink/?linkid=2259814",
+      "https://go.microsoft.com/fwlink/p/?LinkID=2092881 ",
+      "https://help.sap.com/docs/SAP_BW4HANA/d3b558c9e49d4eb495c99c63a0ae549a/4f0b56878a585f86e10000000a42189b.html",
+      "https://help.sap.com/docs/SAP_NETWEAVER_750/683d6a1797a34730a6e005d1e8de6f22/488fe37933114e6fe10000000a421937.html",
+      "https://help.sap.com/docs/SAP_NETWEAVER_750/683d6a1797a34730a6e005d1e8de6f22/489a9a6b48c673e8e10000000a42189b.html",
+      "https://help.sap.com/docs/SLTOOLSET/00b4e4853ef3494da20ebcaceb181d5e/2e708e2d42134b4baabdfeae953b24c5.html",
+      "https://help.sap.com/docs/SUPPORT_CONTENT/si/3362959490.html",
+      "https://help.sap.com/saphelp_nwce72/helpdata/en/48/8fe37933114e6fe10000000a421937/content.htm?no_cache=true",
+      "https://launchpad.support.sap.com/#/notes/1928533",
+      "https://launchpad.support.sap.com/#/notes/962955",
+      "https://learn.microsoft.com/en-us/azure/application-gateway/features",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-netweaver",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana#availability-considerations",
+      "https://learn.microsoft.com/en-us/azure/architecture/guide/sap/sap-s4hana#security-considerations",
+      "https://learn.microsoft.com/en-us/azure/architecture/networking/architecture/hub-spoke",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/n-tier/linux-vm",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/sap/images/sap-bw4hana.svg#lightbox",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/sap/run-sap-bw4hana-with-linux-virtual-machines",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/sap/run-sap-bw4hana-with-linux-virtual-machines#main",
+      "https://learn.microsoft.com/en-us/azure/architecture/reference-architectures/sap/run-sap-hana-for-linux-virtual-machines",
+      "https://learn.microsoft.com/en-us/azure/azure-monitor/fundamentals/overview",
+      "https://learn.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview",
+      "https://learn.microsoft.com/en-us/azure/backup/backup-overview",
+      "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-about",
+      "https://learn.microsoft.com/en-us/azure/bastion/bastion-overview",
+      "https://learn.microsoft.com/en-us/azure/load-balancer",
+      "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview",
+      "https://learn.microsoft.com/en-us/azure/nat-gateway/nat-overview",
+      "https://learn.microsoft.com/en-us/azure/sap/automation/deployment-framework",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/about-azure-monitor-sap-solutions",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/certifications",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/deployment-checklist",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/get-started",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-get-started",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-multi-sid",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-standard-load-balancer-outbound-connections",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse#setting-up-a-highly-available-nfs-server",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-multi-sid",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-netapp-files",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-nfs",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-supported-configurations#disaster-recovery-scenario",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-supported-configurations#high-availability-for-sap-central-service",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-supported-configurations#sap-hana-scale-out-scenarios",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/proximity-placement-scenarios",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-ascs-ha-multi-sid-wsfc-shared-disk",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/virtual-machine-scale-set-sap-deployment-guide?tabs=scaleset-portal",
+      "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-support-matrix",
+      "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview",
+      "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-sap",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-deploy-premium-v2",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-enable-ultra-ssd",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types#premium-ssd",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/premium-storage-performance",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disks-types#premium-ssd",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/azure/well-architected/",
+      "https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/checklist",
+      "https://learn.microsoft.com/en-us/azure/well-architected/operational-excellence/checklist",
+      "https://learn.microsoft.com/en-us/azure/well-architected/performance-efficiency/checklist",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/checklist",
+      "https://learn.microsoft.com/en-us/azure/well-architected/security/checklist",
+      "https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-load-balancer",
+      "https://learn.microsoft.com/en-us/azure/well-architected/service-guides/azure-netapp-files",
+      "https://learn.microsoft.com/en-us/azure/well-architected/service-guides/virtual-network",
+      "https://learn.microsoft.com/en-us/contribute",
+      "https://learn.microsoft.com/en-us/legal/termsofuse",
+      "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+      "https://learn.microsoft.com/en-us/power-bi/connect-data/desktop-sap-bw-connector",
+      "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview",
+      "https://learn.microsoft.com/en-us/previous-versions/",
+      "https://learn.microsoft.com/en-us/principles-for-ai-generated-content",
+      "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog",
+      "https://us.sios.com/solutions/cloud-high-availability/azure",
+      "https://www.linkedin.com/in/bentrinh",
+      "https://www.linkedin.com/pulse/internet-facing-sap-fiori-access-azure-firewall-gateway-apparao-sanam",
+      "https://www.microsoft.com/legal/intellectualproperty/Trademarks/",
+      "https://www.microsoft.com/licensing/docs/view/Service-Level-Agreements-SLA-for-Online-Services",
+      "https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/"
+    ],
+    "textCharacters": 23327
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-sap-hana-database",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/backup/backup-azure-sap-hana-database",
+    "status": "collected",
+    "sha256": "d293eb013e9ee2f6b5d6b39cd325576be4c35a449947256b752ca1f89942ef0c",
+    "title": "Back up an SAP HANA database to Azure with Azure Backup - Azure Backup | Microsoft Learn",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Back up SAP HANA databases in Azure VMs"
+      },
+      {
+        "level": 2,
+        "text": "In this article"
+      },
+      {
+        "level": 2,
+        "text": "Prerequisites"
+      },
+      {
+        "level": 3,
+        "text": "Establish network connectivity"
+      },
+      {
+        "level": 4,
+        "text": "Private endpoints"
+      },
+      {
+        "level": 4,
+        "text": "NSG tags"
+      },
+      {
+        "level": 4,
+        "text": "Azure Firewall tags"
+      },
+      {
+        "level": 4,
+        "text": "Allow access to service IP ranges"
+      },
+      {
+        "level": 4,
+        "text": "Allow access to service FQDNs"
+      },
+      {
+        "level": 4,
+        "text": "Use an HTTP proxy server to route traffic"
+      },
+      {
+        "level": 5,
+        "text": "Using an HTTP proxy server for Microsoft Entra traffic"
+      },
+      {
+        "level": 5,
+        "text": "Use outbound rules"
+      },
+      {
+        "level": 2,
+        "text": "Create a Recovery Services vault"
+      },
+      {
+        "level": 2,
+        "text": "Enable Cross Region Restore"
+      },
+      {
+        "level": 2,
+        "text": "Discover the databases"
+      },
+      {
+        "level": 2,
+        "text": "Configure backup"
+      },
+      {
+        "level": 3,
+        "text": "Create a backup policy"
+      },
+      {
+        "level": 2,
+        "text": "Run an on-demand backup"
+      },
+      {
+        "level": 2,
+        "text": "Run SAP HANA native clients backup on a database with Azure Backup"
+      },
+      {
+        "level": 2,
+        "text": "Configure multistreaming data backups for higher throughput using Backint"
+      },
+      {
+        "level": 2,
+        "text": "Review backup status"
+      },
+      {
+        "level": 2,
+        "text": "Next steps"
+      },
+      {
+        "level": 2,
+        "text": "Feedback"
+      },
+      {
+        "level": 2,
+        "text": "Additional resources"
+      },
+      {
+        "level": 3,
+        "text": "In this article"
+      }
+    ],
+    "links": [
+      "https://aka.ms/yourcaliforniaprivacychoices",
+      "https://azure.microsoft.com/pricing/details/private-link/",
+      "https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/backup/backup-azure-sap-hana-database.md",
+      "https://go.microsoft.com/fwlink/?LinkId=521839",
+      "https://go.microsoft.com/fwlink/?linkid=2259814",
+      "https://go.microsoft.com/fwlink/p/?LinkID=2092881 ",
+      "https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/18db704959a24809be8d01cc0a409681.html",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/overview",
+      "https://learn.microsoft.com/en-us/azure/backup/backup-azure-immutable-vault-concept",
+      "https://learn.microsoft.com/en-us/azure/backup/backup-azure-recovery-services-vault-overview",
+      "https://learn.microsoft.com/en-us/azure/backup/backup-azure-sap-hana-database",
+      "https://learn.microsoft.com/en-us/azure/backup/backup-azure-sap-hana-database#main",
+      "https://learn.microsoft.com/en-us/azure/backup/backup-azure-sap-hana-database#use-an-http-proxy-server-to-route-traffic",
+      "https://learn.microsoft.com/en-us/azure/backup/backup-azure-sql-database",
+      "https://learn.microsoft.com/en-us/azure/backup/backup-create-rs-vault#set-cross-region-restore",
+      "https://learn.microsoft.com/en-us/azure/backup/backup-overview",
+      "https://learn.microsoft.com/en-us/azure/backup/media/backup-azure-sap-hana-database/check-backup-status.png#lightbox",
+      "https://learn.microsoft.com/en-us/azure/backup/media/backup-azure-sap-hana-database/hana-select-databases.png#lightbox",
+      "https://learn.microsoft.com/en-us/azure/backup/media/backup-azure-sap-hana-database/hana-select-virtual-machines.png#lightbox",
+      "https://learn.microsoft.com/en-us/azure/backup/media/backup-azure-sap-hana-database/outbound-rule-hana-backups.png#lightbox",
+      "https://learn.microsoft.com/en-us/azure/backup/private-endpoints",
+      "https://learn.microsoft.com/en-us/azure/backup/sap-hana-backup-support-matrix#support-for-multistreaming-data-backups",
+      "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-instances-backup",
+      "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-manage#manage-operations-using-sap-hana-native-clients",
+      "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-manage#run-on-demand-backups",
+      "https://learn.microsoft.com/en-us/azure/backup/sap-hana-database-with-hana-system-replication-backup",
+      "https://learn.microsoft.com/en-us/azure/backup/sap-hana-db-manage",
+      "https://learn.microsoft.com/en-us/azure/backup/sap-hana-db-restore",
+      "https://learn.microsoft.com/en-us/azure/backup/sap-hana-faq-backup-azure-vm",
+      "https://learn.microsoft.com/en-us/azure/backup/tutorial-backup-sap-hana-db#preregistration-script-functionality-for-sap-hana-database-backup",
+      "https://learn.microsoft.com/en-us/azure/backup/tutorial-backup-sap-hana-db#prerequisites",
+      "https://learn.microsoft.com/en-us/azure/backup/tutorial-sap-hana-manage-cli",
+      "https://learn.microsoft.com/en-us/azure/backup/tutorial-sap-hana-restore-cli",
+      "https://learn.microsoft.com/en-us/azure/firewall/fqdn-tags",
+      "https://learn.microsoft.com/en-us/azure/includes/media/backup-create-rs-vault/create-vault.png#lightbox",
+      "https://learn.microsoft.com/en-us/azure/includes/media/backup-create-rs-vault/search-resiliency.png#lightbox",
+      "https://learn.microsoft.com/en-us/azure/machine-learning/how-to-access-azureml-behind-firewall",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/manage-network-security-group#security-rule-settings",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/network-security-groups-overview#service-tags",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/service-tags-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-service-endpoints-overview",
+      "https://learn.microsoft.com/en-us/contribute",
+      "https://learn.microsoft.com/en-us/legal/termsofuse",
+      "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+      "https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide&preserve-view=true#microsoft-365-common-and-office-online",
+      "https://learn.microsoft.com/en-us/office365/enterprise/urls-and-ip-address-ranges#microsoft-365-common-and-office-online",
+      "https://learn.microsoft.com/en-us/previous-versions/",
+      "https://learn.microsoft.com/en-us/principles-for-ai-generated-content",
+      "https://portal.azure.com/",
+      "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog",
+      "https://www.microsoft.com/download/details.aspx?id=56519",
+      "https://www.microsoft.com/legal/intellectualproperty/Trademarks/"
+    ],
+    "textCharacters": 19709
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-hana",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-hana",
+    "status": "collected",
+    "sha256": "237e012e1f1e14c8da05a49db55968c52b5a6c33d6885aabe3b2fd552a393060",
+    "title": "Configure SAP HANA provider for Azure Monitor for SAP solutions | Microsoft Learn",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Configure SAP HANA provider for Azure Monitor for SAP solutions"
+      },
+      {
+        "level": 2,
+        "text": "In this article"
+      },
+      {
+        "level": 2,
+        "text": "Prerequisite to enable secure communication"
+      },
+      {
+        "level": 2,
+        "text": "Prerequisites"
+      },
+      {
+        "level": 2,
+        "text": "Configure SAP HANA provider"
+      },
+      {
+        "level": 2,
+        "text": "Next steps"
+      },
+      {
+        "level": 2,
+        "text": "Feedback"
+      },
+      {
+        "level": 2,
+        "text": "Additional resources"
+      },
+      {
+        "level": 3,
+        "text": "In this article"
+      }
+    ],
+    "links": [
+      "https://aka.ms/yourcaliforniaprivacychoices",
+      "https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/sap/monitor/provider-hana.md",
+      "https://go.microsoft.com/fwlink/?LinkId=521839",
+      "https://go.microsoft.com/fwlink/?linkid=2259814",
+      "https://go.microsoft.com/fwlink/p/?LinkID=2092881 ",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/enable-tls-azure-monitor-sap-solutions",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-hana",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-hana#main",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/providers",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/quickstart-portal",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/quickstart-powershell",
+      "https://learn.microsoft.com/en-us/contribute",
+      "https://learn.microsoft.com/en-us/legal/termsofuse",
+      "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+      "https://learn.microsoft.com/en-us/previous-versions/",
+      "https://learn.microsoft.com/en-us/principles-for-ai-generated-content",
+      "https://portal.azure.com",
+      "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog",
+      "https://www.microsoft.com/legal/intellectualproperty/Trademarks/",
+      "https://www.sap.com/documents/2018/11/b865eb91-287d-0010-87a3-c30de2ffd8ff.html"
+    ],
+    "textCharacters": 3493
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/sap/monitor/providers",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/sap/monitor/providers",
+    "status": "collected",
+    "sha256": "9820d92c938b5515e882bbcb0f78e3c07d4e3def3363ac8e84464f4253877c13",
+    "title": "What are providers in Azure Monitor for SAP solutions? | Microsoft Learn",
+    "headings": [
+      {
+        "level": 1,
+        "text": "What are providers in Azure Monitor for SAP solutions?"
+      },
+      {
+        "level": 2,
+        "text": "In this article"
+      },
+      {
+        "level": 2,
+        "text": "Provider types"
+      },
+      {
+        "level": 2,
+        "text": "Next steps"
+      },
+      {
+        "level": 2,
+        "text": "Feedback"
+      },
+      {
+        "level": 2,
+        "text": "Additional resources"
+      },
+      {
+        "level": 3,
+        "text": "In this article"
+      }
+    ],
+    "links": [
+      "https://access.redhat.com/articles/6139852",
+      "https://aka.ms/yourcaliforniaprivacychoices",
+      "https://azure.microsoft.com/services/virtual-machines/sql-server/",
+      "https://github.com/ClusterLabs/ha_cluster_exporter",
+      "https://github.com/ClusterLabs/ha_cluster_exporter#manual-clone--build",
+      "https://github.com/ClusterLabs/ha_cluster_exporter/blob/master/doc/metrics.md",
+      "https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/sap/monitor/providers.md",
+      "https://github.com/prometheus/node_exporter",
+      "https://go.microsoft.com/fwlink/?LinkId=521839",
+      "https://go.microsoft.com/fwlink/?linkid=2259814",
+      "https://go.microsoft.com/fwlink/p/?LinkID=2092881 ",
+      "https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-ha-pacemaker-cluster",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-hana",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-ibm-db2",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-linux",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-netweaver",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-sql-server",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/providers",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/providers#main",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/providers#tabpanel_1_ha-cluster",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/providers#tabpanel_1_ibm-db2",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/providers#tabpanel_1_os-linux",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/providers#tabpanel_1_sap-hana",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/providers#tabpanel_1_sap-netweaver",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/providers#tabpanel_1_sql-server",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/quickstart-portal",
+      "https://learn.microsoft.com/en-us/contribute",
+      "https://learn.microsoft.com/en-us/legal/termsofuse",
+      "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+      "https://learn.microsoft.com/en-us/previous-versions/",
+      "https://learn.microsoft.com/en-us/principles-for-ai-generated-content",
+      "https://prometheus.io/docs/guides/node-exporter/",
+      "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog",
+      "https://www.microsoft.com/legal/intellectualproperty/Trademarks/",
+      "https://www.sap.com/documents/2016/09/0a40e60d-8b7c-0010-82c7-eda71af511fa.html"
+    ],
+    "textCharacters": 11674
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/sap/monitor/quickstart-portal",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/sap/monitor/quickstart-portal",
+    "status": "collected",
+    "sha256": "50ee3c5d91b1bc7dd9ab60974bc0603191387e29a88de207e7812df05c59fac4",
+    "title": "Deploy Azure Monitor for SAP solutions using the Azure portal | Microsoft Learn",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Quickstart: Deploy Azure Monitor for SAP solutions using the Azure portal"
+      },
+      {
+        "level": 2,
+        "text": "In this article"
+      },
+      {
+        "level": 2,
+        "text": "Prerequisites"
+      },
+      {
+        "level": 2,
+        "text": "Create a monitoring resource for Azure Monitor for SAP solutions"
+      },
+      {
+        "level": 2,
+        "text": "Create a provider in Azure Monitor for SAP solutions"
+      },
+      {
+        "level": 2,
+        "text": "Next steps"
+      },
+      {
+        "level": 2,
+        "text": "Feedback"
+      },
+      {
+        "level": 2,
+        "text": "Additional resources"
+      },
+      {
+        "level": 3,
+        "text": "In this article"
+      }
+    ],
+    "links": [
+      "https://aka.ms/yourcaliforniaprivacychoices",
+      "https://azure.microsoft.com/features/azure-portal",
+      "https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn",
+      "https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/sap/monitor/quickstart-portal.md",
+      "https://go.microsoft.com/fwlink/?LinkId=521839",
+      "https://go.microsoft.com/fwlink/?linkid=2259814",
+      "https://go.microsoft.com/fwlink/p/?LinkID=2092881 ",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-ha-pacemaker-cluster",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-hana",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-ibm-db2",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-linux",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-netweaver",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/provider-sql-server",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/quickstart-portal",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/quickstart-portal#main",
+      "https://learn.microsoft.com/en-us/azure/sap/monitor/set-up-network",
+      "https://learn.microsoft.com/en-us/contribute",
+      "https://learn.microsoft.com/en-us/legal/termsofuse",
+      "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+      "https://learn.microsoft.com/en-us/previous-versions/",
+      "https://learn.microsoft.com/en-us/principles-for-ai-generated-content",
+      "https://portal.azure.com",
+      "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog",
+      "https://www.microsoft.com/legal/intellectualproperty/Trademarks/"
+    ],
+    "textCharacters": 4340
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage",
+    "status": "collected",
+    "sha256": "c6c4492820c6ddbeee1933a0d1a570fb3e0ab146362f193cbcc93d16327bd248",
+    "title": "Azure storage types for SAP workload | Microsoft Learn",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Azure Storage types for SAP workload"
+      },
+      {
+        "level": 2,
+        "text": "In this article"
+      },
+      {
+        "level": 2,
+        "text": "Microsoft Azure Storage resiliency"
+      },
+      {
+        "level": 3,
+        "text": "Azure managed disks"
+      },
+      {
+        "level": 2,
+        "text": "Storage scenarios with SAP workloads"
+      },
+      {
+        "level": 3,
+        "text": "Storage choices when using DBMS replication"
+      },
+      {
+        "level": 2,
+        "text": "Storage recommendations for SAP storage scenarios"
+      },
+      {
+        "level": 2,
+        "text": "Azure premium storage"
+      },
+      {
+        "level": 3,
+        "text": "Azure burst functionality for premium storage"
+      },
+      {
+        "level": 2,
+        "text": "Azure Premium SSD v2"
+      },
+      {
+        "level": 2,
+        "text": "Azure Ultra Disk"
+      },
+      {
+        "level": 2,
+        "text": "Azure NetApp Files"
+      },
+      {
+        "level": 3,
+        "text": "Deploying volumes"
+      },
+      {
+        "level": 3,
+        "text": "Decoupling throughput from volume size"
+      },
+      {
+        "level": 2,
+        "text": "Azure Files SSD"
+      },
+      {
+        "level": 2,
+        "text": "Azure Standard SSD storage"
+      },
+      {
+        "level": 2,
+        "text": "Azure Standard HDD storage"
+      },
+      {
+        "level": 2,
+        "text": "Azure VM limits in storage traffic"
+      },
+      {
+        "level": 2,
+        "text": "Striping or not striping"
+      },
+      {
+        "level": 2,
+        "text": "Next steps"
+      },
+      {
+        "level": 2,
+        "text": "Feedback"
+      },
+      {
+        "level": 2,
+        "text": "Additional resources"
+      },
+      {
+        "level": 3,
+        "text": "In this article"
+      }
+    ],
+    "links": [
+      "https://aka.ms/anfcalc",
+      "https://aka.ms/anfsapcalc",
+      "https://aka.ms/yourcaliforniaprivacychoices",
+      "https://azure.microsoft.com/pricing/details/managed-disks/",
+      "https://azure.microsoft.com/pricing/details/netapp/",
+      "https://azure.microsoft.com/services/netapp/",
+      "https://azure.microsoft.com/support/legal/sla/virtual-machines",
+      "https://docs.oracle.com/en/database/oracle/oracle-database/19/ntdbi/creating-an-oracle-database-on-direct-nfs.html#GUID-2A0CCBAB-9335-45A8-B8E3-7E8C4B889DEA",
+      "https://en.wikipedia.org/wiki/Gibibyte",
+      "https://en.wikipedia.org/wiki/Tebibyte",
+      "https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/sap/workloads/planning-guide-storage.md",
+      "https://go.microsoft.com/fwlink/?LinkId=521839",
+      "https://go.microsoft.com/fwlink/?linkid=2259814",
+      "https://go.microsoft.com/fwlink/p/?LinkID=2092881 ",
+      "https://launchpad.support.sap.com/#/notes/2015553",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/application-volume-group-introduction",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/azacsnap-introduction",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-introduction",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-resource-limits",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels#throughput-limit-examples-of-volumes-in-a-manual-qos-capacity-pool",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/cross-region-replication-introduction",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/cross-zone-replication-introduction",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/manage-availability-zone-volume-placement",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-introduction",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-restore-new-volume",
+      "https://learn.microsoft.com/en-us/azure/azure-netapp-files/snapshots-revert-volume",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/dbms-guide-general",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/dbms-guide-oracle",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-premium-ssd-v2",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-netapp-files",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-nfs-azure-files",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-netapp-files",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-suse-nfs-azure-files",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-windows-netapp-files-smb",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide-storage#main",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-scale-out-hsr-suse",
+      "https://learn.microsoft.com/en-us/azure/storage/common/storage-redundancy?toc=/azure/storage/queues/toc.json",
+      "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-planning",
+      "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disk-bursting",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types#premium-ssd-v2",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types#premium-ssds",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/disks-types#ultra-disks",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/how-to-enable-write-accelerator",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/managed-disks-overview",
+      "https://learn.microsoft.com/en-us/azure/virtual-machines/sizes",
+      "https://learn.microsoft.com/en-us/contribute",
+      "https://learn.microsoft.com/en-us/legal/termsofuse",
+      "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+      "https://learn.microsoft.com/en-us/previous-versions/",
+      "https://learn.microsoft.com/en-us/principles-for-ai-generated-content",
+      "https://learn.microsoft.com/en-us/troubleshoot/azure/azure-storage/files-troubleshoot-performance?toc=/azure/storage/files/toc.json#cause-2-metadata-or-namespace-heavy-workload",
+      "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog",
+      "https://www.microsoft.com/legal/intellectualproperty/Trademarks/",
+      "https://www.netapp.com/snapcenter/",
+      "https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=v:deCertified;ve:24&sort=Latest%20Certification&sortDesc=true"
+    ],
+    "textCharacters": 41626
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration",
+    "status": "collected",
+    "sha256": "6d778921060661d48e3a3ec9bc8d68f292976e0c26f872ecace8190f77398b3d",
+    "title": "Integrating Azure with SAP RISE | Microsoft Learn",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Integrate Azure with SAP RISE managed workloads"
+      },
+      {
+        "level": 2,
+        "text": "In this article"
+      },
+      {
+        "level": 2,
+        "text": "Enablement of integration scenarios"
+      },
+      {
+        "level": 2,
+        "text": "First steps"
+      },
+      {
+        "level": 2,
+        "text": "Azure support"
+      },
+      {
+        "level": 2,
+        "text": "RISE architecture"
+      },
+      {
+        "level": 2,
+        "text": "Next steps"
+      },
+      {
+        "level": 2,
+        "text": "Feedback"
+      },
+      {
+        "level": 2,
+        "text": "Additional resources"
+      },
+      {
+        "level": 3,
+        "text": "In this article"
+      }
+    ],
+    "links": [
+      "https://aka.ms/yourcaliforniaprivacychoices",
+      "https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/sap/workloads/rise-integration.md",
+      "https://go.microsoft.com/fwlink/?LinkId=521839",
+      "https://go.microsoft.com/fwlink/?linkid=2259814",
+      "https://go.microsoft.com/fwlink/p/?LinkID=2092881 ",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/get-started",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/media/sap-rise-integration/sap-rise-integration-table.png#lightbox",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration#main",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-network",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-network#virtual-network-peering-with-sap-riseecs",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-security",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-security#microsoft-sentinel-solution-for-sap-with-sap-rise",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-security#single-sign-on-for-sap-rise",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-services",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/rise-integration-services#on-premises-data-gateway",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview",
+      "https://learn.microsoft.com/en-us/contribute",
+      "https://learn.microsoft.com/en-us/legal/termsofuse",
+      "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+      "https://learn.microsoft.com/en-us/previous-versions/",
+      "https://learn.microsoft.com/en-us/principles-for-ai-generated-content",
+      "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog",
+      "https://www.microsoft.com/legal/intellectualproperty/Trademarks/"
+    ],
+    "textCharacters": 5963
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel",
+    "status": "collected",
+    "sha256": "a3ee9ee66c69a51cf3cd677e6ae55d36dda227990d9d9aada2a1c57f8d2d9c31",
+    "title": "High availability of SAP HANA on Azure VMs on RHEL | Microsoft Learn",
+    "headings": [
+      {
+        "level": 1,
+        "text": "High availability of SAP HANA on Azure VMs on Red Hat Enterprise Linux"
+      },
+      {
+        "level": 2,
+        "text": "In this article"
+      },
+      {
+        "level": 2,
+        "text": "Prerequisites"
+      },
+      {
+        "level": 2,
+        "text": "Overview"
+      },
+      {
+        "level": 2,
+        "text": "Prepare the infrastructure"
+      },
+      {
+        "level": 3,
+        "text": "Deploy Linux VMs manually via the Azure portal"
+      },
+      {
+        "level": 3,
+        "text": "Configure Azure load balancer"
+      },
+      {
+        "level": 2,
+        "text": "Install SAP HANA"
+      },
+      {
+        "level": 2,
+        "text": "Configure SAP HANA 2.0 System Replication"
+      },
+      {
+        "level": 2,
+        "text": "Create a Pacemaker cluster"
+      },
+      {
+        "level": 2,
+        "text": "Implement SAP HANA system replication hooks"
+      },
+      {
+        "level": 3,
+        "text": "Set up SAP HANA HA/DR providers"
+      },
+      {
+        "level": 2,
+        "text": "Create SAP HANA cluster resources"
+      },
+      {
+        "level": 2,
+        "text": "Configure HANA active/read-enabled system replication in Pacemaker cluster"
+      },
+      {
+        "level": 3,
+        "text": "Additional setup in Azure Load Balancer for active/read-enabled setup"
+      },
+      {
+        "level": 3,
+        "text": "Configure HANA active/read-enabled system replication"
+      },
+      {
+        "level": 3,
+        "text": "Add a secondary virtual IP address resource for an active/read-enabled setup"
+      },
+      {
+        "level": 2,
+        "text": "Test the cluster setup"
+      },
+      {
+        "level": 3,
+        "text": "Test the migration"
+      },
+      {
+        "level": 3,
+        "text": "Block network communication"
+      },
+      {
+        "level": 3,
+        "text": "Test the Azure fencing agent"
+      },
+      {
+        "level": 3,
+        "text": "Test a manual failover"
+      },
+      {
+        "level": 2,
+        "text": "Next steps"
+      },
+      {
+        "level": 2,
+        "text": "Feedback"
+      },
+      {
+        "level": 2,
+        "text": "Additional resources"
+      },
+      {
+        "level": 3,
+        "text": "In this article"
+      }
+    ],
+    "links": [
+      "https://access.redhat.com/articles/3004101",
+      "https://access.redhat.com/articles/3131341",
+      "https://access.redhat.com/articles/3252491",
+      "https://access.redhat.com/articles/3397471",
+      "https://access.redhat.com/errata/RHEA-2020:4804",
+      "https://access.redhat.com/solutions/5110521",
+      "https://access.redhat.com/solutions/7029705",
+      "https://access.redhat.com/solutions/79523",
+      "https://aka.ms/yourcaliforniaprivacychoices",
+      "https://docs.redhat.com/documentation/red_hat_enterprise_linux_for_sap_solutions/9/html-single/automating_sap_hana_scale-up_system_replication_using_the_rhel_ha_add-on/index",
+      "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_and_managing_high_availability_clusters/index",
+      "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/deploying_rhel_9_on_microsoft_azure/index",
+      "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_sap_solutions/9/html-single/automating_sap_hana_scale-up_system_replication_using_the_rhel_ha_add-on/index#con_enable_hook_v9-automating-sap-hana-scale-up-system-replication",
+      "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_sap_solutions/9/html-single/deploying_sap_hana_scale-up_system_replication_high_availability/index#proc_config_srConnectionChanged_v9-deploying-scale-up-system-replication",
+      "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_sap_solutions/9/html-single/deploying_sap_hana_scale-up_system_replication_high_availability/index#proc_config_srServiceStateChanged_v9-deploying-scale-up-system-replication",
+      "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_sap_solutions/9/html-single/upgrading_sap_hana_ha_setup_to_the_new_generation_of_resource_agents/index",
+      "https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/sap/workloads/sap-hana-high-availability-rhel.md",
+      "https://go.microsoft.com/fwlink/?LinkId=521839",
+      "https://go.microsoft.com/fwlink/?linkid=2259814",
+      "https://go.microsoft.com/fwlink/p/?LinkID=2092881 ",
+      "https://help.sap.com/docs/SAP_HANA_PLATFORM/2c1988d620e04368aa4103bf26f17727/2d4de94c8bf14cda8d37278647fff8ab.html",
+      "https://help.sap.com/viewer/78209c1d3a9b41cd8624338e42a12bf6",
+      "https://help.sap.com/viewer/78209c1d3a9b41cd8624338e42a12bf6/latest/en-US/7a9343c9f2a2436faa3cfdb5ca00c052.html",
+      "https://help.sap.com/viewer/ports",
+      "https://launchpad.support.sap.com/#/notes/1928533",
+      "https://launchpad.support.sap.com/#/notes/1999351",
+      "https://launchpad.support.sap.com/#/notes/2002167",
+      "https://launchpad.support.sap.com/#/notes/2009879",
+      "https://launchpad.support.sap.com/#/notes/2015553",
+      "https://launchpad.support.sap.com/#/notes/2178632",
+      "https://launchpad.support.sap.com/#/notes/2191498",
+      "https://launchpad.support.sap.com/#/notes/2243692",
+      "https://launchpad.support.sap.com/#/notes/2382421",
+      "https://launchpad.support.sap.com/#/notes/2388694",
+      "https://launchpad.support.sap.com/#/notes/3108302",
+      "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-custom-probe-overview",
+      "https://learn.microsoft.com/en-us/azure/load-balancer/quickstart-load-balancer-standard-internal-portal#create-load-balancer",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/dbms-guide-general",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/deployment-guide",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/hana-vm-operations-storage",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-rhel-pacemaker",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/high-availability-guide-standard-load-balancer-outbound-connections",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/planning-guide",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#configure-sap-hana-20-system-replication",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#create-sap-hana-cluster-resources",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#deploy-linux-vms-manually-via-the-azure-portal",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#main",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_1_lb-azurecli",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_1_lb-portal",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_1_lb-powershell",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_2_classic",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_2_newgeneration-angi",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_3_classic",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_3_newgeneration-angi",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_4_classic",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_4_newgeneration-angi",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_5_classic",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_5_newgeneration-angi",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_6_classic",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_6_newgeneration-angi",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_7_classic",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_7_newgeneration-angi",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_8_classic",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_8_newgeneration-angi",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_9_classic",
+      "https://learn.microsoft.com/en-us/azure/sap/workloads/sap-hana-high-availability-rhel#tabpanel_9_newgeneration-angi",
+      "https://learn.microsoft.com/en-us/azure/virtual-network/virtual-networks-overview",
+      "https://learn.microsoft.com/en-us/cli/azure/network/lb/probe",
+      "https://learn.microsoft.com/en-us/contribute",
+      "https://learn.microsoft.com/en-us/legal/termsofuse",
+      "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+      "https://learn.microsoft.com/en-us/powershell/module/az.network/set-azloadbalancerprobeconfig",
+      "https://learn.microsoft.com/en-us/previous-versions/",
+      "https://learn.microsoft.com/en-us/principles-for-ai-generated-content",
+      "https://me.sap.com/notes/0003571561",
+      "https://me.sap.com/notes/2777782",
+      "https://me.sap.com/notes/3057467",
+      "https://me.sap.com/notes/3108302",
+      "https://me.sap.com/notes/3189534",
+      "https://me.sap.com/notes/3562919",
+      "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog",
+      "https://www.microsoft.com/legal/intellectualproperty/Trademarks/",
+      "https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=v:deCertified;ve:24;iaas;v:125;v:105;v:99;v:120"
+    ],
+    "textCharacters": 53206
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/entra/identity/saas-apps/sap-hana-cloud-platform-identity-authentication-tutorial",
+    "collectedAt": "2026-10-13",
+    "httpStatus": 200,
+    "finalUrl": "https://learn.microsoft.com/en-us/entra/identity/saas-apps/sap-hana-cloud-platform-identity-authentication-tutorial",
+    "status": "collected",
+    "sha256": "2df360826d0b44110f7c0468e574466fb31e20e17f578661a47c93663ce92444",
+    "title": "Configure SAP Cloud Identity Services for Single sign-on with Microsoft Entra ID - Microsoft Entra ID | Microsoft Learn",
+    "headings": [
+      {
+        "level": 1,
+        "text": "Configure SAP Cloud Identity Services for Single sign-on with Microsoft Entra ID"
+      },
+      {
+        "level": 2,
+        "text": "In this article"
+      },
+      {
+        "level": 2,
+        "text": "Prerequisites"
+      },
+      {
+        "level": 2,
+        "text": "Scenario description"
+      },
+      {
+        "level": 2,
+        "text": "Adding SAP Cloud Identity Services from the gallery"
+      },
+      {
+        "level": 2,
+        "text": "Configure and test Microsoft Entra SSO for SAP Cloud Identity Services"
+      },
+      {
+        "level": 2,
+        "text": "Obtain the SAP Cloud Identity Services federation metadata"
+      },
+      {
+        "level": 2,
+        "text": "Configure Microsoft Entra SSO"
+      },
+      {
+        "level": 3,
+        "text": "Create and assign Microsoft Entra test user"
+      },
+      {
+        "level": 2,
+        "text": "Configure SAP Cloud Identity Services SSO"
+      },
+      {
+        "level": 3,
+        "text": "Create SAP Cloud Identity Services test user"
+      },
+      {
+        "level": 2,
+        "text": "Test SSO"
+      },
+      {
+        "level": 4,
+        "text": "SP initiated:"
+      },
+      {
+        "level": 4,
+        "text": "IDP initiated:"
+      },
+      {
+        "level": 2,
+        "text": "Discover existing users in SAP Cloud Identity Services"
+      },
+      {
+        "level": 2,
+        "text": "Related content"
+      },
+      {
+        "level": 2,
+        "text": "Feedback"
+      },
+      {
+        "level": 2,
+        "text": "Additional resources"
+      },
+      {
+        "level": 3,
+        "text": "In this article"
+      }
+    ],
+    "links": [
+      "https://aka.ms/yourcaliforniaprivacychoices",
+      "https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn",
+      "https://cloudplatform.sap.com/capabilities/security/trustcenter.html",
+      "https://community.sap.com/t5/technology-blogs-by-members/identity-and-access-management-with-microsoft-entra-part-i-managing-access/ba-p/13873276",
+      "https://developers.sap.com/tutorials/cp-ias-azure-ad.html",
+      "https://entra.microsoft.com",
+      "https://github.com/MicrosoftDocs/entra-docs/blob/main/docs/identity/saas-apps/sap-hana-cloud-platform-identity-authentication-tutorial.md",
+      "https://go.microsoft.com/fwlink/?LinkId=521839",
+      "https://go.microsoft.com/fwlink/?linkid=2259814",
+      "https://go.microsoft.com/fwlink/p/?LinkID=2092881 ",
+      "https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/create-corporate-idp-in-administration-console",
+      "https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/forward-all-sso-requests-to-corporate-idp",
+      "https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/view-troubleshooting-logs",
+      "https://help.sap.com/docs/identity-provisioning/identity-provisioning/target-systems",
+      "https://help.sap.com/viewer/6d6d63354d1242d185ab4830fc04feb1/Cloud/c029bbbaefbf4350af15115396ba14e2.html",
+      "https://learn.microsoft.com/en-us/cloud-app-security/proxy-deployment-aad",
+      "https://learn.microsoft.com/en-us/contribute",
+      "https://learn.microsoft.com/en-us/entra/fundamentals/scenario-azure-first-sap-identity-integration",
+      "https://learn.microsoft.com/en-us/entra/fundamentals/users-default-permissions#owned-enterprise-applications",
+      "https://learn.microsoft.com/en-us/entra/id-governance/identity-governance-applications-prepare#prerequisites-before-configuring-microsoft-entra-id-and-microsoft-entra-id-governance-for-identity-governance",
+      "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/how-to-account-discovery",
+      "https://learn.microsoft.com/en-us/entra/identity/app-provisioning/plan-sap-user-source-and-target",
+      "https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal-assign-users",
+      "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#application-administrator",
+      "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#cloud-application-administrator",
+      "https://learn.microsoft.com/en-us/entra/identity/saas-apps/sap-cloud-platform-identity-authentication-provisioning-tutorial",
+      "https://learn.microsoft.com/en-us/entra/identity/saas-apps/sap-hana-cloud-platform-identity-authentication-tutorial",
+      "https://learn.microsoft.com/en-us/entra/identity/saas-apps/sap-hana-cloud-platform-identity-authentication-tutorial#configure-azure-ad-sso",
+      "https://learn.microsoft.com/en-us/entra/identity/saas-apps/sap-hana-cloud-platform-identity-authentication-tutorial#configure-sap-cloud-identity-services-sso",
+      "https://learn.microsoft.com/en-us/entra/identity/saas-apps/sap-hana-cloud-platform-identity-authentication-tutorial#create-sap-cloud-identity-services-test-user",
+      "https://learn.microsoft.com/en-us/entra/identity/saas-apps/sap-hana-cloud-platform-identity-authentication-tutorial#main",
+      "https://learn.microsoft.com/en-us/entra/identity/saas-apps/sap-hana-cloud-platform-identity-authentication-tutorial#test-sso",
+      "https://learn.microsoft.com/en-us/legal/termsofuse",
+      "https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge",
+      "https://learn.microsoft.com/en-us/microsoft-365/admin/misc/azure-ad-setup-guides",
+      "https://learn.microsoft.com/en-us/previous-versions/",
+      "https://learn.microsoft.com/en-us/principles-for-ai-generated-content",
+      "https://portal.office.com/AdminPortal/home?Q=Docs#/azureadappintegration",
+      "https://support.microsoft.com/account-billing/sign-in-and-start-apps-from-the-my-apps-portal-2f3b1bae-0e5a-4a86-a33e-876fbd2a4510",
+      "https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog",
+      "https://userapps.support.sap.com/sap/support/knowledge/en/2698571",
+      "https://userapps.support.sap.com/sap/support/knowledge/en/3128585",
+      "https://userapps.support.sap.com/sap/support/knowledge/en/3201824",
+      "https://www.microsoft.com/legal/intellectualproperty/Trademarks/",
+      "https://www.sap.com/products/cloud-platform.html"
+    ],
+    "textCharacters": 15982
+  }
+]

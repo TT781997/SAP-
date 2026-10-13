@@ -13,11 +13,11 @@ npm run build
 npm run preview
 ```
 
-A compilação verifica também os tipos do código React anterior, conservado em `src/`. A aplicação principal é agora a versão estática SAP Atlas: `index.html`, `explorer.html` e `publicar.html`. Os scripts clássicos, estilos, dados e 159 diagramas ficam em `public/` e são copiados para `dist/` pelo Vite. Os scripts usam dados globais e conservam a ordem de carregamento original.
+A compilação verifica também os tipos do código React anterior, conservado em `src/`. A aplicação principal é agora a versão estática SAP Atlas: `index.html`, `explorer.html`, `knowledge.html` e `publicar.html`. Os scripts clássicos, estilos, dados e 159 diagramas ficam em `public/` e são copiados para `dist/` pelo Vite. Os scripts usam dados globais e conservam a ordem de carregamento original.
 
 ## Publicação
 
-No Vercel, usar `npm run build` e o diretório `dist`. As três páginas estão incluídas na compilação. A configuração SPA existente permanece disponível. Nenhuma publicação automática é executada.
+No Vercel, usar `npm run build` e o diretório `dist`. As quatro páginas estão incluídas na compilação. A configuração SPA existente permanece disponível. Nenhuma publicação automática é executada.
 
 ## Conteúdo e limitações
 
@@ -29,10 +29,18 @@ O mapa e os dados funcionam localmente. Vídeos, áudio ambiente, fontes tipogr�
 
 O painel de detalhes pode ser recolhido e reaberto no cabeçalho; a preferência é conservada no navegador. A navegação separa produtos/processos, plataforma/integração/identidade e infraestrutura/operação. O mapa mostra todas as relações por omissão; a vista BTP inclui um atalho para a estrutura de contas, distinguindo composição de tráfego.
 
-A secção «Planeamento da cadeia logística» explica capacidades de SAP IBP e SAP APO a partir do catálogo fornecido, com ligações à documentação por versão. São sínteses funcionais, não uma validação da instalação, do licenciamento ou dos mecanismos de integração. Os agrupamentos de capacidades não representam tráfego ou componentes obrigatórios.
+A secção «Planeamento da cadeia logística» explica capacidades de SAP IBP e SAP APO. O guia IBP 2608 HFC5 fundamenta a organização funcional e as condições de licenciamento para novas subscrições após 20/04/2026; os procedimentos de integração 2502 e operações APO 7.0 EHP4 conservam o seu âmbito. Os exemplos de formação, o material descontinuado e os cenários de implantação têm âmbito explícito. Os agrupamentos de capacidades não representam tráfego ou componentes obrigatórios.
+
+## Produtos e biblioteca documental
+
+`knowledge.html` organiza as fichas, guias explicados, cobertura e documentos SAP/parceiros. A documentação licenciada recolhida no GitHub pode ser lida no painel recolhível; os guias PDF SAP conservam versão, metadados e ligação original. Cada afirmação revista tem uma citação. A biblioteca identifica material arquivado e distingue candidatos GitHub de fontes verificadas.
+
+O [guia de recolha e proveniência](docs/knowledge-research.md) explica o âmbito, licenças, reprodução, testes e lacunas reais. `npm run test:knowledge` valida os documentos, hashes, referências, associações e estados históricos.
 
 ## Picture e agentes Limen
 
 O [guia de integração](docs/limen-sap.md) explica o mapa Picture, o workflow de tarefas e a monitorização. O mapa é reconstruído por `npm run picture:build`; os checks estão em `npm run test:picture`. Para trabalhar com agentes, usar `npm run agents:doctor` e `npm run agents`, autenticar no Pi e selecionar provider/modelo antes de executar jobs. A execução autenticada continua pendente.
 
 A página Picture principal usa agora a vista por níveis observada no vídeo fornecido: tema escuro por omissão, relações destacadas ao passar o rato e detalhes à direita. A vista em camadas continua disponível através do link no cabeçalho.
+
+A revisão de 13/10 também compara versões por produto, corrige associações documentais e acrescenta tópicos atuais e fontes AWS/Microsoft. `npm run test:versions` valida essas regras. O estado e as pendências externas ficam em `public/knowledge/completion-review.json`; o acesso a conteúdos protegidos continua a exigir autenticação autorizada.

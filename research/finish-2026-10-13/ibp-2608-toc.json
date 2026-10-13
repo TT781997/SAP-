@@ -1,0 +1,4991 @@
+{
+  "sourceUrl": "https://help.sap.com/docs/SAP_INTEGRATED_BUSINESS_PLANNING/feae3cea3cc549aaa9d9de7d363a83e6/06224454dafe8b24e10000000a4450e5.html?locale=en-US&state=PRODUCTION&version=2608",
+  "version": "2608",
+  "collectedAt": "2026-10-13",
+  "topics": [
+    {
+      "title": "SAP Integrated Business Planning",
+      "file": "06224454dafe8b24e10000000a4450e5.html"
+    },
+    {
+      "title": "What's New",
+      "file": "b96c8e1ce12d4e06ba6cf6c280725cf0.html"
+    },
+    {
+      "title": "Applications and Features of SAP Integrated Business Planning",
+      "file": "e531ed579120bc12e10000000a4450e5.html"
+    },
+    {
+      "title": "Features in Planning UIs",
+      "file": "c2b7a5d7a3d64902bda4401dd766c04e.html"
+    },
+    {
+      "title": "Planning with Microsoft Excel",
+      "file": "85766254d68b054ee10000000a423f68.html"
+    },
+    {
+      "title": "Planner Workspaces",
+      "file": "13e5461bb82a443ca0206c51cfb61d5d.html"
+    },
+    {
+      "title": "Joule in SAP IBP",
+      "file": "01f8e8a2fb5a493db8dda123503a55df.html"
+    },
+    {
+      "title": "Embedded AI in SAP IBP",
+      "file": "021b6cdc9475494c812c4623eb7c0f3d.html"
+    },
+    {
+      "title": "Manage AI Agents",
+      "file": "63b6b68dca8c4f5daf903f7e3db59dc0.html"
+    },
+    {
+      "title": "Administration",
+      "file": "78be5054e5edea6fe10000000a423f68.html"
+    },
+    {
+      "title": "Apps for Model Configuration",
+      "file": "ef019ec7ca7e40f687d21f9058e73398.html"
+    },
+    {
+      "title": "Application Mappings",
+      "file": "fcb364b149fa43c7a9720c0d1e243326.html"
+    },
+    {
+      "title": "Attributes",
+      "file": "5c1e9957fb2a9f2de10000000a44147b.html"
+    },
+    {
+      "title": "Master Data Types",
+      "file": "b31df457b0acbf12e10000000a4450e5.html"
+    },
+    {
+      "title": "Reason Codes",
+      "file": "cc1f9957fb2a9f2de10000000a44147b.html"
+    },
+    {
+      "title": "Time Profiles",
+      "file": "7022f6e7b9294f8bb908ab9f94d96529.html"
+    },
+    {
+      "title": "Sample Model Entities",
+      "file": "f47bf68fc3414db3839ce2d55d654d12.html"
+    },
+    {
+      "title": "Planning Areas",
+      "file": "3c45420a689b403c864909a1c78877dd.html"
+    },
+    {
+      "title": "Key Figure Calculations",
+      "file": "e311c2efc0f547b598b85aaf265bf686.html"
+    },
+    {
+      "title": "Global Configuration",
+      "file": "38dcb25c0c264d36886388469e4f9816.html"
+    },
+    {
+      "title": "Compare Planning Areas",
+      "file": "3c36ea7c4a0542c69bb1d3f3f6b9cdbf.html"
+    },
+    {
+      "title": "Manage Historical States",
+      "file": "0a198584dfb14d9bae2f07271d4f72ae.html"
+    },
+    {
+      "title": "Multilanguage Support",
+      "file": "c9229a0af68540fb8b74dcd05126bae1.html"
+    },
+    {
+      "title": "Where-Used Information for Key Figures",
+      "file": "df24591246934b0aaa46d33d32abeb13.html"
+    },
+    {
+      "title": "Key Figure Groups",
+      "file": "886f8428d6df4539ab2a44996838fdd0.html"
+    },
+    {
+      "title": "Defining Key Figure Groups",
+      "file": "368b97a91ef54973abf63caacfb880a9.html"
+    },
+    {
+      "title": "Analyze Data Volume in Calculations",
+      "file": "878e7c0950ed4e818cce74a97ba1f675.html"
+    },
+    {
+      "title": "Simulate Key Figure Calculations",
+      "file": "7cb071c421da49d2a47dbf3d9f5cf656.html"
+    },
+    {
+      "title": "Apps for the Export and Import of Extension Items",
+      "file": "d07b572a4c794ad0a954149d830a941c.html"
+    },
+    {
+      "title": "Extensibility Inventory",
+      "file": "db94d54228ba4a60ac1fd81c71523ea4.html"
+    },
+    {
+      "title": "Export Software Collection",
+      "file": "baab8cb4286441ed97bad12ed23fe948.html"
+    },
+    {
+      "title": "How to Manage and Export Your Software Collection",
+      "file": "a20651f459b24d36899c0f7f93794112.html"
+    },
+    {
+      "title": "Exporting a Software Collection",
+      "file": "2c6b3704128a46dcbd3579c70128e66e.html"
+    },
+    {
+      "title": "Adding Items to a Hotfix Collection",
+      "file": "642624b5e0964b25b747f87c5aa115f1.html"
+    },
+    {
+      "title": "Adding Missing Items",
+      "file": "8ffff88872684a01a334171083df7dd9.html"
+    },
+    {
+      "title": "Merging Software Collections",
+      "file": "9ee4e3ffd40e4996a5abdb96b3063fc3.html"
+    },
+    {
+      "title": "Moving Items",
+      "file": "d6925d2da37045cbb7d641a5d6913c15.html"
+    },
+    {
+      "title": "Locking a Software Collection",
+      "file": "c45dad4d546b433dbac1406f30657f63.html"
+    },
+    {
+      "title": "Import Collection",
+      "file": "5393c3c6677844d4884fdf59c8c1e6ec.html"
+    },
+    {
+      "title": "Import Collection: Business Impact and Dependencies",
+      "file": "4768d02d693b46c1b76a155315efa99b.html"
+    },
+    {
+      "title": "Importing a Software Collection to the Production System",
+      "file": "f3cd3c72ab5748a2bf33f5139f095322.html"
+    },
+    {
+      "title": "Possible Actions and Status Values of Software Collections",
+      "file": "9f7fbfef3260475f8ba8a2dc1a041ef3.html"
+    },
+    {
+      "title": "Data Lifecycle Management",
+      "file": "f4f916583d5b0a02e10000000a44147b.html"
+    },
+    {
+      "title": "Purge Key Figure Data Outside Planning Area Planning Horizon",
+      "file": "8b5c9da5bf084e48a93979a99767c3d0.html"
+    },
+    {
+      "title": "Purge Change History Data",
+      "file": "3edbb53d745d408d8da03d3efe1b6031.html"
+    },
+    {
+      "title": "Purge Data Import Batches",
+      "file": "9c1ac79a193441f38e9bb953aefa17ed.html"
+    },
+    {
+      "title": "Purge Processes",
+      "file": "faff00f27e3d452dae47fa5261de7f71.html"
+    },
+    {
+      "title": "Purge Non-Conforming Data",
+      "file": "b8953d113ac2452796de529c7d27f51f.html"
+    },
+    {
+      "title": "Purge Planning Area Data",
+      "file": "3a51848dd2034c83a884cec2aadcbf94.html"
+    },
+    {
+      "title": "Purge Key Figure Data",
+      "file": "5b9e516968f24680b7f05b2964cd4f3c.html"
+    },
+    {
+      "title": "Purge Master Data",
+      "file": "ebbf495346e14c39b965742d713c0238.html"
+    },
+    {
+      "title": "Purge Scenarios",
+      "file": "59073a0abfed496f9e122d7f335a7df3.html"
+    },
+    {
+      "title": "Data Integration Scenarios",
+      "file": "40fc8154fcd0e530e10000000a44538d.html"
+    },
+    {
+      "title": "Data Integration: Post Processing",
+      "file": "e708c6fa86574a91a1727d78d44f49d5.html"
+    },
+    {
+      "title": "Communication Management",
+      "file": "27213fb60bb24435b490c4c2c2d01dbf.html"
+    },
+    {
+      "title": "Communication Scenarios in SAP IBP",
+      "file": "f675b55e0e76438c826b8d253365a43a.html"
+    },
+    {
+      "title": "Integrating Job Scheduling Using External Tools",
+      "file": "d7bb5e3d3dcd4b72adcec542abd04819.html"
+    },
+    {
+      "title": "Live Data Connection to SAP Analytics Cloud",
+      "file": "67b3b9c4dc214103a528da163a101396.html"
+    },
+    {
+      "title": "Integrating Exception Monitoring with IBP Logging",
+      "file": "fcfefc57ade5ed0ee10000000a4450e5.html"
+    },
+    {
+      "title": "Integrating Resource Consumption and System Task Monitoring with External Systems",
+      "file": "7154d2b8beb84952ad3a26c983ba506b.html"
+    },
+    {
+      "title": "Integrating External Product References for New Product Introduction",
+      "file": "fb378ae8d4154534b566eb6a64001275.html"
+    },
+    {
+      "title": "Integrating Joule",
+      "file": "d84156485e0c4bf68538f7c2c42d6704.html"
+    },
+    {
+      "title": "Integrating External Preprocessing and Forecasting Algorithms",
+      "file": "353a8fd9f16f431d96f5325ef03e5760.html"
+    },
+    {
+      "title": "Integrating Custom Themes",
+      "file": "c7e413413bed4288af7f2f9e2425e23b.html"
+    },
+    {
+      "title": "Integrating Customer-Defined Help and Learning Content",
+      "file": "d5c339a460f041a2a1a863accc78e952.html"
+    },
+    {
+      "title": "Integrating WalkMe Premium with SAP Integrated Business Planning (SAP IBP)",
+      "file": "130525f7dc73483685c92413fcc844f3.html"
+    },
+    {
+      "title": "Integrating Key Figure and Master Data",
+      "file": "264bc5fe76fe4151ae90e7fc615ad696.html"
+    },
+    {
+      "title": "Integration with Ariba Network",
+      "file": "d3108a4eff7d4c97aa0b1994b7027ee9.html"
+    },
+    {
+      "title": "Integration with SAP Jam (Deprecated) or SAP Build Work Zone, advanced edition",
+      "file": "86aca935b64d45ad83aab6ee4354bf76.html"
+    },
+    {
+      "title": "Integration with Microsoft Teams",
+      "file": "999316a2d72e4792a2a6790258451432.html"
+    },
+    {
+      "title": "Integration with SAP Build Process Automation",
+      "file": "49c2504dfa8040f5b5ce9d12d89fae25.html"
+    },
+    {
+      "title": "Outbound Communication with SAP Cloud Integration",
+      "file": "ee7d0722e5c74d3798c54687bbd06520.html"
+    },
+    {
+      "title": "Configuring the Outbound Communication with SAP Cloud Integration for Data Services",
+      "file": "a2d679579ca36a2be10000000a441470.html"
+    },
+    {
+      "title": "Integrating Planning Calendar Data",
+      "file": "657df76fbd82426086636e8c96261cb3.html"
+    },
+    {
+      "title": "Integrating with SAP Product Lifecycle Management",
+      "file": "47c1f942e1134ca688755e4e5a080729.html"
+    },
+    {
+      "title": "Associating a 3D Model with an IBP Attribute Identifier",
+      "file": "e19ac6d5202a412584d8eaa9cfe2eb55.html"
+    },
+    {
+      "title": "Dissociating a 3D Model From an Attribute Identifier",
+      "file": "2459b7bc8c074e28b7a63901b23affaa.html"
+    },
+    {
+      "title": "Integrating On-Premise Systems",
+      "file": "0ba15be350994915b9786684b8163968.html"
+    },
+    {
+      "title": "Setting Up Connections from SAP Integrated Business Planning to On-Premise Systems",
+      "file": "a02158c1ad6f4776a7512128fd07d4c1.html"
+    },
+    {
+      "title": "Setting Up Connections from On-Premise Systems to SAP IBP",
+      "file": "e050a0b7d06b4492b8908ba9cabfb336.html"
+    },
+    {
+      "title": "Integrate with the SAP BTP Connectivity Service",
+      "file": "fe2e0ca39e214766bffd774a36727548.html"
+    },
+    {
+      "title": "Integrating SAP ERP Central Component (SAP ECC) or SAP S/4HANA via Real-Time Integration",
+      "file": "7eb61aae6d554afa85cea0e3d116019a.html"
+    },
+    {
+      "title": "Integrating SAP Transportation Management Data",
+      "file": "f7db059bd7874bdeb97d145caa1e27af.html"
+    },
+    {
+      "title": "Integrating SAP Business Network for Logistics Data",
+      "file": "d2576f6add284ab98a91e0184c18abda.html"
+    },
+    {
+      "title": "Extracting and Managing Process Management Data",
+      "file": "5a3743a4e76b4f31b7e6aeac38452563.html"
+    },
+    {
+      "title": "Extracting and Managing Change History Data",
+      "file": "e4709fbfae844d0b8e4ac7324becae12.html"
+    },
+    {
+      "title": "Integrating Data Using WebSocket RFC",
+      "file": "ff8ed32af90c4d66a6042b514da3fc4d.html"
+    },
+    {
+      "title": "Integrating Identity and Access Management",
+      "file": "f49822afe4734c15aab3c4daf04e9562.html"
+    },
+    {
+      "title": "Integrating Business Users from an External Identity Management System",
+      "file": "9959a9c1ab104340ba5723ace73a9a70.html"
+    },
+    {
+      "title": "Business User",
+      "file": "6229e98b51324a78aa2273c7caaaa013.html"
+    },
+    {
+      "title": "Business User - Read",
+      "file": "3b380a51d84c40a9b22378f8b57cf726.html"
+    },
+    {
+      "title": "Business User - Read Metadata",
+      "file": "4419ba675a724d1c99fea04dd6c97581.html"
+    },
+    {
+      "title": "RoleCategoryDependentMetaData",
+      "file": "1226170be75e41eebfe30ff06243fc64.html"
+    },
+    {
+      "title": "CodeList",
+      "file": "2bfeee6493e54614a781e01999270dd3.html"
+    },
+    {
+      "title": "Log",
+      "file": "7b69a9467f1c40cba4175108195d93f0.html"
+    },
+    {
+      "title": "Integrating External Systems with Permission Filters and Attribute Permissions",
+      "file": "0d00ff570c43ef32e10000000a441470.html"
+    },
+    {
+      "title": "Integrating SAP Cloud Identity Access Governance with SAP IBP",
+      "file": "0df1e992d9ca4ee89b3d64d321c7fa9c.html"
+    },
+    {
+      "title": "Integrating External Systems with User Groups",
+      "file": "0cc9a10f8b534cf080e8d7fa57cc9994.html"
+    },
+    {
+      "title": "Integrating SAP Cloud Identity Services - Identity Authentication",
+      "file": "ead93477a098478db2d1daddf6950dc9.html"
+    },
+    {
+      "title": "Integrating Identity Provisioning Service with SAP IBP",
+      "file": "c512e3aefa6f43bbb916eb164361a1c0.html"
+    },
+    {
+      "title": "Requesting Access to Identity Provisioning Service Bundle",
+      "file": "c59379d8ce3543b2a2d0719b3701c531.html"
+    },
+    {
+      "title": "Configuring the Identity Provisioning Bundle",
+      "file": "15244170894748c6a28ec868585468e7.html"
+    },
+    {
+      "title": "Configuring Certificate-Based Authentication",
+      "file": "139490f13aa7485c956ec21a92843279.html"
+    },
+    {
+      "title": "Configuring User Provisioning for New SAP IBP Customers",
+      "file": "176b1c355dec4565ba96648850282fda.html"
+    },
+    {
+      "title": "Configuring User Provisioning for Existing SAP IBP Customers",
+      "file": "041a39a578cc40558d54ffef13983f8d.html"
+    },
+    {
+      "title": "Integrate Cross-Domain Identity Management",
+      "file": "09a1bebaf6eb4954af2df326b025d0ec.html"
+    },
+    {
+      "title": "Monitor Security-Relevant Configuration and Log and Trace Data",
+      "file": "6133045b00654fcaab035e7a8ddf04a4.html"
+    },
+    {
+      "title": "Integrate SIEM Systems with Security Logging",
+      "file": "6fefbc779116420f8b55abfe2bef5937.html"
+    },
+    {
+      "title": "Read Business Role Change Documents",
+      "file": "622c098b806142e9a9703a78d6ba3ce4.html"
+    },
+    {
+      "title": "Read Business User Change Documents",
+      "file": "7dcbf22bf7644117ab3ba0b3b0cd1916.html"
+    },
+    {
+      "title": "Read Business User Logon Details",
+      "file": "097efb6f512147f3aee9f93e864c058b.html"
+    },
+    {
+      "title": "Read Business Role Data",
+      "file": "b0e8ed14e4c84514b756523b7866bf42.html"
+    },
+    {
+      "title": "Read Communication User Data",
+      "file": "7d93ea446bc441bda447e71d242b2b34.html"
+    },
+    {
+      "title": "Read Communication System Data",
+      "file": "0599288bf0474548a8277d4355f2f852.html"
+    },
+    {
+      "title": "Read Communication Arrangement Data",
+      "file": "5899d987d75c4f74a3eb146d36d6f74d.html"
+    },
+    {
+      "title": "Read Content Security Policy Data",
+      "file": "589f8e365f834ba495b2690d8db4017f.html"
+    },
+    {
+      "title": "Read Protection Allowlist Data",
+      "file": "2c7e8548c6aa497bab83a0b2551cf381.html"
+    },
+    {
+      "title": "Read Certificate Data",
+      "file": "575bd74330e0425b9a3631fcde6a4b56.html"
+    },
+    {
+      "title": "Read Support User Data",
+      "file": "aa7e9a978d9b4938be8dbf66f74181c2.html"
+    },
+    {
+      "title": "Integrating SAP Cloud Application Lifecycle Management for Operation",
+      "file": "f171fab4dc4d4e7198d27c6643ed81ac.html"
+    },
+    {
+      "title": "Integrating SAP Cloud Application Lifecycle Management for Implementation",
+      "file": "2d0671c7897c44dc8c614e56a149043a.html"
+    },
+    {
+      "title": "Integration Using Smart Data Integration",
+      "file": "7e4ce8a2febc47d8b6942e357bb5dd62.html"
+    },
+    {
+      "title": "Integrating Data Using SAP Cloud Integration",
+      "file": "6f941372437547348225d408bf71313c.html"
+    },
+    {
+      "title": "Integrating External Stock and Batch Data",
+      "file": "800a07230aca40d299fca4c862cbc789.html"
+    },
+    {
+      "title": "Integrating External Purchasing Document Data",
+      "file": "3668c8420303480eb2a50a321fe763a9.html"
+    },
+    {
+      "title": "Integrating External Production Document Data",
+      "file": "c05e4eb73821484ab65f248aee96be98.html"
+    },
+    {
+      "title": "Integrating External Delivery Document Data",
+      "file": "8d43c17eef8546d2975249550fc32ca3.html"
+    },
+    {
+      "title": "Integrating Detailed Pegging Data",
+      "file": "0f38625b92e04d6399a036d24b891e44.html"
+    },
+    {
+      "title": "Integrating Forecast Data",
+      "file": "dff512117b044cd09f7d9c7e91f4719a.html"
+    },
+    {
+      "title": "Managing Snapshot Data of Stocks and Orders",
+      "file": "668670dd96d642ef80948325ed027c2b.html"
+    },
+    {
+      "title": "Integrating External Sales Order Data",
+      "file": "a66089f16ccc4ca198e518888b148eaf.html"
+    },
+    {
+      "title": "Integration with SAP Datasphere",
+      "file": "e7e8f2a0691046268bdfa3ad88284838.html"
+    },
+    {
+      "title": "Maintain Communication Users",
+      "file": "ea2e44a707b44d7da55a4fa0f0f4a145.html"
+    },
+    {
+      "title": "How to Create Communication Users",
+      "file": "4bff8d203d4c4b1c8dd25564d1913302.html"
+    },
+    {
+      "title": "How to Display Change Documents for Communication Users",
+      "file": "c6e571ee6a20485f96a2428650fc29dc.html"
+    },
+    {
+      "title": "Communication Systems",
+      "file": "8f298ea3acc243d5bfd46537a15399f8.html"
+    },
+    {
+      "title": "How to Create Communication Systems",
+      "file": "084a6cce1a7e4c3c9c2f2bca8384b243.html"
+    },
+    {
+      "title": "Manual Configuration - OpenID Connect (OIDC) Provider",
+      "file": "b701cf82cd0449d39e72930b62bc9ce0.html"
+    },
+    {
+      "title": "How to Display Change Documents for Communication Systems",
+      "file": "3f655fa5457e4cf0955c0294b0f4ca2e.html"
+    },
+    {
+      "title": "Communication Arrangements",
+      "file": "efd53213874645a68411b88f6e22daeb.html"
+    },
+    {
+      "title": "How to Create a Communication Arrangement",
+      "file": "065d578693334cbeb86b8f31f0edfc93.html"
+    },
+    {
+      "title": "How to Display Change Documents for Communication Arrangements",
+      "file": "ec3a0c02c4494cb19a6b7badbbe430d6.html"
+    },
+    {
+      "title": "Display Communication Scenarios",
+      "file": "2aa9ad3ef1cb4305a666ce4e56b62745.html"
+    },
+    {
+      "title": "Display Connectivity Trace",
+      "file": "b89201fc39d041d790fdbb0bde873d17.html"
+    },
+    {
+      "title": "How to Create a Trace",
+      "file": "346359c7a51b49cd90c56d86b1c81fa8.html"
+    },
+    {
+      "title": "Display Inbound Services",
+      "file": "6ab8539318d148cc9f73151b9296744d.html"
+    },
+    {
+      "title": "Display Outbound Services",
+      "file": "dfd2ee8adb2a492e9d2f1d5e12849547.html"
+    },
+    {
+      "title": "Monitor bgRFC Queues",
+      "file": "472af4a24e864d9a8199d655f4c02138.html"
+    },
+    {
+      "title": "Job Scheduling",
+      "file": "2a7140faec6f42a5943b855fc6b2aabf.html"
+    },
+    {
+      "title": "Predefined Application Job Templates",
+      "file": "21918e56087ad95fe10000000a441470.html"
+    },
+    {
+      "title": "Creating Your Own Job Templates",
+      "file": "690ad81ae30c48358650fc8a51918a70.html"
+    },
+    {
+      "title": "Example: Creating a Job with Multiple Steps for Demand Sensing",
+      "file": "6cb6b457fa7aca02e10000000a4450e5.html"
+    },
+    {
+      "title": "Creating Application Job Templates for Planning UIs",
+      "file": "75deb3ad86ca477ab211b4648ec84cba.html"
+    },
+    {
+      "title": "Job Definitions",
+      "file": "f179270858f54fee87062aaff14d92f1.html"
+    },
+    {
+      "title": "Creating Job Definitions",
+      "file": "d667c13449244ca693223fe91fe34621.html"
+    },
+    {
+      "title": "Using Job Definitions",
+      "file": "f7e096f5a5184354b1ac8ba373279f4d.html"
+    },
+    {
+      "title": "Maintaining Job Definitions",
+      "file": "29e957b59dae4e07b4f9f710f5b13a3a.html"
+    },
+    {
+      "title": "Allowed List of Reference Job Templates",
+      "file": "16a9dd73a4734b7dbfcbde0e162b7111.html"
+    },
+    {
+      "title": "Apps for Job Scheduling",
+      "file": "e4d0d99b4e9c4af08dfafb7f28ad899b.html"
+    },
+    {
+      "title": "Application Job Templates",
+      "file": "1f523157ec87df72e10000000a44147b.html"
+    },
+    {
+      "title": "Maintaining Authorizations",
+      "file": "acabe60445a24b8ba36cd534c40eea8c.html"
+    },
+    {
+      "title": "Application Jobs",
+      "file": "f630e61c08ad49fd9e34b1b5442887ef.html"
+    },
+    {
+      "title": "Scheduling an Application Job",
+      "file": "8deb9a75646e4316a98818f0ba97b03d.html"
+    },
+    {
+      "title": "Parallel Processing of Recurrent Application Jobs",
+      "file": "abf8921204f2459eace7f93693b81ff5.html"
+    },
+    {
+      "title": "Job Scheduling Authorizations",
+      "file": "1a93905d34b04724a5905a7e1aab90f9.html"
+    },
+    {
+      "title": "How to Restart Application Jobs and Chains",
+      "file": "2ae9f4e064c34188b628a1bae6c40fc4.html"
+    },
+    {
+      "title": "Viewing, Copying, Restarting and Cancelling Other Users' Jobs",
+      "file": "071faf1051224492920dc18fce74eebc.html"
+    },
+    {
+      "title": "Monitor Application Jobs",
+      "file": "220f6f179ff749d4a4a457ad6aa06c74.html"
+    },
+    {
+      "title": "Viewing and Monitoring Application Jobs",
+      "file": "476a6a2774684becbbeb8fadae070298.html"
+    },
+    {
+      "title": "Scheduling Jobs",
+      "file": "343e56eb4e12475d8cdc5dfaca8c5e14.html"
+    },
+    {
+      "title": "Scheduling Jobs with One Click",
+      "file": "4d8c4878348b463192871da8427fc341.html"
+    },
+    {
+      "title": "Searching with Filters",
+      "file": "38d36ace316c45ac9f0067c99446f4ee.html"
+    },
+    {
+      "title": "Monitoring Job Failure",
+      "file": "f1d0f4cbfc904ec4a372521b6e46d5ea.html"
+    },
+    {
+      "title": "Detecting Outliers in Job Runtime",
+      "file": "b3aa42fc34b74a46bdab3a53f403587b.html"
+    },
+    {
+      "title": "Creating Ad Hoc Filters",
+      "file": "75bbc72ecb624d6db1a0fe98fba93636.html"
+    },
+    {
+      "title": "Troubleshooting Job Scheduling and Run Issues",
+      "file": "27afdaae36244172ab9eddea8b7c9754.html"
+    },
+    {
+      "title": "Job Scheduling with Joule",
+      "file": "395c487923a8474ea4a85f176a57edcc.html"
+    },
+    {
+      "title": "Maintain Job Users",
+      "file": "e55d8d94ba2a40a3ba5fa6bfb7d8bcc1.html"
+    },
+    {
+      "title": "Editing Job Users",
+      "file": "accbbada615c4d08931ae9c3ab4304fd.html"
+    },
+    {
+      "title": "Outlier Job Detection Job Template",
+      "file": "d6a96b1e1edc45c1953bf138da4b79f1.html"
+    },
+    {
+      "title": "Receiving Notifications for Scheduled Jobs",
+      "file": "76a8bf11d204458593658067fbcb6441.html"
+    },
+    {
+      "title": "Application Logs",
+      "file": "cf3928571e566659e10000000a44147b.html"
+    },
+    {
+      "title": "Deleting Application Logs",
+      "file": "c1188c56a427d75fe10000000a441470.html"
+    },
+    {
+      "title": "Monitoring Tools",
+      "file": "9478ed85761346fe969e96e1dbd2b47f.html"
+    },
+    {
+      "title": "Monitor System Tasks",
+      "file": "be7dfc15dba94e778a98f7ce1bafaea5.html"
+    },
+    {
+      "title": "Telemetry Data",
+      "file": "88d1af95dc254ac489f74b05dd6af908.html"
+    },
+    {
+      "title": "Message Monitoring",
+      "file": "b26898312ffb469d87700c96c5bbf00a.html"
+    },
+    {
+      "title": "Message Dashboard",
+      "file": "0e9297d458084345acd076d7f476c216.html"
+    },
+    {
+      "title": "Message Monitoring Overview",
+      "file": "0f153063340d4bdf94bc24fc6611b3ba.html"
+    },
+    {
+      "title": "Message Monitoring",
+      "file": "cb2bacd423054338bb29b2736e2a05c1.html"
+    },
+    {
+      "title": "Assign Recipients to Users",
+      "file": "2294f6e429ed4ed093107b18cf4e2cd6.html"
+    },
+    {
+      "title": "Available Interfaces and Corresponding Recipients",
+      "file": "48829c1de05541178784dc217debbbcb.html"
+    },
+    {
+      "title": "SOAP Error Log and OData Error Log",
+      "file": "94f07a8dcc6447e8a85e02779b5ae01c.html"
+    },
+    {
+      "title": "Adding the Business Catalog for SOAP Error Log and OData Error Log",
+      "file": "b2e44a4bb04c492c88473029998381d8.html"
+    },
+    {
+      "title": "Automatic Reprocessing",
+      "file": "31e97f14d8e14248b1e4b9552212d1a1.html"
+    },
+    {
+      "title": "System Monitoring",
+      "file": "35875f0d4f524ba18e7bbf5ca84507d8.html"
+    },
+    {
+      "title": "Session Statistics for IBP Excel Add-In",
+      "file": "0477bd6748534d9da6d34cc678cdc074.html"
+    },
+    {
+      "title": "Resource Consumption",
+      "file": "0046a6d87cc742dd9c1552848293ba98.html"
+    },
+    {
+      "title": "Planning Objects Statistics",
+      "file": "c69bdc6b00fc4f0cae9c0966a23295c0.html"
+    },
+    {
+      "title": "Time Series Statistics",
+      "file": "c23396e647bd40a9b65e6b135076d533.html"
+    },
+    {
+      "title": "User Login Statistics for Excel Add-In",
+      "file": "3c549db6ab8643c1bbfb41c7d22e3b80.html"
+    },
+    {
+      "title": "Attribute as Key Figure Statistics",
+      "file": "6ffe028be3604b14ac1ab763cf4599c4.html"
+    },
+    {
+      "title": "SAP HANA Cloud Upgrade Status",
+      "file": "9c12310aa19240e6a00d738239f6a66f.html"
+    },
+    {
+      "title": "Content Administration",
+      "file": "2a1006589c010846e10000000a441470.html"
+    },
+    {
+      "title": "Content Sharing with Joule",
+      "file": "689bc237a6dc4bb894f0f0a01d05fd45.html"
+    },
+    {
+      "title": "User-Related and Personal Data",
+      "file": "599c730f0ddc42e392df9b4ea4c7c5bb.html"
+    },
+    {
+      "title": "View Personal Master Data Changes",
+      "file": "48c92a25353b45009a7dad743cf01605.html"
+    },
+    {
+      "title": "Data Linked to User",
+      "file": "52df4fcea79b4384b6280ae402a126a3.html"
+    },
+    {
+      "title": "Manage Navigation to Other Systems",
+      "file": "dabdd523da2a4506a0bd01a1b8078d55.html"
+    },
+    {
+      "title": "Creating Generic Navigations to Other Systems",
+      "file": "ea71df1d3ead4bbe8e12c286421baa5b.html"
+    },
+    {
+      "title": "Example: Master Data Configuration for Dynamic Navigation",
+      "file": "fecdb28c5c274bd8b6cc5f7acb02c1a3.html"
+    },
+    {
+      "title": "Creating Order-Based Navigations to Other Systems",
+      "file": "7846182fd6d34d49aadeb7e5673a6163.html"
+    },
+    {
+      "title": "Example: Navigation to Other Systems",
+      "file": "ad7c809af41e4b5b93424ea919c28b61.html"
+    },
+    {
+      "title": "Apps for Output Management",
+      "file": "b6a6e12282a94c47a5a609158135a2e7.html"
+    },
+    {
+      "title": "Maintain Email Templates",
+      "file": "06e28659c3584d5e890098e97af0ec47.html"
+    },
+    {
+      "title": "Maintaining Email Templates",
+      "file": "2f5c2691185c440eb4119e5e85b9caca.html"
+    },
+    {
+      "title": "Monitor Email Transmissions",
+      "file": "d5132e76c7ca4789ba822cabd8f3823c.html"
+    },
+    {
+      "title": "Monitoring Email Transmissions",
+      "file": "be62f741695d4393aec76c77b25dfab8.html"
+    },
+    {
+      "title": "Identity and Access Management",
+      "file": "55d8524805064d2b9dc40b621f51d860.html"
+    },
+    {
+      "title": "Working with Web Applications",
+      "file": "2cd0805453201a6fe10000000a423f68.html"
+    },
+    {
+      "title": "SAP Fiori Launchpad for SAP IBP",
+      "file": "e1561f40151f40a9afd132562cf759bc.html"
+    },
+    {
+      "title": "Supported Browsers",
+      "file": "a36e1966f1784c0a8065faa16435f2b9.html"
+    },
+    {
+      "title": "Language Settings",
+      "file": "20c8d45613a32f7be10000000a44147b.html"
+    },
+    {
+      "title": "Default Planning Area",
+      "file": "f9b6580e43e848568514b8887098159b.html"
+    },
+    {
+      "title": "Dismissed Messages",
+      "file": "83d9533d519a481f8c25f537a83f0c71.html"
+    },
+    {
+      "title": "Favorites",
+      "file": "da87e154b2c77274e10000000a423f68.html"
+    },
+    {
+      "title": "In-App Help in SAP IBP",
+      "file": "572be6665e8b4eebb71dab41b14ff47d.html"
+    },
+    {
+      "title": "SAP Companion in SAP IBP",
+      "file": "3ea0bb8207034e3ea6ff7dcdb54e4533.html"
+    },
+    {
+      "title": "WalkMe in SAP IBP",
+      "file": "b7deddb45ccd4c55ae42eab6e66fae91.html"
+    },
+    {
+      "title": "Managing Master Data",
+      "file": "2f4809365ac84df08d39e1e7e506c762.html"
+    },
+    {
+      "title": "Application- or Function-Specific Use of Master Data",
+      "file": "0de9dd4c5b2f4801b096f5cc6673af85.html"
+    },
+    {
+      "title": "Apps for Managing Master Data",
+      "file": "a320fe8f33a94dec996c16c4d47e1b1c.html"
+    },
+    {
+      "title": "Manage Master Data",
+      "file": "d20a1eae4401494286ca8c08f1b4b41f.html"
+    },
+    {
+      "title": "Navigation in the List Report View of the Manage Master Data App",
+      "file": "d43f2cb0d8a144c299f36f37bdf458da.html"
+    },
+    {
+      "title": "Managing Attribute Dependencies in the Manage Master Data App",
+      "file": "2273014028c344e49a31b86b86049b8a.html"
+    },
+    {
+      "title": "Mass Editing in the Manage Master Data App",
+      "file": "8d2418c52a1d4d9ab49b6ff4b37fda4f.html"
+    },
+    {
+      "title": "Editing a Selection of Master Data Entries",
+      "file": "2cc58a0794404446977d2c771bfd6a1b.html"
+    },
+    {
+      "title": "Running a Master Data Health Check",
+      "file": "bd5ca85fc81443c89d66a339c495d499.html"
+    },
+    {
+      "title": "Exporting Data from the Manage Master Data App",
+      "file": "09c084c1ff0d48258aa6942d4060fa51.html"
+    },
+    {
+      "title": "Description Attribute Handling in the Manage Master Data App",
+      "file": "3b49d53276e8457896565f1beddbe922.html"
+    },
+    {
+      "title": "Manage Master Data (Deprecated)",
+      "file": "34ef5d45d1fb45c182e8a24efe9b37db.html"
+    },
+    {
+      "title": "Manage Rules for Master Data Maintenance",
+      "file": "06df19d374364b2bb7b662f4ed29aa05.html"
+    },
+    {
+      "title": "Applying a Rule for Master Data Maintenance",
+      "file": "519866f0e04f4f4a98b9fb4145eea083.html"
+    },
+    {
+      "title": "Recommendations for Automating Rule-Based Master Data Maintenance",
+      "file": "13ef22d3b1a64fab8fb7057602752817.html"
+    },
+    {
+      "title": "Performance Considerations for Automated Rule-Based Master Data Maintenance with Real-Time Integration",
+      "file": "bd2ae8b20f2a463ca50a58cbb1c283ad.html"
+    },
+    {
+      "title": "Running Simulations from the Manage Rules for Master Data Maintenance App",
+      "file": "f87aca9e9d0a49d3ac0ca7f781bc591d.html"
+    },
+    {
+      "title": "Using Multiple Filter Conditions",
+      "file": "21f2e2ee58264743885824c593849cef.html"
+    },
+    {
+      "title": "Tips and Tricks for Creating Rules for Master Data Maintenance",
+      "file": "d22f45ea9a4044348f78f4cab984a5a9.html"
+    },
+    {
+      "title": "Example Use Case for Rule-Based Master Data Update",
+      "file": "57bcf462f25049cc886b98834d597b1c.html"
+    },
+    {
+      "title": "Example Use Case for Rule-Based Master Data Creation",
+      "file": "45237a9a14e14a91a3d7eedd823aed80.html"
+    },
+    {
+      "title": "Example Use Case for Setting Up an Aggregation Rule in Your Rule Profile",
+      "file": "5033cde457564f2397209079ba87d2a0.html"
+    },
+    {
+      "title": "Example Use Case for Assigning Empty or Fixed Values to Target Attributes",
+      "file": "85accfcd3eb84a8ba92f30ff0bc71287.html"
+    },
+    {
+      "title": "Discover Patterns in Master Data",
+      "file": "19f526ea3bee44b2a1eebb24571c4f73.html"
+    },
+    {
+      "title": "Understanding Patterns",
+      "file": "9cd1c45f91194c17a6c07f9c2ffc03fe.html"
+    },
+    {
+      "title": "Obtaining Meaningful Recommendations",
+      "file": "fc1b8c87fd1344b88b807e60a6259311.html"
+    },
+    {
+      "title": "Evaluating the Reliability of a Pattern",
+      "file": "69e93579a6514915b206c517828d271f.html"
+    },
+    {
+      "title": "Metrics in the Discover Patterns in Master Data App",
+      "file": "4006f1ccc90745a3adbd792b117a62ea.html"
+    },
+    {
+      "title": "Using an Application Job to Discover Patterns",
+      "file": "00ee821f854d40458d4c9eb251483222.html"
+    },
+    {
+      "title": "Numerical Outliers in Master Data",
+      "file": "eeb012a629e245f1a1c05c591c2c8074.html"
+    },
+    {
+      "title": "Manage Master Data Checks",
+      "file": "0e313bd502f4493fbc6e9519c4398b48.html"
+    },
+    {
+      "title": "Using Multiple Error Check Criteria",
+      "file": "baaadd609ace4f958ba74d7f20550340.html"
+    },
+    {
+      "title": "Using the Value Help in the Manage Master Data Checks App",
+      "file": "63d045dd59f64d1cacdffbd9dbc1f0f2.html"
+    },
+    {
+      "title": "Apps for Real-Time Integration (RTI)",
+      "file": "3522d18a8321406db678355747696e9a.html"
+    },
+    {
+      "title": "Real-Time Integration Profiles",
+      "file": "bcc5a8eb5e2244008ba32fcaffd08bcd.html"
+    },
+    {
+      "title": "Editing Real-Time Integration Profiles",
+      "file": "202a666bce3e4fedb59a904e96055e2a.html"
+    },
+    {
+      "title": "Deleting Real-Time Integration Profiles",
+      "file": "4fcb580abe3e49dd9cb5edc5ee291348.html"
+    },
+    {
+      "title": "Adding Outbound Systems to Real-Time Integration Profiles",
+      "file": "d29e3dc70e9242fa9b24044e1bd605f2.html"
+    },
+    {
+      "title": "Mapping Master Data Types and Master Data Type Attributes",
+      "file": "113e016008354e5ca7d1929261ab6c18.html"
+    },
+    {
+      "title": "Data Comparison and Reconciliation for RTI",
+      "file": "eaabd2da1d3e4cd8805ad3d63fd44e07.html"
+    },
+    {
+      "title": "Manage Reconciliation Automation Profiles of Real-Time Integration",
+      "file": "0669cab0df8b46d385b6d22a4aa18906.html"
+    },
+    {
+      "title": "Location Mappings of Real-Time Integration",
+      "file": "0b94780688974be098f24f3994b2d8e3.html"
+    },
+    {
+      "title": "Product Mappings of Real-Time Integration",
+      "file": "6f0ccd5975b948b7a2a3b0f95fc5c316.html"
+    },
+    {
+      "title": "Analyzing and Visualizing Your Data",
+      "file": "3e55e354ec72e53ae10000000a44176d.html"
+    },
+    {
+      "title": "Analytics – Advanced",
+      "file": "d027cb5f6caa443fbdb0f3fdfd7b1205.html"
+    },
+    {
+      "title": "Analytics List",
+      "file": "9c150be399dd42e6babd089b8e3f54f0.html"
+    },
+    {
+      "title": "Analytics Details",
+      "file": "192a60cdb5294fc39d090d565a3a08a9.html"
+    },
+    {
+      "title": "Creating Analytics Charts",
+      "file": "6ffd2ecdb07448f5af87ce0260f5edab.html"
+    },
+    {
+      "title": "Chart Types",
+      "file": "18cd8c57f21f44c69b457be953da5081.html"
+    },
+    {
+      "title": "Editing Analytics Charts",
+      "file": "38893b6493504bf2bd666482deefbfb2.html"
+    },
+    {
+      "title": "Creating Drilldowns",
+      "file": "d9b79d3b9b0243ee9f8c4a6abae2565d.html"
+    },
+    {
+      "title": "Displaying Planning Notes",
+      "file": "048b4bfe58754ce782b5c5afcc0f99ad.html"
+    },
+    {
+      "title": "Using Save As to Save a Copy of an Analytics Chart",
+      "file": "e9d3c4effebf4b339d07cf01899e41be.html"
+    },
+    {
+      "title": "Using Filters in Analytics - Advanced",
+      "file": "66546681f7c94463b3f7a0f413c311af.html"
+    },
+    {
+      "title": "Dashboards - Advanced",
+      "file": "85a279a05b024371bf46c4eb84618e7d.html"
+    },
+    {
+      "title": "Dashboard List",
+      "file": "9fc45d4839034ade9a5ddd4dbf0d7e8c.html"
+    },
+    {
+      "title": "Working with a Dashboard",
+      "file": "092c2b3861e241fc8edc5886f324ab54.html"
+    },
+    {
+      "title": "Using Filters in Dashboards - Advanced",
+      "file": "3e2c9e8d7ed64979b7bcdb6e5aeade6b.html"
+    },
+    {
+      "title": "Supply Chain Network",
+      "file": "66768775410740f9af56c4726233537c.html"
+    },
+    {
+      "title": "About Supply Chain Network Charts",
+      "file": "fd3ce2cda3e94fd39f0600aa77f44cbb.html"
+    },
+    {
+      "title": "Configuration for Supply Chain Network",
+      "file": "e644f4517188445ba4f2dbe33ebd9ce7.html"
+    },
+    {
+      "title": "Creating a Supply Chain Network Chart",
+      "file": "78b3967eb91d4616a565a2a0d65d39fa.html"
+    },
+    {
+      "title": "Manage Analytics Stories",
+      "file": "c21965b7346b499f83748dd6a838fcab.html"
+    },
+    {
+      "title": "Exception Management",
+      "file": "3fbecc72ba3a41fb8c867e4ee16289bd.html"
+    },
+    {
+      "title": "Custom Alerts",
+      "file": "f8d4745450c0b924e10000000a4c4043.html"
+    },
+    {
+      "title": "Define and Subscribe to Custom Alerts",
+      "file": "220035848899456d97b298925618debb.html"
+    },
+    {
+      "title": "Creating Custom Alert Definitions",
+      "file": "83a25ffc1d4c47b5ae1e6d7a9d97958e.html"
+    },
+    {
+      "title": "Example: Rolling Time Periods",
+      "file": "76ae1cfbdbd34d5e8c80a903c6638756.html"
+    },
+    {
+      "title": "Example: Static Alert Rules",
+      "file": "f887785c5422484eb39e671211e88438.html"
+    },
+    {
+      "title": "Example: Attribute Filters in Alert Definitions and Subscriptions",
+      "file": "212eba50337d4f4faa461932e5c002e9.html"
+    },
+    {
+      "title": "Machine Learning Rules",
+      "file": "c4fc53c2545c43c2b99aebc4f6f22252.html"
+    },
+    {
+      "title": "DBSCAN Clustering Method",
+      "file": "8e7d8c98537c4c77b59e556e71776661.html"
+    },
+    {
+      "title": "K-Means Clustering Method",
+      "file": "80edee7e89a44750a2a1a10f58a6fa63.html"
+    },
+    {
+      "title": "Subscribing to Custom Alert Definitions",
+      "file": "6c5c43b0a4f54402a358555a95a8231d.html"
+    },
+    {
+      "title": "Viewing Custom Alert Definitions and Subscriptions",
+      "file": "1981bc54ae014aeb9f9d7bb1635d9727.html"
+    },
+    {
+      "title": "Editing Custom Alert Definitions",
+      "file": "e60c571dddc84896bfaa269443f8d940.html"
+    },
+    {
+      "title": "Changing the Owner of Custom Alert Definitions and Subscriptions",
+      "file": "d9dbffb7475b45f5b873040f6af9e878.html"
+    },
+    {
+      "title": "Opting Out of Custom Alert Definitions",
+      "file": "6dc9f12977314b859019389894f9f371.html"
+    },
+    {
+      "title": "Opting Out of Custom Alert Subscriptions",
+      "file": "7684ad17b65249f2aefb868787509e6d.html"
+    },
+    {
+      "title": "Deleting Custom Alert Definitions",
+      "file": "cdec18ecae314486b92d721f9ad0c64e.html"
+    },
+    {
+      "title": "Deleting Custom Alert Subscriptions",
+      "file": "4c28e888e98e429ebae0b0a3029cdfb4.html"
+    },
+    {
+      "title": "Monitor Custom Alerts",
+      "file": "ff4474547412bb24e10000000a4c4043.html"
+    },
+    {
+      "title": "How to Monitor Alerts",
+      "file": "f8f36b57e2a26c2be10000000a441470.html"
+    },
+    {
+      "title": "Example: Monitoring Alerts Over Time",
+      "file": "bfb7c957b7018809e10000000a4450e5.html"
+    },
+    {
+      "title": "How to Solve an Alert",
+      "file": "19bf84d0ac764a34a34aa7af490b2217.html"
+    },
+    {
+      "title": "Snoozing Alerts",
+      "file": "df0e68579552346ae10000000a4450e5.html"
+    },
+    {
+      "title": "Adding Alerts to a Case",
+      "file": "86b0b457fa7aca02e10000000a4450e5.html"
+    },
+    {
+      "title": "Navigating to Other SAP IBP Apps or to External Systems",
+      "file": "85eafc00948848da9aeee344d2a6e35d.html"
+    },
+    {
+      "title": "Reducing the Number of Alerts",
+      "file": "726513569e800033e10000000a44538d.html"
+    },
+    {
+      "title": "Buffering and Refreshing of Custom Alerts",
+      "file": "61d5355ab71246fa8bebdb003234c19d.html"
+    },
+    {
+      "title": "Setting Up Notifications and Emails for Custom Alerts",
+      "file": "9a800adaceb244e2a588925ee2485875.html"
+    },
+    {
+      "title": "Define Custom Alerts Overview",
+      "file": "08823a7e7b4a47ba960c7db71288cfae.html"
+    },
+    {
+      "title": "Define Custom Alerts Overview By Subscription",
+      "file": "58230d19f94648bda875e78b46909143.html"
+    },
+    {
+      "title": "Define Custom Alerts Overview By Other Criteria",
+      "file": "22cb8fdbd6a14996b86b23bb86288fd9.html"
+    },
+    {
+      "title": "View Custom Alerts Overview in the Dashboard",
+      "file": "95caf0eb43704481bf1aa47f4ad6aca7.html"
+    },
+    {
+      "title": "View Custom Alerts in the Custom Alerts Overview",
+      "file": "8f30fe37b8d54bccb39cce33f3901241.html"
+    },
+    {
+      "title": "Edit a Custom Alerts Overview",
+      "file": "7b4931f050844f68a3d267cbf72e9aab.html"
+    },
+    {
+      "title": "Show Active and Snoozed Alerts in the Custom Alerts Overview",
+      "file": "27737a0c9ba14b36a4296174b8b1de8f.html"
+    },
+    {
+      "title": "Procedure Playbooks",
+      "file": "9f9bfa3164c94dffad3eb1e1c99253c1.html"
+    },
+    {
+      "title": "Creating Procedure Playbooks",
+      "file": "65c179319224464faac1f8fc4f3ae84e.html"
+    },
+    {
+      "title": "Case Management",
+      "file": "112473b4db624243818808b80bdb6657.html"
+    },
+    {
+      "title": "Manage Cases",
+      "file": "8bf2e3546f42ee05e10000000a4450e5.html"
+    },
+    {
+      "title": "Creating a New Case",
+      "file": "95a4b457fa7aca02e10000000a4450e5.html"
+    },
+    {
+      "title": "Categorizing Cases",
+      "file": "fcaab457d2f6bc54e10000000a441470.html"
+    },
+    {
+      "title": "Changing an Existing Case",
+      "file": "dca9b457fa7aca02e10000000a4450e5.html"
+    },
+    {
+      "title": "Adding Snapshots to a Case",
+      "file": "81b2b457fa7aca02e10000000a4450e5.html"
+    },
+    {
+      "title": "Assigning Users to a Case",
+      "file": "beaeb457fa7aca02e10000000a4450e5.html"
+    },
+    {
+      "title": "Changing the Status",
+      "file": "34acb457fa7aca02e10000000a4450e5.html"
+    },
+    {
+      "title": "Adding Alerts to a Case",
+      "file": "6146a054168d456dbe129d821f913e7d.html"
+    },
+    {
+      "title": "Manage Categories",
+      "file": "ddeb6956511de535e10000000a44147b.html"
+    },
+    {
+      "title": "End-to-End Visibility",
+      "file": "7fb6827695474ddea97489ede3928e55.html"
+    },
+    {
+      "title": "Intelligent Visibility",
+      "file": "69b6fc590ae34727acd3b4c334f67757.html"
+    },
+    {
+      "title": "Viewing Custom Alerts",
+      "file": "1e33b6faac3a4d4ea37ce75f1a4b69ec.html"
+    },
+    {
+      "title": "Viewing Master Data Information",
+      "file": "c26e1b08f7c141248aed71908082077f.html"
+    },
+    {
+      "title": "Viewing Order-Based Alerts",
+      "file": "bcf929a43ab4431480568778d1d6478f.html"
+    },
+    {
+      "title": "Viewing Supply Chain Networks",
+      "file": "9189af754e854aae91a636aba30c5e94.html"
+    },
+    {
+      "title": "Viewing Key Figures",
+      "file": "285455c67a014956a0f17c4c372fcf69.html"
+    },
+    {
+      "title": "Viewing Customers",
+      "file": "67ef557c85f34927bdb84878ad7b84fa.html"
+    },
+    {
+      "title": "Intelligent Visibility Profiles",
+      "file": "b14eb7fd327944859eaf177055df8998.html"
+    },
+    {
+      "title": "How to Create a Profile",
+      "file": "ef2fdfcf693c401e8483f08668c8965a.html"
+    },
+    {
+      "title": "Process Management",
+      "file": "6f0cd25414239221e10000000a44176d.html"
+    },
+    {
+      "title": "Getting Started with Process Management",
+      "file": "335a12ea3d8f45eaa31645a9e86c18e4.html"
+    },
+    {
+      "title": "Configuring a Process",
+      "file": "8d8c0e11b6fa4d2982b2277c7b1fa5ad.html"
+    },
+    {
+      "title": "Process Roles and Authorizations",
+      "file": "5d2ed5aec8114d598ea6fc88cadb6bce.html"
+    },
+    {
+      "title": "Creating a Process Template",
+      "file": "d08e24fb87874311a9570760ff7363d6.html"
+    },
+    {
+      "title": "Settings for Process Automation",
+      "file": "301c81d3743c427c87070efbc5047dcf.html"
+    },
+    {
+      "title": "Available Conditions for Automating Process Steps",
+      "file": "f0e78bf75e7e4a4ab9e315c379b36b87.html"
+    },
+    {
+      "title": "Timing in Process Automation",
+      "file": "c6dfc36dbfa44f14a4c841be4064e359.html"
+    },
+    {
+      "title": "Workflow in Process Management",
+      "file": "04a84f2c78654ed79a985c3bd50d1d37.html"
+    },
+    {
+      "title": "Working with Workflow Approval from SAP Build Process Automation",
+      "file": "5347d81c536848b6b707a39d7452b1a8.html"
+    },
+    {
+      "title": "Integrating SAP Build Process Automation with Process Management in SAP IBP",
+      "file": "778e7e84cfc940b7b9a57d66e0492b3e.html"
+    },
+    {
+      "title": "Prerequisites",
+      "file": "cf0fdc2b9adc427fa8fafa5f8a351904.html"
+    },
+    {
+      "title": "Process Overview",
+      "file": "3ab61d82590a46db9ca2a0f7d16b0bfc.html"
+    },
+    {
+      "title": "Configuring SAP Build Process Automation",
+      "file": "2178ba26dd064454bdd1396cdc5a230e.html"
+    },
+    {
+      "title": "Configuring SAP IBP",
+      "file": "682462bc82ed434bb45541b428268eb8.html"
+    },
+    {
+      "title": "Setting up a Communication System for SAP Build Process Automation",
+      "file": "1a68e2fb887840238e07d8cfb09df239.html"
+    },
+    {
+      "title": "Finalizing the Communication Arrangement",
+      "file": "8106b88e18ed4b76b606cc9046893481.html"
+    },
+    {
+      "title": "Requesting Technical Support",
+      "file": "74a34f8c5bf64c81a5ed13e7f0909be1.html"
+    },
+    {
+      "title": "Further Information",
+      "file": "4d04d250fbfc4db9a8ac0d7e3b157994.html"
+    },
+    {
+      "title": "Tasks in Process Management",
+      "file": "d6b63cd36a6d4058adc2d5ddd71d982d.html"
+    },
+    {
+      "title": "Working with Microsoft Teams in Process Management",
+      "file": "3356bbbf25254134aadb0b53e1317d08.html"
+    },
+    {
+      "title": "Setting Up Notifications",
+      "file": "99491b676973446f94587b6fe52f22ac.html"
+    },
+    {
+      "title": "Setting up Email Notifications",
+      "file": "f547c1631e1245359a874cf4082141bb.html"
+    },
+    {
+      "title": "Application Jobs in Process Management",
+      "file": "550dc917b7bc4e1fb722905cc562d218.html"
+    },
+    {
+      "title": "Permissions for Planning Data",
+      "file": "60a5ef5138214a90a72997864cbe077d.html"
+    },
+    {
+      "title": "Custom Alerts in Process Management",
+      "file": "43fc4f816a514985a5a9e3a91e5faab2.html"
+    },
+    {
+      "title": "Exception Status",
+      "file": "d9d9deb369314ed7b4b9bf5077a50284.html"
+    },
+    {
+      "title": "Managing a Process",
+      "file": "3f23ac7079d143698e6c8e7a61ca3425.html"
+    },
+    {
+      "title": "Creating a One-Time Process from the Template",
+      "file": "b62c0ef39ba64cc4bb3b32890bc7a4e3.html"
+    },
+    {
+      "title": "Creating a Recurring Process from the Template",
+      "file": "af8f874fb423461c859cdadc68910ebf.html"
+    },
+    {
+      "title": "Starting a Process Step Manually",
+      "file": "0e60c70deb4e4a50b269fa828a08fbec.html"
+    },
+    {
+      "title": "Monitoring a Process",
+      "file": "b1e23c536e2648768d3c25a9851463f4.html"
+    },
+    {
+      "title": "Process Chart in Dashboards – Advanced App",
+      "file": "6a35d67a813343348010fc01f02ae42c.html"
+    },
+    {
+      "title": "Statuses in Process Management",
+      "file": "dedfcdc68f814333acab0763eb35bb01.html"
+    },
+    {
+      "title": "Progress of Process and Process Steps",
+      "file": "931a6ab65cf0429ea4a4f86941b55a3b.html"
+    },
+    {
+      "title": "Example: Statuses and Progress",
+      "file": "e4dd40aecd2a4405ab96bfc032a15bd4.html"
+    },
+    {
+      "title": "Checking Custom Alerts for a Process",
+      "file": "8d1a422893bb47bf8e73bcd048fd0806.html"
+    },
+    {
+      "title": "Managing Tasks",
+      "file": "95d57c37ff8241b9a6a20cfe3641c4a0.html"
+    },
+    {
+      "title": "Viewing, Editing, and Completing Tasks",
+      "file": "6a2f3e7cd1694e24ab14b59b16e5a270.html"
+    },
+    {
+      "title": "Creating an Ad Hoc, Process-Related Task with the Manage Tasks App",
+      "file": "4df1fac47d214852a3b3b7e1cbc84336.html"
+    },
+    {
+      "title": "Creating a Standalone Task",
+      "file": "ab562b6d9cbd4f91a7ffaaf2e7811398.html"
+    },
+    {
+      "title": "Apps for Process Management",
+      "file": "381c348514304b34819e937fbddb1dd6.html"
+    },
+    {
+      "title": "Manage Process Templates",
+      "file": "cfc2f3310b594736b7447d5fc3d00503.html"
+    },
+    {
+      "title": "Manage Processes",
+      "file": "b8a05538328840219e0b4cc815d74931.html"
+    },
+    {
+      "title": "Manage Recurring Processes",
+      "file": "c30a947695a14099af08cfc8bb497a7d.html"
+    },
+    {
+      "title": "Manage Tasks",
+      "file": "7239c0e0028549e69e57c5568f405182.html"
+    },
+    {
+      "title": "Business Network Collaboration",
+      "file": "cc4a0cd04f6549ea84f8c0d6cdc5a202.html"
+    },
+    {
+      "title": "What-If Analyses",
+      "file": "7c161596e45247e8a00c8df4f105464a.html"
+    },
+    {
+      "title": "Versions and Scenarios in Time-Series-Based Planning",
+      "file": "0e0fddc57d054880ac6c127d977c9fae.html"
+    },
+    {
+      "title": "Versions",
+      "file": "66547d73332e4f54b23a8d7cc5c0e761.html"
+    },
+    {
+      "title": "Simulations",
+      "file": "36d4c34e3dd04622a4486c0f1360d1c6.html"
+    },
+    {
+      "title": "Simulations in the Past",
+      "file": "157a383119d2431ba3d025e195dffa9f.html"
+    },
+    {
+      "title": "Advanced Simulation Operator",
+      "file": "60f93755463f6a38e10000000a174cb4.html"
+    },
+    {
+      "title": "Advanced Simulation Profiles",
+      "file": "3c2a63e6d80446eb900ef4c38c8ba237.html"
+    },
+    {
+      "title": "Scenarios",
+      "file": "d29416378090484d858bc6ab687808f9.html"
+    },
+    {
+      "title": "Versions and Scenarios in Order-Based Planning",
+      "file": "113847db813b4222b96a2f18e76e94d3.html"
+    },
+    {
+      "title": "Harmonized Scenarios",
+      "file": "bb563e656da943559b89e55e9f0df0e2.html"
+    },
+    {
+      "title": "Enabling Harmonized Scenarios",
+      "file": "9646fd510c2742e8978b4469a2f8ae93.html"
+    },
+    {
+      "title": "Configuring Scenarios",
+      "file": "da1022f449844695a5217be5ee0481e5.html"
+    },
+    {
+      "title": "Managing Scenarios with Joule",
+      "file": "fc9e5e1add2b4969a9612c028104ced5.html"
+    },
+    {
+      "title": "Copying Data",
+      "file": "dde8aaa06fb34b4c81a7de30e59de157.html"
+    },
+    {
+      "title": "Copy Operator",
+      "file": "a38681a3cfee4edb96cf01b463c9afac.html"
+    },
+    {
+      "title": "Copy Operator Profiles",
+      "file": "8988da7dfe8e43b9b7259754d0be841d.html"
+    },
+    {
+      "title": "Tips and Tricks for Working with Copy Operators",
+      "file": "feb68c97f14841b39e415257e9df1aec.html"
+    },
+    {
+      "title": "Processing of Key Figures",
+      "file": "ddb2f83536064affa3b516588208ba68.html"
+    },
+    {
+      "title": "Example Settings for Key Figure Selection",
+      "file": "87053af0e2be471b94a152c43947e342.html"
+    },
+    {
+      "title": "Example: Different Options for Value-Based Filter",
+      "file": "64e832131ef34ed5a13741b48fe730a9.html"
+    },
+    {
+      "title": "Copy Version Operator",
+      "file": "ee71fabf7d504468a0e9ea388b7ec5eb.html"
+    },
+    {
+      "title": "Delete Version Operator",
+      "file": "ddbbc282e03e4f169c9c0a919ebab4de.html"
+    },
+    {
+      "title": "Copy Version and Scenarios Operator",
+      "file": "3368634ff03f45b8bf3afce41e74f440.html"
+    },
+    {
+      "title": "Settings for Copying Data Between Versions and Scenarios",
+      "file": "e1a08667f0404b93b5a8a53da4978a94.html"
+    },
+    {
+      "title": "Planning Objects",
+      "file": "bb7c51dd09bb42b8963c4f0b7692c239.html"
+    },
+    {
+      "title": "Manage Planning Objects",
+      "file": "40ba343915fd4b77bc09ecc15c0a9782.html"
+    },
+    {
+      "title": "Authorizations for Managing Planning Objects",
+      "file": "5b0136e0a6b3466e838ceef8ba61de09.html"
+    },
+    {
+      "title": "Examples: Creation of Planning Objects Using External Uploads",
+      "file": "5fddc1b1b9e842e38e5126b46abe5cf4.html"
+    },
+    {
+      "title": "Disaggregation",
+      "file": "c40af7088a414fee99b2e98904f6fd48.html"
+    },
+    {
+      "title": "Configuration of Disaggregation",
+      "file": "45b40f935a6b4e32b43c1720786fdaba.html"
+    },
+    {
+      "title": "Aggregation Levels and Target Buckets",
+      "file": "c4c30473dc174ba2a2f006c4c9dc9e90.html"
+    },
+    {
+      "title": "Disaggregation Mode: Equal Distribution",
+      "file": "29b33be43a4d4ace9bc052a92826cbb5.html"
+    },
+    {
+      "title": "Disaggregation Mode: Copy Values",
+      "file": "3f3c835e7d2f44f5acc9dc0432b96483.html"
+    },
+    {
+      "title": "Disaggregation and Proportionality",
+      "file": "0b07724f3a62480fa695722c5103c339.html"
+    },
+    {
+      "title": "Proportionality: Same Key Figure - Stored Values",
+      "file": "5b26e89ab471489096c4b008ee5904be.html"
+    },
+    {
+      "title": "Proportionality: Same Key Figure - Calculated Values",
+      "file": "b9feb91c31dc49bdb690bbe24195905d.html"
+    },
+    {
+      "title": "Proportionality: Other Key Figure - Stored Values",
+      "file": "fc83a74a2d83440d8f723d79c9749878.html"
+    },
+    {
+      "title": "Proportionality: Other Key Figure - Calculated Values",
+      "file": "b55f2d5c591a423c9c99cea408cea064.html"
+    },
+    {
+      "title": "Proportionality: Disaggregation Expression",
+      "file": "5016ee83524f485293b9fe60294770de.html"
+    },
+    {
+      "title": "Tips and Tricks for Disaggregation",
+      "file": "579b48766d84411ab02ab9d5d251cef1.html"
+    },
+    {
+      "title": "Fixing of Key Figure Values",
+      "file": "2d11b39a41f54fbaa8a35eac622718f6.html"
+    },
+    {
+      "title": "Fixing a Key Figure Value with All of Its Child Values",
+      "file": "fe968be402f14fb6b4e5b3b7d516f1e9.html"
+    },
+    {
+      "title": "Consideration of Fixing Information in SAP IBP Processes and Applications",
+      "file": "9858eee4771d446f8034d88c56f64034.html"
+    },
+    {
+      "title": "Copy Modes for Fixing-Enabled Key Figures",
+      "file": "dc71826f2a1946cb8d24071ba33b3358.html"
+    },
+    {
+      "title": "Time Zones",
+      "file": "d5fe6f8a635e4c02b7a50cde9c49e696.html"
+    },
+    {
+      "title": "Configuring Time Zones",
+      "file": "27445a7f1f854a22b3f2f6990c0a061e.html"
+    },
+    {
+      "title": "Overview of Planning Calendars",
+      "file": "763c1acc3efa481c92c22ea4d57dabef.html"
+    },
+    {
+      "title": "Planning Calendars",
+      "file": "9ce4843ec7314ec4a1b547c02dfaab9b.html"
+    },
+    {
+      "title": "Planning Notes",
+      "file": "cc0c6f0c20274e6699a8258caedd077f.html"
+    },
+    {
+      "title": "Manage Planning Notes",
+      "file": "3e887427145942eebbd6ddad24363e16.html"
+    },
+    {
+      "title": "Enabling Planning Notes and Granting Authorizations",
+      "file": "0e6e622937244a7c858f966736d9381a.html"
+    },
+    {
+      "title": "Viewing, Creating, Editing, and Deleting Planning Notes",
+      "file": "a48e921cd537450287e99dc11f26f747.html"
+    },
+    {
+      "title": "Why Can't I View Any Planning Notes in the Planning View?",
+      "file": "164a9a19fae440fabbe6e6b1de86a83b.html"
+    },
+    {
+      "title": "Auto-Sizing of Planning Notes in the Excel Add-In",
+      "file": "a4cbadaa7e4d48ac8cc4d35e8bb2fe86.html"
+    },
+    {
+      "title": "Classifying Planning Notes Using Keywords",
+      "file": "d5867d3da7e54c589d03e434751a099e.html"
+    },
+    {
+      "title": "Authorizations for Using Keywords and Planning Notes",
+      "file": "765da5af74d54f40a196966ef35b12eb.html"
+    },
+    {
+      "title": "Enabling Planning Note Keywords",
+      "file": "551f320944fe4ba681a753e57d86fceb.html"
+    },
+    {
+      "title": "Planning Filters",
+      "file": "37e64bd4017c49c3b9a08ae035ba596c.html"
+    },
+    {
+      "title": "Creating Planning Filters",
+      "file": "b9b4c1bf731745c0a3e98135b80918f7.html"
+    },
+    {
+      "title": "Working with Planning Filters",
+      "file": "ea4d3861c53c4700b51fc15afd7b761b.html"
+    },
+    {
+      "title": "Sharing a Planning Filter",
+      "file": "620fe6b7f5474d9e9ec8d6e36ba4a21a.html"
+    },
+    {
+      "title": "Using Advanced Operators",
+      "file": "a0ceec80432e446f8f7b55a3308b797e.html"
+    },
+    {
+      "title": "Social Collaboration",
+      "file": "3b1ba661f67a415489eddbccd70e4b54.html"
+    },
+    {
+      "title": "ABC/XYZ Segmentation",
+      "file": "33e40058547f8073e10000000a441470.html"
+    },
+    {
+      "title": "Setting Up a Planning Area for ABC/XYZ Segmentation",
+      "file": "712ad214191c483baaf1a6e76dceee19.html"
+    },
+    {
+      "title": "ABC Segmentation",
+      "file": "fab75ea465ff4874b1389fa63c2d03a3.html"
+    },
+    {
+      "title": "Calculation Examples",
+      "file": "3f0abb3ecd9b4bf59b0399d352df3d5a.html"
+    },
+    {
+      "title": "XYZ Segmentation",
+      "file": "457c0aeb10f245c08fe5d6c7b78825dd.html"
+    },
+    {
+      "title": "Leveraging the Results of Time Series Analysis",
+      "file": "4c3e89bb4c914853aec92cd3d9504086.html"
+    },
+    {
+      "title": "App for ABC/XYZ Segmentation",
+      "file": "26ae89b696e44eb09a590a0e614ab049.html"
+    },
+    {
+      "title": "Manage ABC/XYZ Segmentation Rules",
+      "file": "a325b74b416b4edabe25f131a3ec5a32.html"
+    },
+    {
+      "title": "Time Settings",
+      "file": "a436518911c047708fafd09b567347ae.html"
+    },
+    {
+      "title": "Calculation Level",
+      "file": "a62ba44475234ff7971c339f8085ad37.html"
+    },
+    {
+      "title": "Grouping",
+      "file": "2d4807d411f74c88a4bbe2d079abcd57.html"
+    },
+    {
+      "title": "Using Planning Filters in ABC/XYZ Segmentation",
+      "file": "087586b26c2545878434608e13e20574.html"
+    },
+    {
+      "title": "Change History for Key Figures",
+      "file": "8f6d3393dd0e480c8c5b1146b96eb2e6.html"
+    },
+    {
+      "title": "Where Can I View the Change History?",
+      "file": "e5d46dad84524b1a837c71e4a844f90c.html"
+    },
+    {
+      "title": "What Does Change History Track?",
+      "file": "bc8ac8c4fa6f4e22be728783095164bb.html"
+    },
+    {
+      "title": "Apps for Change History",
+      "file": "5ccc4be36a974c86bd541f451bdb752f.html"
+    },
+    {
+      "title": "Settings for Change History",
+      "file": "fd031da50b9445e2b8494a0180069cfa.html"
+    },
+    {
+      "title": "Example: Additional Sources of Change",
+      "file": "ae1bd5638a1740adbad995e0b65383ca.html"
+    },
+    {
+      "title": "Change History Analysis",
+      "file": "4080b7afc41b4421983f7b3b204c900d.html"
+    },
+    {
+      "title": "Change-History-Based Calculations",
+      "file": "a173a27e6e2b4a05a895fe9dd6e42808.html"
+    },
+    {
+      "title": "Sources of Historical Data",
+      "file": "1c433621ca35499abaac0218d9254c8f.html"
+    },
+    {
+      "title": "Snapshots",
+      "file": "e2b437a1f39c453cab7e97b4534c31bd.html"
+    },
+    {
+      "title": "Original Snapshots",
+      "file": "b274379bf8014712bfbaa49dfd49a850.html"
+    },
+    {
+      "title": "Lag-Based Snapshots",
+      "file": "bfc7e4df9dce49a084679c88d60a2fc0.html"
+    },
+    {
+      "title": "Lag-Based Snapshot Profiles",
+      "file": "e718a6a93ac1420280de950a8b0f7451.html"
+    },
+    {
+      "title": "Creating a Lag-Based Snapshot Profile",
+      "file": "7ae9aef9cd414cddaeff1b3872f6c752.html"
+    },
+    {
+      "title": "Using Application Jobs to Create and Schedule Lag-Based Snapshots",
+      "file": "9dbe671835ff4ec79084eaef9a15c32c.html"
+    },
+    {
+      "title": "Troubleshooting for Lag-Based Snapshots",
+      "file": "9b9f9abea88f4d8b8bd15dfa7b327998.html"
+    },
+    {
+      "title": "Supply Lead Time",
+      "file": "80981ed1b7174c46ae3fd5cb6db5be34.html"
+    },
+    {
+      "title": "Supply Lead Time Operator",
+      "file": "70b107d1040e40dfb066b30d667450e2.html"
+    },
+    {
+      "title": "Model Entities for Supply Lead Time",
+      "file": "84e01a6b7f8a4251bebb5cf168d576ec.html"
+    },
+    {
+      "title": "Supply Lead Time Profiles",
+      "file": "753389ca00ec4da987236cae9c129adf.html"
+    },
+    {
+      "title": "Creating Supply Lead Time Profiles",
+      "file": "2ec1642c80cd491b8bde344e9644d6db.html"
+    },
+    {
+      "title": "Running Supply Lead Time Calculations",
+      "file": "663867a1e4d147e5919b20d86f02f389.html"
+    },
+    {
+      "title": "Using Application Jobs to Run the Supply Lead Time Calculations",
+      "file": "8b56e86dd0754604a7852e2905896d76.html"
+    },
+    {
+      "title": "Using the Excel Add-In to Run the Supply Lead Time Calculations",
+      "file": "f9b7c6e346a349cda4ea9772dc3f011e.html"
+    },
+    {
+      "title": "Lead Time Intelligence",
+      "file": "44d2ec258488445d82c6f87d0c48dcb7.html"
+    },
+    {
+      "title": "Setting Up Lead Time Intelligence",
+      "file": "84d55957cbbc442ebf33c6fb9044b5d8.html"
+    },
+    {
+      "title": "Using Lead Time Intelligence in Joule",
+      "file": "83770e1d10074b36a6bac9411a240d0d.html"
+    },
+    {
+      "title": "Planning Run Monitor",
+      "file": "122cad1a79ba481d9bc6ead8c7c1c6c6.html"
+    },
+    {
+      "title": "Low-Level Code",
+      "file": "a53ee5e791174960b044e902ae2ad083.html"
+    },
+    {
+      "title": "Low-Level Code Profiles",
+      "file": "0fae045d330a45d8b607f74048733595.html"
+    },
+    {
+      "title": "Creating Low-Level Code Profiles",
+      "file": "20224269320a417889c7909e6926636a.html"
+    },
+    {
+      "title": "Using Profiles to Run the Low-Level Code Operator",
+      "file": "003f734c4d934049b9a95d031b189a6f.html"
+    },
+    {
+      "title": "Using Application Jobs to Create and Schedule Low-Level Code Operator Runs",
+      "file": "36d9fdc60fd9432ca5c77ead02a66e3d.html"
+    },
+    {
+      "title": "Integrated Business Planning Based on I_SAPIBP2",
+      "file": "d735beba77cd4e29ac4b3ede871f7675.html"
+    },
+    {
+      "title": "Example: Integrated Planning Process with Unified Planning Area",
+      "file": "bea60e563f3e787fe10000000a441470.html"
+    },
+    {
+      "title": "Demand Planning",
+      "file": "8891092a3fad4e499645cafcd5dc2c81.html"
+    },
+    {
+      "title": "Statistical Forecasting",
+      "file": "52623c55a5ef992de10000000a174cb4.html"
+    },
+    {
+      "title": "Available Algorithms",
+      "file": "7eacc2d067ed497c9b717ce388ba62ce.html"
+    },
+    {
+      "title": "Compare the Algorithms",
+      "file": "3e60a6d96fe446229590f0d2eeaf9cf9.html"
+    },
+    {
+      "title": "Create Forecast Models",
+      "file": "8ce0e34dcc734128b630afbd3af8f8dc.html"
+    },
+    {
+      "title": "General Settings",
+      "file": "8c481b3a66194be2a2b5838be3d9732b.html"
+    },
+    {
+      "title": "Preprocessing Steps",
+      "file": "254f8154c2652357e10000000a44176d.html"
+    },
+    {
+      "title": "Substitute Missing Values",
+      "file": "b6438154c2652357e10000000a44176d.html"
+    },
+    {
+      "title": "External Preprocessing",
+      "file": "7f5a2fa7284644f9a72e7347a208d83a.html"
+    },
+    {
+      "title": "Automatic Outlier Correction",
+      "file": "189620959535465aa64aa2c382ec5f9a.html"
+    },
+    {
+      "title": "Outlier Correction",
+      "file": "9a458154c2652357e10000000a44176d.html"
+    },
+    {
+      "title": "Promotion Sales Lift Elimination",
+      "file": "bd211c56e833692de10000000a4450e5.html"
+    },
+    {
+      "title": "Forecasting Steps",
+      "file": "b4468154c2652357e10000000a44176d.html"
+    },
+    {
+      "title": "Forecasting Algorithms",
+      "file": "e1751a550f343e6ae10000000a44176d.html"
+    },
+    {
+      "title": "Adaptive-Response-Rate Single Exponential Smoothing",
+      "file": "3cdb8c5646aa8251e10000000a4450e5.html"
+    },
+    {
+      "title": "Auto-ARIMA/SARIMA",
+      "file": "c9b4470ccc0b47b7bed31d18c76f2201.html"
+    },
+    {
+      "title": "Auto-ARIMAX/SARIMAX",
+      "file": "c98335ebca6e490b89ad6dd0bbacafe7.html"
+    },
+    {
+      "title": "Automated Exponential Smoothing",
+      "file": "c7c981566f2adc5fe10000000a441470.html"
+    },
+    {
+      "title": "Brown's Linear Exponential Smoothing",
+      "file": "ead3816ad88949afa6a1754d950bba0e.html"
+    },
+    {
+      "title": "Copy Past Periods",
+      "file": "799ba9d72586445a9c62aa0c6b3f4171.html"
+    },
+    {
+      "title": "Croston Method",
+      "file": "f1c781566f2adc5fe10000000a441470.html"
+    },
+    {
+      "title": "Croston TSB Method",
+      "file": "1c10b5503d4841098b9213d8f455dd8e.html"
+    },
+    {
+      "title": "Curve-Based Method",
+      "file": "5984bab037c34dcfae2f6536be36caba.html"
+    },
+    {
+      "title": "Daily Disaggregation Optimization",
+      "file": "010beb7d7d6d47828201054d003fa57c.html"
+    },
+    {
+      "title": "Demand Sensing with Multiple Linear Regression (Full, Legacy)",
+      "file": "c7879856b7ccda5fe10000000a441470.html"
+    },
+    {
+      "title": "Demand Sensing with Multiple Linear Regression (Update, Legacy)",
+      "file": "56839e566c3ed75fe10000000a441470.html"
+    },
+    {
+      "title": "Demand Sensing with Gradient Boosting",
+      "file": "2a35bcc64b5d40518a66e2ae167d2d64.html"
+    },
+    {
+      "title": "Double Exponential Smoothing",
+      "file": "699b8c56f225763de10000000a4450e5.html"
+    },
+    {
+      "title": "External Algorithm",
+      "file": "679ec711f9ef4115b2d89a6f1db4d17b.html"
+    },
+    {
+      "title": "Extreme Gradient Boosting",
+      "file": "117df65725954d9aa0e2d823a4cc9e28.html"
+    },
+    {
+      "title": "Gradient Boosting of Decision Trees",
+      "file": "a2a3eada1d954aeaaaa8259ac2720767.html"
+    },
+    {
+      "title": "Multiple Linear Regression",
+      "file": "d857975618ad292fe10000000a441470.html"
+    },
+    {
+      "title": "Seasonal Linear Regression",
+      "file": "2a90abfcfc64409ab47b1f8e35c357a8.html"
+    },
+    {
+      "title": "Simple Average",
+      "file": "bdca81566f2adc5fe10000000a441470.html"
+    },
+    {
+      "title": "Simple Moving Average",
+      "file": "a6cb81566f2adc5fe10000000a441470.html"
+    },
+    {
+      "title": "Single Exponential Smoothing",
+      "file": "8d8c8b56aa6bd75fe10000000a441470.html"
+    },
+    {
+      "title": "Triple Exponential Smoothing",
+      "file": "a7ad8c56f225763de10000000a4450e5.html"
+    },
+    {
+      "title": "Weighted Average",
+      "file": "2a4b975618ad292fe10000000a441470.html"
+    },
+    {
+      "title": "Weighted Moving Average",
+      "file": "41e199567213d95fe10000000a441470.html"
+    },
+    {
+      "title": "Utilize Multiple Forecasts",
+      "file": "65b1da1c2630409885b96c4eec9b61d0.html"
+    },
+    {
+      "title": "Test Phase",
+      "file": "d9b213f81743479da4eeb5eb4dfd7302.html"
+    },
+    {
+      "title": "Consider Time Series Properties in Forecasting",
+      "file": "58a0f4eb95a34fbdb5baf9994930e7ce.html"
+    },
+    {
+      "title": "Postprocessing Steps",
+      "file": "bcbab3549ec1e231e10000000a4450e5.html"
+    },
+    {
+      "title": "Error Measures",
+      "file": "32cc1c552770a20ce10000000a44176d.html"
+    },
+    {
+      "title": "Comparison of Error Measures",
+      "file": "b1ee49ecb57f4dd79df3cc5926f6403d.html"
+    },
+    {
+      "title": "Create Curve Clustering Profiles",
+      "file": "7923fd9a263d4851ab27e9621173c5d9.html"
+    },
+    {
+      "title": "Assign Forecast Models",
+      "file": "a1ea018fb2c2448cb46792a1d762af83.html"
+    },
+    {
+      "title": "Run Statistical Forecasting",
+      "file": "6907dd54d4c37274e10000000a423f68.html"
+    },
+    {
+      "title": "Simulate Statistical Forecasting",
+      "file": "d25259f78bce45cca7daf981689e1ef4.html"
+    },
+    {
+      "title": "Check the Logs",
+      "file": "669bdf613e574aae8bf5db550da1d984.html"
+    },
+    {
+      "title": "Check Statistical Forecast Details in Planning UIs",
+      "file": "00f11c2827b147868b8486ce7a197c71.html"
+    },
+    {
+      "title": "Probabilistic Forecasting",
+      "file": "296628f60d9d4ed983b3e0a444db0eae.html"
+    },
+    {
+      "title": "Forecasting for New Products",
+      "file": "bfa8997159334c69972ccc9879504393.html"
+    },
+    {
+      "title": "Forecast Automation",
+      "file": "3baef6665f41436abbf8a519e215ecfa.html"
+    },
+    {
+      "title": "Time Series Analysis",
+      "file": "ac7e8586fe724de590f83646ea0620cf.html"
+    },
+    {
+      "title": "Time Series Properties",
+      "file": "f68deb4a38284397a4fbaefdb253ab6c.html"
+    },
+    {
+      "title": "Change Point Detection",
+      "file": "be9bc5e98fc244269e18aab55432f386.html"
+    },
+    {
+      "title": "Using Change Points in Forecasting",
+      "file": "70645ad7ec234e54ab9860c3d6430d74.html"
+    },
+    {
+      "title": "Creating a Forecast Automation Profile",
+      "file": "a0a7bab03eca42c5a2d04323d2cdcfbb.html"
+    },
+    {
+      "title": "Configuration of Target Attributes",
+      "file": "0827673aefa9480dbfee5ab444a0eae9.html"
+    },
+    {
+      "title": "Forecast Error Calculations",
+      "file": "aa55779bf47d4845a0d9c613f4db3e4f.html"
+    },
+    {
+      "title": "Setting Up a Planning Area for Forecast Error Calculations",
+      "file": "dcbeb557fbdc397ce10000000a4450e5.html"
+    },
+    {
+      "title": "Setting Up Unit of Measure and Currency Conversion",
+      "file": "6a71b7571a0a5e5de10000000a44147b.html"
+    },
+    {
+      "title": "Configuration of Forecast Error Calculations",
+      "file": "7900b6579af3397ce10000000a4450e5.html"
+    },
+    {
+      "title": "Lag-Based Forecast Error Calculation Using Snapshots",
+      "file": "6a1e111410da42e4867aaf1758d0572e.html"
+    },
+    {
+      "title": "Lag-Based Forecast Error Calculation Without Using Snapshots",
+      "file": "e824b657ace85b3be10000000a4450e5.html"
+    },
+    {
+      "title": "Error Measures in the Manage Forecast Error Calculations App",
+      "file": "1820bd572801bb38e10000000a44147b.html"
+    },
+    {
+      "title": "Troubleshooting for Statistical Forecasting",
+      "file": "17839bdf192e4aaf896f9d9fc1709aa6.html"
+    },
+    {
+      "title": "Demand Sensing",
+      "file": "c4143c55a5ef9a2de10000000a174cb4.html"
+    },
+    {
+      "title": "Demand Sensing Process",
+      "file": "26578154c2652357e10000000a44176d.html"
+    },
+    {
+      "title": "Setting Up a Planning Area for Demand Sensing",
+      "file": "e785ae54aadb1020e10000000a441470.html"
+    },
+    {
+      "title": "Creating a Forecast Model for Demand Sensing",
+      "file": "172cd5561e69be43e10000000a441470.html"
+    },
+    {
+      "title": "Demand Sensing with Gradient Boosting",
+      "file": "2a35bcc64b5d40518a66e2ae167d2d64-599.html"
+    },
+    {
+      "title": "Demand Sensing with Multiple Linear Regression (Full, Legacy)",
+      "file": "c7879856b7ccda5fe10000000a441470-601.html"
+    },
+    {
+      "title": "Demand Sensing with Multiple Linear Regression (Update, Legacy)",
+      "file": "56839e566c3ed75fe10000000a441470-602.html"
+    },
+    {
+      "title": "Using Lag-Based Snapshots for Demand Sensing",
+      "file": "f286ae54aadb1020e10000000a441470.html"
+    },
+    {
+      "title": "Outlier Detection in Demand Sensing",
+      "file": "010307b8693d476ea0a87750816089bd.html"
+    },
+    {
+      "title": "Advanced Rounding for Daily Balancing",
+      "file": "20273fff055d433e8d9612d0741dcc4a.html"
+    },
+    {
+      "title": "Troubleshooting for Demand Sensing",
+      "file": "81a5b0b351de432a9108bb1b1140469e.html"
+    },
+    {
+      "title": "Issues with Application Jobs",
+      "file": "04fdd20542ad428eac89e63e1af6396a.html"
+    },
+    {
+      "title": "Extra Signals",
+      "file": "37ba7325000e4ff0ae344145a2a78cf6.html"
+    },
+    {
+      "title": "Capping Around the Consensus Forecast",
+      "file": "f47b52d8ff514a6eb698153853000ff4.html"
+    },
+    {
+      "title": "Sensed Demand Calculation",
+      "file": "c366f483765f41bc8b6ae3540d6b9e0b.html"
+    },
+    {
+      "title": "Tagging Historical Periods as Outliers",
+      "file": "1c6e837effc442878c161018c5a6e6cb.html"
+    },
+    {
+      "title": "New Product Introduction",
+      "file": "65b28e570e366d10e10000000a441470.html"
+    },
+    {
+      "title": "Product Assignments and Forecast Dates for Single Products",
+      "file": "2376c9cf88aa4508b945a92a415180ca.html"
+    },
+    {
+      "title": "Mass Maintenance of Product Assignments and Forecast Dates",
+      "file": "443af2ca51fe4540a65ad17c20bb2ff6.html"
+    },
+    {
+      "title": "Uploading Product Assignments and Forecast Dates",
+      "file": "29109ac3bafa4e65aa1aa5ec78f21216.html"
+    },
+    {
+      "title": "Uploading Curves",
+      "file": "0719247150004fd2aae7158b576610f5.html"
+    },
+    {
+      "title": "Downloading Templates With or Without Data",
+      "file": "1959c90bf6af431499cde1088ae5db06.html"
+    },
+    {
+      "title": "Simulate History of References",
+      "file": "85e521b5d573401bb3ea344bfdf527f4.html"
+    },
+    {
+      "title": "Phase-In and Phase-Out Planning for New Products",
+      "file": "202c00d3378f4d05943c6a68661c4896.html"
+    },
+    {
+      "title": "Phase-In and Phase-Out in Forecasting",
+      "file": "91c6fed26e9849f8bd7b0d8b8885bbcf.html"
+    },
+    {
+      "title": "Phase-In/Phase-Out Curves",
+      "file": "1c17d5d19c754fe0b404de04e932fb0a.html"
+    },
+    {
+      "title": "Multiple Launch Dimensions",
+      "file": "420e4f919c474510916ad73f3d5e1555.html"
+    },
+    {
+      "title": "Aggregated Lifecycle Planning for Phase-In and Phase-Out",
+      "file": "2f99bf9116744434beff0d001b85aef9.html"
+    },
+    {
+      "title": "Creating Missing Planning Objects",
+      "file": "500f14ccff364a239df56ea78037a15a.html"
+    },
+    {
+      "title": "Working with Product Assignments and Forecast Dates in Planning UIs",
+      "file": "5625cc88d0c64edfba2f8c6b6c643142.html"
+    },
+    {
+      "title": "Manual Forecasting",
+      "file": "873ffe93b47545c3b4077c0ec06f20c4.html"
+    },
+    {
+      "title": "Uploading Forecast Dates for Manual Forecasting",
+      "file": "d705fa9e51b844fcb955673ba7d8cd10.html"
+    },
+    {
+      "title": "Seasonality Curves",
+      "file": "3a61edd4126342c1a298594a1df95578.html"
+    },
+    {
+      "title": "Curves for Product Lifecycle Management",
+      "file": "d314d4118ca54f0097658f2539e20cdb.html"
+    },
+    {
+      "title": "Planning Area Settings",
+      "file": "48f54f06c12b4d208c3e3ac6acb5714b.html"
+    },
+    {
+      "title": "Product Assignment Settings",
+      "file": "374de19cf3744486bf1f167dc174c937.html"
+    },
+    {
+      "title": "Phase-In/Phase-Out",
+      "file": "f363de9172364bc39f701381418d2454.html"
+    },
+    {
+      "title": "User/User Groups",
+      "file": "667c0303f1f24d5d826017215a8fe039.html"
+    },
+    {
+      "title": "Using Product Lifecycle Information in Forecasting",
+      "file": "b495d069f2564d8d9f35a202b9f33518.html"
+    },
+    {
+      "title": "Product Assignments",
+      "file": "6318a52d85c0422dbff5f3105ea28c01.html"
+    },
+    {
+      "title": "Forecast Dates",
+      "file": "ac600eee3e414a07a77ff3b10cd0ffa7.html"
+    },
+    {
+      "title": "Disabling the PLM Engine",
+      "file": "10106dfd7d7843a3a09ae25fafff7e7f.html"
+    },
+    {
+      "title": "Product Assignments (PLM Engine Disabled)",
+      "file": "a83ec5c3610d41e9873956ff86ceca5d.html"
+    },
+    {
+      "title": "Forecast Dates (PLM Engine Disabled)",
+      "file": "43698ca6a9ff403c976791dc79560d79.html"
+    },
+    {
+      "title": "Example for Using Product Assignments and Forecast Dates",
+      "file": "3d11440e8b1a446ea93b8d392a4c9602.html"
+    },
+    {
+      "title": "Product Assignment Attributes and Launch Dimensions in Aggregated Lifecycle Planning",
+      "file": "232b1bf491334849aadab8410e1b0ff0.html"
+    },
+    {
+      "title": "Integrating Promotion Data in Forecasting",
+      "file": "c3aa17569c260033e10000000a44538d.html"
+    },
+    {
+      "title": "Setting Up a Planning Area for Integrating Promotion Data",
+      "file": "66be40564b9ff81ae10000000a441470.html"
+    },
+    {
+      "title": "Creating Promotions",
+      "file": "bea1bae07f7d4890a1e03f3167614a97.html"
+    },
+    {
+      "title": "Calculate Promotion Success",
+      "file": "c3dff627061f48cea30e3117127535e5.html"
+    },
+    {
+      "title": "Data Realignment",
+      "file": "463d888ebb2447a8b117961d4e975e17.html"
+    },
+    {
+      "title": "Working with Data Realignment",
+      "file": "b9f75c28e97b4d4a8537874fad77ab61.html"
+    },
+    {
+      "title": "Simulating the Impacts of a Realignment Run",
+      "file": "d07411573ea94d5a9b41e0731cb047b2.html"
+    },
+    {
+      "title": "Running Realignment for Specific Versions",
+      "file": "61f5b3e493a545118f8a98a183684cd4.html"
+    },
+    {
+      "title": "Reviewing the Results of the Realignment Run",
+      "file": "ffbf38bddb7046578703fa7ae78b7609.html"
+    },
+    {
+      "title": "Statuses and Status Changes of a Realignment Project",
+      "file": "670d03a9c35549f69f33bcf376641d37.html"
+    },
+    {
+      "title": "Uploading Realignment Projects",
+      "file": "558cd0c5e8f0490fab08e1c8560e57f2.html"
+    },
+    {
+      "title": "Table Format for Uploading Realignment Projects",
+      "file": "8dd116b904ed4cccbb24c4cc2e8f2195.html"
+    },
+    {
+      "title": "Basic Concepts",
+      "file": "38707218502e43b8aba4d6a66e9eb197.html"
+    },
+    {
+      "title": "Data Realignment Run",
+      "file": "77176ad9e82347c48dce28694b931bae.html"
+    },
+    {
+      "title": "Master Data Realignment",
+      "file": "0646f37ad8374e5189fbc77158e4b61f.html"
+    },
+    {
+      "title": "Key Figure Realignment",
+      "file": "9cc18fe0a3b644a38249337d9caba7bb.html"
+    },
+    {
+      "title": "Options for Adjusting Source and Target Key Figure Values",
+      "file": "4571f689aa024c94bee8831265381e2e.html"
+    },
+    {
+      "title": "Evaluation of Selections",
+      "file": "6848306235844008bce0bbf2a2b5f0ab.html"
+    },
+    {
+      "title": "Example: Realignment Settings for Typical Use Cases",
+      "file": "ae4e9febee644f70962fdc26d1b5d05c.html"
+    },
+    {
+      "title": "Examples: Attribute Mappings",
+      "file": "e25690bb0e7547e2b3f0f962a4b53926.html"
+    },
+    {
+      "title": "Correlation Analysis",
+      "file": "49de029b2f5148e582b70fa91b729c83.html"
+    },
+    {
+      "title": "Manage Correlation Analysis Profiles",
+      "file": "32cc48bb389b4737aa219324c838e390.html"
+    },
+    {
+      "title": "Creating Correlation Analysis Profiles",
+      "file": "2072f12a5b224a178c87ad442267117c.html"
+    },
+    {
+      "title": "Using Application Jobs to Schedule and Run Correlation Analyses",
+      "file": "6a9bb6944f914c8ca83bc927cd10f551.html"
+    },
+    {
+      "title": "SAP6 Sample Planning Area for Demand",
+      "file": "8e27bb55fe28410ee10000000a441470.html"
+    },
+    {
+      "title": "Time Profile",
+      "file": "1e7f26103b7449c1a4c60a4da2edd401.html"
+    },
+    {
+      "title": "Key Figures",
+      "file": "4b45d45526181e02e10000000a441470.html"
+    },
+    {
+      "title": "Key Figures Used for Statistical Forecasting",
+      "file": "5979d4552d72727fe10000000a44538d.html"
+    },
+    {
+      "title": "Key Figures Used for Demand Sensing",
+      "file": "79edd3555520410ee10000000a441470.html"
+    },
+    {
+      "title": "Key Figures Related to Order Data",
+      "file": "42fedb55e0c88809e10000000a441470.html"
+    },
+    {
+      "title": "Key Figures Related to Trade Promotion Data",
+      "file": "090f1656b3703a35e10000000a44538d.html"
+    },
+    {
+      "title": "Key Figures Related to Point of Sales (POS) Data",
+      "file": "eeed2f56ab1cf81ae10000000a441470.html"
+    },
+    {
+      "title": "Key Figures Related to Forecast Error Calculation",
+      "file": "d5f814d939f34edaa5b061615fc46ebf.html"
+    },
+    {
+      "title": "Special Key Figures",
+      "file": "7c0adb5566380f15e10000000a441470.html"
+    },
+    {
+      "title": "Example for Last Period Aggregation",
+      "file": "135cde5620a62f7be10000000a44147b.html"
+    },
+    {
+      "title": "Master Data Types",
+      "file": "cc14c95511b8727fe10000000a44538d.html"
+    },
+    {
+      "title": "Business Meaning for Master Data Attributes",
+      "file": "42ca1d575fc65632e10000000a441470.html"
+    },
+    {
+      "title": "Planning Levels",
+      "file": "ea75da5542f8612de10000000a441470.html"
+    },
+    {
+      "title": "Planning Operators",
+      "file": "21e1cb55f2058809e10000000a441470.html"
+    },
+    {
+      "title": "Inventory Optimization",
+      "file": "8fce80549f42054ee10000000a423f68.html"
+    },
+    {
+      "title": "Setting Up Inventory Optimization",
+      "file": "6bd5c456a4b96c28e10000000a4450e5.html"
+    },
+    {
+      "title": "Profile Settings for Inventory Optimization",
+      "file": "791ab86d091e4d30ac4d2ce0c7b99d62.html"
+    },
+    {
+      "title": "Forecast Error Input Type",
+      "file": "b734d198ebf24ba7b70d6c8b548b93df.html"
+    },
+    {
+      "title": "Storage Capacity Constraints",
+      "file": "0d7c398a62a947728e9fa15bdb4fdc6c.html"
+    },
+    {
+      "title": "Storage Penalty",
+      "file": "0fa28522fe52415b8cabdd24cbe3b2fe.html"
+    },
+    {
+      "title": "Minimum and Maximum Safety Stock",
+      "file": "c94e89301b884790b30fbd82a687bcc1.html"
+    },
+    {
+      "title": "Lot-Size Impact",
+      "file": "623da5ab5048446cb5262200ad0c7b22.html"
+    },
+    {
+      "title": "Safety Stock Input",
+      "file": "48c043fcf57d421e81382e00a70f4cd3.html"
+    },
+    {
+      "title": "Time-Varying Service Levels",
+      "file": "50e8be3a257a493ea3666ec216553444.html"
+    },
+    {
+      "title": "Internal Service Level Across BOM Components",
+      "file": "c97c2e70f89c4158aad8be3a6bcb15ca.html"
+    },
+    {
+      "title": "Calculation of Propagated Demand Mean with Decimal Lead Times",
+      "file": "dbf79d21be554e2aaf8ff6598eb394c8.html"
+    },
+    {
+      "title": "Non-Stocking Service Level Propagation",
+      "file": "1d624c0019e641e282dc82f6709a73fe.html"
+    },
+    {
+      "title": "Invalid Sourcing Indicator",
+      "file": "0d1972df25ba4803a9a3c3d36b4ede43.html"
+    },
+    {
+      "title": "Global Configuration Parameters for Inventory Optimization",
+      "file": "d047c009c55b4478ad734e31cf7b9293.html"
+    },
+    {
+      "title": "Extended Push for Non-Stocking Locations",
+      "file": "cb10013e57884dc48cbe0a94a95a937e.html"
+    },
+    {
+      "title": "Production and Transportation Lead Time",
+      "file": "06601e378f0b405eb64e126a09ff60d9.html"
+    },
+    {
+      "title": "Additional Settings for Inventory Optimization",
+      "file": "c5e4909229af4a848198495086eb0429.html"
+    },
+    {
+      "title": "Managing Sourcing Loops",
+      "file": "bedb06fc28814bbab8fa5004d4564337.html"
+    },
+    {
+      "title": "Using the Technical Week Time Profile",
+      "file": "ce35b6579af3397ce10000000a4450e5.html"
+    },
+    {
+      "title": "Demand Ramp-Down and Phase-Out",
+      "file": "9dbcabafa172493b9564aca31144dcdd.html"
+    },
+    {
+      "title": "Fair-Share Lot Sizes for Non-Stocking Locations",
+      "file": "079af2ef53c14ecc99c3807a3bb8b4f7.html"
+    },
+    {
+      "title": "Multiple Modes of Transport",
+      "file": "19b0839ec35e4e059e04642ab2ce80d5.html"
+    },
+    {
+      "title": "Transportation and BOM Propagated Demand",
+      "file": "49f9b9d6ba654358a9ba622fcdcce728.html"
+    },
+    {
+      "title": "Using the Safety Stock Policy Indicator",
+      "file": "37671ad7c5684ef893f254751109b130.html"
+    },
+    {
+      "title": "Managing Slow-Moving Stock",
+      "file": "7047066e85fc48868f353e7b8a9a4342.html"
+    },
+    {
+      "title": "Ignoring Production or Transportation Demand in Safety Stock",
+      "file": "15fe5039abfa409092282a8da3927ba2.html"
+    },
+    {
+      "title": "Inventory Budgeting",
+      "file": "cf133e2426d1471fae616468793cb954.html"
+    },
+    {
+      "title": "Troubleshooting for Inventory Optimization",
+      "file": "025c79ee9c524cf2934db8943b17ab67.html"
+    },
+    {
+      "title": "Reorder Point Greater Than the Target Inventory Position",
+      "file": "57a06724e63c4e709a8e30d47172439b.html"
+    },
+    {
+      "title": "Supply Variability Safety Stock Equals Zero",
+      "file": "6766605312514d3d991ebb3a277f4bba.html"
+    },
+    {
+      "title": "Target Cycle Stock Greater Than the Propagated Demand Mean",
+      "file": "310332a4c85e4c5988a03ba7f951d60e.html"
+    },
+    {
+      "title": "Working with Propagated Demand",
+      "file": "9dc5e3c49a5540eb87f31a41cd0cb438.html"
+    },
+    {
+      "title": "Calculating Propagated Demand Mean without Lot Size Impacts",
+      "file": "09504903fb7e427590388e09125d384f.html"
+    },
+    {
+      "title": "Calculating IOSAFETYSTOCKDAYSOFSUPPLY",
+      "file": "5af08f6d776e46c5b559ede1340ff3fa.html"
+    },
+    {
+      "title": "IOTARGETPIPELINESTOCK or IOTARGETINPROCESSSTOCK Key Figure Values are Zero",
+      "file": "1bd2b8ec6fce4aca86eba07838f10e68.html"
+    },
+    {
+      "title": "Inventory Optimization Generates RECOMMENDEDSAFETYSTOCK Values of Zero",
+      "file": "06817d72c99f454ca44bc36ece7a9953.html"
+    },
+    {
+      "title": "Output Key Figures Unchanged After Inventory Optimization Run",
+      "file": "ab3075405f2d497dbcfd1125a151be3c.html"
+    },
+    {
+      "title": "Inventory Operator Resiliency when Processing Erroneous Input Data",
+      "file": "7659dbe55f6e4e2184f08cdcce6d2edb.html"
+    },
+    {
+      "title": "Inventory Operators not Respecting MAXINTERNALSERVICELEVEL for Hybrid Nodes",
+      "file": "c1f324224c284818b4aa33e93c956b01.html"
+    },
+    {
+      "title": "Why Does My Safety Stock Exceed the Maximum Safety Input?",
+      "file": "7230f06b39ea4d7f85221368ab17ab3a.html"
+    },
+    {
+      "title": "Sample Planning Area for Inventory Optimization",
+      "file": "5ecb8f57f95a6b10e10000000a441470.html"
+    },
+    {
+      "title": "Time Profile",
+      "file": "e76af4c7509749c3a494c5b258269365.html"
+    },
+    {
+      "title": "Master Data Types",
+      "file": "23060e5681558c5be10000000a44147b.html"
+    },
+    {
+      "title": "Planning Levels",
+      "file": "2db6a457695d5b3be10000000a4450e5.html"
+    },
+    {
+      "title": "Attributes as Key Figures",
+      "file": "839b0e82c8f04409a73e190b5f2f45b3.html"
+    },
+    {
+      "title": "Key Figures",
+      "file": "c0046454cdeee530e10000000a44538d.html"
+    },
+    {
+      "title": "Planning Operators",
+      "file": "081054ffec49433a9927f76a0df1d8ff.html"
+    },
+    {
+      "title": "Apps for Inventory Optimization",
+      "file": "778dd94755a04cb8ab41612dc9404b20.html"
+    },
+    {
+      "title": "Forecast Error Calculations - Overview",
+      "file": "10bf86fb07884ef98b8837637cbdacf8.html"
+    },
+    {
+      "title": "Creating Profiles for Forecast Error Calculations",
+      "file": "be0898c3e61e42f2ab6ea796eab7a74e.html"
+    },
+    {
+      "title": "Configuring Groups of Forecast Error Measures",
+      "file": "c9a097f886a0494f8c66bb7e3f297f5d.html"
+    },
+    {
+      "title": "Lag-Based Forecast Error Calculation Using Snapshots",
+      "file": "d313310c68ad48d699886c395de9a617.html"
+    },
+    {
+      "title": "Lag-Based Forecast Error Calculation Without Using Snapshots",
+      "file": "d1aa1856e6a647009bc197cb9ca632ef.html"
+    },
+    {
+      "title": "Using Bias in Inventory Optimization",
+      "file": "d5a7645b6b894f3bbd8b36ced2ca0eb0.html"
+    },
+    {
+      "title": "Forecast Error Measures",
+      "file": "32c42ccaf908426d9a32060de0dfedde.html"
+    },
+    {
+      "title": "Using Profiles to Run Forecast Error Calculations",
+      "file": "0e57bd49109745ff8e181eadebe3d15e.html"
+    },
+    {
+      "title": "Creating Inventory Profiles",
+      "file": "2125e109a36c407aba54fb7d706f1d82.html"
+    },
+    {
+      "title": "Using Profiles to Run Inventory Optimization",
+      "file": "52af59dd325b4af3bdb73812013b02e1.html"
+    },
+    {
+      "title": "Operators for Inventory Optimization",
+      "file": "ba13dff98b1f496ea45fc81f948c3f5d.html"
+    },
+    {
+      "title": "Forecast Error Operator",
+      "file": "5e56a56cf1a84f6ba8fa617fd6977d9e.html"
+    },
+    {
+      "title": "Inventory Optimization Operators",
+      "file": "eafe6454cdeee530e10000000a44538d.html"
+    },
+    {
+      "title": "Multi-Stage Network",
+      "file": "ba5b100e82144b7dad5c43e4dfd83f3e.html"
+    },
+    {
+      "title": "Global (Multi-Stage) Inventory Optimization",
+      "file": "34c33bf59bc44c35962bb2405d8cdfa7.html"
+    },
+    {
+      "title": "Calculate Target Inventory Components",
+      "file": "ab7b2b5a7bc24b86b949ee10d3275053.html"
+    },
+    {
+      "title": "Multi-Stage Optimization and Target Inventory Components",
+      "file": "5e6a87ecddb34d7ea31251a14d0b162c.html"
+    },
+    {
+      "title": "Decomposed (Single-Stage) Inventory Optimization",
+      "file": "a46e510f47e94abebb61afb1cda2f65d.html"
+    },
+    {
+      "title": "Service Level Prediction",
+      "file": "2fef5089fba8498cb272579e9e44f983.html"
+    },
+    {
+      "title": "Inventory Consumption Group (1 Year) Profile Operator",
+      "file": "1783c54e0cc344838c9aa6cc9900bb31.html"
+    },
+    {
+      "title": "Using Operators in Inventory Optimization",
+      "file": "24f6645462e5e630e10000000a44538d.html"
+    },
+    {
+      "title": "Using Application Jobs to Run the Forecast Error Operator",
+      "file": "8ccca40c24cc469da1467193bd8eb960.html"
+    },
+    {
+      "title": "Using the Excel Add-In to Run the Forecast Error Operator",
+      "file": "d6ce5ec25d4e4217b60e8f4038cddc04.html"
+    },
+    {
+      "title": "Using Application Jobs to Run Inventory Optimization Operators",
+      "file": "00d40f2fd8504773af0dd72ee5bba402.html"
+    },
+    {
+      "title": "Using the Excel Add-In to Run Inventory Optimization Operators",
+      "file": "d8f6e234bd6a464b89920e97bff64e91.html"
+    },
+    {
+      "title": "Running Inventory Optimization Operators as Application Jobs in the Excel Add-In",
+      "file": "db39f13a113c48e7b11360ab250f9773.html"
+    },
+    {
+      "title": "Simulating Inventory Optimization Operators in the Excel Add-In",
+      "file": "0cf7645462e5e630e10000000a44538d.html"
+    },
+    {
+      "title": "Scenario Planning for Inventory Optimization",
+      "file": "ea818511561e4b86ab461c37a0fe185d.html"
+    },
+    {
+      "title": "Attribute-Based Filtering for Inventory Optimization",
+      "file": "d36f1aecd528447ea6dba6e3be36d1c9.html"
+    },
+    {
+      "title": "Subnetwork Filtering for Inventory Optimization",
+      "file": "0e5cf04d5f524031af2c5ba880d3a18b.html"
+    },
+    {
+      "title": "Additional Inventory Planning Functions",
+      "file": "12013812cb1a48d0b33b6b8e610e7a8d.html"
+    },
+    {
+      "title": "Supply Lead Time Calculation for Inventory Optimization",
+      "file": "f348b4fb4e83495480d51449f3f35280.html"
+    },
+    {
+      "title": "EOQ and Service Level Calculation for Inventory Optimization",
+      "file": "d5643a8bd8a6469183d51042a1386749.html"
+    },
+    {
+      "title": "MRO Inventory Calculation",
+      "file": "4ee86936fff34f0dad09a4d25b7e893e.html"
+    },
+    {
+      "title": "AI-Assisted Inventory Analysis",
+      "file": "2294be9eda2c4d8b8b2da1fbbf572595.html"
+    },
+    {
+      "title": "Time-Series-Based Supply Planning",
+      "file": "64fed35516089251e10000000a4450e5.html"
+    },
+    {
+      "title": "Getting Started with Time-Series-Based Supply Planning",
+      "file": "580264c8006a4ef183cf0820310f40c9.html"
+    },
+    {
+      "title": "Configuration (Configuration Expert)",
+      "file": "a6bdd455a1433105e10000000a44538d.html"
+    },
+    {
+      "title": "Planning Profiles for Time-Series-Based Supply Planning",
+      "file": "907d68552c02be19e10000000a423f68.html"
+    },
+    {
+      "title": "Planning Area Parameters",
+      "file": "bbaa9b439c3740daa776ec12e756f7ba.html"
+    },
+    {
+      "title": "TS-Based Supply Heuristic",
+      "file": "5c4747ed39024df1944bf32fc83c89ca.html"
+    },
+    {
+      "title": "General Information",
+      "file": "a5965d2403ab45618d875ecce05db971.html"
+    },
+    {
+      "title": "Forecast Consumption Profile",
+      "file": "7c25c139a7144f03ab23dc3fbc21f60c.html"
+    },
+    {
+      "title": "Primary Parameters",
+      "file": "f271fed72c0d4234a07ee469aca8655c.html"
+    },
+    {
+      "title": "Limits for Messages",
+      "file": "96442d437df0450794d526315822e938.html"
+    },
+    {
+      "title": "Additional Parameters",
+      "file": "ff437965eb5347d9b1db975dd99015e3.html"
+    },
+    {
+      "title": "TS-Based Supply Optimizer",
+      "file": "1192d48ef62b4c25a3491e5c254c0d78.html"
+    },
+    {
+      "title": "General Information",
+      "file": "63836dc08a38439f8e1eb451d0b92ba6.html"
+    },
+    {
+      "title": "Optimizer Parameters",
+      "file": "74f362b10a5e475094e7a1f7416f9239.html"
+    },
+    {
+      "title": "Product Decomposition",
+      "file": "4d58169fa774411c98b8253736bee3dc.html"
+    },
+    {
+      "title": "Local Optimization for Discrete Problems (TS-Based Supply Planning)",
+      "file": "7e59b838484b46888483d59089c7129e.html"
+    },
+    {
+      "title": "Time Aggregation",
+      "file": "55099fd5d0774a5197b3c62b1dee65db.html"
+    },
+    {
+      "title": "Forecast Consumption Profile",
+      "file": "fb9800df4f3b4aeaaad69da2f59b1f7d.html"
+    },
+    {
+      "title": "Primary Parameters",
+      "file": "3f0d9dc36258437f83fa32ecb9424acb.html"
+    },
+    {
+      "title": "Limits for Messages",
+      "file": "f5872008da0f49739b18bf4d8d1d008e.html"
+    },
+    {
+      "title": "Additional Parameters",
+      "file": "9023070211194b87b3ba63a1e52af532.html"
+    },
+    {
+      "title": "TS-Based Forecast Consumption",
+      "file": "63e2e4920dca4d1ca03c573d6c5596f0.html"
+    },
+    {
+      "title": "General Information",
+      "file": "2d6b2d8eeb9f4fafa51e24f171bab4fd.html"
+    },
+    {
+      "title": "Forecast Consumption Profile",
+      "file": "9202055d6ba94bcd84b198fa4615cab3.html"
+    },
+    {
+      "title": "Primary Parameters",
+      "file": "adfb308ce0e94e94a558acdfb4c18ee2.html"
+    },
+    {
+      "title": "Limits for Messages",
+      "file": "1bfdb8a65fd9425cb1117abc868b05ec.html"
+    },
+    {
+      "title": "Additional Parameters",
+      "file": "627cc6089b9743898465329e225364ce.html"
+    },
+    {
+      "title": "Check Mode",
+      "file": "0e33d2564de44151a87c6ef3bb3572cf.html"
+    },
+    {
+      "title": "General Information",
+      "file": "b0fb005e56a34e83bc3927c2377f73b5.html"
+    },
+    {
+      "title": "Primary Parameters",
+      "file": "c2e89f309823459197085ae17d7f8306.html"
+    },
+    {
+      "title": "Limits for Messages",
+      "file": "6ef83c668f064ac9b1ab81a0e53ed077.html"
+    },
+    {
+      "title": "Additional Parameters",
+      "file": "2bb451d3086a427893fdfa363453bd1d.html"
+    },
+    {
+      "title": "Local Updates",
+      "file": "bb38c207f6aa40438d53e173fa4b3179.html"
+    },
+    {
+      "title": "General Information",
+      "file": "5b4c3586da50466ca93a210fbe91bff3.html"
+    },
+    {
+      "title": "Primary Parameters",
+      "file": "6abb82af3f4f4e79af4e60f531e2c193.html"
+    },
+    {
+      "title": "Limits for Messages",
+      "file": "dbf6f278a39142bdab71e534ea1e8b99.html"
+    },
+    {
+      "title": "Additional Parameters",
+      "file": "525dd3437c9f40aca9bc6c475c5b244e.html"
+    },
+    {
+      "title": "Compute Quotas",
+      "file": "3ffcd349da2a42b096948b03f831cdfc.html"
+    },
+    {
+      "title": "General Information",
+      "file": "d92cd536608b427481031f90677ec8b9.html"
+    },
+    {
+      "title": "Primary Parameters",
+      "file": "dde532f66c5942bebf0ba828df759ee5.html"
+    },
+    {
+      "title": "Limits for Messages",
+      "file": "79277db7bded43f7aea6d56ccc0c5462.html"
+    },
+    {
+      "title": "Additional Parameters",
+      "file": "20233f495e8b4956aa41bf865e3ea145.html"
+    },
+    {
+      "title": "Aggregation and Disaggregation Across Different Time Levels",
+      "file": "a204aa5766700322e10000000a44147b.html"
+    },
+    {
+      "title": "Increased Time Accuracy",
+      "file": "3a5a7112691b452691dcd0e9ff013de8.html"
+    },
+    {
+      "title": "Lot-Sizing Procedures and Lot-Size Parameters",
+      "file": "9b78ce0802d0434aac094d5c4af58563.html"
+    },
+    {
+      "title": "Key Figures",
+      "file": "871d6cb610e640e6a7c0b0599f38b9e8.html"
+    },
+    {
+      "title": "Calendars",
+      "file": "4f2a9a904d954c7c8e6804619dbc452f.html"
+    },
+    {
+      "title": "Inbound Calendars",
+      "file": "15a6b3d9b4fa49d8836c9529023c6b14.html"
+    },
+    {
+      "title": "Inbound Calendars and Lot-Sizing Procedures",
+      "file": "f65a8c8f19d14799994da75ab228226e.html"
+    },
+    {
+      "title": "Transportation Calendars",
+      "file": "b41868496e554340b781753d5935923e.html"
+    },
+    {
+      "title": "Production Calendars",
+      "file": "0715ef7ae63742c3974a913cf634494d.html"
+    },
+    {
+      "title": "Goods Receipt Calendars",
+      "file": "33f5ff5cd8c34755b4824a2e323fa8e1.html"
+    },
+    {
+      "title": "Overruling Calendars with Key Figures",
+      "file": "c9ef73df594d4452979df6fb37afe198.html"
+    },
+    {
+      "title": "Configuring Location Product Substitution",
+      "file": "5457f5b4bda44ddf848620afdf543775.html"
+    },
+    {
+      "title": "Configuring Planning Levels for Aggregated Constraint Key Figures",
+      "file": "0609799b558c421b94f7d09c6b74f66a.html"
+    },
+    {
+      "title": "Configuring Planning Levels for Demand Prioritization (Demand Categories)",
+      "file": "9dc4a98cfd0541c9b99d373fdc8c6e50.html"
+    },
+    {
+      "title": "Configuring Planning Levels for Modes of Transport (SAP4)",
+      "file": "6896c69dfef04b4f9d322f99dc7621a1.html"
+    },
+    {
+      "title": "Configuring Planning Levels for Modes of Transport (SAPIBP1)",
+      "file": "29a83e12a5b14ebc8bee1efa9ed125f9.html"
+    },
+    {
+      "title": "Rolling Time Profile Level",
+      "file": "2149f2ac891f4343b9d38a487e3d47f4.html"
+    },
+    {
+      "title": "Subnetwork-Specific Segmentation of Planning Objects",
+      "file": "02c674f5e0c4433481adda910cbb9dbd.html"
+    },
+    {
+      "title": "Freezing the Supply Plan (Supply Planning Heuristic, Finite Heuristic, Optimizer)",
+      "file": "1a6ebefa4383491dad31050c7cc3de86.html"
+    },
+    {
+      "title": "Freezing the Supply Plan (Shelf Life Planning Heuristic)",
+      "file": "9685e00ec88947228d212b92aa35753c.html"
+    },
+    {
+      "title": "Freezing the Supply Plan (Shelf Life Distribution Planning Heuristic)",
+      "file": "d5327c68776a4ef785ae4f595f545682.html"
+    },
+    {
+      "title": "Freeze Horizon for Production",
+      "file": "06327c4b98404e7d937b5a27b4d2c23a.html"
+    },
+    {
+      "title": "Freeze Horizon for Transport",
+      "file": "8f8e2ceacea441ce82fa8fdc319fd5c0.html"
+    },
+    {
+      "title": "Freeze Horizon for External Receipts",
+      "file": "7c940a49f32147909f298fb230632d0a.html"
+    },
+    {
+      "title": "Switching Off the Freeze Horizon",
+      "file": "388aec446afa45879bc7af46ebe75a9f.html"
+    },
+    {
+      "title": "SAP4S Sample Planning Area",
+      "file": "88773b7d956746c0885e9a7121d4c253.html"
+    },
+    {
+      "title": "General Settings",
+      "file": "c29da1e54012401696a57e781a90523c.html"
+    },
+    {
+      "title": "Master Data Types",
+      "file": "c74a324c953f4854bf8c3a6a8b8e9027.html"
+    },
+    {
+      "title": "Planning Levels",
+      "file": "6fef4173aaa246798662c92046f768f9.html"
+    },
+    {
+      "title": "PERPRODLOCSHLFID",
+      "file": "819ae0fe8ff941f0a52c24be6b30d144.html"
+    },
+    {
+      "title": "PERPRODCUSTSHLFID",
+      "file": "edcefa2fa73b4a01818652c8d2c72f81.html"
+    },
+    {
+      "title": "PERPRODLOCCUSTSHLFID",
+      "file": "96d79e515ad348368cfc94e51eb8da59.html"
+    },
+    {
+      "title": "PERPRODLOCLOCFRSHLFID",
+      "file": "7911436fc246405395287a33545fd5ea.html"
+    },
+    {
+      "title": "PERPRODLOCTOLOCSHLFID",
+      "file": "ea801de61bda4137b5de0695448a571f.html"
+    },
+    {
+      "title": "PERPRODLOCCOMPSRCSHLFID",
+      "file": "7a2cf5a9550a4e4e80be353632018579.html"
+    },
+    {
+      "title": "PERPRODTOLOCPRODSRCSHLFID",
+      "file": "5b7adb1da96e4d6fa4f8f9eb1c781f27.html"
+    },
+    {
+      "title": "Key Figures",
+      "file": "7a7f43cafca943c082729578c8643bc1.html"
+    },
+    {
+      "title": "Creating a Supply Plan in the SAP IBP, Add-In for Microsoft Excel(Planner)",
+      "file": "2e77d25536e98809e10000000a441470.html"
+    },
+    {
+      "title": "Running S&OP Operator V2 in the SAP IBP, Add-In for Microsoft Excel",
+      "file": "69747ce3057041c284ffdfd4d28c8c13.html"
+    },
+    {
+      "title": "Time-Series-Based Supply Planning Heuristic",
+      "file": "68be40553ebe8518e10000000a423f68.html"
+    },
+    {
+      "title": "How Does the Time-Series-Based Supply Planning Heuristic Work?",
+      "file": "0b46e5556b8d8c5be10000000a44147b.html"
+    },
+    {
+      "title": "Time-Series-Based Supply Planning Finite Heuristic",
+      "file": "4080bb02e3f347e98e0f0be808763f9f.html"
+    },
+    {
+      "title": "How Does the Time-Series-Based Supply Planning Finite Heuristic Work?",
+      "file": "28007e4994f945edadc9658d84224a6b.html"
+    },
+    {
+      "title": "From Costs to Priorities",
+      "file": "fd4b7046bf644f2c9d98e66f1ed91939.html"
+    },
+    {
+      "title": "Fair-Share Distribution",
+      "file": "1912ee57d6050f70e10000000a44147b.html"
+    },
+    {
+      "title": "Time-Series-Based Supply Propagation Heuristic",
+      "file": "7df549c6172c41b9978605a082889d5e.html"
+    },
+    {
+      "title": "Supply Planning vs. Supply Propagation",
+      "file": "975784adc89c4701882e3924b723dc88.html"
+    },
+    {
+      "title": "What to Consider About the Supply Propagation Heuristic",
+      "file": "2651c51cc8454e88972ac77064a54c0d.html"
+    },
+    {
+      "title": "Demand Prioritization During Supply Propagation",
+      "file": "a96c8dfa3af84e0cbf2818b07b65caeb.html"
+    },
+    {
+      "title": "Supply Propagation with Production Sources of Supply",
+      "file": "385bd3b600504348b3ef09a91da6c879.html"
+    },
+    {
+      "title": "Time-Series-Based Shelf Life Planning Heuristic",
+      "file": "947405eec48b4191ba4f2e7d3fadbf9b.html"
+    },
+    {
+      "title": "Configuring Shelf Life Planning Areas",
+      "file": "196e8ba6e1f341daaaa957005d7a1437.html"
+    },
+    {
+      "title": "Configuring Shelf Life Planning Areas Based on SAP4",
+      "file": "ea62288fcf0541f1bd1e67d02cf628a8.html"
+    },
+    {
+      "title": "Configuring Shelf Life Planning Areas Based on SAPIBP1",
+      "file": "c5afb12640c54b7fae163d4cf660b088.html"
+    },
+    {
+      "title": "Running Non-Shelf Life Algorithms in Shelf Life Planning Areas",
+      "file": "3fa668bb680d4ffe89e075d4cf4b88a9.html"
+    },
+    {
+      "title": "Key Figures",
+      "file": "d3807ce56ebb4cb6ab74557cf374c9f5.html"
+    },
+    {
+      "title": "Key Figures Inheriting Shelf Life from Master Data Attribute",
+      "file": "21bebfe146174acd9484c709f147e2bc.html"
+    },
+    {
+      "title": "Key Figures with Shelf Life ID Attribute",
+      "file": "33aed794991c4853ac50007085b54294.html"
+    },
+    {
+      "title": "Different Approaches to Shelf Life Planning",
+      "file": "11520b44d7aa4585b10b42dbb613684d.html"
+    },
+    {
+      "title": "Considering the Shelf Life of Finished Products Only or of All Products in the Supply Chain",
+      "file": "8dd573ba43ee4eafb38392cca1e95d86.html"
+    },
+    {
+      "title": "Separating Stock on Hand from New Production/External Receipts",
+      "file": "c19f5483fcdc4f21992b38cd4742c894.html"
+    },
+    {
+      "title": "Tips and Best Practices",
+      "file": "31001058be4748d79326a1d8b0384023.html"
+    },
+    {
+      "title": "Static and Dynamic Periods of Supply Lot-Sizing Procedures",
+      "file": "7d4b279119c54be59a6c6ce6d9d89410.html"
+    },
+    {
+      "title": "Lot-Size Parameters and Minimum Shelf Life",
+      "file": "391778c49e5e4f69b1757b469bdf8891.html"
+    },
+    {
+      "title": "Subnetworks",
+      "file": "2eac8b99de6c430daa7657c9756e62ca.html"
+    },
+    {
+      "title": "IPU Key Figures",
+      "file": "8c313cd66cfc42abb7e685fd902ca563.html"
+    },
+    {
+      "title": "Using the Compute Expected Supply for Transport Parameter",
+      "file": "ca05fe24f9de4e83a6d08e5af170d9d8.html"
+    },
+    {
+      "title": "Examples",
+      "file": "43f08ae1cdd242068b9587a4f009c080.html"
+    },
+    {
+      "title": "Time-Series-Based Shelf Life Distribution Planning Heuristic",
+      "file": "9fc40a1991684aa6b60799c781b557ac.html"
+    },
+    {
+      "title": "How Does the Time-Series-Based Shelf Life Distribution Planning Heuristic Work?",
+      "file": "f8ee7f173406454ca7e34d7be6f60598.html"
+    },
+    {
+      "title": "Non-Storable Location Products",
+      "file": "8e274b8c48c14e49a65aa2582ee3b33e.html"
+    },
+    {
+      "title": "Location Product Substitution (Simplified Version)",
+      "file": "019bee5773634feb8c87fdafcee0c506.html"
+    },
+    {
+      "title": "Coupled Mode",
+      "file": "187004cc6d2f4a22b8cb0e06c8a31a1b.html"
+    },
+    {
+      "title": "Step 1: Shelf Life Distribution Planning Heuristic Run",
+      "file": "17b487984149474b9b0abf6168e9d0a1.html"
+    },
+    {
+      "title": "Step 2: Supply Planning Optimizer Run",
+      "file": "720e32f61bbd422cb094144b0e5818ac.html"
+    },
+    {
+      "title": "Time-Series-Based Supply Planning Optimizer",
+      "file": "26c840553ebe8518e10000000a423f68.html"
+    },
+    {
+      "title": "Fair-Share Distribution",
+      "file": "1912ee57d6050f70e10000000a44147b-892.html"
+    },
+    {
+      "title": "Time Aggregation",
+      "file": "a7d6d11327fa46cb8ce5c95a50377191.html"
+    },
+    {
+      "title": "Time Aggregation Profiles",
+      "file": "d8a83525a3ed44909362a48ccf1b14fa.html"
+    },
+    {
+      "title": "Technical Implications",
+      "file": "6d64c23dc0bd4c029131b79c65b871d0.html"
+    },
+    {
+      "title": "Planning Based on Lead Times in Days",
+      "file": "8ace63bfa3514449a0594c24dcaf518f.html"
+    },
+    {
+      "title": "Alternative Resources",
+      "file": "72f103d03ea249249c149bfafab6276c.html"
+    },
+    {
+      "title": "Explanation of Optimizer Results",
+      "file": "f11a7844270a4a318098ba54a8c4d23c.html"
+    },
+    {
+      "title": "Examples for Explanations of Optimizer Results",
+      "file": "911bd1d3787b45f7ad3f13b7fc5af530.html"
+    },
+    {
+      "title": "AI-Assisted Supply Optimization Analysis",
+      "file": "cbe3de7ae079431088d0dc7ca0a748e0.html"
+    },
+    {
+      "title": "Optimizer Run Details",
+      "file": "6ae8504591574271acb4fe7658e3e910.html"
+    },
+    {
+      "title": "Input Key Figures for the Optimizer and the Finite Heuristic Only",
+      "file": "ec76385609686f78e10000000a44147b.html"
+    },
+    {
+      "title": "Maximum Key Figures",
+      "file": "39194156f7baf81ae10000000a441470.html"
+    },
+    {
+      "title": "Late Delivery",
+      "file": "65934c564a9ff81ae10000000a441470.html"
+    },
+    {
+      "title": "Aggregated Constraints",
+      "file": "63b1bb56ed263f23e10000000a44147b.html"
+    },
+    {
+      "title": "Upstream Key Figures",
+      "file": "a57774a7913e4f2b84ffa6ca74ed7b6e.html"
+    },
+    {
+      "title": "Downstream Key Figures",
+      "file": "b166b956c1db4023e10000000a44147b.html"
+    },
+    {
+      "title": "Cost Key Figures",
+      "file": "e59b54c459e7432abc8321392f302af5.html"
+    },
+    {
+      "title": "Aggregated Constraints Using Conversion Factors",
+      "file": "31f5f4e59c4f4ac8bdf2f214cec84041.html"
+    },
+    {
+      "title": "Minimum Resource Consumption",
+      "file": "e12e0457c1b0104ce10000000a4450e5.html"
+    },
+    {
+      "title": "Cost and Revenue Key Figures for Subnetworks",
+      "file": "06d0d0579212c525e10000000a4450e5.html"
+    },
+    {
+      "title": "Dealing with Complexity in Optimization (Configuration Expert)",
+      "file": "619019261a0540a1ba8c8db333c73fa1.html"
+    },
+    {
+      "title": "Using SCM Optimization in Time-Series-Based Supply Planning",
+      "file": "62e3a72ddd874589856052b8004320e9.html"
+    },
+    {
+      "title": "Time-Series-Based Forecast Consumption",
+      "file": "aa57378f6f184e7191f31a6afa62dc90.html"
+    },
+    {
+      "title": "Forecast Consumption Mode",
+      "file": "8095a94cac49478da530c6928f8677f0.html"
+    },
+    {
+      "title": "Setting Up the Forecast Consumption Mode",
+      "file": "4c595328ddb74671b39d7d9619daf1c8.html"
+    },
+    {
+      "title": "Creating a Forecast Consumption Profile",
+      "file": "6b6f48f2887e4a358242b6a7352441a5.html"
+    },
+    {
+      "title": "Calculating Forecast Consumption on an Aggregated Level",
+      "file": "1f3e57d114c64008bf2e854c8537955d.html"
+    },
+    {
+      "title": "Calculating Forecast Consumption",
+      "file": "08d13b08cecd4bc29f923f8f88cdd82c.html"
+    },
+    {
+      "title": "Forecast Consumption Calendars",
+      "file": "941407d153d34db59b2677c971e8ad39.html"
+    },
+    {
+      "title": "Assigning a Forecast Consumption Calendar to a Forecast Consumption Profile",
+      "file": "039ad228c25147a09b2fd414c9102a01.html"
+    },
+    {
+      "title": "Examples of Time-Series Based Forecast Consumption",
+      "file": "fe6856328aa246b4a1f66906443a73d2.html"
+    },
+    {
+      "title": "Additional Algorithms",
+      "file": "d0360b5599f9bf07e10000000a423f68.html"
+    },
+    {
+      "title": "Calculating Quotas from a Supply Plan",
+      "file": "1d417e5549dcbd4fe10000000a423f68.html"
+    },
+    {
+      "title": "Local Updates of Key Figures",
+      "file": "0cc7405557038418e10000000a423f68.html"
+    },
+    {
+      "title": "Checking Data Consistency",
+      "file": "06b81954bd518c24e10000000a4450e5.html"
+    },
+    {
+      "title": "Planning Algorithms for TS-Based Supply Planning: Supported Functions",
+      "file": "aada642335c84ead8c4fd807b8a54f0d.html"
+    },
+    {
+      "title": "Planning Run Statistics",
+      "file": "e16c9a8aec6b482786ee41932b1f0eb2.html"
+    },
+    {
+      "title": "Monitoring TS-Based Supply Planning Runs",
+      "file": "f028c054f4564c4d9b03097904d895d5.html"
+    },
+    {
+      "title": "Production Planning Integration Based on Key Figures",
+      "file": "279a3fe0d61e44fda27ae4b3165d11b5.html"
+    },
+    {
+      "title": "Setting Up Production Planning Integration",
+      "file": "ffb9a7946ab84f82b7a4ed30a7673324.html"
+    },
+    {
+      "title": "Evaluating PP/DS Key Figures in SAP IBP",
+      "file": "9abe2067c1ba4afc81bd2ed397c12bf0.html"
+    },
+    {
+      "title": "Things to Consider",
+      "file": "fff129886c3d4808bbfc75ca7bf0a1f0.html"
+    },
+    {
+      "title": "Master Data for Time-Series-Based Supply Planning",
+      "file": "47f872553d590c30e10000000a441470.html"
+    },
+    {
+      "title": "Customer",
+      "file": "adfa72553d590c30e10000000a441470.html"
+    },
+    {
+      "title": "Location",
+      "file": "32fe72553d590c30e10000000a441470.html"
+    },
+    {
+      "title": "Ship-From Location",
+      "file": "e6ff72553d590c30e10000000a441470.html"
+    },
+    {
+      "title": "Ship-To Location",
+      "file": "950172553d590c30e10000000a441470.html"
+    },
+    {
+      "title": "Product",
+      "file": "88e87355a1b20d4de10000000a4450e5.html"
+    },
+    {
+      "title": "Customer Product",
+      "file": "79f182558f61bf5de10000000a423f68.html"
+    },
+    {
+      "title": "Location Product",
+      "file": "67fd7055d806797ae10000000a423f68.html"
+    },
+    {
+      "title": "Location Product Substitution",
+      "file": "821a40d8a7344c95a5e328e683196cd2.html"
+    },
+    {
+      "title": "Location Product Substitution R",
+      "file": "8ff909203f7b499595e74a36536ecdb0.html"
+    },
+    {
+      "title": "Substitute Product",
+      "file": "df1eca4eb3a24fc2bf510234ace960b2.html"
+    },
+    {
+      "title": "Leading Product",
+      "file": "d7fda9b8cdbb42c7ab82aac7778513e2.html"
+    },
+    {
+      "title": "Component",
+      "file": "3e1772553d590c30e10000000a441470.html"
+    },
+    {
+      "title": "Output Product",
+      "file": "e12572553d590c30e10000000a441470.html"
+    },
+    {
+      "title": "Resource",
+      "file": "dba17255adb4be19e10000000a423f68.html"
+    },
+    {
+      "title": "Location Resource",
+      "file": "c8a27255adb4be19e10000000a423f68.html"
+    },
+    {
+      "title": "Capacity Supply Expansion",
+      "file": "c6c63d156aab4a7984baeb64e326d3e6.html"
+    },
+    {
+      "title": "Location Product Resource",
+      "file": "dca37255adb4be19e10000000a423f68.html"
+    },
+    {
+      "title": "Production Source Resource",
+      "file": "fea67255adb4be19e10000000a423f68.html"
+    },
+    {
+      "title": "Production Source Resource Sub",
+      "file": "743724e96a094b64b1d099520dd4c337.html"
+    },
+    {
+      "title": "Transportation Resource",
+      "file": "29b60ab77dbc4954beea1e4ba9a805dc.html"
+    },
+    {
+      "title": "Customer Source of Supply",
+      "file": "a3a47255adb4be19e10000000a423f68.html"
+    },
+    {
+      "title": "Customer Source Validity",
+      "file": "82340032c6ac494894b8a80cc020cf51.html"
+    },
+    {
+      "title": "Production Source of Supply",
+      "file": "bcc18055f3eb7b43e10000000a4450e5.html"
+    },
+    {
+      "title": "Production Source of Supply Header",
+      "file": "6da57255adb4be19e10000000a423f68.html"
+    },
+    {
+      "title": "Production Source of Supply Item",
+      "file": "34a67255adb4be19e10000000a423f68.html"
+    },
+    {
+      "title": "Production Source Item Sub",
+      "file": "68eaa824d32b4e7188f2525f9ed72cc4.html"
+    },
+    {
+      "title": "Production Source Validity",
+      "file": "d40ca7ade9a0407aab406045482b2678.html"
+    },
+    {
+      "title": "Production Source Item Validity",
+      "file": "84137b40152344d89d49f74f2ee47610.html"
+    },
+    {
+      "title": "Location Source of Supply",
+      "file": "a0fc7055d806797ae10000000a423f68.html"
+    },
+    {
+      "title": "Location Source Validity",
+      "file": "b205cbff808e4b1880a89e94bae66bb8.html"
+    },
+    {
+      "title": "How Invalid Sources Affect Quotas",
+      "file": "308cf337c5ed4997815708f23ace3fdc.html"
+    },
+    {
+      "title": "Aligning Validity Dates with Planning Periods (Example)",
+      "file": "e18931e30977465fa55e27f96e797aa1.html"
+    },
+    {
+      "title": "Mode of Transport",
+      "file": "7ff6e82f073045fd9445eac6810f0f75.html"
+    },
+    {
+      "title": "Subnetwork",
+      "file": "2efe7055d806797ae10000000a423f68.html"
+    },
+    {
+      "title": "Product Substitution",
+      "file": "fafe7055d806797ae10000000a423f68.html"
+    },
+    {
+      "title": "Demand Category",
+      "file": "5a61161f746b4bb18d14cbfab742bfa1.html"
+    },
+    {
+      "title": "Aggregate Constraint",
+      "file": "917973da66874f7f936790be0d9ce36b.html"
+    },
+    {
+      "title": "Forecast Consumption Mode",
+      "file": "dde1eb03a54f478b992b8e9a8203018a.html"
+    },
+    {
+      "title": "Shelf Life",
+      "file": "2c8a2c63f2d74599a6bb9b0667e62645.html"
+    },
+    {
+      "title": "Production Group Attribute Header",
+      "file": "8729f8d825f44ed3953c0852e8a385c6.html"
+    },
+    {
+      "title": "Production Group Attribute Value",
+      "file": "4fccf7cc2b154818b4c9dfc7eac11943.html"
+    },
+    {
+      "title": "Production Group Attribute Value Resource Assignment",
+      "file": "04e02b452382474aa963454191b2597a.html"
+    },
+    {
+      "title": "Production Group Attribute Resource Assignment",
+      "file": "e900ef908149459dac27eea615708ca5.html"
+    },
+    {
+      "title": "Key Figures",
+      "file": "28369155bb43292de10000000a44147b.html"
+    },
+    {
+      "title": "Location-Centric View",
+      "file": "93003956db3f9d21e10000000a44538d.html"
+    },
+    {
+      "title": "Planning Horizon",
+      "file": "b6305156964cf81ae10000000a441470.html"
+    },
+    {
+      "title": "Calendars",
+      "file": "67364d79862646e0b4ae25f8212532c4.html"
+    },
+    {
+      "title": "Customer Demands",
+      "file": "0fc240553a70aa16e10000000a441470.html"
+    },
+    {
+      "title": "Upstream Key Figures",
+      "file": "53ff5d561454c741e10000000a44147b.html"
+    },
+    {
+      "title": "Downstream Key Figures",
+      "file": "792744567b94e223e10000000a441470.html"
+    },
+    {
+      "title": "Adjusted Upstream Key Figures",
+      "file": "538e45563d6bfa1ae10000000a441470.html"
+    },
+    {
+      "title": "Adjusted Downstream Key Figures",
+      "file": "eb085d561454c741e10000000a44147b.html"
+    },
+    {
+      "title": "Location Product",
+      "file": "c9a19c55cfa8d007e10000000a44538d.html"
+    },
+    {
+      "title": "Upstream Key Figures",
+      "file": "86d95e5683c6f64ee10000000a44538d.html"
+    },
+    {
+      "title": "Downstream Key Figures",
+      "file": "f8603c56beade221e10000000a4450e5.html"
+    },
+    {
+      "title": "Adjusted Key Figures",
+      "file": "2e603c56beade221e10000000a4450e5.html"
+    },
+    {
+      "title": "Production",
+      "file": "be9136565b0ec44ee10000000a44147b.html"
+    },
+    {
+      "title": "Upstream Key Figures",
+      "file": "fd596556f2441d58e10000000a4450e5.html"
+    },
+    {
+      "title": "Downstream Key Figures",
+      "file": "eb2e44567b94e223e10000000a441470.html"
+    },
+    {
+      "title": "Adjusted Key Figures",
+      "file": "e32b44567b94e223e10000000a441470.html"
+    },
+    {
+      "title": "Transport",
+      "file": "815c6556d5401c58e10000000a4450e5.html"
+    },
+    {
+      "title": "Downstream Key Figures",
+      "file": "a65a6556d5401c58e10000000a4450e5.html"
+    },
+    {
+      "title": "Adjusted Upstream Key Figures",
+      "file": "335d6556d5401c58e10000000a4450e5.html"
+    },
+    {
+      "title": "Adjusted Downstream Key Figures",
+      "file": "ec586556f2441d58e10000000a4450e5.html"
+    },
+    {
+      "title": "Examples: Minimum Transport Supply and Receipts",
+      "file": "cba35556247ded10e10000000a44147b.html"
+    },
+    {
+      "title": "In Transit",
+      "file": "f706525636d6e223e10000000a441470.html"
+    },
+    {
+      "title": "Downstream Key Figures",
+      "file": "291d5356fa12f81ae10000000a441470.html"
+    },
+    {
+      "title": "Goods Receipt",
+      "file": "653a00b926db4a5a921e7a45aec0347d.html"
+    },
+    {
+      "title": "Capacity",
+      "file": "57a937561b12de21e10000000a4450e5.html"
+    },
+    {
+      "title": "Quotas",
+      "file": "6f74385609686f78e10000000a44147b.html"
+    },
+    {
+      "title": "Input Key Figures",
+      "file": "e7fd67561fd49d24e10000000a44147b.html"
+    },
+    {
+      "title": "Computed Key Figures",
+      "file": "95cb67564889e55ae10000000a44147b.html"
+    },
+    {
+      "title": "Subnetworks",
+      "file": "e4205356fa12f81ae10000000a441470.html"
+    },
+    {
+      "title": "Downstream Key Figures",
+      "file": "d7215356fa12f81ae10000000a441470.html"
+    },
+    {
+      "title": "Freeze Horizon",
+      "file": "5a0082b53ee240cfbe47320f6f218756.html"
+    },
+    {
+      "title": "Input Key Figures for the Optimizer and the Finite Heuristic Only",
+      "file": "ec76385609686f78e10000000a44147b-1012.html"
+    },
+    {
+      "title": "Maximum Key Figures",
+      "file": "39194156f7baf81ae10000000a441470-1013.html"
+    },
+    {
+      "title": "Late Delivery",
+      "file": "65934c564a9ff81ae10000000a441470-1014.html"
+    },
+    {
+      "title": "Aggregated Constraints",
+      "file": "63b1bb56ed263f23e10000000a44147b-1015.html"
+    },
+    {
+      "title": "Upstream Key Figures",
+      "file": "a57774a7913e4f2b84ffa6ca74ed7b6e-1016.html"
+    },
+    {
+      "title": "Downstream Key Figures",
+      "file": "b166b956c1db4023e10000000a44147b-1017.html"
+    },
+    {
+      "title": "Cost Key Figures",
+      "file": "e59b54c459e7432abc8321392f302af5-1018.html"
+    },
+    {
+      "title": "Aggregated Constraints Using Conversion Factors",
+      "file": "31f5f4e59c4f4ac8bdf2f214cec84041-1019.html"
+    },
+    {
+      "title": "Minimum Resource Consumption",
+      "file": "e12e0457c1b0104ce10000000a4450e5-1020.html"
+    },
+    {
+      "title": "Cost and Revenue Key Figures for Subnetworks",
+      "file": "06d0d0579212c525e10000000a4450e5-1021.html"
+    },
+    {
+      "title": "Sourcing",
+      "file": "b4ca8f5572e5b75de10000000a423f68.html"
+    },
+    {
+      "title": "Source Determination Using Quotas",
+      "file": "d3d28f5572e5b75de10000000a423f68.html"
+    },
+    {
+      "title": "Receipts Balancing",
+      "file": "469cc456a82d6c28e10000000a4450e5.html"
+    },
+    {
+      "title": "Subnetworks",
+      "file": "fda5c4565f9a5040e10000000a44147b.html"
+    },
+    {
+      "title": "Receipts Balancing with Calendars",
+      "file": "524e246e0a154f0eb335499391c3290b.html"
+    },
+    {
+      "title": "Receipts Balancing with Lot-Size Parameters",
+      "file": "44ee726a08d347f38c1a5f96f6ea2991.html"
+    },
+    {
+      "title": "Examples",
+      "file": "5bfa9aac8f5b48e3a1cc0267565cc899.html"
+    },
+    {
+      "title": "Production Sources of Supply",
+      "file": "5a85c3565d915040e10000000a44147b.html"
+    },
+    {
+      "title": "Location Sources of Supply",
+      "file": "65a5c456136fcf4fe10000000a44147b.html"
+    },
+    {
+      "title": "External Sources of Supply",
+      "file": "dca7c456136fcf4fe10000000a44147b.html"
+    },
+    {
+      "title": "Customer Sources of Supply",
+      "file": "9fa1c4565f9a5040e10000000a44147b.html"
+    },
+    {
+      "title": "Quota Checks",
+      "file": "01d78f5572e5b75de10000000a423f68.html"
+    },
+    {
+      "title": "Multiple Production Sources",
+      "file": "d4c98f6cb6fc4fec92690a68815926ed.html"
+    },
+    {
+      "title": "Limiting Source of Supply Warning to Location Products with Net Demand",
+      "file": "206c72589c9a4904978a6d4007c933fb.html"
+    },
+    {
+      "title": "Lot Sizes",
+      "file": "0c0fa8658c7d47d1bda4f6c703009ed7.html"
+    },
+    {
+      "title": "Lot for Lot",
+      "file": "091b67567a89215ae10000000a4450e5.html"
+    },
+    {
+      "title": "Periods of Supply",
+      "file": "021d67567a89215ae10000000a4450e5.html"
+    },
+    {
+      "title": "Static Periods of Supply",
+      "file": "432267567a89215ae10000000a4450e5.html"
+    },
+    {
+      "title": "Static Periods of Supply Based on Average Demand",
+      "file": "d2cde4b352dc4fd7bd91d780a1e22e30.html"
+    },
+    {
+      "title": "Target Periods for Customer Demand",
+      "file": "af4cedf210114a44ac87bd56bc615bfd.html"
+    },
+    {
+      "title": "Dynamic Periods of Supply",
+      "file": "a1d31f561a7f410ee10000000a441470.html"
+    },
+    {
+      "title": "Dynamic Periods of Supply with Safety Stock",
+      "file": "a0e21aa575d54baba659416e9860bc25.html"
+    },
+    {
+      "title": "Production Cycle Lot Size",
+      "file": "eab46756efae275ae10000000a4450e5.html"
+    },
+    {
+      "title": "Lot-Size Parameters",
+      "file": "f3d567560889235ae10000000a4450e5.html"
+    },
+    {
+      "title": "Production",
+      "file": "0dd1b15794a56c10e10000000a441470.html"
+    },
+    {
+      "title": "Co-Production",
+      "file": "c83fbf671e0640d6bffc83317d0aa884.html"
+    },
+    {
+      "title": "Setting Up a Data Model for Co-Products",
+      "file": "feed3835e25f485c8160fbad294558d4.html"
+    },
+    {
+      "title": "Cross-Plant Production",
+      "file": "3cb06a0aa18b4dada79689e7ead12519.html"
+    },
+    {
+      "title": "Multilevel Bills of Material",
+      "file": "df5e2b2b9bce43d8b9310359cd35bdc4.html"
+    },
+    {
+      "title": "Production Lead Time",
+      "file": "15fdb25783126b10e10000000a441470.html"
+    },
+    {
+      "title": "Production Group Planning (only for the optimizer)",
+      "file": "940ba2d26e7e4e4aa5f9415f50b25dda.html"
+    },
+    {
+      "title": "Transport",
+      "file": "beed8201030840a9beb37bf3738bbb5e.html"
+    },
+    {
+      "title": "Transportation Lead Time",
+      "file": "62b3fced6fd44844a38276000adce54a.html"
+    },
+    {
+      "title": "Goods Receipt",
+      "file": "616c650c28274da8925eaaf6c25192a7.html"
+    },
+    {
+      "title": "Product Interchangeability",
+      "file": "434d21593da04f52bccc0233c036b311.html"
+    },
+    {
+      "title": "Product Substitution",
+      "file": "9af8c0749b1f48c6ad30cab1937a7250.html"
+    },
+    {
+      "title": "Component Substitution",
+      "file": "cec63df8d8384ceda948a79632fdc7f8.html"
+    },
+    {
+      "title": "Location Product Substitution",
+      "file": "705d7c0c7ac443e7a9f1f79d4bd1c599.html"
+    },
+    {
+      "title": "Discontinuing a Location Product",
+      "file": "235aa364b9f641d2953859e18b2276a1.html"
+    },
+    {
+      "title": "Promoting a Location Product",
+      "file": "f948a65c1ce045fab02af8af252b755d.html"
+    },
+    {
+      "title": "Substituting Dependent Location Demands",
+      "file": "a4e1245d8a3541b083aca8278bce41f9.html"
+    },
+    {
+      "title": "Additional Scenarios for the Optimizer and the Finite Heuristic",
+      "file": "776f0c9fbcdb44b6874c4e1b5206b689.html"
+    },
+    {
+      "title": "Subnetworks",
+      "file": "6efce156a592327be10000000a44147b.html"
+    },
+    {
+      "title": "Defining Subnetworks (Configuration Expert)",
+      "file": "af62e956263f3f0ae10000000a4450e5.html"
+    },
+    {
+      "title": "Subnetwork Borders",
+      "file": "5bfde156a592327be10000000a44147b.html"
+    },
+    {
+      "title": "Examples: Planning Across Subnetwork Borders",
+      "file": "ce6dd556d02afc77e10000000a4450e5.html"
+    },
+    {
+      "title": "Subnetworks and Production Sources of Supply",
+      "file": "cbd1bf57c7f60f2be10000000a441470.html"
+    },
+    {
+      "title": "Selecting Subnetworks by ID or by Filter",
+      "file": "120103d236674997a1199098bb88cac6.html"
+    },
+    {
+      "title": "Network Aggregation",
+      "file": "d50f038c32cb44daabe9b8864d020574.html"
+    },
+    {
+      "title": "Configuration",
+      "file": "9da1ef1de02c49ad93cdf1d2838a9b40.html"
+    },
+    {
+      "title": "Network Aggregation Operator",
+      "file": "a4db76fd60694cda8634b59ada6a62c6.html"
+    },
+    {
+      "title": "Example of Network Aggregation: Cost Rollup",
+      "file": "a513686220d8469088fb57271865cb0d.html"
+    },
+    {
+      "title": "Network Topology Operator",
+      "file": "cda0d8a7456b4df5bc585533f2ff0747.html"
+    },
+    {
+      "title": "Example of Network Splitting",
+      "file": "1ab99198945046f181d61fc7dcd8bb91.html"
+    },
+    {
+      "title": "Driver-Based Planning",
+      "file": "f1336f0cec0440de892d505abbcf2506.html"
+    },
+    {
+      "title": "Example: Risks and Opportunities as Drivers",
+      "file": "afaa3e9fd367481aa90f11ac144d3276.html"
+    },
+    {
+      "title": "Setting Up Driver-Based Planning",
+      "file": "ab18b3dba3934586a9ef20dfa3eaf153.html"
+    },
+    {
+      "title": "Model Entities for Driver-Based Planning",
+      "file": "54200ba83c48433ba1edec175664dcf8.html"
+    },
+    {
+      "title": "Working with Driver-Based Planning",
+      "file": "8e9fbc0ebc0442c197a06a8d5a194cf9.html"
+    },
+    {
+      "title": "Creating and Copying Drivers",
+      "file": "15e09e7ca7f2459297d2277f3a80e448.html"
+    },
+    {
+      "title": "Limitation of Planning Objects for Drivers",
+      "file": "359feaa29c614c0b80e2d646b4a10ccc.html"
+    },
+    {
+      "title": "App for Driver-Based Planning",
+      "file": "17177e0204f64c5b8411a6b44abf6856.html"
+    },
+    {
+      "title": "Driver-Based Planning",
+      "file": "b27fa08343f54fc3868c6ba9cf47f40a.html"
+    },
+    {
+      "title": "Demand-Driven Replenishment",
+      "file": "dc87d46d18fe41718c92db3d642bf17d.html"
+    },
+    {
+      "title": "Buffer Zones and Average Daily Usage (ADU)",
+      "file": "bbbad34ca19e4c0ea0436106e37582db.html"
+    },
+    {
+      "title": "DDMRP Implementation Scenarios",
+      "file": "ba74e7420b884bc1b1ab6df555afb91f.html"
+    },
+    {
+      "title": "DDMRP Supply Generation with SAP IBP Order-Based Planning",
+      "file": "247e9b7256324c18a83c2f13cb966615.html"
+    },
+    {
+      "title": "Demand-Driven Replenishment with OBP based on External Master Data",
+      "file": "c0b5f8615fa84f6788c439629483184e.html"
+    },
+    {
+      "title": "Demand-Driven Replenishment with OBP based on Flexible Master Data",
+      "file": "0503ebd965af4531b376b371b38f1e6c.html"
+    },
+    {
+      "title": "DDMRP Supply Generation with SAP S/4HANA for Demand-Driven Replenishment",
+      "file": "771b89add42c4d758a0129f6a6b5ae32.html"
+    },
+    {
+      "title": "DDMRP Supply Generation with SAP ERP, Supply Chain Integration Add-On for SAP IBP",
+      "file": "67fefa3fa11049668948d0e9f67cf911.html"
+    },
+    {
+      "title": "Using the SAP ERP, Supply Chain Integration Add-On for IBP",
+      "file": "13796767b4324204948c8c5ae241387c.html"
+    },
+    {
+      "title": "Using the DDR Cockpit",
+      "file": "b9e6779cc68a45e79b33a6a3fb5047f7.html"
+    },
+    {
+      "title": "Maintaining Global and Plant Settings",
+      "file": "183603b268454a148225c0a8f01deefa.html"
+    },
+    {
+      "title": "Maintaining Global and Plant Category Mapping",
+      "file": "8b7e13dfe0f842fc8f24f96e180ee53b.html"
+    },
+    {
+      "title": "Maintaining Material Settings",
+      "file": "ebead1d8e367486085691a2935a59c07.html"
+    },
+    {
+      "title": "Running Demand-Driven Planning",
+      "file": "8e9374365b9149a5af6aeb9f1b676c61.html"
+    },
+    {
+      "title": "Monitoring DDMRP Planning Runs",
+      "file": "16cd35b523d4455fa7b35797a5f22a64.html"
+    },
+    {
+      "title": "Displaying the DDMRP Element List",
+      "file": "ab820d434f6445b88286b55d72f57e09.html"
+    },
+    {
+      "title": "Sample Planning Area for Demand-Driven Replenishment",
+      "file": "067d0d4414eb4dd29e3c4eabf9b88e85.html"
+    },
+    {
+      "title": "Time Profile",
+      "file": "ffa46a6080b640038c5b44ec5fca2e8c.html"
+    },
+    {
+      "title": "Master Data Types",
+      "file": "53538993436b4e538c6874b0133529be.html"
+    },
+    {
+      "title": "Planning Levels",
+      "file": "a20227d611dd4b9f93058dd47e9e4d41.html"
+    },
+    {
+      "title": "Key Figures",
+      "file": "c3a244a14ec04c4f83a0a8c774b94876.html"
+    },
+    {
+      "title": "Planning Operators",
+      "file": "94b0510a0a2944f89f942f63a3e52829.html"
+    },
+    {
+      "title": "Apps for Demand-Driven Replenishment",
+      "file": "4ffcfbd138604ca5a11c899028f87041.html"
+    },
+    {
+      "title": "Creating Demand-Driven Replenishment Profiles",
+      "file": "1dde40e445744491bb106441b8f52b1f.html"
+    },
+    {
+      "title": "Using Profiles to Run Demand-Driven Replenishment",
+      "file": "6733170bff5f4e20b386d9fc0a6e945c.html"
+    },
+    {
+      "title": "Creating Scenarios in DDMRP Buffer Analysis",
+      "file": "c03dee43cb87404da018f7c91f98e843.html"
+    },
+    {
+      "title": "Running Scenarios in DDMRP Buffer Analysis",
+      "file": "3dfb5b12c019409692a696a60388dcfb.html"
+    },
+    {
+      "title": "Administrative Information",
+      "file": "c1f4d2d514194d9296f99373a528014a.html"
+    },
+    {
+      "title": "Monitoring DDMRP Buffer Statuses",
+      "file": "9aaf9708ee3642b2afa0c4788361ba52.html"
+    },
+    {
+      "title": "Using Demand-Driven Replenishment Planning Operators",
+      "file": "2b75eee7d7a6477daa7ef0be51a786c7.html"
+    },
+    {
+      "title": "Demand-Driven Replenishment Planning Operators",
+      "file": "71221b41442646c387614bd9fb902942.html"
+    },
+    {
+      "title": "Calculate Average Daily Usage",
+      "file": "3f9da2072d1d4439a45e0e5be8dc9377.html"
+    },
+    {
+      "title": "Recommend Decoupling Points",
+      "file": "3e5d27c7af5a4f59b84bae8c21154468.html"
+    },
+    {
+      "title": "Calculate DDMRP Buffer Levels",
+      "file": "9ece2515ccb84c1abf34e63415c459b8.html"
+    },
+    {
+      "title": "Map to Decoupling Points",
+      "file": "9f7c781508504a0c82d762a11064847a.html"
+    },
+    {
+      "title": "Using Application Jobs to Create and Schedule Demand-Driven Replenishment Operator Runs",
+      "file": "d7dbda51e09d4e88bf519229e19dede1.html"
+    },
+    {
+      "title": "Scheduling Demand-Driven Replenishment Operators to Run as a Reoccurring Job",
+      "file": "6f3fcdc1b3104642be5d0f7da358c0c8.html"
+    },
+    {
+      "title": "Multi-Sourcing Scenarios",
+      "file": "4945c552b880495b8c532b98f42b1b84.html"
+    },
+    {
+      "title": "Rolling Calculations",
+      "file": "b45b41f58f0c451ca705ea91f21fa3a1.html"
+    },
+    {
+      "title": "Considering Product Lifecycle Information in ADU Calculations",
+      "file": "71e99105f8c849bbb26dabdc5d56834f.html"
+    },
+    {
+      "title": "Consider Local Minimum Order Quantity When Calculating Green Zone",
+      "file": "ba324711996947578b46a9d95251beb8.html"
+    },
+    {
+      "title": "Visualizing Decoupled Lead Time for Non-Decoupling Points",
+      "file": "819cd965186144169620ef2509e520db.html"
+    },
+    {
+      "title": "Maintenance, Repair, and Operations",
+      "file": "89ba7acf063047cea5b37702adfa300b.html"
+    },
+    {
+      "title": "Sample Planning Area for Maintenance, Repair, and Operations",
+      "file": "4e6bb6eb91b64e69a7bef16eca03b0ba.html"
+    },
+    {
+      "title": "Time Profile",
+      "file": "d9fd570bba774203853ad40a1442624f.html"
+    },
+    {
+      "title": "Master Data Types",
+      "file": "a362ec999d3a4eb4801b2212fcf1da11.html"
+    },
+    {
+      "title": "Planning Levels",
+      "file": "fd5f91e8099441fd85f3ff2af61c15f1.html"
+    },
+    {
+      "title": "Key Figures",
+      "file": "05e07a6fc7cc42a49c00a9060029fba3.html"
+    },
+    {
+      "title": "Planning Operators",
+      "file": "4352692b9dd84965a4dbb4fe0ab56d9f.html"
+    },
+    {
+      "title": "Using Sample Rules for Master Data Maintenance to Determine Part Risk Score",
+      "file": "e6543b2c166449c4a45b03e1f427ab83.html"
+    },
+    {
+      "title": "Apps for Maintenance, Repair, and Operations",
+      "file": "5ee6cd0d1d50441ea003d7e2ea6ce54e.html"
+    },
+    {
+      "title": "Using Profiles to Run Maintenance, Repair, and Operations Operators",
+      "file": "4e31c024d1094f5fbda1112cb6241e0e.html"
+    },
+    {
+      "title": "Using Profiles to Run the EOQ and Service Level Operators",
+      "file": "e75269a532ce4c8b86da1f6ea6735a19.html"
+    },
+    {
+      "title": "MRO Inventory Calculation",
+      "file": "7f736ee22da84008a8e39cf2607b1434.html"
+    },
+    {
+      "title": "Creating Profiles for MRO Inventory Calculation",
+      "file": "ab263bf66f314cac9c44debcc49f561d.html"
+    },
+    {
+      "title": "Using Application Jobs to Create and Schedule MRO Inventory Calculation Operator Runs",
+      "file": "887badd94f354356922af4ed351e1898.html"
+    },
+    {
+      "title": "Scheduling MRO Operators to Run in the Excel Add-In",
+      "file": "a7acdb3bafd94756b9ef9e4fa13f2e3f.html"
+    },
+    {
+      "title": "Rotables Sourcing Ratio",
+      "file": "4a5a6ba086824211b8eeae1ee7e8d262.html"
+    },
+    {
+      "title": "Creating Profiles for Rotables Sourcing Ratio",
+      "file": "ad2979658601404fb2a7562aac24e05b.html"
+    },
+    {
+      "title": "Using Application Jobs to Create and Schedule MRO Rotables Sourcing Ratio Operator Runs",
+      "file": "ad999f6529894b0a85b2a79bd0cdb8fe.html"
+    },
+    {
+      "title": "Scheduling MRO Operators to Run in the Excel Add-In",
+      "file": "d0677276cb6c484fa0dfc0bcb5e4fb16.html"
+    },
+    {
+      "title": "Inventory Balancing Calculation",
+      "file": "e232137f61b34822b9f55b379692bde0.html"
+    },
+    {
+      "title": "Creating Profiles for Inventory Balancing Calculation Operator",
+      "file": "119834d17b7345728f9ed254eedcc690.html"
+    },
+    {
+      "title": "Using Application Jobs to Create and Schedule Inventory Balancing Calculation Runs",
+      "file": "5d732e5efdda4e2590521cd6964612b1.html"
+    },
+    {
+      "title": "Scheduling MRO Operators to Run in the Excel Add-In",
+      "file": "fd167fb147bf4bf4824ff542b09c41f9.html"
+    },
+    {
+      "title": "Distance Calculation",
+      "file": "742c5fb70a344afaa28c518d329dff61.html"
+    },
+    {
+      "title": "Creating Profiles for Distance Calculation Operator",
+      "file": "1e1a7ece26014cc789b0dc4513480bd5.html"
+    },
+    {
+      "title": "Scheduling MRO Operators to Run in the Excel Add-In",
+      "file": "a415e02da5fb460daee68cb9a4c9917a.html"
+    },
+    {
+      "title": "Using Application Jobs to Create and Schedule Distance Calculation Runs",
+      "file": "642a88dbc19245f29322b3991eba10a5.html"
+    },
+    {
+      "title": "Economic Order Quantity Calculation",
+      "file": "f8ed3f622093484e9b2c8188a1b46e35.html"
+    },
+    {
+      "title": "Creating Economic Order Quantity Profiles",
+      "file": "3b1551a5c1e645229456014f1363dd11.html"
+    },
+    {
+      "title": "Using Application Jobs to Create and Schedule Economic Order Quantity Calculation Operator Runs",
+      "file": "3aa65dbd8f914c93a0c2775f17374d2e.html"
+    },
+    {
+      "title": "Scheduling EOQ and Service Level Operators to Run in the Excel Add-In",
+      "file": "c36c37432fc540eab1ef39b724648c7e.html"
+    },
+    {
+      "title": "Service Level Calculation",
+      "file": "059f0ae149e34d809b43ac3fde72b11a.html"
+    },
+    {
+      "title": "Creating Service Level Calculation Profiles",
+      "file": "26c1f429e1e84bfcbdd95c2edd438861.html"
+    },
+    {
+      "title": "Using Application Jobs to Create and Schedule Service Level Calculation Operator Runs",
+      "file": "526e6aceebac4781ab3ce4946fdae699.html"
+    },
+    {
+      "title": "Scheduling EOQ and Service Level Operators to Run in the Excel Add-In",
+      "file": "028dd4d043194d3aa5a2670b9a8f208f.html"
+    },
+    {
+      "title": "Last Time Buy",
+      "file": "0604fac1b65e443b82d5121d65cb6730.html"
+    },
+    {
+      "title": "MRO and Navigation to Other Systems",
+      "file": "b489d377040f425282cedd52e7b61cd9.html"
+    },
+    {
+      "title": "Forecast Consumption for MRO",
+      "file": "53a1d981213545b581e8cf7e7e991a91.html"
+    },
+    {
+      "title": "AI-Assisted MRO Inventory Analysis",
+      "file": "762412effb684040849bdc6e522df229.html"
+    },
+    {
+      "title": "Order-Based Planning",
+      "file": "e5593253b1e44058beea284fadc8b4c2.html"
+    },
+    {
+      "title": "Using Order-Based Planning with Flexible Master Data",
+      "file": "0adce9e356974d9790cae131bbedee30.html"
+    },
+    {
+      "title": "Using Order-Based Planning with External Master Data",
+      "file": "a23346e7139a47649cbefcf3f4ba7b74.html"
+    },
+    {
+      "title": "Security Guide",
+      "file": "f6c22355af83f651e10000000a423f68.html"
+    },
+    {
+      "title": "Extensibility Options",
+      "file": "13ed17b271ba446084bffb431345df3a.html"
+    },
+    {
+      "title": "End-to-End Data Integration and Extensibility for SAP Integrated Business Planning",
+      "file": "f854e1ed77ae4060bfa43e031757cec5.html"
+    },
+    {
+      "title": "Additional Extensibility Options for Time-Series-Based Planning",
+      "file": "a5fccc92396c4721a136ab6526a1f020.html"
+    },
+    {
+      "title": "Built-In Extensibility",
+      "file": "f0b12a865c61452f841a113053fd52c7.html"
+    },
+    {
+      "title": "Custom User Interface on SAP Business Technology Platform",
+      "file": "9c19f7a73f0e43029903312c9f01749f.html"
+    },
+    {
+      "title": "Custom Application and Algorithms on SAP Business Technology Platform",
+      "file": "21f637e22dab41599b2a5334ff9908f7.html"
+    },
+    {
+      "title": "Integration Option Using SAP Cloud Integration for Data Services",
+      "file": "cdbf3a8884d548448fa5f64892d6f843.html"
+    },
+    {
+      "title": "User Interface Extensibility with Custom Themes",
+      "file": "b77aad1c93d34eaebe1ccc72da43df3a.html"
+    },
+    {
+      "title": "Learning Content Extensibility with SAP Enable Now",
+      "file": "d31185dedc7e49bc8a9bfa4817095b05.html"
+    },
+    {
+      "title": "Extensibility of Master Data for Order-Based Planning",
+      "file": "9d0795ce6dcb4ed58ad408fb66c58599.html"
+    },
+    {
+      "title": "Using Extensible Apps in Order-Based Planning",
+      "file": "96d2254996214619a23804af89bec5e6.html"
+    },
+    {
+      "title": "Extensibility Option for External Forecasting",
+      "file": "1ce34887022741d39222958066d45d9d.html"
+    },
+    {
+      "title": "Custom Fields",
+      "file": "23bf0fa9135146cab3927554236961d3.html"
+    },
+    {
+      "title": "Creating Custom Fields",
+      "file": "a7cd7039869940e29d64fbd84cc56a2b.html"
+    },
+    {
+      "title": "Editing Custom Fields",
+      "file": "4e4f2053beb048bd9087d14f94ae6884.html"
+    },
+    {
+      "title": "App Descriptions for Business Applications",
+      "file": "06659c78e88348faac8e98dd7f4198ed.html"
+    },
+    {
+      "title": "Manage Forecast Models",
+      "file": "603f8154c2652357e10000000a44176d.html"
+    },
+    {
+      "title": "Assign Forecast Models",
+      "file": "a09c76555545011de10000000a44538d.html"
+    },
+    {
+      "title": "Manage Curve Clustering Profiles",
+      "file": "21f160992ac94ec589cda7232d0a08aa.html"
+    },
+    {
+      "title": "Manage Forecast Automation Profiles",
+      "file": "c17d52335d23423790fcfa019e5100fc.html"
+    },
+    {
+      "title": "Manage Forecast Error Calculations",
+      "file": "db38a0570dbd8a1be10000000a44147b.html"
+    },
+    {
+      "title": "Manage Product Lifecycle",
+      "file": "5dad8c570c9b6d10e10000000a441470.html"
+    },
+    {
+      "title": "Manage Curves for Product Lifecycle",
+      "file": "9210304209c74eaab22758c9c122cdc6.html"
+    },
+    {
+      "title": "Settings for Product Lifecycle",
+      "file": "444043ad74b54cd68a21227c6e9a39c2.html"
+    },
+    {
+      "title": "Analyze Promotions",
+      "file": "621d1656b3703a35e10000000a44538d.html"
+    },
+    {
+      "title": "Manage Realignment Rules",
+      "file": "bf69eacf492d4c6e84cd84e02a4c7f50.html"
+    },
+    {
+      "title": "Authorizations for Realignment",
+      "file": "7569577af70241dda1f94dec2f7e7799.html"
+    },
+    {
+      "title": "Forecast Error Profiles",
+      "file": "90855df421d34a55a86f6d0049e7c347.html"
+    },
+    {
+      "title": "Inventory Profiles",
+      "file": "96bd6ea13bfb45abab3f81a8d5f22072.html"
+    },
+    {
+      "title": "S&OP Operator Profiles",
+      "file": "13d588c8408e4694a67a52acd747add2.html"
+    },
+    {
+      "title": "Time Aggregation Profiles",
+      "file": "fb5649f40f6d480f817555f1128d49f0.html"
+    },
+    {
+      "title": "Forecast Consumption Profiles",
+      "file": "5237f9098c5948dcbc3003eb5c81cacb.html"
+    },
+    {
+      "title": "Settings for TS Supply Planning",
+      "file": "ea9c9ecaaaa04d828418112e3071a235.html"
+    },
+    {
+      "title": "Configure Cost Rollup",
+      "file": "aa6b2196027d4712b4289ef22958eb7d.html"
+    },
+    {
+      "title": "Configure Carbon Emissions Rollup",
+      "file": "d9b5004ba30c4f56a9ac595cc9eb8d84.html"
+    },
+    {
+      "title": "Application Mappings",
+      "file": "fcb364b149fa43c7a9720c0d1e243326-1222.html"
+    },
+    {
+      "title": "Manage Versions and Scenarios",
+      "file": "48cc0d56612efb37e10000000a44147b.html"
+    },
+    {
+      "title": "Application Jobs ‒ Order-Based Planning",
+      "file": "1a5f0d5639307c65e10000000a44147b.html"
+    },
+    {
+      "title": "Planning Run Profiles",
+      "file": "79c4182e754e45b8aec87b48daea08a4.html"
+    },
+    {
+      "title": "Source of Supply Selection Profiles",
+      "file": "a1e283faf3094fc284c1d564f69a6bfa.html"
+    },
+    {
+      "title": "Smart Data Integration Profiles",
+      "file": "6eaa7699801847dba908997e7484f040.html"
+    },
+    {
+      "title": "Creating an Integration Profile",
+      "file": "f990b3b591c14e62891f8d7f70606229.html"
+    },
+    {
+      "title": "Adding Logical Systems to an Integration Profile",
+      "file": "008298d3b5a849f39e1432da444acc80.html"
+    },
+    {
+      "title": "Removing a Logical System from an Integration Profile",
+      "file": "f2adb61f78f0477c941ad2c243ecd703.html"
+    },
+    {
+      "title": "Replacing a Logical System in an Integration Profile",
+      "file": "c4d9f2a8ddc94aca95fee42e9bcf4a22.html"
+    },
+    {
+      "title": "Configure Remote Sources (SDI)",
+      "file": "6489d8566b465567e10000000a441470.html"
+    },
+    {
+      "title": "Manage User Credentials of Smart Data Integration",
+      "file": "3b2b6cd325a345668b3b4b5a94972213.html"
+    },
+    {
+      "title": "Product Allocation Profiles",
+      "file": "c23642566d91f81ae10000000a441470.html"
+    },
+    {
+      "title": "Forecast Consumption Profiles",
+      "file": "035443563c24d455e10000000a44147b.html"
+    },
+    {
+      "title": "OBP Planning Levels",
+      "file": "84d33fb2203d49dfb7e2ae1196f1a9b3.html"
+    },
+    {
+      "title": "Settings for Order-Based Planning",
+      "file": "9e620d5639307c65e10000000a44147b.html"
+    },
+    {
+      "title": "View Locations",
+      "file": "ef5b0a56d448792de10000000a44538d.html"
+    },
+    {
+      "title": "View Location Products",
+      "file": "e3ac08567dead207e10000000a44538d.html"
+    },
+    {
+      "title": "View Products",
+      "file": "f3ad08567dead207e10000000a44538d.html"
+    },
+    {
+      "title": "View Resources",
+      "file": "17ac08567dead207e10000000a44538d.html"
+    },
+    {
+      "title": "View Transportation Lanes",
+      "file": "afb008567dead207e10000000a44538d.html"
+    },
+    {
+      "title": "View Suppliers",
+      "file": "f4980a56d448792de10000000a44538d.html"
+    },
+    {
+      "title": "View Production Data Structures",
+      "file": "3bb3095659493a35e10000000a44538d.html"
+    },
+    {
+      "title": "View Customers",
+      "file": "98890956279c0033e10000000a44538d.html"
+    },
+    {
+      "title": "Projected Stock",
+      "file": "0fd47747816d4251889ae8d823c023c3.html"
+    },
+    {
+      "title": "Creating an Order",
+      "file": "10efce2ad2f44e2fab34738483d6168b.html"
+    },
+    {
+      "title": "Changing an Order",
+      "file": "b2f14a3610844d80b8fccaf0129144ec.html"
+    },
+    {
+      "title": "Converting an Order",
+      "file": "691eac6cf9114065b784a3b3eb3ed640.html"
+    },
+    {
+      "title": "Simulating a Sales Order",
+      "file": "cbc8f2f99e304336bcefb4bb6cdfe35b.html"
+    },
+    {
+      "title": "Fixing or Unfixing an Order",
+      "file": "ab554c9c4aed4ab29333e121ccd243c2.html"
+    },
+    {
+      "title": "Deleting an Order",
+      "file": "69b87f43ef854ace84f51f24a72f2612.html"
+    },
+    {
+      "title": "View Stock Details",
+      "file": "ec3947c1356c4b2e9f15ec481cce49e6.html"
+    },
+    {
+      "title": "Supply Chain Dependencies",
+      "file": "9649588f83a342a69e8b52def2d56059.html"
+    },
+    {
+      "title": "Manage Rules for Master Data Maintenance",
+      "file": "ee1f6ace105b4a8e9a527b9b2bb9b778.html"
+    },
+    {
+      "title": "Applying a Rule for Master Data Maintenance",
+      "file": "e5b73c3734424321a95ac70a86591845.html"
+    },
+    {
+      "title": "Using Multiple Filter Conditions",
+      "file": "8f7e8ed2647d4ca385153c249c67b938.html"
+    },
+    {
+      "title": "Tips and Tricks for Creating Rules for Master Data Maintenance",
+      "file": "33ff47dd43314d54b2acc7a12c338948.html"
+    },
+    {
+      "title": "Example Use Case for Rule-Based Master Data Update",
+      "file": "d1554c44df34450eaafd78e4bed3d462.html"
+    },
+    {
+      "title": "Example Use Case for Rule-Based Master Data Creation",
+      "file": "b08dc1ecb6a442d28fbd1f1bc7bad0e5.html"
+    },
+    {
+      "title": "Example Use Case for Setting Up an Aggregation Rule in Your Rule Profile",
+      "file": "33226dcedb784ca38386cfd1057be9b6.html"
+    },
+    {
+      "title": "Example Use Case for Assigning Empty or Fixed Values to Target Attributes",
+      "file": "f6dc55477ac14dfc9f7ee4e5693af1c8.html"
+    },
+    {
+      "title": "Planning Run Profiles",
+      "file": "79c4182e754e45b8aec87b48daea08a4-1266.html"
+    },
+    {
+      "title": "Application Jobs ‒ Order-Based Planning",
+      "file": "1a5f0d5639307c65e10000000a44147b-1267.html"
+    },
+    {
+      "title": "Fair-Share Set Profiles",
+      "file": "e21cbade7244436a9aab4175cad4e528.html"
+    },
+    {
+      "title": "Define Sequence of Sort Attribute Values",
+      "file": "7a2feaa1a5254cb2ae51d19410a6b44c.html"
+    },
+    {
+      "title": "Defining a Custom Sequence of Sort Attribute Values",
+      "file": "39cca6e2ad4d43398b48a21c29087c0c.html"
+    },
+    {
+      "title": "Time Aggregation Profiles",
+      "file": "ffc39f391ffc4b019aa2fec7a5f696ec.html"
+    },
+    {
+      "title": "Application Jobs ‒ Order-Based Planning",
+      "file": "1a5f0d5639307c65e10000000a44147b-1273.html"
+    },
+    {
+      "title": "Planning Run Profiles",
+      "file": "79c4182e754e45b8aec87b48daea08a4-1274.html"
+    },
+    {
+      "title": "Simulate Demand Prioritization",
+      "file": "702a2f55d673bc06e10000000a441470.html"
+    },
+    {
+      "title": "Projected Stock",
+      "file": "71a8fd54d0cef51ee10000000a441470.html"
+    },
+    {
+      "title": "Creating an Order",
+      "file": "1abe108db24342aa81f364c7feffbc4b.html"
+    },
+    {
+      "title": "Changing an Order",
+      "file": "3864592cfab74b4994a18758cdb6e7b5.html"
+    },
+    {
+      "title": "Converting an Order",
+      "file": "c8d4fd878471435788d9d2997f418a0d.html"
+    },
+    {
+      "title": "Simulating a Sales Order",
+      "file": "0c0c4102faf543df9873855e96124a45.html"
+    },
+    {
+      "title": "Fixing or Unfixing an Order",
+      "file": "dbda210eaf0244da88414575d8ec3b3e.html"
+    },
+    {
+      "title": "Deleting an Order",
+      "file": "18f8b7afa7c74f85b38f3d524421a01e.html"
+    },
+    {
+      "title": "View Gating Factors",
+      "file": "dadd21577ffcdd7ae10000000a4450e5.html"
+    },
+    {
+      "title": "Analyze Supply Usage",
+      "file": "38976f5e63084628a11778518a54d620.html"
+    },
+    {
+      "title": "View Confirmations",
+      "file": "33752f5581788a05e10000000a441470.html"
+    },
+    {
+      "title": "Orders",
+      "file": "912197f0d7734318b101977c4df04cc6.html"
+    },
+    {
+      "title": "Available-to-Deploy Profiles",
+      "file": "59dca90386634a37a8898354fe039e93.html"
+    },
+    {
+      "title": "Transportation Load Building Profiles",
+      "file": "93ae67c366ba45fe98a1093b7f49fd7c.html"
+    },
+    {
+      "title": "Planner Workspaces",
+      "file": "d1829db2c8ba40aab2311648b56af1ff.html"
+    },
+    {
+      "title": "Attribute Sets - Characteristics-Based Planning",
+      "file": "1256a96211274b3ca0c7681c5b9f0fb6.html"
+    },
+    {
+      "title": "Characteristic Mappings - Characteristics-Based Planning",
+      "file": "609b814eb6e84d869c490664abf53452.html"
+    },
+    {
+      "title": "Characteristics-Based Planning Profiles",
+      "file": "56e53f3624ba4ef4bc8eca3242ecea1e.html"
+    },
+    {
+      "title": "Working with Rule Segments",
+      "file": "ab675b6fcec74de89447e5ee8657722e.html"
+    },
+    {
+      "title": "Driver-Based Planning",
+      "file": "b27fa08343f54fc3868c6ba9cf47f40a-1299.html"
+    },
+    {
+      "title": "Demand-Driven Replenishment Profiles",
+      "file": "d7601ffe103f4fff810a9c4e226c639a.html"
+    },
+    {
+      "title": "DDMRP Buffer Analysis",
+      "file": "c53ba9f385624dbc9b6425de3cfd5bf8.html"
+    },
+    {
+      "title": "DDMRP Buffer Status Monitoring",
+      "file": "5fcc5b06bd764720b7bc1104732f8918.html"
+    },
+    {
+      "title": "Maintenance, Repair, and Operations Profiles",
+      "file": "6dd392c7997441ecaa307e2ab9ccddfb.html"
+    },
+    {
+      "title": "EOQ and Service Level Profiles",
+      "file": "488e46b6586243798dafc56ea27921cd.html"
+    }
+  ]
+}

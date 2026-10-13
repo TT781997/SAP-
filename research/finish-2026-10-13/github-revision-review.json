@@ -1,0 +1,325 @@
+[
+  {
+    "repository": "aws-samples/aws-ssm-automation-for-sap-hana-restore",
+    "commit": "0f95719f8e83c3fc75b9b258d81fe990688445fc",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "0f95719f8e83c3fc75b9b258d81fe990688445fc",
+    "status": "same-revision"
+  },
+  {
+    "repository": "Azure/SAP-on-Azure-Scripts-and-Utilities",
+    "commit": "f27603bf4189f436da577ba3e945b3857d508c9c",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "f27603bf4189f436da577ba3e945b3857d508c9c",
+    "status": "same-revision"
+  },
+  {
+    "repository": "GoogleCloudPlatform/sap-deployment-automation",
+    "commit": "097bab72bca131165654e2558090de133e5a9997",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "097bab72bca131165654e2558090de133e5a9997",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SUSE/SAPHanaSR",
+    "commit": "0cb22b4a7d9b63dfd5c6416d44c0846448856e26",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "0cb22b4a7d9b63dfd5c6416d44c0846448856e26",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-samples/teched2024-IN280",
+    "commit": "a2e1a91d4394eb3f2bd477188d4380d60c47196f",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "a2e1a91d4394eb3f2bd477188d4380d60c47196f",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-samples/integrated-business-planning-excel-addin-vba-samples",
+    "commit": "904213f33ea292793a245f3bca3c1c3d36fdc141",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "904213f33ea292793a245f3bca3c1c3d36fdc141",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-samples/ibp-data-intelligence-forecasting-prophet",
+    "commit": "c0133c4cd4e79831b9482f4f5a9a14214c023675",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "c0133c4cd4e79831b9482f4f5a9a14214c023675",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-samples/integrated-business-planning-excel-add-in-templates",
+    "commit": "51b5d2fa10fa94d47440e16531efd337f2f1377d",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "51b5d2fa10fa94d47440e16531efd337f2f1377d",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/terraform-landingpage-for-btp",
+    "commit": "492da543ef462531a715ffbf39f85e4a14a44d3b",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "492da543ef462531a715ffbf39f85e4a14a44d3b",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-runtime-comparison-guide",
+    "commit": "f756ee4d3fd2eddaed277b783a546ef5983a0f57",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "f756ee4d3fd2eddaed277b783a546ef5983a0f57",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-cloud-transport-management",
+    "commit": "3e52386db14f1d2ad87d7abfb693662c9c308ad7",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "3e52386db14f1d2ad87d7abfb693662c9c308ad7",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-application-autoscaler",
+    "commit": "f3d50494a7e1b32c3086415d409957ff447b8a26",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "f3d50494a7e1b32c3086415d409957ff447b8a26",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-continuous-integration-and-delivery",
+    "commit": "764b539d970188cf55c2cfb3fc595fa4f26d1503",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "764b539d970188cf55c2cfb3fc595fa4f26d1503",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-cloud-integration-automation-service",
+    "commit": "b79f9085d3a400f6e31014a3bc98914f352fe826",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "b79f9085d3a400f6e31014a3bc98914f352fe826",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-cloud-logging",
+    "commit": "abe489722e9a975bf6587d16f31acb41998b7a74",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "abe489722e9a975bf6587d16f31acb41998b7a74",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-credential-store",
+    "commit": "ff95b7c1508648e889c99a8191456fd33d9b2174",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "ff95b7c1508648e889c99a8191456fd33d9b2174",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-master-data-integration",
+    "commit": "1382594a5747f5221edbb1f1bc27b2f9c8b8e852",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "1382594a5747f5221edbb1f1bc27b2f9c8b8e852",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-connectivity",
+    "commit": "8483798c61bc394c0bdd1a9729b0add28396b68a",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "8483798c61bc394c0bdd1a9729b0add28396b68a",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-developer-guide",
+    "commit": "ccf96219b3ceb520d4eefd0f73f346f244e06744",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "ccf96219b3ceb520d4eefd0f73f346f244e06744",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-fiori-tools",
+    "commit": "375a9b528cd3154943d47e2c2b7f69dc8af59cb4",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "375a9b528cd3154943d47e2c2b7f69dc8af59cb4",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-cloud-identity-services-system-integration-guide",
+    "commit": "03f83d7a0f2b61934a8da1cac9fdd6de85d4c0c7",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "03f83d7a0f2b61934a8da1cac9fdd6de85d4c0c7",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/abap-platform-trial-image",
+    "commit": "c2e8ce6423ee37529c6db161ce8afa2ca5aafcd4",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "c2e8ce6423ee37529c6db161ce8afa2ca5aafcd4",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/sap-hana-cloud-data-intelligence",
+    "commit": "228a4ef5082bb9b11685294e8fd308373a0f5477",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "228a4ef5082bb9b11685294e8fd308373a0f5477",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-ui-theme-designer",
+    "commit": "1becfc85b2ea540907dce82a247244caa5167055",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "1becfc85b2ea540907dce82a247244caa5167055",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-build-work-zone-advanced",
+    "commit": "0feb7e502148cfe862edcab66697d855c30f936f",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "0feb7e502148cfe862edcab66697d855c30f936f",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/sap-datasphere",
+    "commit": "d0fee5a1719cc3472fb98b2f85513e3e1232ad84",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "d0fee5a1719cc3472fb98b2f85513e3e1232ad84",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/sap-artificial-intelligence",
+    "commit": "f6e3248c0a58db0c7604428083634059a8d93a59",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "f6e3248c0a58db0c7604428083634059a8d93a59",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-task-center",
+    "commit": "748feb3c704e4b3a4d81ed645f8eaa0720bc00ef",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "748feb3c704e4b3a4d81ed645f8eaa0720bc00ef",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-service-manager",
+    "commit": "7d53ba9ac52fa408cd4aca161fb602e0fc14c93a",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "7d53ba9ac52fa408cd4aca161fb602e0fc14c93a",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-integration-suite",
+    "commit": "33f339544cd06d3c4e272fe8ef57c7248f68c6a2",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "33f339544cd06d3c4e272fe8ef57c7248f68c6a2",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-cloud-identity-services",
+    "commit": "27961251d56cc7c83ff427eadc224544b347bd50",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "715ae1ca6e2146055b2a3e136592d0391558bcf7",
+    "status": "updated",
+    "comparisonFileCount": 1,
+    "comparisonComplete": true,
+    "scopedDocumentChanges": 1,
+    "collectedCommit": "715ae1ca6e2146055b2a3e136592d0391558bcf7"
+  },
+  {
+    "repository": "SAP-docs/btp-neo-environment",
+    "commit": "a49f948821bf0a52d299882ff3c56f4aa8325ee0",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "a49f948821bf0a52d299882ff3c56f4aa8325ee0",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-custom-domain-service",
+    "commit": "4819e96c8e2db303d77523f296112fc5884a851b",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "4819e96c8e2db303d77523f296112fc5884a851b",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-job-scheduling-service",
+    "commit": "173ba86f1500a34da0553e80aea8b56008f4438c",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "173ba86f1500a34da0553e80aea8b56008f4438c",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/sapui5",
+    "commit": "b54f2e8b18102810cc53364fd04d67b72710cf71",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "b54f2e8b18102810cc53364fd04d67b72710cf71",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/api-style-guide",
+    "commit": "a07809a01fd1a13f75707cccbbfc612a5505da1a",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "a07809a01fd1a13f75707cccbbfc612a5505da1a",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-process-orchestration-migration-guide",
+    "commit": "66cb5836917f1a3bcdf827ff98f3c1d232e7c76e",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "66cb5836917f1a3bcdf827ff98f3c1d232e7c76e",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/cloud-alm-setup-admin-guide",
+    "commit": "247ce0045a2a60f57b9afb5914184bb784e7ba1a",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "247ce0045a2a60f57b9afb5914184bb784e7ba1a",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-cloud-platform",
+    "commit": "d1c13753eb527f6b34b2c0a1e6101dd2b5b9d3e5",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "d1c13753eb527f6b34b2c0a1e6101dd2b5b9d3e5",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-private-link-service",
+    "commit": "acf4311d6aa9f0fbf2f880f75f0edc10c4f9898f",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "acf4311d6aa9f0fbf2f880f75f0edc10c4f9898f",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/s4hana-cloud-advanced-financial-closing",
+    "commit": "242192f3b695d96e1c8a4f3843147f9e70923d72",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "242192f3b695d96e1c8a4f3843147f9e70923d72",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/preview.developer.concur.com",
+    "commit": "f3265a1770ffa5ee3df770d0597bc5f8c58c63cd",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "f3265a1770ffa5ee3df770d0597bc5f8c58c63cd",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-best-practices-guide",
+    "commit": "4ac1d8e69d9345d4c7161b42a33615530bd62da0",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "4ac1d8e69d9345d4c7161b42a33615530bd62da0",
+    "status": "same-revision"
+  },
+  {
+    "repository": "SAP-docs/btp-business-application-studio",
+    "commit": "9517aeaeaee33fb4b6907ace194af81fd359bc62",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "9517aeaeaee33fb4b6907ace194af81fd359bc62",
+    "status": "same-revision"
+  },
+  {
+    "repository": "MicrosoftDocs/azure-docs",
+    "commit": "7a3237df3e723422d49031a617ab59d1137e0d35",
+    "scope": "articles/sap",
+    "checkedAt": "2026-10-13",
+    "latestCommit": "fc4f02d11bc2d47307e90f4cb9a5bdb1307fc5ea",
+    "status": "scope-unchanged",
+    "comparisonFileCount": 276,
+    "comparisonComplete": true,
+    "scopedDocumentChanges": 0
+  }
+]

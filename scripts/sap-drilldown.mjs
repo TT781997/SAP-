@@ -28,7 +28,7 @@ export function drilldownModel(model) {
 export async function renderDrilldown(model,relations) {
   const dir=resolve(root,'vendor/limen-drilldown');
   let [template,css,js]=await Promise.all(['template.html','viewer.css','viewer.js'].map(f=>readFile(resolve(dir,f),'utf8')));
-  const labels={module:'Componente',feature:'Cenário',partial:'Parcial',ready:'Verificado',stub:'Por preencher',
+  const labels={module:'Componente',feature:'Cenário',partial:'Parcial',ready:'Revisto',stub:'Por preencher',
     ...Object.fromEntries(Object.entries(relations).map(([type,r])=>[type,r.title])),
     'scenario-association':'associa ao cenário'};
   const translate=new Map([
@@ -75,7 +75,7 @@ export async function renderDrilldown(model,relations) {
   css+=`\nhtml[data-sap-theme="light"]{${light};color-scheme:light}html[data-sap-theme="dark"]{${dark};color-scheme:dark}\n`;
   css+='\n.sap-nav{display:flex;gap:8px;align-items:center}.sap-nav a{font-size:12px;color:var(--accent);text-decoration:none;white-space:nowrap}.sap-nav a:focus-visible{outline:2px solid var(--accent)}@media(max-width:700px){.top{flex-wrap:wrap}.sap-nav{order:10;width:100%}.project-state{display:none}}';
   template=text(template).replace('lang="en"','lang="pt-PT" data-sap-theme="dark"');
-  template=template.replace('<header class="top">','<header class="top"><nav class="sap-nav" aria-label="Vistas SAP Atlas"><a href="/explorer.html">Explorador SAP</a><a href="/sap-picture-layers.html">Vista em camadas</a></nav>')
+  template=template.replace('<header class="top">','<header class="top"><nav class="sap-nav" aria-label="Vistas SAP Atlas"><a href="/knowledge.html">Produtos e documentação</a><a href="/explorer.html">Explorador SAP</a><a href="/sap-picture-layers.html">Vista em camadas</a></nav>')
     .replace('<button type="button" id="panel-toggle"','<button type="button" class="tbtn" id="sap-theme">Tema claro</button><button type="button" id="panel-toggle"');
   const theme=`(function(){var b=document.getElementById('sap-theme');function set(t){document.documentElement.dataset.sapTheme=t;b.textContent=t==='dark'?'Tema claro':'Tema escuro';try{localStorage.setItem('sap-video-theme',t)}catch{}}var t='dark';try{t=localStorage.getItem('sap-video-theme')||'dark'}catch{}set(t==='light'?'light':'dark');b.onclick=function(){set(document.documentElement.dataset.sapTheme==='dark'?'light':'dark')}})();`;
   const parts={
